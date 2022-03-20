@@ -17,6 +17,7 @@ void motorinit(){
 }
 
 
+
 void motorctrl(){
 	if(duty1>=0){
 		gpio_set(DIR_1,0);
