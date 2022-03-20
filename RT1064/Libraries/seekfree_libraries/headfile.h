@@ -82,5 +82,8 @@
 #include "SEEKFREE_SCC8660_CSI.h"
 #include "SEEKFREE_SCC8660.h"
 
+//------my head file
+#include "motor.h"
+
 #endif
 

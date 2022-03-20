@@ -1,0 +1,41 @@
+摄像头CSI接口 TX:C28 RX:C29 VSY:B22 HREF:不需要 PCLK:B20  D0-D7:B31 B30 B29 B28 B27 B26 B25 B24
+摄像头FLEXIO接口 TX:C16 RX:C17 VSY:C7 HREF:C6 PCLK:C5  D0-D7:C8 C9 C10 C11 C12 C13 C14 C15
+如果只使用一个摄像头请使用CSI接口的，如果采用双摄的话使用FLEXIO接口请注意，C4-C15为单片机的配置引脚
+自己在做硬件的时候最好做一个处理，务必保证内核启动后才给FLEXIO接口的摄像头供电，这样避免配置信息错误导致内核不启动。
+
+
+正交解码 
+LSB:C0 DIR:C1
+LSB:C2 DIR:C24
+LSB:C3 DIR:C25 
+LSB:B18 DIR:B19	//与ADC引脚分配重复，请注意。如果用于正交解码了，那么ADC可用端口也就会少两个
+
+PWM D0 D1 D2 D3 D12 D13 D14 D15 
+
+舵机 C30 C31
+
+
+TFT SCK:B0 CS:B3 MOSI:B1 B2 B4 B5
+
+串口 TX:B12 RX:B13
+
+   
+ICM SCK:C23 MOSI:C22 MISO:C21 CS:C20 
+
+
+
+
+adc B14 B15 B16 B17 B18 B19 B21 B23
+
+
+
+无线转串口	TX:D16 RX:D17 D26 D27 加普通IO两个
+
+拨码开关
+
+蜂鸣器
+
+按键
+
+C4 至 C15尽量不要使用
+如果需要使用的话C4 至 C15 尽量不要用作输入

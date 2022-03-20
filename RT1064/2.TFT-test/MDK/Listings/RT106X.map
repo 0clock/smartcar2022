@@ -12782,6 +12782,7 @@ Removing Unused input sections from the image.
     Removing evkmimxrt1064_flexspi_nor_config.o(.text), (0 bytes).
     Removing evkmimxrt1064_sdram_ini_dcd.o(.text), (0 bytes).
     Removing fsl_flexspi_nor_boot.o(.text), (0 bytes).
+    Removing motor.o(.text), (0 bytes).
     Removing dadd.o(.text), (334 bytes).
     Removing dmul.o(.text), (228 bytes).
     Removing ddiv.o(.text), (222 bytes).
@@ -12791,7 +12792,7 @@ Removing Unused input sections from the image.
     Removing d2f.o(.text), (56 bytes).
     Removing fepilogue.o(.text), (110 bytes).
 
-4758 unused section(s) (total 503270 bytes) removed from the image.
+4759 unused section(s) (total 503270 bytes) removed from the image.
 
 ==============================================================================
 
@@ -12978,6 +12979,7 @@ Image Symbol Table
     isr.c                                    0x00000000   Number         0  isr.o ABSOLUTE
     lpuart_adapter.c                         0x00000000   Number         0  lpuart_adapter.o ABSOLUTE
     main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    motor.c                                  0x00000000   Number         0  motor.o ABSOLUTE
     pin_mux.c                                0x00000000   Number         0  pin_mux.o ABSOLUTE
     serial_manager.c                         0x00000000   Number         0  serial_manager.o ABSOLUTE
     serial_port_uart.c                       0x00000000   Number         0  serial_port_uart.o ABSOLUTE
@@ -14333,7 +14335,7 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x70016dc0   0x00000004   Data   RW         6144    .data               mc_w.l(errno.o)
+    0x20000000   0x70016dc0   0x00000004   Data   RW         6145    .data               mc_w.l(errno.o)
     0x20000004   0x70016dc4   0x00000020   Data   RW         5377    .data.GET_CFG_CSI   seekfree_mt9v03x_csi.o
     0x20000024   0x70016de4   0x00000024   Data   RW         5376    .data.MT9V03X_CFG_CSI  seekfree_mt9v03x_csi.o
     0x20000048   0x70016e08   0x00000028   Data   RW         4458    .data.PORTPTR       zf_gpio.o
@@ -14437,25 +14439,25 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x70002400   0x70002400   0x00000000   Code   RO         5993  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x70002400   0x70002400   0x00000004   Code   RO         6105    .ARM.Collect$$$$00000003  mc_w.l(entry4.o)
-    0x70002404   0x70002404   0x00000004   Code   RO         6108    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x70002408   0x70002408   0x00000000   Code   RO         6110    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x70002408   0x70002408   0x00000000   Code   RO         6112    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x70002408   0x70002408   0x00000008   Code   RO         6113    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x70002410   0x70002410   0x00000000   Code   RO         6115    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x70002410   0x70002410   0x00000000   Code   RO         6117    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x70002410   0x70002410   0x00000004   Code   RO         6106    .ARM.Collect$$$$00002714  mc_w.l(entry4.o)
+    0x70002400   0x70002400   0x00000000   Code   RO         5994  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x70002400   0x70002400   0x00000004   Code   RO         6106    .ARM.Collect$$$$00000003  mc_w.l(entry4.o)
+    0x70002404   0x70002404   0x00000004   Code   RO         6109    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x70002408   0x70002408   0x00000000   Code   RO         6111    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x70002408   0x70002408   0x00000000   Code   RO         6113    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x70002408   0x70002408   0x00000008   Code   RO         6114    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x70002410   0x70002410   0x00000000   Code   RO         6116    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x70002410   0x70002410   0x00000000   Code   RO         6118    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x70002410   0x70002410   0x00000004   Code   RO         6107    .ARM.Collect$$$$00002714  mc_w.l(entry4.o)
     0x70002414   0x70002414   0x00000224   Code   RO         5594    .text               startup_mimxrt1064.o
-    0x70002638   0x70002638   0x00000024   Code   RO         6165    .text               mc_w.l(init.o)
+    0x70002638   0x70002638   0x00000024   Code   RO         6166    .text               mc_w.l(init.o)
     0x7000265c   0x7000265c   0x00000004   PAD
     0x70002660   0x70002660   0x0000024a   Code   RO          283    .text.SystemInit    system_mimxrt1064.o
     0x700028aa   0x700028aa   0x00000006   PAD
     0x700028b0   0x700028b0   0x00000002   Code   RO          285    .text.SystemInitHook  system_mimxrt1064.o
-    0x700028b2   0x700028b2   0x0000000e   Code   RO         6190    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x700028c0   0x700028c0   0x00000002   Code   RO         6191    i.__scatterload_null  mc_w.l(handlers.o)
-    0x700028c2   0x700028c2   0x0000000e   Code   RO         6192    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x700028d0   0x700028d0   0x00000030   Data   RO         6189    Region$$Table       anon$$obj.o
+    0x700028b2   0x700028b2   0x0000000e   Code   RO         6191    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x700028c0   0x700028c0   0x00000002   Code   RO         6192    i.__scatterload_null  mc_w.l(handlers.o)
+    0x700028c2   0x700028c2   0x0000000e   Code   RO         6193    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x700028d0   0x700028d0   0x00000030   Data   RO         6190    Region$$Table       anon$$obj.o
 
 
     Execution Region VECTOR_RAM (Exec base: 0x80000000, Load base: 0x70002900, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
@@ -14469,17 +14471,17 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x80000400   0x70002900   0x00000062   Code   RO         5996    .text               mc_w.l(uldiv.o)
-    0x80000462   0x70002962   0x00000062   Code   RO         5998    .text               mc_w.l(ldiv.o)
-    0x800004c4   0x700029c4   0x00000024   Code   RO         6006    .text               mc_w.l(memseta.o)
-    0x800004e8   0x700029e8   0x0000000e   Code   RO         6008    .text               mc_w.l(strlen.o)
-    0x800004f6   0x700029f6   0x00000028   Code   RO         6070    .text               mf_w.l(dfltl.o)
-    0x8000051e   0x70002a1e   0x0000004a   Code   RO         6072    .text               mf_w.l(dfixl.o)
-    0x80000568   0x70002a68   0x0000001e   Code   RO         6135    .text               mc_w.l(llshl.o)
-    0x80000586   0x70002a86   0x00000020   Code   RO         6137    .text               mc_w.l(llushr.o)
-    0x800005a6   0x70002aa6   0x00000000   Code   RO         6150    .text               mc_w.l(iusefp.o)
-    0x800005a6   0x70002aa6   0x000000ba   Code   RO         6151    .text               mf_w.l(depilogue.o)
-    0x80000660   0x70002b60   0x0000002e   Code   RO         6159    .text               mf_w.l(dscalb.o)
+    0x80000400   0x70002900   0x00000062   Code   RO         5997    .text               mc_w.l(uldiv.o)
+    0x80000462   0x70002962   0x00000062   Code   RO         5999    .text               mc_w.l(ldiv.o)
+    0x800004c4   0x700029c4   0x00000024   Code   RO         6007    .text               mc_w.l(memseta.o)
+    0x800004e8   0x700029e8   0x0000000e   Code   RO         6009    .text               mc_w.l(strlen.o)
+    0x800004f6   0x700029f6   0x00000028   Code   RO         6071    .text               mf_w.l(dfltl.o)
+    0x8000051e   0x70002a1e   0x0000004a   Code   RO         6073    .text               mf_w.l(dfixl.o)
+    0x80000568   0x70002a68   0x0000001e   Code   RO         6136    .text               mc_w.l(llshl.o)
+    0x80000586   0x70002a86   0x00000020   Code   RO         6138    .text               mc_w.l(llushr.o)
+    0x800005a6   0x70002aa6   0x00000000   Code   RO         6151    .text               mc_w.l(iusefp.o)
+    0x800005a6   0x70002aa6   0x000000ba   Code   RO         6152    .text               mf_w.l(depilogue.o)
+    0x80000660   0x70002b60   0x0000002e   Code   RO         6160    .text               mf_w.l(dscalb.o)
     0x8000068e   0x70002b8e   0x00000002   PAD
     0x80000690   0x70002b90   0x00000026   Code   RO           17    .text.ARM_MPU_Disable  board.o
     0x800006b6   0x70002bb6   0x00000002   PAD
@@ -15026,23 +15028,23 @@ Memory Map of the image
     0x80012bf0   0x700150f0   0x0000004c   Code   RO         4826    .text.uart_rx_irq   zf_uart.o
     0x80012c3c   0x7001513c   0x00000004   PAD
     0x80012c40   0x70015140   0x00000050   Code   RO         4828    .text.uart_set_handle  zf_uart.o
-    0x80012c90   0x70015190   0x00000030   Code   RO         6094    i.__ARM_fpclassify  m_wv.l(fpclassify.o)
-    0x80012cc0   0x700151c0   0x000000c0   Code   RO         5974    i.__hardfp_modf     m_wv.l(modf.o)
-    0x80012d80   0x70015280   0x000008c4   Code   RO         5980    i.__hardfp_pow      m_wv.l(pow.o)
-    0x80013644   0x70015b44   0x00000070   Code   RO         6096    i.__kernel_poly     m_wv.l(poly.o)
+    0x80012c90   0x70015190   0x00000030   Code   RO         6095    i.__ARM_fpclassify  m_wv.l(fpclassify.o)
+    0x80012cc0   0x700151c0   0x000000c0   Code   RO         5975    i.__hardfp_modf     m_wv.l(modf.o)
+    0x80012d80   0x70015280   0x000008c4   Code   RO         5981    i.__hardfp_pow      m_wv.l(pow.o)
+    0x80013644   0x70015b44   0x00000070   Code   RO         6097    i.__kernel_poly     m_wv.l(poly.o)
     0x800136b4   0x70015bb4   0x00000004   PAD
-    0x800136b8   0x70015bb8   0x00000018   Code   RO         6074    i.__mathlib_dbl_divzero  m_wv.l(dunder.o)
-    0x800136d0   0x70015bd0   0x00000006   Code   RO         6076    i.__mathlib_dbl_infnan2  m_wv.l(dunder.o)
+    0x800136b8   0x70015bb8   0x00000018   Code   RO         6075    i.__mathlib_dbl_divzero  m_wv.l(dunder.o)
+    0x800136d0   0x70015bd0   0x00000006   Code   RO         6077    i.__mathlib_dbl_infnan2  m_wv.l(dunder.o)
     0x800136d6   0x70015bd6   0x00000002   PAD
-    0x800136d8   0x70015bd8   0x00000018   Code   RO         6077    i.__mathlib_dbl_invalid  m_wv.l(dunder.o)
-    0x800136f0   0x70015bf0   0x00000018   Code   RO         6078    i.__mathlib_dbl_overflow  m_wv.l(dunder.o)
-    0x80013708   0x70015c08   0x00000018   Code   RO         6080    i.__mathlib_dbl_underflow  m_wv.l(dunder.o)
-    0x80013720   0x70015c20   0x0000000c   Code   RO         6143    i.__set_errno       mc_w.l(errno.o)
-    0x8001372c   0x70015c2c   0x00000018   Code   RO         6090    i.fabs              m_wv.l(fabs.o)
-    0x80013744   0x70015c44   0x0000006a   Code   RO         6101    i.sqrt              m_wv.l(sqrt.o)
+    0x800136d8   0x70015bd8   0x00000018   Code   RO         6078    i.__mathlib_dbl_invalid  m_wv.l(dunder.o)
+    0x800136f0   0x70015bf0   0x00000018   Code   RO         6079    i.__mathlib_dbl_overflow  m_wv.l(dunder.o)
+    0x80013708   0x70015c08   0x00000018   Code   RO         6081    i.__mathlib_dbl_underflow  m_wv.l(dunder.o)
+    0x80013720   0x70015c20   0x0000000c   Code   RO         6144    i.__set_errno       mc_w.l(errno.o)
+    0x8001372c   0x70015c2c   0x00000018   Code   RO         6091    i.fabs              m_wv.l(fabs.o)
+    0x80013744   0x70015c44   0x0000006a   Code   RO         6102    i.sqrt              m_wv.l(sqrt.o)
     0x800137ae   0x70015cae   0x00000002   PAD
-    0x800137b0   0x70015cb0   0x00000088   Data   RO         5983    .constdata          m_wv.l(pow.o)
-    0x80013838   0x70015d38   0x00000008   Data   RO         6098    .constdata          m_wv.l(qnan.o)
+    0x800137b0   0x70015cb0   0x00000088   Data   RO         5984    .constdata          m_wv.l(pow.o)
+    0x80013838   0x70015d38   0x00000008   Data   RO         6099    .constdata          m_wv.l(qnan.o)
     0x80013840   0x70015d40   0x00000008   Data   RO           56    .rodata.armPllConfig_BOARD_BootClockRUN  clock_config.o
     0x80013848   0x70015d48   0x00000010   Data   RO          550    .rodata.cst16       fsl_clock.o
     0x80013858   0x70015d58   0x00000024   Data   RO          199    .rodata.s_LpuartAdapterBase  lpuart_adapter.o
