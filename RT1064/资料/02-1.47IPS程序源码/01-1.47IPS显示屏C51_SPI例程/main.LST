@@ -1,0 +1,84 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              07/13/2021 11:42:41 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil4\C51\BIN\C51.EXE main.c LARGE BROWSE INCDIR(.\SRC\LED;.\SRC\LCD) DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          //////////////////////////////////////////////////////////////////////////////////   
+   2          //本程序只供学习使用，未经作者许可，不得用于其它任何用途
+   3          //中景园电子
+   4          //店铺地址：http://shop73023976.taobao.com/?spm=2013.1.0.0.M4PqC2
+   5          //
+   6          //  文 件 名   : main.c
+   7          //  版 本 号   : v2.0
+   8          //  作    者   : HuangKai
+   9          //  生成日期   : 2014-0101
+  10          //  最近修改   : 
+  11          //  功能描述   : OLED 4接口演示例程(51系列)
+  12          //              说明: 
+  13          //              ----------------------------------------------------------------
+  14          //              GND    电源地
+  15          //              VCC  3.3v电源
+  16          //              SCL  P10（SCLK）
+  17          //              SDA  P11（MOSI）
+  18          //              RES  P12
+  19          //              DC   P13
+  20          //              CS   P14 
+  21          //              BLK  P15
+  22          //              ----------------------------------------------------------------
+  23          // 修改历史   :
+  24          // 日    期   : 
+  25          // 作    者   : HuangKai
+  26          // 修改内容   : 创建文件
+  27          //版权所有，盗版必究。
+  28          //Copyright(C) 中景园电子2014/3/16
+  29          //All rights reserved
+  30          //******************************************************************************/
+  31          #include "REG51.h"
+  32          #include "lcd_init.h"
+  33          #include "lcd.h"
+  34          #include "pic.h"
+  35          
+  36          int main(void)
+  37          {
+  38   1        float t=0;
+  39   1        LCD_Init();//LCD初始化
+  40   1        LCD_Fill(0,0,LCD_W,LCD_H,WHITE);
+  41   1        while(1)
+  42   1        {
+  43   2          LCD_Fill(0,0,LCD_W,LCD_H,WHITE);
+  44   2          LCD_Fill(0,0,LCD_W,LCD_H,RED);
+  45   2          LCD_Fill(0,0,LCD_W,LCD_H,GREEN);
+  46   2          LCD_Fill(0,0,LCD_W,LCD_H,BLUE);
+  47   2          LCD_Fill(0,0,LCD_W,LCD_H,WHITE);
+  48   2          LCD_ShowChinese(40,0,"中景园电子",RED,WHITE,32,0);
+  49   2          LCD_ShowString(10,33,"LCD_W:",RED,WHITE,32,0);
+  50   2          LCD_ShowIntNum(106,33,LCD_W,3,RED,WHITE,32);
+  51   2          LCD_ShowString(10,66,"LCD_H:",RED,WHITE,32,0);
+  52   2          LCD_ShowIntNum(106,66,LCD_H,3,RED,WHITE,32);
+  53   2          LCD_ShowFloatNum1(10,99,t,4,RED,WHITE,32);
+  54   2          t+=0.11;
+  55   2          LCD_ShowPicture(160,95,40,40,gImage_1);
+C51 COMPILER V9.52.0.0   MAIN                                                              07/13/2021 11:42:41 PAGE 2   
+
+  56   2        }
+  57   1      }
+  58          
+  59            
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    488    ----
+   CONSTANT SIZE    =   3225    ----
+   XDATA SIZE       =   ----       4
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,20 @@
+--cpu=Cortex-M4.fp --branchpatch=sdcomp-29491-629360
+"..\obj\main.o"
+"..\obj\stm32l4xx_it.o"
+"..\obj\system_stm32l4xx.o"
+"..\obj\led.o"
+"..\obj\lcd_init.o"
+"..\obj\lcd.o"
+"..\obj\stm32l4xx_hal.o"
+"..\obj\stm32l4xx_hal_cortex.o"
+"..\obj\stm32l4xx_hal_gpio.o"
+"..\obj\stm32l4xx_hal_pwr.o"
+"..\obj\stm32l4xx_hal_pwr_ex.o"
+"..\obj\stm32l4xx_hal_rcc.o"
+"..\obj\startup_stm32l476xx.o"
+"..\obj\sys.o"
+"..\obj\delay.o"
+--library_type=microlib --strict --scatter "..\OBJ\LCD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\LCD.map" -o ..\OBJ\LCD.axf

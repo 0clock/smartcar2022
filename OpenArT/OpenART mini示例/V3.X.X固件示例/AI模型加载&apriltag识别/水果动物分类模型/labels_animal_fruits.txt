@@ -1,0 +1,10 @@
+cat
+dog
+horse
+pig
+cow
+apple
+orange
+banana
+durian
+grapes

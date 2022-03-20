@@ -1,0 +1,1 @@
+在使用OPENART MINI的 GPIO LED PWM UART的时候，请务必将“SD卡必备文件”文件夹中的内容放置到sd卡根目录中。

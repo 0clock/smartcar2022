@@ -1,0 +1,6 @@
+"STARTUP.obj",
+"main.obj",
+"lcd_init.obj",
+"lcd.obj" 
+TO "LCD" 
+RAMSIZE(256) 

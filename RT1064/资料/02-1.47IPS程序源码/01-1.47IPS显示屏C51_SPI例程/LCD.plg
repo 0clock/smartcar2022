@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\80685\Desktop\中景园1.47寸\02-1.47IPS程序源码\01-1.47IPS显示屏C51_SPI例程\LCD.uvproj
+Project File Date:  03/13/2020
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+compiling lcd_init.c...
+SRC\LCD\lcd_init.c(89): warning C294: unreachable code
+SRC\LCD\lcd_init.c(99): warning C294: unreachable code
+SRC\LCD\lcd_init.c(119): warning C294: unreachable code
+SRC\LCD\lcd_init.c(150): warning C294: unreachable code
+compiling lcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_DRAWRECTANGLE?LCD
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_CIRCLE?LCD
+Program Size: data=9.0 xdata=109 code=25978
+creating hex file from "LCD"...
+"LCD" - 0 Error(s), 6 Warning(s).
+Rebuild target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+compiling lcd_init.c...
+SRC\LCD\lcd_init.c(89): warning C294: unreachable code
+SRC\LCD\lcd_init.c(99): warning C294: unreachable code
+SRC\LCD\lcd_init.c(119): warning C294: unreachable code
+SRC\LCD\lcd_init.c(149): warning C294: unreachable code
+compiling lcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_DRAWRECTANGLE?LCD
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_CIRCLE?LCD
+Program Size: data=9.0 xdata=109 code=26134
+creating hex file from "LCD"...
+"LCD" - 0 Error(s), 6 Warning(s).

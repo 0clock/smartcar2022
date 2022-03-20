@@ -1,0 +1,1 @@
+_1s_model_11_0.9928_xxxx.nncu与labels_number.txt两文件必须放sd卡根目录

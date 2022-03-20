@@ -1,0 +1,1 @@
+_1s_model_08_0.7748_xxxx.nncu与labels_animal_fruits.txt两文件必须放sd卡根目录

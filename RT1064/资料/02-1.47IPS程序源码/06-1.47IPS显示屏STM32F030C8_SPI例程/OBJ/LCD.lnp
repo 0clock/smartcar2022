@@ -1,0 +1,17 @@
+--cpu Cortex-M0
+"..\obj\main.o"
+"..\obj\stm32f0xx_it.o"
+"..\obj\system_stm32f0xx.o"
+"..\obj\startup_stm32f0xx.o"
+"..\obj\led.o"
+"..\obj\lcd_init.o"
+"..\obj\lcd.o"
+"..\obj\sys.o"
+"..\obj\delay.o"
+"..\obj\stm32f0xx_gpio.o"
+"..\obj\stm32f0xx_rcc.o"
+"..\obj\stm32f0xx_misc.o"
+"..\obj\stm32f0xx_usart.o"
+--library_type=microlib --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\LCD.map" -o ..\OBJ\LCD.axf
