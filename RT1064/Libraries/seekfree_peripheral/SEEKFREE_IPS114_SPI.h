@@ -73,10 +73,10 @@
 
 
 //定义写字笔的颜色
-#define IPS114_PENCOLOR    RED
+#define IPS114_PENCOLOR    WHITE
 
 //定义背景颜色
-#define IPS114_BGCOLOR     WHITE
+#define IPS114_BGCOLOR     BLACK
 
 
 

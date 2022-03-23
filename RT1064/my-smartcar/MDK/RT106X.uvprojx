@@ -1869,6 +1869,21 @@
               <FileType>5</FileType>
               <FilePath>..\CODE\motor.h</FilePath>
             </File>
+            <File>
+              <FileName>GUI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\GUI.c</FilePath>
+            </File>
+            <File>
+              <FileName>vofa.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\vofa.c</FilePath>
+            </File>
+            <File>
+              <FileName>vofa.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\CODE\vofa.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
@@ -3734,6 +3749,21 @@
               <FileName>motor.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\CODE\motor.h</FilePath>
+            </File>
+            <File>
+              <FileName>GUI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\GUI.c</FilePath>
+            </File>
+            <File>
+              <FileName>vofa.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\vofa.c</FilePath>
+            </File>
+            <File>
+              <FileName>vofa.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\CODE\vofa.h</FilePath>
             </File>
           </Files>
         </Group>

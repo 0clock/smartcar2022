@@ -45,5 +45,5 @@
 
 1. [find_rects 识别矩形 · OpenMV中文入门教程](https://book.openmv.cc/example/09-Feature-Detection/find-rects.html)
 
-
+![image-20220321064839921](C:\Users\Jay\AppData\Roaming\Typora\typora-user-images\image-20220321064839921.png)
 

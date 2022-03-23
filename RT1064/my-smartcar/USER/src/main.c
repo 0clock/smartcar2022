@@ -57,6 +57,7 @@
 
 #include "headfile.h"
 
+uint8 buffer[64] ;
 
 int main(void)
 {
@@ -64,31 +65,38 @@ int main(void)
 	board_init();   	//务必保留，本函数用于初始化MPU 时钟 调试串口
     
 	systick_delay_ms(300);	//延时300ms，等待主板其他外设上电成功
-	
-	//显示模式设置为3  横屏模式
-	//显示模式在SEEKFREE_IPS114_SPI.h文件内的IPS114_DISPLAY_DIR宏定义设置
-	
-	ips114_init();     	//初始化1.14寸IPS屏幕
-	ips114_showstr(0,0,"SEEKFREE MT9V03x");
-	ips114_showstr(0,1,"Initializing... ");
-
-	//如果屏幕没有任何显示，请检查屏幕接线
+	/////////////////////////////////
+	GUI_init();
 	motorinit();
 	encoderinit();
+	
+	simiic_init();
+	icm20602_init();
+	seekfree_wireless_init();
 	
 	mt9v03x_csi_init();	//初始化摄像头 使用CSI接口
 	//如果屏幕一直显示初始化信息，请检查摄像头接线
 	//如果使用主板，一直卡在while(!uart_receive_flag)，请检查是否电池连接OK?
 	//如果图像只采集一次，请检查场信号(VSY)是否连接OK?
-    
-	ips114_showstr(0,1,"      OK...     ");
 	systick_delay_ms(500);
 	
 	EnableGlobalIRQ(0);
 	while(1)
 	{
+		get_icm20602_accdata();
+		get_icm20602_gyro();
+		GUI_icm20602();
+		
+		GUI_speed();
+		
 		motorctrl();
 		getencoder();
+		
+		int len = snprintf((char *) buffer, sizeof(buffer), "encoder1=%d\r\n", - encoder1);
+		seekfree_wireless_send_buff(buffer,len);
+		len = snprintf((char *) buffer, sizeof(buffer), "encoder2=%d\r\n", encoder2);
+		seekfree_wireless_send_buff(buffer,len);
+
 		if(mt9v03x_csi_finish_flag)
 		{
 			mt9v03x_csi_finish_flag = 0;

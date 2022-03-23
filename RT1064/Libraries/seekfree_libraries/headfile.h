@@ -22,6 +22,7 @@
 
 
 #include <stdint.h>
+#include <stdio.h>
 #include "fsl_common.h"
 
 #include "fsl_debug_console.h"
@@ -84,6 +85,7 @@
 
 //------my head file
 #include "motor.h"
+#include "GUI.h"
 
 #endif
 
