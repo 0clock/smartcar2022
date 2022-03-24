@@ -86,6 +86,7 @@
 //------my head file
 #include "motor.h"
 #include "GUI.h"
+#include "vofa.h"
 
 #endif
 

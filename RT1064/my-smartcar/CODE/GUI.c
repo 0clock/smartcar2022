@@ -21,3 +21,15 @@ void GUI_icm20602(){
 	ips114_showint16(180,3,icm_gyro_y);
 	ips114_showint16(180,4,icm_gyro_z);
 }
+
+void GUI_duty(){
+	ips114_showint16(255,2,duty1);
+	ips114_showint16(255,3,duty2);
+	ips114_showint16(255,4,duty3);
+	ips114_showint16(255,5,duty4);
+	
+	ips114_showint16(255,6,speed_tar_1);
+	ips114_showint16(255,7,speed_tar_2);
+	ips114_showint16(255,8,speed_tar_3);
+	ips114_showint16(255,9,speed_tar_4);
+}

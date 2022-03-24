@@ -76,137 +76,137 @@ void printf_reverse_order(int8 *d_buff, uint32 len)
     }
 }
 
+#define PRINTF 1
+void myprintf(const int8 *format, ...)
+{
+#if(PRINTF)     //如果宏定义PRINTF为0 则不编译printf函数内容，调用printf没有任何操作
+    va_list arg;
+	va_start(arg, format);
+    
+	while (*format)
+	{
+		int8 ret = *format;
+		if (ret == '%')
+		{
+			switch (*++format)
+			{
+                case 'a':// 十六进制p计数法输出浮点数 暂未实现
+                {
+                    
+                    
+                }break;
+                
+                
+                case 'c':// 一个字符
+                {
+                    int8 ch = (int8)va_arg(arg, uint32);
+                    uart_putchar(USART_4, (int8)ch);
+                            
+                }break;
+                
+                
+                case 'd':
+                case 'i':// 有符号十进制整数
+                {
+                    int8 vstr[33];
+                    int32 ival = (int32)va_arg(arg, int32);
+                    uint8 vlen = number_conversion_ascii((uint32)ival, vstr, 1, 10);
+                    if(ival<0)  uart_putchar(USART_4, '-');
+                    printf_reverse_order(vstr,vlen);
+                    uart_putbuff(USART_4, (uint8 *)vstr,vlen);
+                }break;
+                
+                case 'f':// 浮点数，输出小数点后六位  不能指定输出精度
+                case 'F':// 浮点数，输出小数点后六位  不能指定输出精度
+                {
+                    int8 vstr[33];
+                    double ival = (double)va_arg(arg, double);
+                    uint8 vlen = number_conversion_ascii((uint32)(int32)ival, vstr, 1, 10);
+                    if(ival<0)  uart_putchar(USART_4, '-');
+                    printf_reverse_order(vstr,vlen);
+                    uart_putbuff(USART_4, (uint8 *)vstr,vlen);
+                    uart_putchar(USART_4, '.');
 
-//void printf(const int8 *format, ...)
-//{
-//#if(PRINTF)     //如果宏定义PRINTF为0 则不编译printf函数内容，调用printf没有任何操作
-//    va_list arg;
-//	va_start(arg, format);
-//    
-//	while (*format)
-//	{
-//		int8 ret = *format;
-//		if (ret == '%')
-//		{
-//			switch (*++format)
-//			{
-//                case 'a':// 十六进制p计数法输出浮点数 暂未实现
-//                {
-//                    
-//                    
-//                }break;
-//                
-//                
-//                case 'c':// 一个字符
-//                {
-//                    int8 ch = (int8)va_arg(arg, uint32);
-//                    uart_putchar(DEBUG_UART, (int8)ch);
-//                            
-//                }break;
-//                
-//                
-//                case 'd':
-//                case 'i':// 有符号十进制整数
-//                {
-//                    int8 vstr[33];
-//                    int32 ival = (int32)va_arg(arg, int32);
-//                    uint8 vlen = number_conversion_ascii((uint32)ival, vstr, 1, 10);
-//                    if(ival<0)  uart_putchar(DEBUG_UART, '-');
-//                    printf_reverse_order(vstr,vlen);
-//                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,vlen);
-//                }break;
-//                
-//                case 'f':// 浮点数，输出小数点后六位  不能指定输出精度
-//                case 'F':// 浮点数，输出小数点后六位  不能指定输出精度
-//                {
-//                    int8 vstr[33];
-//                    double ival = (double)va_arg(arg, double);
-//                    uint8 vlen = number_conversion_ascii((uint32)(int32)ival, vstr, 1, 10);
-//                    if(ival<0)  uart_putchar(DEBUG_UART, '-');
-//                    printf_reverse_order(vstr,vlen);
-//                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,vlen);
-//                    uart_putchar(DEBUG_UART, '.');
+                    ival = ((double)ival - (int32)ival)*1000000;
+                    vlen = number_conversion_ascii((uint32)(int32)ival, vstr, 1, 10);
+				      while(6>vlen)
+                    {
+                        vstr[vlen] = '0';
+                        vlen++;
+                    }
+                    printf_reverse_order(vstr,vlen);
+                    uart_putbuff(USART_4, (uint8 *)vstr,vlen);
+                    break;
+                }
+                
+                case 'u':// 无符号十进制整数
+                {
+                    int8 vstr[33];
+                    uint32 ival = (uint32)va_arg(arg, uint32);
+                    uint8 vlen = number_conversion_ascii(ival, vstr, 0, 10);
+                    printf_reverse_order(vstr,vlen);
+                    uart_putbuff(USART_4, (uint8 *)vstr,vlen);
+                }break;
+                
+                case 'o':// 无符号八进制整数 
+                {
+                    int8 vstr[33];
+                    uint32 ival = (uint32)va_arg(arg, uint32);
+                    uint8 vlen = number_conversion_ascii(ival, vstr, 0, 8);
+                    printf_reverse_order(vstr,vlen);
+                    uart_putbuff(USART_4, (uint8 *)vstr,vlen);
+                    
+                }break;
+                
+                case 'x':// 无符号十六进制整数
+                case 'X':// 无符号十六进制整数
+                {
+                    int8 vstr[33];
+                    uint32 ival = (uint32)va_arg(arg, uint32);
+                    uint8 vlen = number_conversion_ascii(ival, vstr, 0, 16);
+                    printf_reverse_order(vstr,vlen);
+                    uart_putbuff(USART_4, (uint8 *)vstr,vlen);
+                }break;
+                
+                
+                case 's':// 字符串
+                {
+                    int8 *pc = va_arg(arg, int8 *);
+                    while (*pc)
+                    {
+                        uart_putchar(USART_4, (int8)(*pc));
+                        pc++;
+                    }
+                }break;
+                
+                case 'p':// 以16进制形式输出指针
+                {
+                    int8 vstr[33];
+                    uint32 ival = (uint32)va_arg(arg, uint32);
+                    uint8 vlen = number_conversion_ascii(ival, vstr, 0, 16);
+                    printf_reverse_order(vstr,8);
+                    uart_putbuff(USART_4, (uint8 *)vstr,8);
+                            
+                }break;
+                
+                
+                case '%':// 输出字符% 
+                {
+                    uart_putchar(USART_4, '%');
+                }break;
 
-//                    ival = ((double)ival - (int32)ival)*1000000;
-//                    vlen = number_conversion_ascii((uint32)(int32)ival, vstr, 1, 10);
-//				      while(6>vlen)
-//                    {
-//                        vstr[vlen] = '0';
-//                        vlen++;
-//                    }
-//                    printf_reverse_order(vstr,vlen);
-//                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,vlen);
-//                    break;
-//                }
-//                
-//                case 'u':// 无符号十进制整数
-//                {
-//                    int8 vstr[33];
-//                    uint32 ival = (uint32)va_arg(arg, uint32);
-//                    uint8 vlen = number_conversion_ascii(ival, vstr, 0, 10);
-//                    printf_reverse_order(vstr,vlen);
-//                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,vlen);
-//                }break;
-//                
-//                case 'o':// 无符号八进制整数 
-//                {
-//                    int8 vstr[33];
-//                    uint32 ival = (uint32)va_arg(arg, uint32);
-//                    uint8 vlen = number_conversion_ascii(ival, vstr, 0, 8);
-//                    printf_reverse_order(vstr,vlen);
-//                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,vlen);
-//                    
-//                }break;
-//                
-//                case 'x':// 无符号十六进制整数
-//                case 'X':// 无符号十六进制整数
-//                {
-//                    int8 vstr[33];
-//                    uint32 ival = (uint32)va_arg(arg, uint32);
-//                    uint8 vlen = number_conversion_ascii(ival, vstr, 0, 16);
-//                    printf_reverse_order(vstr,vlen);
-//                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,vlen);
-//                }break;
-//                
-//                
-//                case 's':// 字符串
-//                {
-//                    int8 *pc = va_arg(arg, int8 *);
-//                    while (*pc)
-//                    {
-//                        uart_putchar(DEBUG_UART, (int8)(*pc));
-//                        pc++;
-//                    }
-//                }break;
-//                
-//                case 'p':// 以16进制形式输出指针
-//                {
-//                    int8 vstr[33];
-//                    uint32 ival = (uint32)va_arg(arg, uint32);
-//                    uint8 vlen = number_conversion_ascii(ival, vstr, 0, 16);
-//                    printf_reverse_order(vstr,8);
-//                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,8);
-//                            
-//                }break;
-//                
-//                
-//                case '%':// 输出字符% 
-//                {
-//                    uart_putchar(DEBUG_UART, '%');
-//                }break;
-
-//                default:break;
-//			}
-//		}
-//		else
-//		{
-//			uart_putchar(DEBUG_UART, (int8)(*format));
-//		}
-//		format++;
-//	}
-//	va_end(arg);
-//#endif
-//}
+                default:break;
+			}
+		}
+		else
+		{
+			uart_putchar(USART_4, (int8)(*format));
+		}
+		format++;
+	}
+	va_end(arg);
+#endif
+}
 
 
 uint32 zf_sprintf(int8 *buff, const int8 *format, ...)

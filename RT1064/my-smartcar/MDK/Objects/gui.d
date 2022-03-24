@@ -1,4 +1,4 @@
-./objects/gui.o: ..\CODE\GUI.c ..\CODE\GUI.h \
+./objects/gui.o: ..\CODE\GUI.c ..\CODE\GUI.h ..\CODE\motor.h \
   ..\..\Libraries\seekfree_libraries\headfile.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
@@ -100,4 +100,4 @@
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_W25QXXJV.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660_CSI.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660.h ..\CODE\motor.h \
-  ..\CODE\GUI.h
+  ..\CODE\GUI.h ..\CODE\vofa.h ..\CODE\Vofa_imageformat.h

@@ -70,13 +70,25 @@ int main(void)
 	motorinit();
 	encoderinit();
 	
-	simiic_init();
+	simiic_init();//模拟IIC端口初始化
 	icm20602_init();
-	seekfree_wireless_init();
+	seekfree_wireless_init();//无线转串口模块初始化
 	
 	mt9v03x_csi_init();	//初始化摄像头 使用CSI接口
 	//如果屏幕一直显示初始化信息，请检查摄像头接线
 	//如果使用主板，一直卡在while(!uart_receive_flag)，请检查是否电池连接OK?
+	
+	
+//	// 蓝牙上位机测试－2
+//  VOFA* VOFA_pt = vofa_create();       //创建VOFA对象
+//  vofa_init(VOFA_pt,                   //初始化当前的vofa对象
+//				vofa_ch_data,ch_sz,
+//       vofa_image,image_sz,
+//       custom_buf,custom_sz,
+//       cmd_rxbuf,cmd_sz,
+//       USART_8,USART_8,USART_8);
+//			 
+			 
 	//如果图像只采集一次，请检查场信号(VSY)是否连接OK?
 	systick_delay_ms(500);
 	
@@ -85,17 +97,22 @@ int main(void)
 	{
 		get_icm20602_accdata();
 		get_icm20602_gyro();
-		GUI_icm20602();
-		
-		GUI_speed();
-		
-		motorctrl();
 		getencoder();
+		motorctrl();
+		GUI_icm20602();
+		GUI_speed();
+		GUI_duty();
 		
-		int len = snprintf((char *) buffer, sizeof(buffer), "encoder1=%d\r\n", - encoder1);
+		
+// 蓝牙上位机测试－1
+		int len = snprintf((char *) buffer, sizeof(buffer), "encoder1=%d,%d,%d,%d\n", - encoder1,encoder2,encoder3,-encoder4);
 		seekfree_wireless_send_buff(buffer,len);
-		len = snprintf((char *) buffer, sizeof(buffer), "encoder2=%d\r\n", encoder2);
-		seekfree_wireless_send_buff(buffer,len);
+//		len = snprintf((char *) buffer, sizeof(buffer), "encoder2=%d\r\n", encoder2);
+//		seekfree_wireless_send_buff(buffer,len);
+		
+		
+//		VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
+//VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
 
 		if(mt9v03x_csi_finish_flag)
 		{

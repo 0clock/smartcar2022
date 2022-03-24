@@ -13,6 +13,8 @@
 #define PWM_4 PWM1_MODULE0_CHB_D13
 
 extern int16 encoder1,encoder2,encoder3,encoder4;
+extern int32 duty1,duty2,duty3,duty4;
+extern int speed_tar_1,speed_tar_2,speed_tar_3,speed_tar_4;
 
 void motorinit(void);
 void motorctrl(void);
