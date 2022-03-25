@@ -23,9 +23,7 @@
 
 #### 2.有关Apriltag
 
-![image-20220220141115349](C:\Users\ThinkPad\AppData\Roaming\Typora\typora-user-images\image-20220220141115349.png)
-
-
+![Apriltag](\images\image-20220220141115349.png)
 
 ------
 
