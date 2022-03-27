@@ -1,6 +1,7 @@
 ./objects/isr.o: ..\USER\src\isr.c \
   ..\..\Libraries\seekfree_libraries\headfile.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   ..\..\Libraries\nxp_libraries\drives\fsl_common.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\assert.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
@@ -98,5 +99,6 @@
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X_CSI.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_W25QXXJV.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660_CSI.h \
-  ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660.h \
-  ..\USER\inc\isr.h
+  ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660.h ..\CODE\motor.h \
+  ..\CODE\GUI.h ..\CODE\motor.h ..\CODE\vofa.h \
+  ..\CODE\Vofa_imageformat.h ..\USER\inc\isr.h
