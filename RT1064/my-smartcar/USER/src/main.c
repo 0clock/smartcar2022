@@ -58,6 +58,7 @@
 #include "headfile.h"
 
 uint8 buffer[64] ;
+int count=0,flag=0;
 
 int main(void)
 {
@@ -65,7 +66,11 @@ int main(void)
 	board_init();   	//务必保留，本函数用于初始化MPU 时钟 调试串口
     
 	systick_delay_ms(300);	//延时300ms，等待主板其他外设上电成功
-	/////////////////////////////////
+	/*******************************************/
+	pit_init();//
+	pit_interrupt_ms(PIT_CH0,50);  //初始化pit通道0 周期50ms
+	pit_interrupt_ms(PIT_CH1,16);  //初始化pit通道1 周期16ms	
+	
 	GUI_init();
 	motorinit();
 	encoderinit();
@@ -95,23 +100,55 @@ int main(void)
 	EnableGlobalIRQ(0);
 	while(1)
 	{
+		if(flag==0){
+			Car_Ahead();
+			count++;
+			if(count==30){
+				flag=1;
+				}
+		}
+
+		if(flag==1){
+			Car_SideWay();
+			count++;
+			if(count==60){
+				flag=2;
+			}
+		}
+
+		if(flag==2){
+			Car_Back();
+			count++;
+			if(count==90){
+				flag=3;
+			}
+		}
+
+		if(flag==3){
+			Car_RSideWay();
+			count++;
+			if(count==120){
+				flag=0;
+				count=0;
+			}
+		}
+		
 		get_icm20602_accdata();
 		get_icm20602_gyro();
-		getencoder();
-		motorctrl();
+
 		GUI_icm20602();
 		GUI_speed();
 		GUI_duty();
 		
 		
 // 蓝牙上位机测试－1
-		int len = snprintf((char *) buffer, sizeof(buffer), "encoder1=%d,%d,%d,%d\n", - encoder1,encoder2,encoder3,-encoder4);
-		seekfree_wireless_send_buff(buffer,len);
+//		int len = snprintf((char *) buffer, sizeof(buffer), "encoder1=%d,%d,%d,%d\n", - encoder1,encoder2,encoder3,-encoder4);
+//		seekfree_wireless_send_buff(buffer,len);
 //		len = snprintf((char *) buffer, sizeof(buffer), "encoder2=%d\r\n", encoder2);
 //		seekfree_wireless_send_buff(buffer,len);
 		
 		
-//		VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
+//VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
 //VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
 
 		if(mt9v03x_csi_finish_flag)

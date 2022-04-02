@@ -21,4 +21,15 @@ void motorctrl(void);
 void encoderinit(void);
 void getencoder(void);
 
+
+void Car_Ahead();
+void Car_SideWay();
+void Car_RSideWay();
+void Car_Diagonal();
+void Car_Concerning();
+void Car_Turnround();
+
+void Car_Back();
+
+
 #endif

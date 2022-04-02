@@ -45,3 +45,14 @@
 
 ![image-20220321064839921](C:\Users\Jay\AppData\Roaming\Typora\typora-user-images\image-20220321064839921.png)
 
+## 2.2麦轮
+
+![20200927210537410](images\max.png)
+
+# log
+
+4-2
+
+> 硬件万事俱备，开始专注写BUG :-)
+>
+> 加入了PID控制
