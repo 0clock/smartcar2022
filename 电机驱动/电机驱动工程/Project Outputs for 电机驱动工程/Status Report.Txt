@@ -1,10 +1,10 @@
 Output: Test Point Report
 Type  : Test Points
-From  : Project [电机驱动工程.PrjPcb]
-   Generated File[Fabrication Testpoint Report for jieneng.csv]
+From  : Variant [[No Variations]] of Project [电机驱动工程.PrjPcb]
+   Generated File[Assembly Testpoint Report for jieneng.csv]
 
 
 Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 1:20:49 On 2022/2/17
+Finished Output Generation At 2:02:29 On 2022/3/28

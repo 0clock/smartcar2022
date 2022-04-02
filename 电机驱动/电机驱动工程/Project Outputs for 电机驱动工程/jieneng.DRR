@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: jieneng.PcbDoc   2022/2/17  1:20:38
+NCDrill File Report For: jieneng.PcbDoc   2022/3/28  2:02:10
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -10,13 +10,13 @@ Tool       Hole Size               Hole Tolerance               Hole Type       
 ----------------------------------------------------------------------------------------------------------------------------------
 T1      4mil (0.1mm)                                              Round             1         PTH        0.00inch (0.00mm)
 T2      8mil (0.2mm)                                              Round             3         PTH        0.21inch (5.23mm)
-T3      12mil (0.3mm)                                             Round             140       PTH        11.80inch (299.76mm)
+T3      12mil (0.3mm)                                             Round             145       PTH        13.36inch (339.38mm)
 T4      35mil (0.9mm)                                             Round             2         PTH        0.14inch (3.50mm)
 T5      35mil (0.9mm)                                             Slot              3         PTH        0.83inch (21.00mm)
 T6      39mil (1mm)                                               Round             6         PTH        0.50inch (12.70mm)
 T7      63mil (1.6mm)                                             Round             6         PTH        5.08inch (129.15mm)
 T8      125mil (3.175mm)                                          Slot              4         PTH        10.99inch (279.16mm)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              165
+Totals                                                                              170
 
 Total Processing Time (hh:mm:ss) : 00:00:00

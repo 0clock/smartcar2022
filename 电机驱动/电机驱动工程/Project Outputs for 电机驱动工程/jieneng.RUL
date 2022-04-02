@@ -1,4 +1,4 @@
-DRC Rules Export File for PCB: C:\Users\ThinkPad\Desktop\智能车视觉组\电机驱动\jieneng.PcbDoc
+DRC Rules Export File for PCB: C:\Users\ThinkPad\Desktop\my-smart-car-2022\电机驱动\jieneng.PcbDoc
 RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
 RuleKind=Width|RuleName=Width|Scope=Board|Minimum=5.91
 RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
