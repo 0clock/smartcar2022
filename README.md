@@ -45,3 +45,4 @@
 6. [智能视觉组补充说明](https://bj.bcebos.com/cdstm-hyetecforthesmartcar-bucket/source/doc-888jo99kh9g0.pdf)
 7. [17界比赛总规则](https://bj.bcebos.com/cdstm-hyetecforthesmartcar-bucket/source/doc-7f76k5yp26g0.pdf)
 8. [NXP_OpenART](https://github.com/NXPmicro/OpenART/blob/master/README_zh.md)
+
