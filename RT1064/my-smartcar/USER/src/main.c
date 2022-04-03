@@ -69,7 +69,7 @@ int main(void)
 	/*******************************************/
 	pit_init();//
 	pit_interrupt_ms(PIT_CH0,5);  //初始化pit通道0 周期5ms 编码器中断
-	pit_interrupt_ms(PIT_CH1,10);  //初始化pit通道1 周期10ms	按键中断
+	pit_interrupt_ms(PIT_CH1,10);  //初始化pit通道1 周期10ms	按键、串口发送中断
 	pit_interrupt_ms(PIT_CH2,10);  //初始化pit通道2 周期10ms	PID控制中断
 	NVIC_SetPriority(PIT_IRQn,1);
 	
@@ -87,9 +87,9 @@ int main(void)
 	uart_init (USART_8, 115200,UART8_TX_D16,UART8_RX_D17); //初始化串口
 	
 	// VOFA+ 
-  VOFA* VOFA_pt = vofa_create();       //创建VOFA对象
-  vofa_init(VOFA_pt,                   //初始化当前的vofa对象
-				vofa_ch_data,ch_sz,
+    VOFA* VOFA_pt = vofa_create();       //创建VOFA对象
+    vofa_init(VOFA_pt,                   //初始化当前的vofa对象
+                vofa_ch_data,ch_sz,
        vofa_image,image_sz,
        custom_buf,custom_sz,
        cmd_rxbuf,cmd_sz,
