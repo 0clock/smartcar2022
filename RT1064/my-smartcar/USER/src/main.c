@@ -77,14 +77,13 @@ int main(void)
 	
 	simiic_init();//模拟IIC端口初始化
 	icm20602_init();
-	//seekfree_wireless_init();//无线转串口模块初始化
 	
 	mt9v03x_csi_init();	//初始化摄像头 使用CSI接口
 	//如果屏幕一直显示初始化信息，请检查摄像头接线
 	//如果使用主板，一直卡在while(!uart_receive_flag)，请检查是否电池连接OK?
 	uart_init (USART_8, 115200,UART8_TX_D16,UART8_RX_D17); //初始化串口
 	
-	// 蓝牙上位机测试－2
+	// VOFA+ 
   VOFA* VOFA_pt = vofa_create();       //创建VOFA对象
   vofa_init(VOFA_pt,                   //初始化当前的vofa对象
 				vofa_ch_data,ch_sz,

@@ -1,0 +1,25 @@
+"C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3.3/bin/ninja/win/ninja.exe" -G Ninja C:\Users\Jay\Desktop\smartcar-contes\my-smart-car-2022\RT1064
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+CMake Error at CMakeLists.txt:506 (add_executable):
+  Cannot find source file:
+
+    ����/02-1.47IPS����Դ��/01-1.47IPS��ʾ��C51_SPI����/SRC/LCD/lcd.c
+
+
+CMake Error at CMakeLists.txt:506 (add_executable):
+  No SOURCES given to target: RT1064
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
