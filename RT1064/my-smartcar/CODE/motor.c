@@ -1,6 +1,8 @@
 #include "motor.h"
 #include <math.h>
 
+#define PWM_LIMITE 50000
+
 int32 duty1=0,duty2=0,duty3=0,duty4=0;//电机PWM值
 int16 encoder1=0,encoder2=0,encoder3=0,encoder4=0;//编码器的值
 
@@ -123,17 +125,17 @@ int Position_PID4(int Encoder,int Target){
 int limit_pwm(int pwm){
   if (pwm>=0)
   {
-    if (pwm>=15000)
+    if (pwm>=PWM_LIMITE)
     {
-      pwm = 15000;
+      pwm = PWM_LIMITE;
     }
     
   }
   else if (pwm<=0)
   {
-    if (pwm<-15000)
+    if (pwm<-PWM_LIMITE)
     {
-      pwm = -15000;
+      pwm = -PWM_LIMITE;
     }
   }
   return pwm;

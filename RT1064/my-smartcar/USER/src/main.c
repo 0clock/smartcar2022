@@ -46,19 +46,12 @@
 
 
 //整套推荐IO查看Projecct文件夹下的TXT文本
-
-
-
 //打开新的工程或者工程移动了位置务必执行以下操作
 //第一步 关闭上面所有打开的文件
 //第二步 project  clean  等待下方进度条走完
 
-
-
 #include "headfile.h"
 
-uint8 buffer[64] ;
-int count=0,flag=0;
 
 int main(void)
 {
@@ -94,57 +87,22 @@ int main(void)
        custom_buf,custom_sz,
        cmd_rxbuf,cmd_sz,
        USART_8,USART_8,USART_8);
-			 
-			 
+
 	//如果图像只采集一次，请检查场信号(VSY)是否连接OK?
 	systick_delay_ms(500);
-	
 	systick_start();
-	
 	EnableGlobalIRQ(0);
+
+
 	while(1)
-	{		
-//		if(flag==0){
-//			Car_Ahead();
-//			count++;
-//			if(count==30){
-//				flag=1;
-//				}
-//		}
+	{
+		get_icm20602_accdata();
+		get_icm20602_gyro();
 
-//		if(flag==1){
-//			Car_SideWay();
-//			count++;
-//			if(count==60){
-//				flag=2;
-//			}
-//		}
-
-//		if(flag==2){
-//			Car_Back();
-//			count++;
-//			if(count==90){
-//				flag=3;
-//			}
-//		}
-
-//		if(flag==3){
-//			Car_RSideWay();
-//			count++;
-//			if(count==120){
-//				flag=0;
-//				count=0;
-//			}
-//		}
-		
-//		get_icm20602_accdata();
-//		get_icm20602_gyro();
-
-//		GUI_icm20602();
+        //屏幕显示
+		GUI_icm20602();
 		GUI_speed();
-		GUI_duty();		
-		
-
+		GUI_duty();
 	} 
 }
 
