@@ -17,9 +17,9 @@ extern int32 duty1,duty2,duty3,duty4;
 extern int speed_tar_1,speed_tar_2,speed_tar_3,speed_tar_4;
 
 void motorinit(void);
-void motorctrl(void);
+void Motor_Ctrl(void);
 void encoderinit(void);
-void getencoder(void);
+void Get_Encoder(void);
 
 
 void Car_Ahead();

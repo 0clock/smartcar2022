@@ -69,7 +69,7 @@ int main(void)
 	/*******************************************/
 	pit_init();//
 	pit_interrupt_ms(PIT_CH0,50);  //初始化pit通道0 周期50ms
-	pit_interrupt_ms(PIT_CH1,16);  //初始化pit通道1 周期16ms	
+	//pit_interrupt_ms(PIT_CH1,50);  //初始化pit通道1 周期16ms	
 	
 	GUI_init();
 	motorinit();
@@ -77,61 +77,61 @@ int main(void)
 	
 	simiic_init();//模拟IIC端口初始化
 	icm20602_init();
-	seekfree_wireless_init();//无线转串口模块初始化
+	//seekfree_wireless_init();//无线转串口模块初始化
 	
 	mt9v03x_csi_init();	//初始化摄像头 使用CSI接口
 	//如果屏幕一直显示初始化信息，请检查摄像头接线
 	//如果使用主板，一直卡在while(!uart_receive_flag)，请检查是否电池连接OK?
+	uart_init (USART_8, 115200,UART8_TX_D16,UART8_RX_D17); //初始化串口
 	
-	
-//	// 蓝牙上位机测试－2
-//  VOFA* VOFA_pt = vofa_create();       //创建VOFA对象
-//  vofa_init(VOFA_pt,                   //初始化当前的vofa对象
-//				vofa_ch_data,ch_sz,
-//       vofa_image,image_sz,
-//       custom_buf,custom_sz,
-//       cmd_rxbuf,cmd_sz,
-//       USART_8,USART_8,USART_8);
-//			 
+	// 蓝牙上位机测试－2
+  VOFA* VOFA_pt = vofa_create();       //创建VOFA对象
+  vofa_init(VOFA_pt,                   //初始化当前的vofa对象
+				vofa_ch_data,ch_sz,
+       vofa_image,image_sz,
+       custom_buf,custom_sz,
+       cmd_rxbuf,cmd_sz,
+       USART_8,USART_8,USART_8);
+			 
 			 
 	//如果图像只采集一次，请检查场信号(VSY)是否连接OK?
 	systick_delay_ms(500);
 	
 	EnableGlobalIRQ(0);
 	while(1)
-	{
-		if(flag==0){
-			Car_Ahead();
-			count++;
-			if(count==30){
-				flag=1;
-				}
-		}
+	{		
+//		if(flag==0){
+//			Car_Ahead();
+//			count++;
+//			if(count==30){
+//				flag=1;
+//				}
+//		}
 
-		if(flag==1){
-			Car_SideWay();
-			count++;
-			if(count==60){
-				flag=2;
-			}
-		}
+//		if(flag==1){
+//			Car_SideWay();
+//			count++;
+//			if(count==60){
+//				flag=2;
+//			}
+//		}
 
-		if(flag==2){
-			Car_Back();
-			count++;
-			if(count==90){
-				flag=3;
-			}
-		}
+//		if(flag==2){
+//			Car_Back();
+//			count++;
+//			if(count==90){
+//				flag=3;
+//			}
+//		}
 
-		if(flag==3){
-			Car_RSideWay();
-			count++;
-			if(count==120){
-				flag=0;
-				count=0;
-			}
-		}
+//		if(flag==3){
+//			Car_RSideWay();
+//			count++;
+//			if(count==120){
+//				flag=0;
+//				count=0;
+//			}
+//		}
 		
 		get_icm20602_accdata();
 		get_icm20602_gyro();
