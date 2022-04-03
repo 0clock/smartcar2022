@@ -12,14 +12,5 @@
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Configuring done
-CMake Error at CMakeLists.txt:506 (add_executable):
-  Cannot find source file:
-
-    ����/02-1.47IPS����Դ��/01-1.47IPS��ʾ��C51_SPI����/SRC/LCD/lcd.c
-
-
-CMake Error at CMakeLists.txt:506 (add_executable):
-  No SOURCES given to target: RT1064
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done
+-- Build files have been written to: C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/cmake-build-debug

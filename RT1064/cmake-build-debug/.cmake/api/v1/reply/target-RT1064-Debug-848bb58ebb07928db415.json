@@ -1,0 +1,4294 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "RT1064.exe"
+		},
+		{
+			"path" : "RT1064.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 45,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 47,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/lists"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/uart"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/template"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/dcd"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/include"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs/ehci"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/phy"
+				},
+				{
+					"backtrace" : 32,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/config"
+				},
+				{
+					"backtrace" : 33,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/debug_console"
+				},
+				{
+					"backtrace" : 37,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/str"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip"
+				},
+				{
+					"backtrace" : 39,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/seekfree_libraries"
+				},
+				{
+					"backtrace" : 40,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral"
+				},
+				{
+					"backtrace" : 43,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/my-smartcar/CODE"
+				},
+				{
+					"backtrace" : 44,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/my-smartcar/USER"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/my-smartcar/USER/inc"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				59,
+				61,
+				63,
+				65,
+				68,
+				73,
+				75,
+				77,
+				80,
+				82,
+				85,
+				87,
+				89,
+				91,
+				93,
+				98,
+				100,
+				102,
+				104,
+				106,
+				108,
+				110,
+				112,
+				114,
+				116,
+				118,
+				120,
+				122,
+				124,
+				126,
+				128,
+				130,
+				132,
+				134,
+				136,
+				138,
+				140,
+				142,
+				144,
+				146,
+				148,
+				150,
+				152,
+				154,
+				156,
+				158,
+				160,
+				162,
+				164,
+				166,
+				168,
+				170,
+				172,
+				174,
+				177,
+				179,
+				181,
+				183,
+				185,
+				187,
+				189,
+				191,
+				193,
+				195,
+				197,
+				199,
+				201,
+				203,
+				205,
+				207,
+				209,
+				211,
+				213,
+				215,
+				217,
+				219,
+				221,
+				223,
+				225,
+				227,
+				229,
+				231,
+				233,
+				287,
+				288,
+				289,
+				290,
+				291,
+				313,
+				315,
+				317,
+				319,
+				322,
+				325,
+				327,
+				331,
+				332,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				349,
+				350,
+				351,
+				352,
+				355,
+				358,
+				360,
+				362,
+				364,
+				366,
+				368,
+				370,
+				372,
+				374,
+				376,
+				378,
+				380,
+				381,
+				383,
+				385,
+				388,
+				390,
+				392,
+				394,
+				396,
+				398,
+				400,
+				406,
+				410,
+				412,
+				414,
+				416,
+				418,
+				420,
+				422,
+				424,
+				426,
+				428,
+				430,
+				432,
+				434,
+				439,
+				442,
+				444,
+				445,
+				447,
+				448,
+				450,
+				452,
+				454,
+				456,
+				458,
+				460,
+				463,
+				465,
+				468,
+				470,
+				472,
+				474,
+				476,
+				478,
+				480,
+				482,
+				484,
+				486,
+				488,
+				490,
+				492,
+				494,
+				496,
+				498,
+				500,
+				502,
+				504,
+				506,
+				508,
+				510,
+				512,
+				514,
+				516,
+				518,
+				520,
+				522,
+				524,
+				526,
+				528,
+				530,
+				532,
+				534,
+				536,
+				538,
+				540,
+				542,
+				544,
+				546,
+				551,
+				552
+			]
+		}
+	],
+	"id" : "RT1064::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "RT1064",
+	"nameOnDisk" : "RT1064.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				58,
+				71,
+				72,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				304,
+				305,
+				310,
+				311,
+				312,
+				323,
+				324,
+				334,
+				335,
+				353,
+				436,
+				437,
+				438
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				59,
+				61,
+				63,
+				65,
+				68,
+				73,
+				75,
+				77,
+				80,
+				82,
+				85,
+				87,
+				89,
+				91,
+				93,
+				98,
+				100,
+				102,
+				104,
+				106,
+				108,
+				110,
+				112,
+				114,
+				116,
+				118,
+				120,
+				122,
+				124,
+				126,
+				128,
+				130,
+				132,
+				134,
+				136,
+				138,
+				140,
+				142,
+				144,
+				146,
+				148,
+				150,
+				152,
+				154,
+				156,
+				158,
+				160,
+				162,
+				164,
+				166,
+				168,
+				170,
+				172,
+				174,
+				177,
+				179,
+				181,
+				183,
+				185,
+				187,
+				189,
+				191,
+				193,
+				195,
+				197,
+				199,
+				201,
+				203,
+				205,
+				207,
+				209,
+				211,
+				213,
+				215,
+				217,
+				219,
+				221,
+				223,
+				225,
+				227,
+				229,
+				231,
+				233,
+				287,
+				288,
+				289,
+				290,
+				291,
+				313,
+				315,
+				317,
+				319,
+				322,
+				325,
+				327,
+				331,
+				332,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				349,
+				350,
+				351,
+				352,
+				355,
+				358,
+				360,
+				362,
+				364,
+				366,
+				368,
+				370,
+				372,
+				374,
+				376,
+				378,
+				380,
+				381,
+				383,
+				385,
+				388,
+				390,
+				392,
+				394,
+				396,
+				398,
+				400,
+				406,
+				410,
+				412,
+				414,
+				416,
+				418,
+				420,
+				422,
+				424,
+				426,
+				428,
+				430,
+				432,
+				434,
+				439,
+				442,
+				444,
+				445,
+				447,
+				448,
+				450,
+				452,
+				454,
+				456,
+				458,
+				460,
+				463,
+				465,
+				468,
+				470,
+				472,
+				474,
+				476,
+				478,
+				480,
+				482,
+				484,
+				486,
+				488,
+				490,
+				492,
+				494,
+				496,
+				498,
+				500,
+				502,
+				504,
+				506,
+				508,
+				510,
+				512,
+				514,
+				516,
+				518,
+				520,
+				522,
+				524,
+				526,
+				528,
+				530,
+				532,
+				534,
+				536,
+				538,
+				540,
+				542,
+				544,
+				546,
+				551,
+				552
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				60,
+				62,
+				64,
+				66,
+				67,
+				69,
+				70,
+				74,
+				76,
+				78,
+				79,
+				81,
+				83,
+				84,
+				86,
+				88,
+				90,
+				92,
+				94,
+				95,
+				96,
+				97,
+				99,
+				101,
+				103,
+				105,
+				107,
+				109,
+				111,
+				113,
+				115,
+				117,
+				119,
+				121,
+				123,
+				125,
+				127,
+				129,
+				131,
+				133,
+				135,
+				137,
+				139,
+				141,
+				143,
+				145,
+				147,
+				149,
+				151,
+				153,
+				155,
+				157,
+				159,
+				161,
+				163,
+				165,
+				167,
+				169,
+				171,
+				173,
+				175,
+				176,
+				178,
+				180,
+				182,
+				184,
+				186,
+				188,
+				190,
+				192,
+				194,
+				196,
+				198,
+				200,
+				202,
+				204,
+				206,
+				208,
+				210,
+				212,
+				214,
+				216,
+				218,
+				220,
+				222,
+				224,
+				226,
+				228,
+				230,
+				232,
+				234,
+				314,
+				316,
+				318,
+				320,
+				321,
+				326,
+				328,
+				329,
+				330,
+				333,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				348,
+				354,
+				356,
+				357,
+				359,
+				361,
+				363,
+				365,
+				367,
+				369,
+				371,
+				373,
+				375,
+				377,
+				379,
+				382,
+				384,
+				386,
+				387,
+				389,
+				391,
+				393,
+				395,
+				397,
+				399,
+				401,
+				402,
+				403,
+				404,
+				405,
+				407,
+				408,
+				409,
+				411,
+				413,
+				415,
+				417,
+				419,
+				421,
+				423,
+				425,
+				427,
+				429,
+				431,
+				433,
+				435,
+				440,
+				441,
+				443,
+				446,
+				449,
+				451,
+				453,
+				455,
+				457,
+				459,
+				461,
+				462,
+				464,
+				466,
+				467,
+				469,
+				471,
+				473,
+				475,
+				477,
+				479,
+				481,
+				483,
+				485,
+				487,
+				489,
+				491,
+				493,
+				495,
+				497,
+				499,
+				501,
+				503,
+				505,
+				507,
+				509,
+				511,
+				513,
+				515,
+				517,
+				519,
+				521,
+				523,
+				525,
+				527,
+				529,
+				531,
+				533,
+				535,
+				537,
+				539,
+				541,
+				543,
+				545,
+				547,
+				548,
+				549,
+				550
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				306,
+				307,
+				308,
+				309
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/doc/read me.txt",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/doc/version.txt",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_CAN.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_ETH_MAC.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_ETH_PHY.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_Flash.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_I2C.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_MCI.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_SAI.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_SPI.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_Storage.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_USART.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_USBD.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_USBH.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_CAN.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_Common.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_ETH.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_ETH_MAC.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_ETH_PHY.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_Flash.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_I2C.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_MCI.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_NAND.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_SAI.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_SPI.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_USART.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_USB.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_USBD.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_USBH.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_WiFi.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/arm_common_tables.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/arm_const_structs.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/arm_math.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/cmsis_armcc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/cmsis_armclang.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/cmsis_armclang_ltm.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/cmsis_compiler.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/cmsis_gcc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/cmsis_iccarm.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/cmsis_version.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_armv81mml.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_armv8mbl.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_armv8mml.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_cm0.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_cm0plus.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_cm1.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_cm23.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_cm3.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_cm33.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_cm35p.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_cm4.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_cm7.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_dsp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_sc000.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/core_sc300.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/mpu_armv7.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/mpu_armv8.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/Include/tz_context.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/CMSIS/LICENSE.txt",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/cmsis_drivers/fsl_lpi2c_cmsis.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/cmsis_drivers/fsl_lpi2c_cmsis.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/cmsis_drivers/fsl_lpspi_cmsis.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/cmsis_drivers/fsl_lpspi_cmsis.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/cmsis_drivers/fsl_lpuart_cmsis.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/cmsis_drivers/fsl_lpuart_cmsis.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/components/lists/generic_list.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/lists/generic_list.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/osa/fsl_os_abstraction.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/components/osa/fsl_os_abstraction_bm.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/osa/fsl_os_abstraction_bm.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/osa/fsl_os_abstraction_config.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/inf/cdc.cat",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/inf/fsl_ucwxp.inf",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_cdc_acm.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_cdc_acm.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_ch9.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_ch9.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_class.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_class.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_config.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_descriptor.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_descriptor.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/serial_manager.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/serial_manager.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/serial_port_internal.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/serial_port_swo.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/serial_port_swo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/serial_port_uart.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/serial_port_uart.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/serial_port_usb.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/serial_port_usb.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/serial_port_usb_virtual.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/serial_manager/serial_port_usb_virtual.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/components/uart/lpuart_adapter.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/components/uart/uart.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/deceive/fsl_device_registers.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/deceive/MIMXRT1064.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/deceive/MIMXRT1064_features.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/deceive/system_MIMXRT1064.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/deceive/system_MIMXRT1064.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_adc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_adc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_adc_etc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_adc_etc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_aipstz.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_aipstz.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_aoi.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_aoi.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_bee.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_bee.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_cache.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_cache.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_clock.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_clock.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_cmp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_cmp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_common.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_common.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_csi.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_csi.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_dcdc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_dcdc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_dcp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_dcp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_dmamux.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_dmamux.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_edma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_edma.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_elcdif.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_elcdif.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_enc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_enc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_enet.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_enet.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_ewm.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_ewm.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexcan.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexcan.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexcan_edma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexcan_edma.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_camera.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_camera.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_camera_edma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_camera_edma.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_i2c_master.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_i2c_master.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_i2s.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_i2s.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_i2s_edma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_i2s_edma.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_mculcd.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_mculcd.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_mculcd_edma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_mculcd_edma.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_spi.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_spi.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_spi_edma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_spi_edma.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_uart.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_uart.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_uart_edma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexio_uart_edma.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexram.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexram.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexram_allocate.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexram_allocate.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexspi.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_flexspi.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_gpc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_gpc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_gpio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_gpio.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_gpt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_gpt.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_iomuxc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_kpp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_kpp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_lpi2c.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_lpi2c.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_lpi2c_edma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_lpi2c_edma.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_lpspi.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_lpspi.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_lpspi_edma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_lpspi_edma.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_lpuart.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_lpuart.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_lpuart_edma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_lpuart_edma.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_ocotp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_ocotp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_pit.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_pit.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_pmu.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_pmu.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_pwm.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_pwm.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_pxp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_pxp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_qtmr.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_qtmr.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_rtwdog.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_rtwdog.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_sai.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_sai.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_sai_edma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_sai_edma.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_semc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_semc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_snvs_hp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_snvs_hp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_snvs_lp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_snvs_lp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_spdif.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_spdif.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_spdif_edma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_spdif_edma.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_src.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_src.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_tempmon.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_tempmon.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_trng.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_trng.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_tsc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_tsc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_usdhc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_usdhc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_wdog.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_wdog.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_xbara.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_xbara.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/drives/fsl_xbarb.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/drives/fsl_xbarb.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/appnote.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/chdir.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/chdrive.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/chmod.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/close.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/closedir.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/config.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/dinit.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/dioctl.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/dread.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/dstat.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/dwrite.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/eof.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/error.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/expand.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/fattime.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/fdisk.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/filename.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/findfirst.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/findnext.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/forward.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/getcwd.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/getfree.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/getlabel.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/gets.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/lseek.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/mkdir.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/mkfs.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/mount.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/open.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/opendir.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/printf.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/putc.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/puts.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/rc.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/read.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/readdir.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/rename.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/sdir.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/setcp.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/setlabel.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/sfatfs.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/sfile.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/sfileinfo.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/size.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/stat.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/sync.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/tell.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/truncate.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/unlink.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/utime.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/doc/write.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/app1.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/app2.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/app3.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/app4.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/app5.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/f1.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/f2.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/f3.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/f4.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/f5.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/f6.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/f7.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/funcs.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/layers.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/layers1.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/layers2.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/layers3.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/mkfatimg.zip",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/mkfs.xls",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/modules.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/rwtest1.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/rwtest2.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/res/rwtest3.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/00index_e.html",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/css_e.css",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/documents/updates.txt",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_bm.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/00history.txt",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/00readme.txt",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/diskio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/diskio.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/ff.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/ff.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/ffconf.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/ffconf_template.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/ffsystem.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/source/ffunicode.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/template/ffconf.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/ChangeLogKSDK.txt",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/fatfs/LICENSE.txt",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_mmc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sd.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sdio.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sdmmc_common.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sdmmc_host.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sdmmc_spec.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/freertos/fsl_sdmmc_event.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/freertos/fsl_sdmmc_host.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/polling/fsl_sdmmc_event.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/polling/fsl_sdmmc_host.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/port/fsl_sdmmc_event.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/src/fsl_sd.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/sdmmc/ChangeLogKSDK.txt",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/dcd/usb_charger_detect.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/dcd/usb_phydcd.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/dcd/usb_phydcd.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/device/usb_device.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/device/usb_device_dci.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/device/usb_device_dci.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/device/usb_device_ehci.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/device/usb_device_ehci.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/device/usb_device_khci.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/device/usb_device_khci.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/device/usb_device_lpcip3511.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/device/usb_device_lpcip3511.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_audio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_audio.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc_rndis.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc_rndis.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hid.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hid.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub_app.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub_app.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd_ufi.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_phdc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_phdc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_printer.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_printer.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_video.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/class/usb_host_video.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_devices.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_devices.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_ehci.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_ehci.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_framework.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_framework.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_hci.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_hci.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_ip3516hs.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_ip3516hs.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_khci.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_khci.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_ohci.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/host/usb_host_ohci.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/include/usb.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/include/usb_misc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/include/usb_spec.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs/ehci/usb_host_config.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/phy/usb_phy.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/phy/usb_phy.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/config/usb_device_config.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/config/usb_host_config.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_audio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_audio.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_ccid.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_ccid.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_acm.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_acm.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_rndis.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_rndis.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_class.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_class.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_dfu.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_dfu.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_hid.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_hid.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc_ufi.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc_ufi.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_phdc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_phdc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_printer.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_printer.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_video.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_video.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/usb_device_ch9.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/templates/device/usb_device_ch9.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/middleware/usb/ChangeLogKSDK.txt",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/startup/IAR-ARM/startup_MIMXRT1064.s",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/startup/MDK-ARM/startup_MIMXRT1064.s",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/utilities/debug_console/fsl_debug_console.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/utilities/debug_console/fsl_debug_console.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/utilities/debug_console/fsl_debug_console_conf.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/utilities/str/fsl_str.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/utilities/str/fsl_str.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/utilities/fsl_assert.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/utilities/fsl_notifier.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/utilities/fsl_notifier.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/utilities/fsl_sbrk.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/utilities/fsl_shell.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/utilities/fsl_shell.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/nxp_libraries/xip/fsl_flexspi_nor_boot.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/nxp_libraries/xip/fsl_flexspi_nor_boot.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/board/board.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/board/board.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/board/clock_config.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/board/clock_config.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/board/pin_mux.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/board/pin_mux.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/board/RTE_Device.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/common/common.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/common/common.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/common/SEEKFREE_PRINTF.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/common/SEEKFREE_PRINTF.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/headfile.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_adc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_adc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_camera.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_camera.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_csi.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_csi.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_flash.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_flash.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_gpio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_gpio.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_iic.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_iic.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_iomuxc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_iomuxc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_pit.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_pit.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_pwm.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_pwm.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_qtimer.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_qtimer.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_rom_api.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_rom_api.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_sdcard.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_sdcard.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_spi.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_spi.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_systick.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_systick.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_uart.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_uart.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_usb_cdc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_usb_cdc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_libraries/zf_vector.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_libraries/zf_vector.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_18TFT.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_18TFT.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_FONT.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_FONT.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_FUN.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_FUN.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_ICM20602.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_ICM20602.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_IIC.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_IIC.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_IPS114_SPI.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_IPS114_SPI.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_L3G4200D.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_L3G4200D.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_MMA8451.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_MMA8451.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_MPU6050.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_MPU6050.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_MT9V03X.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_MT9V03X.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_NRF24L01.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_NRF24L01.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_OLED.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_OLED.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_SCC8660.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_SCC8660.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_SCC8660_CSI.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_SCC8660_CSI.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_VIRSCO.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_VIRSCO.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_W25QXXJV.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_W25QXXJV.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_WIRELESS.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Libraries/seekfree_peripheral/SEEKFREE_WIRELESS.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "my-smartcar/CODE/GUI.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "my-smartcar/CODE/GUI.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "my-smartcar/CODE/key.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "my-smartcar/CODE/key.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "my-smartcar/CODE/motor.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "my-smartcar/CODE/motor.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "my-smartcar/CODE/vofa.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "my-smartcar/CODE/vofa.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "my-smartcar/CODE/vofa_imageformat.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "my-smartcar/USER/inc/isr.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "my-smartcar/USER/inc/RT106X_config.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "my-smartcar/USER/src/isr.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "my-smartcar/USER/src/main.c",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

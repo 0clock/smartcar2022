@@ -2,7 +2,7 @@
 
 void GUI_init(){
 	ips114_init();     	//≥ı ºªØ1.47¥ÁIPS∆¡ƒª
-	ips114_showstr(10,0,"everything is okk!");
+	ips114_showstr(10,0,"everything is okk!!");
 }
 
 void GUI_speed(){

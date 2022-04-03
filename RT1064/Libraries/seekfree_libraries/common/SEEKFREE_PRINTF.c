@@ -100,7 +100,7 @@ void myprintf(const int8 *format, ...)
                 case 'c':// 一个字符
                 {
                     int8 ch = (int8)va_arg(arg, uint32);
-                    uart_putchar(USART_4, (int8)ch);
+                    uart_putchar(USART_8, (int8)ch);
                             
                 }break;
                 
@@ -111,9 +111,9 @@ void myprintf(const int8 *format, ...)
                     int8 vstr[33];
                     int32 ival = (int32)va_arg(arg, int32);
                     uint8 vlen = number_conversion_ascii((uint32)ival, vstr, 1, 10);
-                    if(ival<0)  uart_putchar(USART_4, '-');
+                    if(ival<0)  uart_putchar(USART_8, '-');
                     printf_reverse_order(vstr,vlen);
-                    uart_putbuff(USART_4, (uint8 *)vstr,vlen);
+                    uart_putbuff(USART_8, (uint8 *)vstr,vlen);
                 }break;
                 
                 case 'f':// 浮点数，输出小数点后六位  不能指定输出精度
@@ -122,10 +122,10 @@ void myprintf(const int8 *format, ...)
                     int8 vstr[33];
                     double ival = (double)va_arg(arg, double);
                     uint8 vlen = number_conversion_ascii((uint32)(int32)ival, vstr, 1, 10);
-                    if(ival<0)  uart_putchar(USART_4, '-');
+                    if(ival<0)  uart_putchar(USART_8, '-');
                     printf_reverse_order(vstr,vlen);
-                    uart_putbuff(USART_4, (uint8 *)vstr,vlen);
-                    uart_putchar(USART_4, '.');
+                    uart_putbuff(USART_8, (uint8 *)vstr,vlen);
+                    uart_putchar(USART_8, '.');
 
                     ival = ((double)ival - (int32)ival)*1000000;
                     vlen = number_conversion_ascii((uint32)(int32)ival, vstr, 1, 10);
@@ -135,7 +135,7 @@ void myprintf(const int8 *format, ...)
                         vlen++;
                     }
                     printf_reverse_order(vstr,vlen);
-                    uart_putbuff(USART_4, (uint8 *)vstr,vlen);
+                    uart_putbuff(USART_8, (uint8 *)vstr,vlen);
                     break;
                 }
                 
@@ -145,7 +145,7 @@ void myprintf(const int8 *format, ...)
                     uint32 ival = (uint32)va_arg(arg, uint32);
                     uint8 vlen = number_conversion_ascii(ival, vstr, 0, 10);
                     printf_reverse_order(vstr,vlen);
-                    uart_putbuff(USART_4, (uint8 *)vstr,vlen);
+                    uart_putbuff(USART_8, (uint8 *)vstr,vlen);
                 }break;
                 
                 case 'o':// 无符号八进制整数 
@@ -154,7 +154,7 @@ void myprintf(const int8 *format, ...)
                     uint32 ival = (uint32)va_arg(arg, uint32);
                     uint8 vlen = number_conversion_ascii(ival, vstr, 0, 8);
                     printf_reverse_order(vstr,vlen);
-                    uart_putbuff(USART_4, (uint8 *)vstr,vlen);
+                    uart_putbuff(USART_8, (uint8 *)vstr,vlen);
                     
                 }break;
                 
@@ -165,7 +165,7 @@ void myprintf(const int8 *format, ...)
                     uint32 ival = (uint32)va_arg(arg, uint32);
                     uint8 vlen = number_conversion_ascii(ival, vstr, 0, 16);
                     printf_reverse_order(vstr,vlen);
-                    uart_putbuff(USART_4, (uint8 *)vstr,vlen);
+                    uart_putbuff(USART_8, (uint8 *)vstr,vlen);
                 }break;
                 
                 
@@ -174,7 +174,7 @@ void myprintf(const int8 *format, ...)
                     int8 *pc = va_arg(arg, int8 *);
                     while (*pc)
                     {
-                        uart_putchar(USART_4, (int8)(*pc));
+                        uart_putchar(USART_8, (int8)(*pc));
                         pc++;
                     }
                 }break;
@@ -185,14 +185,14 @@ void myprintf(const int8 *format, ...)
                     uint32 ival = (uint32)va_arg(arg, uint32);
                     uint8 vlen = number_conversion_ascii(ival, vstr, 0, 16);
                     printf_reverse_order(vstr,8);
-                    uart_putbuff(USART_4, (uint8 *)vstr,8);
+                    uart_putbuff(USART_8, (uint8 *)vstr,8);
                             
                 }break;
                 
                 
                 case '%':// 输出字符% 
                 {
-                    uart_putchar(USART_4, '%');
+                    uart_putchar(USART_8, '%');
                 }break;
 
                 default:break;
@@ -200,7 +200,7 @@ void myprintf(const int8 *format, ...)
 		}
 		else
 		{
-			uart_putchar(USART_4, (int8)(*format));
+			uart_putchar(USART_8, (int8)(*format));
 		}
 		format++;
 	}

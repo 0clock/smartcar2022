@@ -31,19 +31,30 @@ void PIT_IRQHandler(void)
 {
     if(PIT_FLAG_GET(PIT_CH0))
     {
-      PIT_FLAG_CLEAR(PIT_CH0);
 			Get_Encoder();
-			Motor_Ctrl();
+			PIT_FLAG_CLEAR(PIT_CH0);
     }
     
     if(PIT_FLAG_GET(PIT_CH1))
     {
-      PIT_FLAG_CLEAR(PIT_CH1);
+      Key_Scans();
+			
+			//VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
+//VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
+		//myprintf("%f,%f,%f,%f,%d,%f\n",RC_Encoder1.value,RC_Encoder2.value,RC_Encoder3.value,RC_Encoder4.value,1000,Car.mileage);
+		myprintf("%d,%d,%d,%d,%d\n",encoder1,encoder2,encoder3,encoder4,speed_tar_1);
+		vofa_ch_data[0]=encoder1;
+		vofa_ch_data[1]=encoder2;
+		vofa_ch_data[2]=encoder3;	
+		vofa_ch_data[3]=encoder4;
+			
+			PIT_FLAG_CLEAR(PIT_CH1);
     }
     
     if(PIT_FLAG_GET(PIT_CH2))
     {
-        PIT_FLAG_CLEAR(PIT_CH2);
+			Motor_Ctrl();
+      PIT_FLAG_CLEAR(PIT_CH2);
     }
     
     if(PIT_FLAG_GET(PIT_CH3))

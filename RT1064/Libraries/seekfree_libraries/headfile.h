@@ -87,6 +87,7 @@
 #include "motor.h"
 #include "GUI.h"
 #include "vofa.h"
+#include "key.h"
 
 #endif
 

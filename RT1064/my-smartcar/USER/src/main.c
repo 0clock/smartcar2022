@@ -68,12 +68,15 @@ int main(void)
 	systick_delay_ms(300);	//延时300ms，等待主板其他外设上电成功
 	/*******************************************/
 	pit_init();//
-	pit_interrupt_ms(PIT_CH0,50);  //初始化pit通道0 周期50ms
-	//pit_interrupt_ms(PIT_CH1,50);  //初始化pit通道1 周期16ms	
+	pit_interrupt_ms(PIT_CH0,5);  //初始化pit通道0 周期5ms 编码器中断
+	pit_interrupt_ms(PIT_CH1,10);  //初始化pit通道1 周期10ms	按键中断
+	pit_interrupt_ms(PIT_CH2,10);  //初始化pit通道2 周期10ms	PID控制中断
+	NVIC_SetPriority(PIT_IRQn,1);
 	
 	GUI_init();
-	motorinit();
-	encoderinit();
+	Motor_Init();
+	Encoder_Init();
+	Key_Init();
 	
 	simiic_init();//模拟IIC端口初始化
 	icm20602_init();
@@ -95,6 +98,8 @@ int main(void)
 			 
 	//如果图像只采集一次，请检查场信号(VSY)是否连接OK?
 	systick_delay_ms(500);
+	
+	systick_start();
 	
 	EnableGlobalIRQ(0);
 	while(1)
@@ -132,33 +137,14 @@ int main(void)
 //			}
 //		}
 		
-		get_icm20602_accdata();
-		get_icm20602_gyro();
+//		get_icm20602_accdata();
+//		get_icm20602_gyro();
 
-		GUI_icm20602();
+//		GUI_icm20602();
 		GUI_speed();
-		GUI_duty();
+		GUI_duty();		
 		
-		
-// 蓝牙上位机测试－1
-//		int len = snprintf((char *) buffer, sizeof(buffer), "encoder1=%d,%d,%d,%d\n", - encoder1,encoder2,encoder3,-encoder4);
-//		seekfree_wireless_send_buff(buffer,len);
-//		len = snprintf((char *) buffer, sizeof(buffer), "encoder2=%d\r\n", encoder2);
-//		seekfree_wireless_send_buff(buffer,len);
-		
-		
-//VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
-//VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
 
-		if(mt9v03x_csi_finish_flag)
-		{
-			mt9v03x_csi_finish_flag = 0;
-			
-			//使用缩放显示函数，根据原始图像大小 以及设置需要显示的大小自动进行缩放或者放大显示
-			//总钻风采集到的图像分辨率为 188*120 ，1.14寸IPS屏显示分辨率为 240*135 ，图像拉伸全屏显示。
-			//ips114_displayimage032_zoom(mt9v03x_csi_image[0], MT9V03X_CSI_W, MT9V03X_CSI_H, 320, 172);	//显示摄像头图像
-				
-		}
 	} 
 }
 

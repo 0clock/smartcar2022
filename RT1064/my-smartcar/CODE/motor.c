@@ -5,15 +5,15 @@ int32 duty1=0,duty2=0,duty3=0,duty4=0;//电机PWM值
 int16 encoder1=0,encoder2=0,encoder3=0,encoder4=0;//编码器的值
 
 //记录PID系数
-float Position_KP = 10;
-float Position_KI = 1;
-float Position_KD =0;
+float Position_KP =78;
+float Position_KI =45;
+float Position_KD =1;
 
 //电机目标速度
-int speed_tar_1 = 500;
-int speed_tar_2 = 500;
-int speed_tar_3 = 500;
-int speed_tar_4 = 500;
+int speed_tar_1 = 0;
+int speed_tar_2 = 0;
+int speed_tar_3 = 0;
+int speed_tar_4 = 0;
 
 
 int speed = 0;
@@ -123,17 +123,17 @@ int Position_PID4(int Encoder,int Target){
 int limit_pwm(int pwm){
   if (pwm>=0)
   {
-    if (pwm>=20000)
+    if (pwm>=15000)
     {
-      pwm = 20000;
+      pwm = 15000;
     }
     
   }
   else if (pwm<=0)
   {
-    if (pwm<-20000)
+    if (pwm<-15000)
     {
-      pwm = -20000;
+      pwm = -15000;
     }
   }
   return pwm;
@@ -159,7 +159,7 @@ void PID_Calculate(void){
 	duty4 = limit_pwm(duty4);
 }
 
-void motorinit(){
+void Motor_Init(){
 	gpio_init(DIR_1, GPO, 0, GPIO_PIN_CONFIG); 		//单片机端口D0 初始化DIR_1			GPIO
 	gpio_init(DIR_2, GPO, 0, GPIO_PIN_CONFIG); 		//单片机端口D1 初始化DIR_2			GPIO
 	pwm_init(PWM_1, 17000, 0);      							//单片机端口D2 初始化PWM_1周期10K 占空比0
@@ -174,15 +174,7 @@ void motorinit(){
 
 void Motor_Ctrl(){
 	PID_Calculate();
-	
-		//myprintf("%f,%f,%f,%f,%d,%f\n",RC_Encoder1.value,RC_Encoder2.value,RC_Encoder3.value,RC_Encoder4.value,1000,Car.mileage);
-		myprintf("%d,%d,%d,%d,%d\n",encoder1,encoder2,encoder3,encoder4,35);
-		myprintf("%d,%d,%d,%d\n",speed_tar_1,speed_tar_2,speed_tar_3,speed_tar_4);
-		vofa_ch_data[0]=encoder1;
-		vofa_ch_data[1]=encoder2;
-		vofa_ch_data[2]=encoder3;
-		vofa_ch_data[3]=encoder4;
-	
+		
 	if(duty1>=0){
 		gpio_set(DIR_1,1);
 		pwm_duty(PWM_1,duty1);
@@ -216,7 +208,7 @@ void Motor_Ctrl(){
 }
 
 
-void encoderinit(){
+void Encoder_Init(){
 	//一个QTIMER可以 创建两个正交解码
 	qtimer_quad_init(QTIMER_3,QTIMER3_TIMER2_B18,QTIMER3_TIMER3_B19);
 	qtimer_quad_init(QTIMER_1,QTIMER1_TIMER0_C0,QTIMER1_TIMER1_C1);

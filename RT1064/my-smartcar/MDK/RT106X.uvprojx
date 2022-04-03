@@ -1884,6 +1884,16 @@
               <FileType>5</FileType>
               <FilePath>..\CODE\vofa.h</FilePath>
             </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>key.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\CODE\key.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
@@ -3764,6 +3774,16 @@
               <FileName>vofa.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\CODE\vofa.h</FilePath>
+            </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>key.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\CODE\key.h</FilePath>
             </File>
           </Files>
         </Group>

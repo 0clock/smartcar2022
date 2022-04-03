@@ -12,13 +12,15 @@
 #define PWM_3 PWM2_MODULE3_CHB_D3
 #define PWM_4 PWM1_MODULE0_CHB_D13
 
+
+
 extern int16 encoder1,encoder2,encoder3,encoder4;
 extern int32 duty1,duty2,duty3,duty4;
 extern int speed_tar_1,speed_tar_2,speed_tar_3,speed_tar_4;
 
-void motorinit(void);
+void Motor_Init(void);
 void Motor_Ctrl(void);
-void encoderinit(void);
+void Encoder_Init(void);
 void Get_Encoder(void);
 
 
