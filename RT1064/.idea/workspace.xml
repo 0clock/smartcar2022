@@ -12,19 +12,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41148392-768a-4fd6-88eb-fcdd11f26102" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-smartcar/CODE/motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/my-smartcar/CODE/motor.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-smartcar/MDK/Listings/RT106X.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-smartcar/MDK/Listings/RT106X.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-smartcar/MDK/Objects/RT106X.axf" beforeDir="false" afterPath="$PROJECT_DIR$/my-smartcar/MDK/Objects/RT106X.axf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-smartcar/MDK/Objects/RT106X.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/my-smartcar/MDK/Objects/RT106X.build_log.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-smartcar/MDK/Objects/RT106X.htm" beforeDir="false" afterPath="$PROJECT_DIR$/my-smartcar/MDK/Objects/RT106X.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-smartcar/MDK/Objects/RT106X_nor_sdram_zf_dtcm_v6.dep" beforeDir="false" afterPath="$PROJECT_DIR$/my-smartcar/MDK/Objects/RT106X_nor_sdram_zf_dtcm_v6.dep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-smartcar/MDK/Objects/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/my-smartcar/MDK/Objects/main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-smartcar/MDK/Objects/motor.o" beforeDir="false" afterPath="$PROJECT_DIR$/my-smartcar/MDK/Objects/motor.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-smartcar/MDK/RT106X.uvguix.Jay" beforeDir="false" afterPath="$PROJECT_DIR$/my-smartcar/MDK/RT106X.uvguix.Jay" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-smartcar/MDK/RT106X.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/my-smartcar/MDK/RT106X.uvoptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-smartcar/USER/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/my-smartcar/USER/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-b906e728b2e5a6c3cd16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-ec28746a443e2ab6d3ce.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-e9f3bb20dd40e57f8916.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-04-03T06-50-17-0386.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-RT1064-Debug-848bb58ebb07928db415.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/20220220141115349.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +76,15 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RT1064" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RT1064" TARGET_NAME="RT1064" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RT1064" RUN_TARGET_NAME="RT1064">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -89,6 +102,7 @@
       <workItem from="1648968547455" duration="433000" />
       <workItem from="1648969005176" duration="33000" />
       <workItem from="1648969059481" duration="7491000" />
+      <workItem from="1649004983432" duration="69000" />
     </task>
     <servers />
   </component>

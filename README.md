@@ -56,5 +56,6 @@
 > 5. [智能视觉组补充说明](https://bj.bcebos.com/cdstm-hyetecforthesmartcar-bucket/source/doc-888jo99kh9g0.pdf)
 > 6. [17界比赛总规则](https://bj.bcebos.com/cdstm-hyetecforthesmartcar-bucket/source/doc-7f76k5yp26g0.pdf)
 > 8. [NXP_OpenART](https://github.com/NXPmicro/OpenART/blob/master/README_zh.md)
+> 8. [智能视觉组逐飞演示车模浅析-上篇 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzAxMjQxNjEyMw==&mid=2247488243&idx=1&sn=d22493cc62e76fa6e026b9518460315c&chksm=9bb377e7acc4fef12ee422909b196b3abf06e5c84fb28a643382cf9f0f960442744272f8dc7d&mpshare=1&scene=23&srcid=0404thhN6UB5NRRbZPrsRQda&sharer_sharetime=1649002328705&sharer_shareid=ab779ee959c61ae16ead99fe1fefb3b2#rd)
 >
 

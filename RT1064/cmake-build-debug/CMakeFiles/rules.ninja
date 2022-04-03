@@ -44,7 +44,7 @@ rule C_EXECUTABLE_LINKER__RT1064_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Jay\Desktop\smartcar-contes\my-smart-car-2022\RT1064 -BC:\Users\Jay\Desktop\smartcar-contes\my-smart-car-2022\RT1064\cmake-build-debug
+  command = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\ThinkPad\Desktop\my-smart-car-2022\RT1064 -BC:\Users\ThinkPad\Desktop\my-smart-car-2022\RT1064\cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
