@@ -1894,6 +1894,16 @@
               <FileType>5</FileType>
               <FilePath>..\CODE\key.h</FilePath>
             </File>
+            <File>
+              <FileName>filter.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\CODE\filter.h</FilePath>
+            </File>
+            <File>
+              <FileName>filter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\filter.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
@@ -3784,6 +3794,16 @@
               <FileName>key.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\CODE\key.h</FilePath>
+            </File>
+            <File>
+              <FileName>filter.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\CODE\filter.h</FilePath>
+            </File>
+            <File>
+              <FileName>filter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\filter.c</FilePath>
             </File>
           </Files>
         </Group>

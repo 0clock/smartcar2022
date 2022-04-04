@@ -8079,6 +8079,18 @@ Section Cross References
     key.o(.text.Key4_Action) refers to motor.o(.bss.speed_tar_3) for speed_tar_3
     key.o(.text.Key4_Action) refers to motor.o(.bss.speed_tar_4) for speed_tar_4
     key.o(.ARM.exidx.text.Key4_Action) refers to key.o(.text.Key4_Action) for [Anonymous Symbol]
+    filter.o(.text.Kalmen_getAngle) refers to filter.o(.bss.kal_angle) for kal_angle
+    filter.o(.text.Kalmen_getAngle) refers to filter.o(.bss.Q_bias) for Q_bias
+    filter.o(.text.Kalmen_getAngle) refers to filter.o(.bss.Q_angle) for Q_angle
+    filter.o(.text.Kalmen_getAngle) refers to filter.o(.bss.kal_P) for kal_P
+    filter.o(.text.Kalmen_getAngle) refers to filter.o(.bss.R_angle) for R_angle
+    filter.o(.text.Kalmen_getAngle) refers to filter.o(.bss.kal_k) for kal_k
+    filter.o(.ARM.exidx.text.Kalmen_getAngle) refers to filter.o(.text.Kalmen_getAngle) for [Anonymous Symbol]
+    filter.o(.text.complementary_filter2) refers to filter.o(.bss.cpm_angle) for cpm_angle
+    filter.o(.text.complementary_filter2) refers to filter.o(.data.cpm_k) for cpm_k
+    filter.o(.ARM.exidx.text.complementary_filter2) refers to filter.o(.text.complementary_filter2) for [Anonymous Symbol]
+    filter.o(.ARM.exidx.text.Movingaverage_filter) refers to filter.o(.text.Movingaverage_filter) for [Anonymous Symbol]
+    filter.o(.ARM.exidx.text.RCFilter) refers to filter.o(.text.RCFilter) for [Anonymous Symbol]
     modf.o(i.__hardfp_modf) refers (Special) to iusefp.o(.text) for __I$use$fp
     modf.o(i.__softfp_modf) refers (Special) to iusefp.o(.text) for __I$use$fp
     modf.o(i.__softfp_modf) refers to modf.o(i.__hardfp_modf) for __hardfp_modf
@@ -12970,6 +12982,25 @@ Removing Unused input sections from the image.
     Removing key.o(.ARM.exidx.text.Key2_Action), (8 bytes).
     Removing key.o(.ARM.exidx.text.Key3_Action), (8 bytes).
     Removing key.o(.ARM.exidx.text.Key4_Action), (8 bytes).
+    Removing filter.o(.text), (0 bytes).
+    Removing filter.o(.text.Kalmen_getAngle), (358 bytes).
+    Removing filter.o(.ARM.exidx.text.Kalmen_getAngle), (8 bytes).
+    Removing filter.o(.text.complementary_filter2), (146 bytes).
+    Removing filter.o(.ARM.exidx.text.complementary_filter2), (8 bytes).
+    Removing filter.o(.text.Movingaverage_filter), (122 bytes).
+    Removing filter.o(.ARM.exidx.text.Movingaverage_filter), (8 bytes).
+    Removing filter.o(.text.RCFilter), (58 bytes).
+    Removing filter.o(.ARM.exidx.text.RCFilter), (8 bytes).
+    Removing filter.o(.bss.Q_angle), (4 bytes).
+    Removing filter.o(.bss.Q_bias), (4 bytes).
+    Removing filter.o(.bss.R_angle), (4 bytes).
+    Removing filter.o(.bss.kal_P), (16 bytes).
+    Removing filter.o(.bss.kal_k), (8 bytes).
+    Removing filter.o(.data.cpm_k), (4 bytes).
+    Removing filter.o(.bss.kal_angle), (4 bytes).
+    Removing filter.o(.bss.cpm_angle), (4 bytes).
+    Removing filter.o(.bss.kal_rate), (4 bytes).
+    Removing filter.o(.bss.angle_bias), (4 bytes).
     Removing dadd.o(.text), (334 bytes).
     Removing dmul.o(.text), (228 bytes).
     Removing ddiv.o(.text), (222 bytes).
@@ -12979,7 +13010,7 @@ Removing Unused input sections from the image.
     Removing d2f.o(.text), (56 bytes).
     Removing fepilogue.o(.text), (110 bytes).
 
-4719 unused section(s) (total 491418 bytes) removed from the image.
+4738 unused section(s) (total 492190 bytes) removed from the image.
 
 ==============================================================================
 
@@ -13087,6 +13118,7 @@ Image Symbol Table
     ff.c                                     0x00000000   Number         0  ff.o ABSOLUTE
     ffsystem.c                               0x00000000   Number         0  ffsystem.o ABSOLUTE
     ffunicode.c                              0x00000000   Number         0  ffunicode.o ABSOLUTE
+    filter.c                                 0x00000000   Number         0  filter.o ABSOLUTE
     fsl_adc.c                                0x00000000   Number         0  fsl_adc.o ABSOLUTE
     fsl_adc_etc.c                            0x00000000   Number         0  fsl_adc_etc.o ABSOLUTE
     fsl_aipstz.c                             0x00000000   Number         0  fsl_aipstz.o ABSOLUTE
@@ -14857,9 +14889,9 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x7001b3c0   0x00000004   Data   RW         6284    .data               mc_w.l(mvars.o)
-    0x20000004   0x7001b3c4   0x00000004   Data   RW         6285    .data               mc_w.l(mvars.o)
-    0x20000008   0x7001b3c8   0x00000004   Data   RW         6289    .data               mc_w.l(errno.o)
+    0x20000000   0x7001b3c0   0x00000004   Data   RW         6309    .data               mc_w.l(mvars.o)
+    0x20000004   0x7001b3c4   0x00000004   Data   RW         6310    .data               mc_w.l(mvars.o)
+    0x20000008   0x7001b3c8   0x00000004   Data   RW         6314    .data               mc_w.l(errno.o)
     0x2000000c   0x7001b3cc   0x00000020   Data   RW         5379    .data.GET_CFG_CSI   seekfree_mt9v03x_csi.o
     0x2000002c   0x7001b3ec   0x00000024   Data   RW         5378    .data.MT9V03X_CFG_CSI  seekfree_mt9v03x_csi.o
     0x20000050   0x7001b410   0x00000028   Data   RW         4458    .data.PORTPTR       zf_gpio.o
@@ -15014,25 +15046,25 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x70002400   0x70002400   0x00000000   Code   RO         6138  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x70002400   0x70002400   0x00000004   Code   RO         6250    .ARM.Collect$$$$00000003  mc_w.l(entry4.o)
-    0x70002404   0x70002404   0x00000004   Code   RO         6253    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x70002408   0x70002408   0x00000000   Code   RO         6255    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x70002408   0x70002408   0x00000000   Code   RO         6257    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x70002408   0x70002408   0x00000008   Code   RO         6258    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x70002410   0x70002410   0x00000000   Code   RO         6260    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x70002410   0x70002410   0x00000000   Code   RO         6262    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x70002410   0x70002410   0x00000004   Code   RO         6251    .ARM.Collect$$$$00002714  mc_w.l(entry4.o)
+    0x70002400   0x70002400   0x00000000   Code   RO         6163  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x70002400   0x70002400   0x00000004   Code   RO         6275    .ARM.Collect$$$$00000003  mc_w.l(entry4.o)
+    0x70002404   0x70002404   0x00000004   Code   RO         6278    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x70002408   0x70002408   0x00000000   Code   RO         6280    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x70002408   0x70002408   0x00000000   Code   RO         6282    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x70002408   0x70002408   0x00000008   Code   RO         6283    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x70002410   0x70002410   0x00000000   Code   RO         6285    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x70002410   0x70002410   0x00000000   Code   RO         6287    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x70002410   0x70002410   0x00000004   Code   RO         6276    .ARM.Collect$$$$00002714  mc_w.l(entry4.o)
     0x70002414   0x70002414   0x00000224   Code   RO         5596    .text               startup_mimxrt1064.o
-    0x70002638   0x70002638   0x00000024   Code   RO         6310    .text               mc_w.l(init.o)
+    0x70002638   0x70002638   0x00000024   Code   RO         6335    .text               mc_w.l(init.o)
     0x7000265c   0x7000265c   0x00000004   PAD
     0x70002660   0x70002660   0x0000024a   Code   RO          283    .text.SystemInit    system_mimxrt1064.o
     0x700028aa   0x700028aa   0x00000006   PAD
     0x700028b0   0x700028b0   0x00000002   Code   RO          285    .text.SystemInitHook  system_mimxrt1064.o
-    0x700028b2   0x700028b2   0x0000000e   Code   RO         6335    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x700028c0   0x700028c0   0x00000002   Code   RO         6336    i.__scatterload_null  mc_w.l(handlers.o)
-    0x700028c2   0x700028c2   0x0000000e   Code   RO         6337    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x700028d0   0x700028d0   0x00000030   Data   RO         6334    Region$$Table       anon$$obj.o
+    0x700028b2   0x700028b2   0x0000000e   Code   RO         6360    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x700028c0   0x700028c0   0x00000002   Code   RO         6361    i.__scatterload_null  mc_w.l(handlers.o)
+    0x700028c2   0x700028c2   0x0000000e   Code   RO         6362    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x700028d0   0x700028d0   0x00000030   Data   RO         6359    Region$$Table       anon$$obj.o
 
 
     Execution Region VECTOR_RAM (Exec base: 0x80000000, Load base: 0x70002900, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
@@ -15046,17 +15078,17 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x80000400   0x70002900   0x00000062   Code   RO         6141    .text               mc_w.l(uldiv.o)
-    0x80000462   0x70002962   0x00000062   Code   RO         6143    .text               mc_w.l(ldiv.o)
-    0x800004c4   0x700029c4   0x00000024   Code   RO         6151    .text               mc_w.l(memseta.o)
-    0x800004e8   0x700029e8   0x0000000e   Code   RO         6153    .text               mc_w.l(strlen.o)
-    0x800004f6   0x700029f6   0x00000028   Code   RO         6215    .text               mf_w.l(dfltl.o)
-    0x8000051e   0x70002a1e   0x0000004a   Code   RO         6217    .text               mf_w.l(dfixl.o)
-    0x80000568   0x70002a68   0x0000001e   Code   RO         6280    .text               mc_w.l(llshl.o)
-    0x80000586   0x70002a86   0x00000020   Code   RO         6282    .text               mc_w.l(llushr.o)
-    0x800005a6   0x70002aa6   0x00000000   Code   RO         6295    .text               mc_w.l(iusefp.o)
-    0x800005a6   0x70002aa6   0x000000ba   Code   RO         6296    .text               mf_w.l(depilogue.o)
-    0x80000660   0x70002b60   0x0000002e   Code   RO         6304    .text               mf_w.l(dscalb.o)
+    0x80000400   0x70002900   0x00000062   Code   RO         6166    .text               mc_w.l(uldiv.o)
+    0x80000462   0x70002962   0x00000062   Code   RO         6168    .text               mc_w.l(ldiv.o)
+    0x800004c4   0x700029c4   0x00000024   Code   RO         6176    .text               mc_w.l(memseta.o)
+    0x800004e8   0x700029e8   0x0000000e   Code   RO         6178    .text               mc_w.l(strlen.o)
+    0x800004f6   0x700029f6   0x00000028   Code   RO         6240    .text               mf_w.l(dfltl.o)
+    0x8000051e   0x70002a1e   0x0000004a   Code   RO         6242    .text               mf_w.l(dfixl.o)
+    0x80000568   0x70002a68   0x0000001e   Code   RO         6305    .text               mc_w.l(llshl.o)
+    0x80000586   0x70002a86   0x00000020   Code   RO         6307    .text               mc_w.l(llushr.o)
+    0x800005a6   0x70002aa6   0x00000000   Code   RO         6320    .text               mc_w.l(iusefp.o)
+    0x800005a6   0x70002aa6   0x000000ba   Code   RO         6321    .text               mf_w.l(depilogue.o)
+    0x80000660   0x70002b60   0x0000002e   Code   RO         6329    .text               mf_w.l(dscalb.o)
     0x8000068e   0x70002b8e   0x00000002   PAD
     0x80000690   0x70002b90   0x00000026   Code   RO           17    .text.ARM_MPU_Disable  board.o
     0x800006b6   0x70002bb6   0x00000002   PAD
@@ -15775,26 +15807,26 @@ Memory Map of the image
     0x80016ee8   0x700193e8   0x00000066   Code   RO         6084    .text.vofa_transmit_leader  vofa.o
     0x80016f4e   0x7001944e   0x00000002   PAD
     0x80016f50   0x70019450   0x00000012   Code   RO         6076    .text.vofa_unzip    vofa.o
-    0x80016f62   0x70019462   0x00000030   Code   RO         6239    i.__ARM_fpclassify  m_wv.l(fpclassify.o)
+    0x80016f62   0x70019462   0x00000030   Code   RO         6264    i.__ARM_fpclassify  m_wv.l(fpclassify.o)
     0x80016f92   0x70019492   0x00000002   PAD
-    0x80016f94   0x70019494   0x00000050   Code   RO         6187    i.__free$2region    mc_w.l(malloc2.o)
-    0x80016fe4   0x700194e4   0x000000c0   Code   RO         6119    i.__hardfp_modf     m_wv.l(modf.o)
+    0x80016f94   0x70019494   0x00000050   Code   RO         6212    i.__free$2region    mc_w.l(malloc2.o)
+    0x80016fe4   0x700194e4   0x000000c0   Code   RO         6144    i.__hardfp_modf     m_wv.l(modf.o)
     0x800170a4   0x700195a4   0x00000004   PAD
-    0x800170a8   0x700195a8   0x000008c4   Code   RO         6125    i.__hardfp_pow      m_wv.l(pow.o)
-    0x8001796c   0x70019e6c   0x00000070   Code   RO         6241    i.__kernel_poly     m_wv.l(poly.o)
-    0x800179dc   0x70019edc   0x0000006c   Code   RO         6188    i.__malloc$2region  mc_w.l(malloc2.o)
-    0x80017a48   0x70019f48   0x00000018   Code   RO         6219    i.__mathlib_dbl_divzero  m_wv.l(dunder.o)
-    0x80017a60   0x70019f60   0x00000006   Code   RO         6221    i.__mathlib_dbl_infnan2  m_wv.l(dunder.o)
+    0x800170a8   0x700195a8   0x000008c4   Code   RO         6150    i.__hardfp_pow      m_wv.l(pow.o)
+    0x8001796c   0x70019e6c   0x00000070   Code   RO         6266    i.__kernel_poly     m_wv.l(poly.o)
+    0x800179dc   0x70019edc   0x0000006c   Code   RO         6213    i.__malloc$2region  mc_w.l(malloc2.o)
+    0x80017a48   0x70019f48   0x00000018   Code   RO         6244    i.__mathlib_dbl_divzero  m_wv.l(dunder.o)
+    0x80017a60   0x70019f60   0x00000006   Code   RO         6246    i.__mathlib_dbl_infnan2  m_wv.l(dunder.o)
     0x80017a66   0x70019f66   0x00000002   PAD
-    0x80017a68   0x70019f68   0x00000018   Code   RO         6222    i.__mathlib_dbl_invalid  m_wv.l(dunder.o)
-    0x80017a80   0x70019f80   0x00000018   Code   RO         6223    i.__mathlib_dbl_overflow  m_wv.l(dunder.o)
-    0x80017a98   0x70019f98   0x00000018   Code   RO         6225    i.__mathlib_dbl_underflow  m_wv.l(dunder.o)
-    0x80017ab0   0x70019fb0   0x0000000c   Code   RO         6288    i.__set_errno       mc_w.l(errno.o)
-    0x80017abc   0x70019fbc   0x00000018   Code   RO         6235    i.fabs              m_wv.l(fabs.o)
-    0x80017ad4   0x70019fd4   0x0000006a   Code   RO         6246    i.sqrt              m_wv.l(sqrt.o)
+    0x80017a68   0x70019f68   0x00000018   Code   RO         6247    i.__mathlib_dbl_invalid  m_wv.l(dunder.o)
+    0x80017a80   0x70019f80   0x00000018   Code   RO         6248    i.__mathlib_dbl_overflow  m_wv.l(dunder.o)
+    0x80017a98   0x70019f98   0x00000018   Code   RO         6250    i.__mathlib_dbl_underflow  m_wv.l(dunder.o)
+    0x80017ab0   0x70019fb0   0x0000000c   Code   RO         6313    i.__set_errno       mc_w.l(errno.o)
+    0x80017abc   0x70019fbc   0x00000018   Code   RO         6260    i.fabs              m_wv.l(fabs.o)
+    0x80017ad4   0x70019fd4   0x0000006a   Code   RO         6271    i.sqrt              m_wv.l(sqrt.o)
     0x80017b3e   0x7001a03e   0x00000002   PAD
-    0x80017b40   0x7001a040   0x00000088   Data   RO         6128    .constdata          m_wv.l(pow.o)
-    0x80017bc8   0x7001a0c8   0x00000008   Data   RO         6243    .constdata          m_wv.l(qnan.o)
+    0x80017b40   0x7001a040   0x00000088   Data   RO         6153    .constdata          m_wv.l(pow.o)
+    0x80017bc8   0x7001a0c8   0x00000008   Data   RO         6268    .constdata          m_wv.l(qnan.o)
     0x80017bd0   0x7001a0d0   0x00000008   Data   RO           56    .rodata.armPllConfig_BOARD_BootClockRUN  clock_config.o
     0x80017bd8   0x7001a0d8   0x00000010   Data   RO          550    .rodata.cst16       fsl_clock.o
     0x80017be8   0x7001a0e8   0x00000024   Data   RO          199    .rodata.s_LpuartAdapterBase  lpuart_adapter.o
