@@ -7,6 +7,17 @@ uint8_t custom_buf[custom_sz]  = {0};    				   //下位机发送状态数据缓冲区
 uint8_t cmd_rxbuf[cmd_sz] = {0};  					 		   //下位机接收命令缓冲区
 
 
+void VOFA_Send(){
+    //VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
+    //VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
+    //myprintf("%f,%f,%f,%f,%d,%f\n",RC_Encoder1.value,RC_Encoder2.value,RC_Encoder3.value,RC_Encoder4.value,1000,Car.mileage);
+    myprintf("%d,%d,%d,%d,%d\n",RC_encoder1,RC_encoder2,RC_encoder3,RC_encoder4,speed_tar_1);
+    vofa_ch_data[0]=RC_encoder1;
+    vofa_ch_data[1]=RC_encoder2;
+    vofa_ch_data[2]=RC_encoder3;
+    vofa_ch_data[3]=RC_encoder4;
+}
+
 /**********************************************************************
  *	@fcn	初始化VOFA协议对象、释放VOFA对象占用的资源
  *	@para vofa_pt:vofa对象

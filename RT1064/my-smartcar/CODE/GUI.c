@@ -6,10 +6,10 @@ void GUI_init(){
 }
 
 void GUI_speed(){
-	ips114_showint16(10,2,encoder1); 
-	ips114_showint16(10,3,encoder2);
-	ips114_showint16(10,4,encoder3);
-	ips114_showint16(10,5,encoder4);
+	ips114_showint16(10,2,RC_encoder1);
+	ips114_showint16(10,3,RC_encoder2);
+	ips114_showint16(10,4,RC_encoder3);
+	ips114_showint16(10,5,RC_encoder4);
 }
 
 void GUI_icm20602(){

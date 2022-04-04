@@ -100,4 +100,5 @@
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_W25QXXJV.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660_CSI.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660.h ..\CODE\motor.h \
-  ..\CODE\GUI.h ..\CODE\vofa.h ..\CODE\Vofa_imageformat.h ..\CODE\key.h
+  ..\CODE\GUI.h ..\CODE\vofa.h ..\CODE\Vofa_imageformat.h ..\CODE\key.h \
+  ..\CODE\filter.h

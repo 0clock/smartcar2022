@@ -69,6 +69,7 @@ int main(void)
 	GUI_init();
 	Motor_Init();
 	Encoder_Init();
+    RCEncoder_Init();
 	Key_Init();
 	
 	simiic_init();//模拟IIC端口初始化

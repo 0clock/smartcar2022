@@ -1,3 +1,6 @@
+#ifndef _VOFA_H
+#define _VOFA_H
+
 /*********************************************************************************************************************
  * @file       		main
  * @author     		HHF
@@ -11,6 +14,7 @@
 #include "Vofa_imageformat.h"	//图片格式枚举
 #include "zf_uart.h"					//vofa的物理层实现
 #include "SEEKFREE_PRINTF.h"	//FW所需的printf函数实现
+#include "motor.h"
 
 //Vofa专用缓冲区接口
 #define ch_sz     4
@@ -157,9 +161,9 @@ VOFA_STATE vofa_unzip(VOFA* vofa_pt,uint8_t vofa_protocol,uint8_t msg_catagory);
  **********************************************************************/ 	
 VOFA_STATE image_property_set(VOFA* vofa_pt,uint32_t id,uint32_t size,uint32_t width,uint32_t height,uint32_t format);
 VOFA_STATE image_property_get(VOFA* vofa_pt,uint32_t id); //查看某个图片通道的信息
- 
+
+void VOFA_Send(void);
  
  
 
- 
- 
+#endif

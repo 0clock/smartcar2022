@@ -88,6 +88,7 @@
 #include "GUI.h"
 #include "vofa.h"
 #include "key.h"
+#include "filter.h"
 
 #endif
 

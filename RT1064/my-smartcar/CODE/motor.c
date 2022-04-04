@@ -1,15 +1,27 @@
 #include "motor.h"
 #include <math.h>
 
-#define PWM_LIMITE 50000
+#define PWM_LIMIT 50000
 
 int32 duty1=0,duty2=0,duty3=0,duty4=0;//电机PWM值
 int16 encoder1=0,encoder2=0,encoder3=0,encoder4=0;//编码器的值
+int16 RC_encoder1,RC_encoder2,RC_encoder3,RC_encoder4;//滤波之后encoder的值
+
+//---------------------结构体---------------------//
+struct RC_Para Encoder1_Para = {0,0,10};
+struct RC_Para Encoder2_Para = {0,0,10};
+struct RC_Para Encoder3_Para = {0,0,10};
+struct RC_Para Encoder4_Para = {0,0,10};
+
+RC_Filter_pt RC_Encoder1 = &Encoder1_Para;
+RC_Filter_pt RC_Encoder2 = &Encoder2_Para;
+RC_Filter_pt RC_Encoder3 = &Encoder3_Para;
+RC_Filter_pt RC_Encoder4 = &Encoder4_Para;
 
 //记录PID系数
-float Position_KP =78;
-float Position_KI =45;
-float Position_KD =1;
+float Position_KP =150;
+float Position_KI =20;
+float Position_KD =0;
 
 //电机目标速度
 int speed_tar_1 = 0;
@@ -117,7 +129,7 @@ int Position_PID4(int Encoder,int Target){
 }
 /**
  * @name: limit_pwm 
- * @msg: pwm限幅，这里的幅值是+-10000
+ * @msg: pwm限幅
  * @param {int pwm} 
  * @return {int pwm} 
  */
@@ -125,17 +137,17 @@ int Position_PID4(int Encoder,int Target){
 int limit_pwm(int pwm){
   if (pwm>=0)
   {
-    if (pwm>=PWM_LIMITE)
+    if (pwm>=PWM_LIMIT)
     {
-      pwm = PWM_LIMITE;
+      pwm = PWM_LIMIT;
     }
     
   }
   else if (pwm<=0)
   {
-    if (pwm<-PWM_LIMITE)
+    if (pwm<-PWM_LIMIT)
     {
-      pwm = -PWM_LIMITE;
+      pwm = -PWM_LIMIT;
     }
   }
   return pwm;
@@ -150,10 +162,10 @@ int limit_pwm(int pwm){
  */
 
 void PID_Calculate(void){
-	duty1 = Position_PID1(encoder1,speed_tar_1);
-	duty2 = Position_PID2(encoder2,speed_tar_2);
-	duty3 = Position_PID3(encoder3,speed_tar_3);
-	duty4 = Position_PID4(encoder4,speed_tar_4);
+	duty1 = Position_PID1(RC_encoder1,speed_tar_1);
+	duty2 = Position_PID2(RC_encoder2,speed_tar_2);
+	duty3 = Position_PID3(RC_encoder3,speed_tar_3);
+	duty4 = Position_PID4(RC_encoder4,speed_tar_4);
 	
 	duty1 = limit_pwm(duty1);
 	duty2 = limit_pwm(duty2);
@@ -209,6 +221,23 @@ void Motor_Ctrl(){
 	}
 }
 
+void RCEncoder_Init(void)
+{
+    RC_Encoder1->RC = 0.6;
+    RC_Encoder2->RC = 0.6;
+    RC_Encoder3->RC = 0.6;
+    RC_Encoder4->RC = 0.6;
+
+    RC_Encoder1->value = 0;
+    RC_Encoder2->value = 0;
+    RC_Encoder3->value = 0;
+    RC_Encoder4->value = 0;
+
+    RC_Encoder1->temp = 0;
+    RC_Encoder2->temp = 0;
+    RC_Encoder3->temp = 0;
+    RC_Encoder4->temp = 0;
+}
 
 void Encoder_Init(){
 	//一个QTIMER可以 创建两个正交解码
@@ -225,6 +254,11 @@ void Get_Encoder(){
 	encoder2 = qtimer_quad_get(QTIMER_1,QTIMER1_TIMER0_C0 ); //这里需要注意第二个参数务必填写A相引脚
 	encoder3 = -qtimer_quad_get(QTIMER_1,QTIMER1_TIMER2_C2); //这里需要注意第二个参数务必填写A相引脚
 	encoder4 = -qtimer_quad_get(QTIMER_2,QTIMER2_TIMER0_C3); //这里需要注意第二个参数务必填写A相引脚
+
+    RC_encoder1 = (int16_t)RCFilter(encoder1,RC_Encoder1);
+    RC_encoder2 = (int16_t)RCFilter(encoder2,RC_Encoder2);
+    RC_encoder3 = (int16_t)RCFilter(encoder3,RC_Encoder3);
+    RC_encoder4 = (int16_t) RCFilter(encoder4,RC_Encoder4);
 	
 	qtimer_quad_clear(QTIMER_3,QTIMER3_TIMER2_B18 );
 	qtimer_quad_clear(QTIMER_1,QTIMER1_TIMER0_C0 );

@@ -101,4 +101,5 @@
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660_CSI.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660.h ..\CODE\motor.h \
   ..\CODE\GUI.h ..\CODE\motor.h ..\CODE\vofa.h \
-  ..\CODE\Vofa_imageformat.h ..\CODE\key.h ..\USER\inc\isr.h
+  ..\CODE\Vofa_imageformat.h ..\CODE\key.h ..\CODE\filter.h \
+  ..\USER\inc\isr.h
