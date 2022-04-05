@@ -5,14 +5,31 @@
 #define KEY1 C31 
 #define KEY2 C27 
 #define KEY3 C26 
-#define KEY4 C4 
+#define KEY4 C4
+#define BEEP_PIN   B11       //蜂鸣器引脚
 
 /*Dial_switch*/
 #define Dial_switch1 D27
 #define Dial_switch2 D4
 
+int Beep_flag;
+
+void Beep_Set(){
+    static int count=0;
+    if(Beep_flag) {
+        gpio_set(BEEP_PIN, 1);
+        count++;
+    }
+    else if(!Beep_flag)
+        gpio_set(BEEP_PIN,0);
+    if(count>=10){
+        count=0;
+        Beep_flag=0;
+    }
+}
+
 void Key_Init(void){
-	//按键中断初始化
+    //按键引脚初始化
 	gpio_init(C31, GPI, 1, GPIO_PIN_CONFIG);
 	gpio_init(C27, GPI, 1, GPIO_PIN_CONFIG);
 	gpio_init(C26, GPI, 1, GPIO_PIN_CONFIG);
@@ -20,6 +37,8 @@ void Key_Init(void){
 	//拨码开关引脚初始化
 	gpio_init(D27, GPI, 1, GPIO_PIN_CONFIG);
 	gpio_init(D4, GPI, 1, GPIO_PIN_CONFIG);
+    //蜂鸣器引脚初始化
+    gpio_init(BEEP_PIN,GPO,0,GPIO_PIN_CONFIG);
 }
 
 
@@ -129,6 +148,7 @@ void Key1_Action(void)
     speed_tar_2=speed_tar_2+1;
     speed_tar_3=speed_tar_3+1;
     speed_tar_4=speed_tar_4+1;
+    Beep_flag=1;
 }
 
 void Key2_Action(void)
@@ -137,6 +157,7 @@ void Key2_Action(void)
     speed_tar_2=speed_tar_2-1;
     speed_tar_3=speed_tar_3-1;
     speed_tar_4=speed_tar_4-1;
+    Beep_flag=1;
 }
 
 
@@ -146,6 +167,7 @@ void Key3_Action(void)
     speed_tar_2=speed_tar_2+100;
     speed_tar_3=speed_tar_3+100;
     speed_tar_4=speed_tar_4+100;
+    Beep_flag=1;
 }
 
 void Key4_Action(void)
@@ -154,4 +176,5 @@ void Key4_Action(void)
     speed_tar_2=speed_tar_2-100;
     speed_tar_3=speed_tar_3-100;
     speed_tar_4=speed_tar_4-100;
+    Beep_flag=1;
 }

@@ -89,6 +89,7 @@
 #include "vofa.h"
 #include "key.h"
 #include "filter.h"
+#include "icm.h"
 
 #endif
 

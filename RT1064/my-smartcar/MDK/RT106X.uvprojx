@@ -1904,6 +1904,21 @@
               <FileType>1</FileType>
               <FilePath>..\CODE\filter.c</FilePath>
             </File>
+            <File>
+              <FileName>icm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\icm.c</FilePath>
+            </File>
+            <File>
+              <FileName>icm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\CODE\icm.h</FilePath>
+            </File>
+            <File>
+              <FileName>ahrs.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\CODE\ahrs.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
@@ -3804,6 +3819,21 @@
               <FileName>filter.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CODE\filter.c</FilePath>
+            </File>
+            <File>
+              <FileName>icm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\icm.c</FilePath>
+            </File>
+            <File>
+              <FileName>icm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\CODE\icm.h</FilePath>
+            </File>
+            <File>
+              <FileName>ahrs.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\CODE\ahrs.h</FilePath>
             </File>
           </Files>
         </Group>

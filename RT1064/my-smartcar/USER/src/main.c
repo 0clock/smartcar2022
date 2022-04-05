@@ -73,7 +73,9 @@ int main(void)
 	Key_Init();
 	
 	simiic_init();//模拟IIC端口初始化
-	icm20602_init();
+	icm20602_init();//icm初始化
+    //icmOffsetInit();//icm零漂消除
+
 	
 	mt9v03x_csi_init();	//初始化摄像头 使用CSI接口
 	//如果屏幕一直显示初始化信息，请检查摄像头接线
@@ -97,9 +99,6 @@ int main(void)
 
 	while(1)
 	{
-		get_icm20602_accdata();
-		get_icm20602_gyro();
-
         //屏幕显示
 		GUI_icm20602();
 		GUI_speed();

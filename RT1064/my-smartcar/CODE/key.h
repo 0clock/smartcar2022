@@ -14,6 +14,7 @@ enum Keycode
     Key4
 };
 
+void Beep_Set(void);
 void Key_Init(void);
 void Key_Scans(void);
 

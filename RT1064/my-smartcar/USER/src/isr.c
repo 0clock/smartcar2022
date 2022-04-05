@@ -39,6 +39,7 @@ void PIT_IRQHandler(void)
     {
         Key_Scans();
         VOFA_Send();
+        Beep_Set();
         PIT_FLAG_CLEAR(PIT_CH1);
     }
     
