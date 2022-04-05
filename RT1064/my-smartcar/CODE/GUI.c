@@ -13,13 +13,13 @@ void GUI_speed(){
 }
 
 void GUI_icm20602(){
-	ips114_showint16(100,2,icm_acc_x);
-	ips114_showint16(100,3,icm_acc_y);
-	ips114_showint16(100,4,icm_acc_z);
+	ips114_showint16(100,2,icm_data.gyro_x);
+	ips114_showint16(100,3,icm_data.gyro_x);
+	ips114_showint16(100,4,icm_data.gyro_x);
 	
-	ips114_showint16(180,2,icm_gyro_x);
-	ips114_showint16(180,3,icm_gyro_y);
-	ips114_showint16(180,4,icm_gyro_z);
+	ips114_showint16(180,2,icm_data.acc_x);
+	ips114_showint16(180,3,icm_data.acc_y);
+	ips114_showint16(180,4,icm_data.acc_z);
 }
 
 void GUI_duty(){

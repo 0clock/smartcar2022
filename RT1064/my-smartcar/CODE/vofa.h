@@ -17,7 +17,7 @@
 #include "motor.h"
 
 //Vofa专用缓冲区接口
-#define ch_sz     4
+#define ch_sz     8
 #define image_sz  100
 #define custom_sz 4*7
 #define cmd_sz    3+2*5

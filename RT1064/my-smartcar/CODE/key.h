@@ -6,6 +6,8 @@
 #define STATUS0_COUNTER_MAX 5
 #define STATUS1_COUNTER_MAX 50
 
+extern int Beep_flag;
+
 enum Keycode
 {
     Key1,

@@ -2,6 +2,7 @@
 #define _GUI_H_
 
 #include "motor.h"
+#include "key.h"
 
 void GUI_init(void);
 void GUI_speed(void);

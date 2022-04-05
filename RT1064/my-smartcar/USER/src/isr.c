@@ -38,7 +38,9 @@ void PIT_IRQHandler(void)
     if(PIT_FLAG_GET(PIT_CH1))
     {
         Key_Scans();
-        VOFA_Send();
+        //AHRS_get_yaw();
+        //myprintf("%f,%f,%f\n",ahrs_angle.z,cpmangle_z,angle_offset);
+        //VOFA_Send();
         Beep_Set();
         PIT_FLAG_CLEAR(PIT_CH1);
     }

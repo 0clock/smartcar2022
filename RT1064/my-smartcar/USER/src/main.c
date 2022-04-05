@@ -74,7 +74,7 @@ int main(void)
 	
 	simiic_init();//模拟IIC端口初始化
 	icm20602_init();//icm初始化
-    //icmOffsetInit();//icm零漂消除
+    icmOffsetInit();//icm零漂消除
 
 	
 	mt9v03x_csi_init();	//初始化摄像头 使用CSI接口
@@ -96,9 +96,12 @@ int main(void)
 	systick_start();
 	EnableGlobalIRQ(0);
 
+    Beep_flag=1;
+
 
 	while(1)
 	{
+        icmGetValues();
         //屏幕显示
 		GUI_icm20602();
 		GUI_speed();
