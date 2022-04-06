@@ -257,6 +257,42 @@ void ips114_clear(uint16 color)
     }
 }
 
+/******************************************************************************
+      函数说明：在指定区域填充颜色
+      入口数据：xsta,ysta   起始坐标
+                xend,yend   终止坐标
+								color       要填充的颜色
+      返回值：  无
+******************************************************************************/
+void LCD_Fill(uint16 xsta,uint16 ysta,uint16 xend,uint16 yend,uint16 color)
+{
+    uint16 color1[1];
+    uint16 num;
+    color1[0]=color;
+    num=(xend-xsta)*(yend-ysta);
+    ips114_set_region(xsta,ysta,xend-1,yend-1);//设置显示范围
+    LCD_CS_Clr();
+    SPI1->CR1|=1<<11;//设置SPI16位传输模式
+    SPI_Cmd(SPI1, ENABLE);//使能SPI
+    MYDMA_Config1(DMA1_Channel3,(u32)&SPI1->DR,(u32)color1,num);
+    SPI_I2S_DMACmd(SPI1,SPI_I2S_DMAReq_Tx,ENABLE);
+    MYDMA_Enable(DMA1_Channel3);
+    while(1)
+    {
+        if(DMA_GetFlagStatus(DMA1_FLAG_TC3)!=RESET)//等待通道4传输完成
+        {
+            DMA_ClearFlag(DMA1_FLAG_TC3);//清除通道3传输完成标志
+            break;
+        }
+    }
+    LCD_CS_Set();
+    SPI1->CR1=~SPI1->CR1;
+    SPI1->CR1|=1<<11;
+    SPI1->CR1=~SPI1->CR1;//设置SPI8位传输模式
+    SPI_Cmd(SPI1, ENABLE);//使能SPI
+}
+
+
 //-------------------------------------------------------------------------------------------------------------------
 //  @brief      液晶画点
 //  @param      x     	        坐标x方向的起点
@@ -272,8 +308,91 @@ void ips114_drawpoint(uint16 x,uint16 y,uint16 color)
     ips114_writedata_16bit(color);
 }
 
+/******************************************************************************
+      函数说明：画线
+      入口数据：x1,y1   起始坐标
+                x2,y2   终止坐标
+                color   线的颜色
+      返回值：  无
+******************************************************************************/
+void ips114_drawline(uint16 x1,uint16 y1,uint16 x2,uint16 y2,uint16 color)
+{
+    uint16 t;
+    int xerr=0,yerr=0,delta_x,delta_y,distance;
+    int incx,incy,uRow,uCol;
+    delta_x=x2-x1; //计算坐标增量
+    delta_y=y2-y1;
+    uRow=x1;//画线起点坐标
+    uCol=y1;
+    if(delta_x>0)incx=1; //设置单步方向
+    else if (delta_x==0)incx=0;//垂直线
+    else {incx=-1;delta_x=-delta_x;}
+    if(delta_y>0)incy=1;
+    else if (delta_y==0)incy=0;//水平线
+    else {incy=-1;delta_y=-delta_y;}
+    if(delta_x>delta_y)distance=delta_x; //选取基本增量坐标轴
+    else distance=delta_y;
+    for(t=0;t<distance+1;t++)
+    {
+        ips114_drawpoint(uRow,uCol,color);//画点
+        xerr+=delta_x;
+        yerr+=delta_y;
+        if(xerr>distance)
+        {
+            xerr-=distance;
+            uRow+=incx;
+        }
+        if(yerr>distance)
+        {
+            yerr-=distance;
+            uCol+=incy;
+        }
+    }
+}
 
+/******************************************************************************
+      函数说明：画矩形
+      入口数据：x1,y1   起始坐标
+                x2,y2   终止坐标
+                color   矩形的颜色
+      返回值：  无
+******************************************************************************/
+void ips114_drawRectangle(uint16 x1, uint16 y1, uint16 x2, uint16 y2,uint16 color)
+{
+    ips114_drawline(x1,y1,x2,y1,color);
+    ips114_drawline(x1,y1,x1,y2,color);
+    ips114_drawline(x1,y2,x2,y2,color);
+    ips114_drawline(x2,y1,x2,y2,color);
+}
 
+/******************************************************************************
+      函数说明：画圆
+      入口数据：x0,y0   圆心坐标
+                r       半径
+                color   圆的颜色
+      返回值：  无
+******************************************************************************/
+void ips114_drawCircle(uint16 x0,uint16 y0,uint16 r,uint16 color)
+{
+    int a,b;
+    a=0;b=r;
+    while(a<=b)
+    {
+        ips114_drawpoint(x0-b,y0-a,color);             //3
+        ips114_drawpoint(x0+b,y0-a,color);             //0
+        ips114_drawpoint(x0-a,y0+b,color);             //1
+        ips114_drawpoint(x0-a,y0-b,color);             //2
+        ips114_drawpoint(x0+b,y0+a,color);             //4
+        ips114_drawpoint(x0+a,y0-b,color);             //5
+        ips114_drawpoint(x0+a,y0+b,color);             //6
+        ips114_drawpoint(x0-b,y0+a,color);             //7
+        a++;
+        if((a*a+b*b)>(r*r))//判断要画的点是否过远
+        {
+            b--;
+        }
+    }
+}
 //-------------------------------------------------------------------------------------------------------------------
 //  @brief      液晶显示字符
 //  @param      x     	        坐标x方向的起点 参数范围 0 -（IPS114_X_MAX-1）

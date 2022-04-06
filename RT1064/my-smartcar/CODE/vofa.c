@@ -10,7 +10,7 @@ uint8_t cmd_rxbuf[cmd_sz] = {0};  					 		   //下位机接收命令缓冲区
 void VOFA_Send(){
     //VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
     //VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
-    myprintf("%f,%f,%f\n",icm_data.gyro_x,icm_data.gyro_y,icm_data.gyro_z);
+    myprintf("%f,%f,%f\n",icm_data.acc_x,icm_data.acc_y,icm_data.acc_z);
  //   myprintf("%d,%d,%d,%d,%d\n",RC_encoder1,RC_encoder2,RC_encoder3,RC_encoder4,speed_tar_1);
 //    vofa_ch_data[0]=RC_encoder1;
 //    vofa_ch_data[1]=RC_encoder2;

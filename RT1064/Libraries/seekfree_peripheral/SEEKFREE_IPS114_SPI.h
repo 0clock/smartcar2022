@@ -107,6 +107,9 @@
 void ips114_init(void);
 void ips114_clear(uint16 color);
 void ips114_drawpoint(uint16 x,uint16 y,uint16 color);
+void ips114_drawline(uint16 x1,uint16 y1,uint16 x2,uint16 y2,uint16 color);
+void ips114_drawRectangle(uint16 x1, uint16 y1, uint16 x2, uint16 y2,uint16 color);
+void ips114_drawCircle(uint16 x0,uint16 y0,uint16 r,uint16 color);
 void ips114_showchar(uint16 x,uint16 y,const int8 dat);
 void ips114_showstr(uint16 x,uint16 y,const int8 dat[]);
 void ips114_showint8(uint16 x,uint16 y,int8 dat);
