@@ -1,0 +1,1 @@
+"C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3.3/bin/ninja/win/ninja.exe" -G Ninja C:\Users\Jay\Desktop\smartcar-contes\my-smart-car-2022\RT1064\资料\中景园ZJY147S0800TG01技术资料\02-1.47IPS程序源码\11-1.47IPS显示屏STM32F103硬件SPI+DMA例程

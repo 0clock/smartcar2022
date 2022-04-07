@@ -18,6 +18,7 @@ extern int16 encoder1,encoder2,encoder3,encoder4;
 extern int16 RC_encoder1,RC_encoder2,RC_encoder3,RC_encoder4;//滤波之后encoder的值
 extern int32 duty1,duty2,duty3,duty4;
 extern int speed_tar_1,speed_tar_2,speed_tar_3,speed_tar_4;
+extern int speed_tar;
 
 void Motor_Init(void);
 void Motor_Ctrl(void);
@@ -25,13 +26,13 @@ void Encoder_Init(void);
 void Get_Encoder(void);
 void RCEncoder_Init(void);
 
-
 void Car_Ahead();
 void Car_SideWay();
 void Car_RSideWay();
 void Car_Diagonal();
 void Car_Concerning();
 void Car_Turnround();
+void Car_Anticlockwise();
 
 void Car_Back();
 

@@ -90,6 +90,7 @@
 #include "key.h"
 #include "filter.h"
 #include "icm.h"
+#include "location.h"
 
 #endif
 

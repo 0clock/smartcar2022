@@ -264,32 +264,17 @@ void ips114_clear(uint16 color)
 								color       要填充的颜色
       返回值：  无
 ******************************************************************************/
-void LCD_Fill(uint16 xsta,uint16 ysta,uint16 xend,uint16 yend,uint16 color)
+void ips114_Fill(uint16 xsta,uint16 ysta,uint16 xend,uint16 yend,uint16 color)
 {
-    uint16 color1[1];
-    uint16 num;
-    color1[0]=color;
-    num=(xend-xsta)*(yend-ysta);
+    uint16 i,j;
     ips114_set_region(xsta,ysta,xend-1,yend-1);//设置显示范围
-    LCD_CS_Clr();
-    SPI1->CR1|=1<<11;//设置SPI16位传输模式
-    SPI_Cmd(SPI1, ENABLE);//使能SPI
-    MYDMA_Config1(DMA1_Channel3,(u32)&SPI1->DR,(u32)color1,num);
-    SPI_I2S_DMACmd(SPI1,SPI_I2S_DMAReq_Tx,ENABLE);
-    MYDMA_Enable(DMA1_Channel3);
-    while(1)
+    for(i=ysta;i<yend;i++)
     {
-        if(DMA_GetFlagStatus(DMA1_FLAG_TC3)!=RESET)//等待通道4传输完成
+        for(j=xsta;j<xend;j++)
         {
-            DMA_ClearFlag(DMA1_FLAG_TC3);//清除通道3传输完成标志
-            break;
+            ips114_writedata_16bit(color);
         }
     }
-    LCD_CS_Set();
-    SPI1->CR1=~SPI1->CR1;
-    SPI1->CR1|=1<<11;
-    SPI1->CR1=~SPI1->CR1;//设置SPI8位传输模式
-    SPI_Cmd(SPI1, ENABLE);//使能SPI
 }
 
 

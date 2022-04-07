@@ -52,6 +52,7 @@
 #define IPS114_REST_PIN         B2              //液晶复位引脚定义 由于实际通讯未使用B2因此 这里复用为GPIO
 #define IPS114_DC_PIN 	        C19	            //液晶命令位引脚定义
 
+#define IPS114_CS_Clr(x)        gpio_set(IPS114_CS_PIN,x)
 #define IPS114_DC(x)            gpio_set(IPS114_DC_PIN,x)
 #define IPS114_REST(x)          gpio_set(IPS114_REST_PIN,x)
 
@@ -106,6 +107,7 @@
 
 void ips114_init(void);
 void ips114_clear(uint16 color);
+void ips114_Fill(uint16 xsta,uint16 ysta,uint16 xend,uint16 yend,uint16 color);
 void ips114_drawpoint(uint16 x,uint16 y,uint16 color);
 void ips114_drawline(uint16 x1,uint16 y1,uint16 x2,uint16 y2,uint16 color);
 void ips114_drawRectangle(uint16 x1, uint16 y1, uint16 x2, uint16 y2,uint16 color);

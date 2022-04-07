@@ -29,63 +29,79 @@ int speed_tar_2 = 0;
 int speed_tar_3 = 0;
 int speed_tar_4 = 0;
 
-
-int speed = 0;
+int speed_tar = 0;//目标速度
+float deta_mileage=0;
 
 void Car_Ahead()
 {
-	speed_tar_1 = 500;
-	speed_tar_2 = 500;
-	speed_tar_3 = 500;
-	speed_tar_4 = 500;
+	speed_tar_1 = speed_tar;
+	speed_tar_2 = speed_tar;
+	speed_tar_3 = speed_tar;
+	speed_tar_4 = speed_tar;
 }
 
 void Car_Back()
 {
-	speed_tar_1 = -500;
-	speed_tar_2 = -500;
-	speed_tar_3 = -500;
-	speed_tar_4 = -500;
+	speed_tar_1 = -speed_tar;
+	speed_tar_2 = -speed_tar;
+	speed_tar_3 = -speed_tar;
+	speed_tar_4 = -speed_tar;
 }
 
 void Car_SideWay()
 {
-	speed_tar_1 = 500;
-	speed_tar_2 = -500;
-	speed_tar_3 = 500;
-	speed_tar_4 = -500;
+	speed_tar_1 = speed_tar;
+	speed_tar_2 = -speed_tar;
+	speed_tar_3 = speed_tar;
+	speed_tar_4 = -speed_tar;
 }
 
 void Car_RSideWay()
 {
-	speed_tar_1 = -500;
-	speed_tar_2 = 500;
-	speed_tar_3 = -500;
-	speed_tar_4 = 500;
+	speed_tar_1 = -speed_tar;
+	speed_tar_2 = speed_tar;
+	speed_tar_3 = -speed_tar;
+	speed_tar_4 = speed_tar;
 }
 
 void Car_Diagonal()
 {
-	speed_tar_1 = 500;
+	speed_tar_1 = speed_tar;
 	speed_tar_2 = 0;
-	speed_tar_3 = 500;
+	speed_tar_3 = speed_tar;
 	speed_tar_4 = 0;
 }
 
 void Car_Turnround()
 {
-	speed_tar_1 = 500;
-	speed_tar_2 = 500;
-	speed_tar_3 = -500;
-	speed_tar_4 = -500;
+	speed_tar_1 = speed_tar;
+	speed_tar_2 = speed_tar;
+	speed_tar_3 = -speed_tar;
+	speed_tar_4 = -speed_tar;
+}
+
+void Car_Anticlockwise()
+{
+    speed_tar_1 = -speed_tar;
+    speed_tar_2 = -speed_tar;
+    speed_tar_3 = speed_tar;
+    speed_tar_4 = speed_tar;
 }
 
 void Car_Concerning()
 {
-	speed_tar_1 = 500;
-	speed_tar_2 = 500;
+	speed_tar_1 = speed_tar;
+	speed_tar_2 = speed_tar;
 	speed_tar_3 = 0;
 	speed_tar_4 = 0;
+}
+
+void Car_Stop()
+{
+    speed_tar_1 = 0;
+    speed_tar_2 = 0;
+    speed_tar_3 = 0;
+    speed_tar_4 = 0;
 }
 
 
@@ -254,6 +270,11 @@ void Get_Encoder(){
 	encoder2 = qtimer_quad_get(QTIMER_1,QTIMER1_TIMER0_C0 ); //这里需要注意第二个参数务必填写A相引脚
 	encoder3 = -qtimer_quad_get(QTIMER_1,QTIMER1_TIMER2_C2); //这里需要注意第二个参数务必填写A相引脚
 	encoder4 = -qtimer_quad_get(QTIMER_2,QTIMER2_TIMER0_C3); //这里需要注意第二个参数务必填写A相引脚
+
+    //计算位移(单位：m)
+    //Car.mileage=(Encoder/1024)*(45/104)*2*PI*0.03;
+    deta_mileage=encoder1*0.092;
+    Car.mileage+=deta_mileage;
 
     RC_encoder1 = (int16_t)RCFilter(encoder1,RC_Encoder1);
     RC_encoder2 = (int16_t)RCFilter(encoder2,RC_Encoder2);

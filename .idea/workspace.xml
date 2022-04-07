@@ -7,51 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d2d6cd7-55d6-40b6-af63-9d46fc1b2581" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/my-smart-car-2022.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RT1064/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-13a7838d949cb4bcd541.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RT1064/my-smartcar/CODE/ahrs.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RT1064/my-smartcar/CODE/icm.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RT1064/my-smartcar/CODE/icm.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/icm.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/icm.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/Libraries/seekfree_libraries/headfile.h" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/Libraries/seekfree_libraries/headfile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/Libraries/seekfree_peripheral/SEEKFREE_ICM20602.h" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/Libraries/seekfree_peripheral/SEEKFREE_ICM20602.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-6dfeba40bc0711941182.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-915a95237939040e6b00.json" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-88f637d83a328f9955fb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/cmake-build-debug/.cmake/api/v1/reply/index-2022-04-04T07-48-30-0997.json" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/cmake-build-debug/.cmake/api/v1/reply/index-2022-04-05T06-57-34-0339.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/cmake-build-debug/.cmake/api/v1/reply/target-RT1064-Debug-684cbf3f77d823377954.json" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/cmake-build-debug/.cmake/api/v1/reply/target-RT1064-Debug-0edde55bd1c77652cf12.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/CODE/key.c" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/CODE/key.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/CODE/key.h" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/CODE/key.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/CODE/motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/CODE/motor.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Listings/RT106X.map" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Listings/RT106X.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/RT106X.axf" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/RT106X.axf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/RT106X.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/RT106X.build_log.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/RT106X.htm" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/RT106X.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/RT106X.lnp" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/RT106X.lnp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/RT106X_nor_sdram_zf_dtcm_v6.dep" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/RT106X_nor_sdram_zf_dtcm_v6.dep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/gui.d" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/gui.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/isr.d" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/isr.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/isr.o" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/isr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/key.d" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/key.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/key.o" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/key.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/main.d" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/main.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/motor.d" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/motor.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/motor.o" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/motor.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/vofa.d" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/Objects/vofa.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/RT106X.uvguix.Jay" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/RT106X.uvguix.Jay" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/RT106X.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/RT106X.uvoptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/RT106X.uvprojx" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/MDK/RT106X.uvprojx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/USER/src/isr.c" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/USER/src/isr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/USER/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/USER/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649144710409</updated>
       <workItem from="1649144713787" duration="62000" />
+      <workItem from="1649318220256" duration="445000" />
     </task>
     <servers />
   </component>

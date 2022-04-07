@@ -516,4 +516,4 @@ add_executable(RT1064
         my-smartcar/USER/inc/isr.h
         my-smartcar/USER/inc/RT106X_config.h
         my-smartcar/USER/src/isr.c
-        my-smartcar/USER/src/main.c my-smartcar/CODE/icm.c my-smartcar/CODE/icm.h my-smartcar/CODE/ahrs.h)
+        my-smartcar/USER/src/main.c my-smartcar/CODE/icm.c my-smartcar/CODE/icm.h my-smartcar/CODE/ahrs.h my-smartcar/CODE/location.c my-smartcar/CODE/location.h)

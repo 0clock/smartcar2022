@@ -14,6 +14,7 @@ void GUI_speed(){
 	ips114_showint16(10,4,RC_encoder2);
 	ips114_showint16(10,5,RC_encoder3);
 	ips114_showint16(10,6,RC_encoder4);
+    ips114_showint16(10,8,Car.mileage);
 }
 
 void GUI_icm20602(){

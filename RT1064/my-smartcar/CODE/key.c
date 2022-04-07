@@ -144,37 +144,23 @@ void Key_Scans(void)
 
 void Key1_Action(void)
 {
-    speed_tar_1=speed_tar_1+1;
-    speed_tar_2=speed_tar_2+1;
-    speed_tar_3=speed_tar_3+1;
-    speed_tar_4=speed_tar_4+1;
+    speed_tar=speed_tar+5;
     Beep_flag=1;
 }
 
 void Key2_Action(void)
 {
-    speed_tar_1=speed_tar_1-1;
-    speed_tar_2=speed_tar_2-1;
-    speed_tar_3=speed_tar_3-1;
-    speed_tar_4=speed_tar_4-1;
+    speed_tar=speed_tar-5;
     Beep_flag=1;
 }
 
 
 void Key3_Action(void)
 {
-    speed_tar_1=speed_tar_1+100;
-    speed_tar_2=speed_tar_2+100;
-    speed_tar_3=speed_tar_3+100;
-    speed_tar_4=speed_tar_4+100;
     Beep_flag=1;
 }
 
 void Key4_Action(void)
 {
-    speed_tar_1=speed_tar_1-100;
-    speed_tar_2=speed_tar_2-100;
-    speed_tar_3=speed_tar_3-100;
-    speed_tar_4=speed_tar_4-100;
     Beep_flag=1;
 }

@@ -101,6 +101,7 @@ int main(void)
 
 	while(1)
 	{
+        Car_Ahead();
         icmGetValues();
         //фад╩отй╬
 		GUI_icm20602();
