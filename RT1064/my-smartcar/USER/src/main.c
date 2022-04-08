@@ -52,6 +52,7 @@
 
 #include "headfile.h"
 
+int8 CarFlag=1;
 
 int main(void)
 {
@@ -95,13 +96,11 @@ int main(void)
 	systick_delay_ms(500);
 	systick_start();
 	EnableGlobalIRQ(0);
-
     Beep_flag=1;
-
 
 	while(1)
 	{
-        Car_Ahead();
+        CarMode=ahead;
         icmGetValues();
         //фад╩отй╬
 		GUI_icm20602();

@@ -46,6 +46,7 @@ void PIT_IRQHandler(void)
     
     if(PIT_FLAG_GET(PIT_CH2))
     {
+        Car_Mode();
         Motor_Ctrl();
         PIT_FLAG_CLEAR(PIT_CH2);
     }

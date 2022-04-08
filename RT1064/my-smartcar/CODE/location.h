@@ -2,8 +2,8 @@
 // Created by Jay on 2022/4/7.
 //
 
-#ifndef _LOCATION_H
-#define _LOCATION_H
+#ifndef _LOCATION_H_
+#define _LOCATION_H_
 
 
 #include "headfile.h"
@@ -16,6 +16,16 @@ extern float location_X[locate_sz];    //x坐标存放处
 extern float location_Y[locate_sz];    //y坐标存放处
 //--------------------全局变量---------------------//
 extern struct Location_Goal Car;
+extern int CarMode;
+
+enum CarMode
+{
+    ahead,
+    forward,
+    turnround,
+    anticlockwise,
+    stop
+};
 //---------------------结构体---------------------//
 //记录坐标和相对位置的结构体
 typedef struct Location_Goal
@@ -42,8 +52,8 @@ typedef struct Location_Goal
 
 
 //-------------------函数定义---------------------//
-
 void Charge_Locate(void);            //坐标处理函数
+void Car_Mode(void);
 void Get_Road(void);                 //路径呈现函数
 
 #endif 

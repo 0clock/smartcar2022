@@ -18,6 +18,8 @@ RC_Filter_pt RC_Encoder2 = &Encoder2_Para;
 RC_Filter_pt RC_Encoder3 = &Encoder3_Para;
 RC_Filter_pt RC_Encoder4 = &Encoder4_Para;
 
+
+
 //记录PID系数
 float Position_KP =150;
 float Position_KI =20;
@@ -201,7 +203,6 @@ void Motor_Init(){
 }
 
 
-
 void Motor_Ctrl(){
 	PID_Calculate();
 		
@@ -273,8 +274,10 @@ void Get_Encoder(){
 
     //计算位移(单位：m)
     //Car.mileage=(Encoder/1024)*(45/104)*2*PI*0.03;
-    deta_mileage=encoder1*0.092;
-    Car.mileage+=deta_mileage;
+    if(CarMode==ahead) {
+        deta_mileage = abs(encoder1) * 0.0083;
+        Car.mileage += deta_mileage;
+    }
 
     RC_encoder1 = (int16_t)RCFilter(encoder1,RC_Encoder1);
     RC_encoder2 = (int16_t)RCFilter(encoder2,RC_Encoder2);

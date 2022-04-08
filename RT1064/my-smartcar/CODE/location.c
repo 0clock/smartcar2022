@@ -13,8 +13,34 @@
 //-------------------结构体-----------------------//
 struct Location_Goal Car={0};          //小车状态（位置，目标）存储结构体
 //---------------------数组-----------------------//
-float location_X[locate_sz];
-float location_Y[locate_sz];
+float location_X[locate_sz]={0,5,10,10};
+float location_Y[locate_sz]={0,5,5,10};
+int CarMode;
+
+void Car_RoadMode(){
+    if(Car.Angel==Car.Angel_Target){
+        CarMode=stop;
+    }
+    if(Car.Angel!=Car.Angel_Target){
+        if(0<Car.Angel_Target){
+            CarMode=anticlockwise;
+        }else{
+            CarMode=turnround;
+        }
+    }else if(Car.Distance==Car.mileage)
+}
+
+
+void Car_Mode(){
+    switch (CarMode) {
+        case ahead:Car_Ahead();break;
+        case forward:Car_Back();break;
+        case turnround:Car_Turnround();break;
+        case anticlockwise:Car_Anticlockwise();break;
+        case stop:Car_Stop();break;
+    }
+}
+
 /*
 ***************************************************************
 *	函 数 名: Charge_Locate
@@ -43,13 +69,13 @@ void Charge_Locate(void)
 
 void Get_Target(void)
 {
-    //赋予心新的目标坐标点
+    //赋予新的目标坐标点
     Car.x1=location_X[Car.Position_Pointer];
     Car.y1=location_Y[Car.Position_Pointer];
     //下一个目标点
     Car.Position_Pointer++;
 }
-
+ 
 /*
 ***************************************************************
 *	函 数 名: Get_Road

@@ -33,7 +33,7 @@ void Car_Diagonal();
 void Car_Concerning();
 void Car_Turnround();
 void Car_Anticlockwise();
-
+void Car_Stop();
 void Car_Back();
 
 
