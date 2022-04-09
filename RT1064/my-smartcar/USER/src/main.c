@@ -63,22 +63,22 @@ int main(void)
 	/*******************************************/
 	pit_init();//
 	pit_interrupt_ms(PIT_CH0,5);  //初始化pit通道0 周期5ms 编码器中断
-	pit_interrupt_ms(PIT_CH1,10);  //初始化pit通道1 周期10ms	按键、串口发送中断
+	pit_interrupt_ms(PIT_CH1,16);  //初始化pit通道1 周期10ms	按键、串口发送中断
 	pit_interrupt_ms(PIT_CH2,10);  //初始化pit通道2 周期10ms	PID控制中断
 	NVIC_SetPriority(PIT_IRQn,1);
 	
-	GUI_init();
+	
 	Motor_Init();
 	Encoder_Init();
-    RCEncoder_Init();
+  RCEncoder_Init();
 	Key_Init();
 	
 	simiic_init();//模拟IIC端口初始化
-	icm20602_init();//icm初始化
+    icm20602_init_spi();
+    //icm20602_init();//icm初始化
     icmOffsetInit();//icm零漂消除
-
-	
-	mt9v03x_csi_init();	//初始化摄像头 使用CSI接口
+	GUI_init();
+	//mt9v03x_csi_init();	//初始化摄像头 使用CSI接口
 	//如果屏幕一直显示初始化信息，请检查摄像头接线
 	//如果使用主板，一直卡在while(!uart_receive_flag)，请检查是否电池连接OK?
 	uart_init (USART_8, 115200,UART8_TX_D16,UART8_RX_D17); //初始化串口
@@ -97,11 +97,15 @@ int main(void)
 	systick_start();
 	EnableGlobalIRQ(0);
     Beep_flag=1;
-
+    Car.Angel_Target=20;
 	while(1)
 	{
-        CarMode=ahead;
-        icmGetValues();
+        Car.Angel=Angel_z;
+        Car_Move();
+        if(Car.Angel<=Car.Angel_Target+2&&Car.Angel>=Car.Angel_Target-2){
+            Get_Location();
+        }
+
         //屏幕显示
 		GUI_icm20602();
 		GUI_speed();

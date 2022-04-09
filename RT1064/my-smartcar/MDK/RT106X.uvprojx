@@ -10,7 +10,7 @@
       <TargetName>nor_sdram_zf_dtcm_v5</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -1929,6 +1929,21 @@
               <FileType>5</FileType>
               <FilePath>..\CODE\location.h</FilePath>
             </File>
+            <File>
+              <FileName>ahrs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\ahrs.c</FilePath>
+            </File>
+            <File>
+              <FileName>fast_math.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\fast_math.c</FilePath>
+            </File>
+            <File>
+              <FileName>fast_math.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\CODE\fast_math.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
@@ -2240,7 +2255,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>2</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -3854,6 +3869,21 @@
               <FileName>location.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\CODE\location.h</FilePath>
+            </File>
+            <File>
+              <FileName>ahrs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\ahrs.c</FilePath>
+            </File>
+            <File>
+              <FileName>fast_math.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\fast_math.c</FilePath>
+            </File>
+            <File>
+              <FileName>fast_math.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\CODE\fast_math.h</FilePath>
             </File>
           </Files>
         </Group>

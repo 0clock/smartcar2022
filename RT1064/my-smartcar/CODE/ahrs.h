@@ -6,7 +6,7 @@
 #define _AHRS_H
 
 #include "headfile.h"
-#include "Filter.h"
+#include "filter.h"
 
 #define Plus  1
 #define Minus 2
@@ -21,7 +21,7 @@ typedef struct
     float q3;
 }Q4_t;	//ËÄÔªÊı
 
-typedef struct
+typedef struct vectorxyz
 {
     float x;
     float y;

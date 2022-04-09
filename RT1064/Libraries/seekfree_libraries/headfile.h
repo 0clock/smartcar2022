@@ -91,6 +91,9 @@
 #include "filter.h"
 #include "icm.h"
 #include "location.h"
+#include "ahrs.h"
+#include "fast_math.h"
+
 
 #endif
 

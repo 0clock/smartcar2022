@@ -48,8 +48,8 @@ void icmOffsetInit(void)
     icmOffset.gyro_z = 0;
     for (uint8_t i = 0; i < 100; ++i)
     {
-        get_icm20602_gyro();    // 获取陀螺仪角速度
-        get_icm20602_accdata();	// 获取加速度计加速度
+        get_icm20602_gyro_spi();    // 获取陀螺仪角速度
+        get_icm20602_accdata_spi();	// 获取加速度计加速度
         icmOffset.acc_x += icm_acc_x;
         icmOffset.acc_y += icm_acc_y;
         icmOffset.acc_z += icm_acc_z;
@@ -58,7 +58,6 @@ void icmOffsetInit(void)
         icmOffset.gyro_z += icm_gyro_z;
         systick_delay_ms(5);    // 最大 1Khz
     }
-
     icmOffset.acc_x  /= 100;
     icmOffset.acc_y  /= 100;
     icmOffset.acc_z  /= 100;
@@ -82,8 +81,8 @@ void icmOffsetInit(void)
 void icmGetValues(void)
 {
     //获取瞬时数据
-    get_icm20602_gyro();
-    get_icm20602_accdata();
+    get_icm20602_gyro_spi();
+    get_icm20602_accdata_spi();
     //加速度计
     icm_data.acc_x = (float) icm_acc_x - icmOffset.acc_x;
     icm_data.acc_y = (float) icm_acc_y - icmOffset.acc_y;

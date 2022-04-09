@@ -5,7 +5,7 @@
 #ifndef _ICM_H
 #define _ICM_H
 
-#include "headfile.h"
+//#include "headfile.h"
 #include "SEEKFREE_ICM20602.h"
 #include "ahrs.h"
 
@@ -20,8 +20,8 @@ void Charge_Locate(void);            //坐标处理函数
 
 extern int16 icm_gyro_x,icm_gyro_y,icm_gyro_z;
 extern int16 icm_acc_x,icm_acc_y,icm_acc_z;
-extern vectorxyz gyro_RCFilter;
-extern vectorxyz gyro_MovAverFilter;
+extern struct vectorxyz gyro_RCFilter;
+extern struct vectorxyz gyro_MovAverFilter;
 
 typedef struct IMU_param_t//角加速度输出值
 {

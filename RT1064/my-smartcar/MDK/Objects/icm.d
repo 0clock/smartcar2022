@@ -1,10 +1,10 @@
 ./objects/icm.o: ..\CODE\icm.c ..\CODE\icm.h \
-  ..\..\Libraries\seekfree_libraries\headfile.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  ..\..\Libraries\seekfree_peripheral\SEEKFREE_ICM20602.h \
+  ..\..\Libraries\seekfree_libraries\common\common.h \
   ..\..\Libraries\nxp_libraries\drives\fsl_common.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\assert.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   ..\..\Libraries\nxp_libraries\deceive\fsl_device_registers.h \
@@ -20,6 +20,9 @@
   ..\..\Libraries\nxp_libraries\deceive\MIMXRT1064_features.h \
   ..\..\Libraries\nxp_libraries\drives\fsl_clock.h \
   ..\..\Libraries\nxp_libraries\drives\fsl_common.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h ..\CODE\ahrs.h \
+  ..\..\Libraries\seekfree_libraries\headfile.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   ..\..\Libraries\nxp_libraries\utilities\debug_console\fsl_debug_console.h \
   ..\..\Libraries\nxp_libraries\components\serial_manager\serial_manager.h \
   ..\..\Libraries\nxp_libraries\components\serial_manager\serial_port_uart.h \
@@ -34,8 +37,6 @@
   ..\..\Libraries\seekfree_libraries\board\pin_mux.h \
   ..\..\Libraries\seekfree_libraries\board\clock_config.h \
   ..\..\Libraries\nxp_libraries\drives\fsl_cache.h \
-  ..\..\Libraries\seekfree_libraries\common\common.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
   ..\..\Libraries\seekfree_libraries\zf_vector.h \
   ..\..\Libraries\nxp_libraries\middleware\fatfs\source\ff.h \
   ..\..\Libraries\nxp_libraries\middleware\fatfs\source\ffconf.h \
@@ -92,7 +93,6 @@
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_NRF24L01.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_MMA8451.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.h \
-  ..\..\Libraries\seekfree_peripheral\SEEKFREE_ICM20602.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.h \
   ..\..\Libraries\seekfree_libraries\zf_uart.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_WIRELESS.h \
@@ -102,4 +102,5 @@
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660.h ..\CODE\motor.h \
   ..\CODE\GUI.h ..\CODE\motor.h ..\CODE\key.h ..\CODE\vofa.h \
   ..\CODE\Vofa_imageformat.h ..\CODE\key.h ..\CODE\filter.h \
-  ..\CODE\icm.h ..\CODE\location.h ..\CODE\ahrs.h ..\CODE\Filter.h
+  ..\CODE\icm.h ..\CODE\location.h ..\CODE\ahrs.h ..\CODE\fast_math.h \
+  ..\CODE\filter.h

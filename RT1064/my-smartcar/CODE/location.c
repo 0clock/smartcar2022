@@ -17,17 +17,21 @@ float location_X[locate_sz]={0,5,10,10};
 float location_Y[locate_sz]={0,5,5,10};
 int CarMode;
 
-void Car_RoadMode(){
-    if(Car.Angel==Car.Angel_Target){
+void Car_Move(){
+    if(Car.Angel==Car.Angel_Target||Car.Distance==Car.mileage){
         CarMode=stop;
     }
     if(Car.Angel!=Car.Angel_Target){
-        if(0<Car.Angel_Target){
+        if(0<Car.Angel_Target-Car.Angel){
             CarMode=anticlockwise;
         }else{
             CarMode=turnround;
         }
-    }else if(Car.Distance==Car.mileage)
+      }else if(Car.mileage!=Car.Distance){
+        CarMode=ahead;
+    }else{
+        CarMode=stop;
+    }
 }
 
 
@@ -89,8 +93,8 @@ void Get_Location(void)
 {
     Get_Target();
     //用两点式计算角度和距离
-    Car.Angel=tan((Car.x1-Car.x)/(Car.y1-Car.y));
-    Car.Distance=sqrt((Car.x-Car.x1)*(Car.x-Car.x1)+(Car.y-Car.y1)*(Car.y-Car.y1));
+    Car.Angel_Target=tan((Car.x1-Car.x)/(Car.y1-Car.y));
+    Car.Distance=20*sqrt((Car.x-Car.x1)*(Car.x-Car.x1)+(Car.y-Car.y1)*(Car.y-Car.y1));
 }
 
 

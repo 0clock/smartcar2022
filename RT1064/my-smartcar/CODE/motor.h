@@ -20,9 +20,14 @@ extern int32 duty1,duty2,duty3,duty4;
 extern int speed_tar_1,speed_tar_2,speed_tar_3,speed_tar_4;
 extern int speed_tar;
 
+extern float Angel_x;
+extern float Angel_y;
+extern float Angel_z;
+
 void Motor_Init(void);
 void Motor_Ctrl(void);
 void Encoder_Init(void);
+void Get_Angel(void);
 void Get_Encoder(void);
 void RCEncoder_Init(void);
 
