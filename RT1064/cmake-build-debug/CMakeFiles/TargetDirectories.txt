@@ -1,3 +1,0 @@
-C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/cmake-build-debug/CMakeFiles/RT1064.dir
-C:/Users/Jay/Desktop/smartcar-contes/my-smart-car-2022/RT1064/cmake-build-debug/CMakeFiles/rebuild_cache.dir
