@@ -51,8 +51,9 @@
 //第二步 project  clean  等待下方进度条走完
 
 #include "headfile.h"
-
+#include <string.h>
 int8 CarFlag=1;
+
 
 int main(void)
 {
@@ -100,6 +101,8 @@ int main(void)
     Car.Angel_Target=20;
 	while(1)
 	{
+
+		
         Car.Angel=Angel_z;
         Car_Move();
         if(Car.Angel<=Car.Angel_Target+2&&Car.Angel>=Car.Angel_Target-2){
