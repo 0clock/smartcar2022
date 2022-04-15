@@ -18,13 +18,7 @@ void GUI_speed(){
 }
 
 void GUI_icm20602(){
-    ips114_showfloat(80,2,icm_data.gyro_x,2,3);
-    ips114_showfloat(80,3,icm_data.gyro_y,2,3);
-    ips114_showfloat(80,4,icm_data.gyro_z,2,3);
-
-	ips114_showint16(80,6,icm_data.acc_x);
-	ips114_showint16(80,7,icm_data.acc_y);
-	ips114_showint16(80,8,icm_data.acc_z);
+    ips114_showfloat(80,2,cpmangle_z,2,3);
 }
 
 void GUI_duty(){
