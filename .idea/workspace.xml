@@ -8,6 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9d2d6cd7-55d6-40b6-af63-9d46fc1b2581" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RT1064/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RT1064/my-smartcar/USER/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/RT1064/my-smartcar/USER/src/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,7 @@
       <updated>1649144710409</updated>
       <workItem from="1649144713787" duration="62000" />
       <workItem from="1649318220256" duration="445000" />
+      <workItem from="1650014700789" duration="12000" />
     </task>
     <servers />
   </component>

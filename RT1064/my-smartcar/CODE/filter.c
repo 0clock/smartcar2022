@@ -28,6 +28,7 @@ float angle_bias;
 float cpm_k = 0.85;	//二阶滤波系数
 float cpm_angle;//滤波值
 
+float yaw_Filter = 0;
 
 //---------------------结构体---------------------//
 

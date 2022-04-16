@@ -51,9 +51,12 @@
 //第二步 project  clean  等待下方进度条走完
 
 #include "headfile.h"
-#include <string.h>
-int8 CarFlag=1;
 
+int8 CarFlag=1;
+int32_t My_Count = 0;
+uint32_t current_time = 0;
+uint32_t last_time = 0;
+uint32_t icm_reset_time = 0;
 
 int main(void)
 {
@@ -71,7 +74,7 @@ int main(void)
 	
 	Motor_Init();
 	Encoder_Init();
-  RCEncoder_Init();
+    RCEncoder_Init();
 	Key_Init();
 	
 	simiic_init();//模拟IIC端口初始化
@@ -101,19 +104,41 @@ int main(void)
     Car.Angel_Target=20;
 	while(1)
 	{
+#if 0
 
-		
         Car.Angel=Angel_z;
         Car_Move();
-        if(Car.Angel<=Car.Angel_Target+2&&Car.Angel>=Car.Angel_Target-2){
+        if(Car.Angel==Car.Angel_Target){
             Get_Location();
         }
-
         //屏幕显示
-		GUI_icm20602();
+		
 		GUI_speed();
 		GUI_duty();
-	} 
+#endif
+#if 0
+
+#endif
+        //给定周期5ms解算一次
+
+        current_time = pit_get_us(PIT_CH1) - last_time;
+
+        if(current_time > 5000)
+        {
+            last_time = pit_get_us(PIT_CH1);	//更新时间
+            AHRS_get_yaw();
+            yaw_Filter = Movingaverage_filter(ahrs_angle.z);    //滑动窗口滤波
+            icm_reset_time++;
+        }
+        if(icm_reset_time > 2000)   //10s后重新初始化
+        {
+            icm20602_init_spi();            //icm重新初始化
+            icmOffsetInit();               //消除零漂
+            AHRS_Reset();
+            icm_reset_time = 0;
+        }
+        GUI_icm20602();
+    }
 }
 
 
