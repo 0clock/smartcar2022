@@ -52,8 +52,7 @@
 
 #include "headfile.h"
 
-int8 CarFlag=1;
-int32_t My_Count = 0;
+float icm_buffer[Filter_N+1]={0};
 uint32_t current_time = 0;
 uint32_t last_time = 0;
 uint32_t icm_reset_time = 0;
@@ -76,10 +75,8 @@ int main(void)
 	Encoder_Init();
     RCEncoder_Init();
 	Key_Init();
-	
-	simiic_init();//模拟IIC端口初始化
+
     icm20602_init_spi();
-    //icm20602_init();//icm初始化
     icmOffsetInit();//icm零漂消除
 	GUI_init();
 	//mt9v03x_csi_init();	//初始化摄像头 使用CSI接口
@@ -116,26 +113,24 @@ int main(void)
 		GUI_speed();
 		GUI_duty();
 #endif
-#if 0
 
-#endif
         //给定周期5ms解算一次
-
         current_time = pit_get_us(PIT_CH1) - last_time;
 
         if(current_time > 5000)
         {
             last_time = pit_get_us(PIT_CH1);	//更新时间
             AHRS_get_yaw();
-            yaw_Filter = Movingaverage_filter(ahrs_angle.z);    //滑动窗口滤波
+            yaw_Filter = Movingaverage_filter(ahrs_angle.z,icm_buffer);    //滑动窗口滤波
             icm_reset_time++;
         }
         if(icm_reset_time > 2000)   //10s后重新初始化
         {
-            icm20602_init_spi();            //icm重新初始化
-            icmOffsetInit();               //消除零漂
+            //icm20602_init_spi();            //icm重新初始化
+            //icmOffsetInit();               //消除零漂
             AHRS_Reset();
             icm_reset_time = 0;
+            Beep_flag=1;
         }
         GUI_icm20602();
     }

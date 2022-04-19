@@ -39,7 +39,7 @@ void PIT_IRQHandler(void)
     {
         Key_Scans();
         //Get_Angel();
-        //AHRS_get_yaw();
+        AHRS_get_yaw();
         //VOFA_Send();
         Beep_Set();
         PIT_FLAG_CLEAR(PIT_CH1);
@@ -47,7 +47,7 @@ void PIT_IRQHandler(void)
     
     if(PIT_FLAG_GET(PIT_CH2))
     {
-        Car_Mode();
+        //Car_Mode();
         Motor_Ctrl();
         PIT_FLAG_CLEAR(PIT_CH2);
     }
