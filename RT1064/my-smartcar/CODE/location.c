@@ -9,6 +9,7 @@
 * @date         2022/3/14
 ***************************************************/
 #include "location.h"
+#include <string.h>
 //-----------------------宏-----------------------//
 //-------------------结构体-----------------------//
 struct Location_Goal Car={0};          //小车状态（位置，目标）存储结构体
@@ -19,18 +20,18 @@ int CarMode;
 
 void Car_Move(){
     if(Car.Angel==Car.Angel_Target||Car.Distance==Car.mileage){
-        CarMode=stop;
+        Car_Stop();
     }
     if(Car.Angel!=Car.Angel_Target){
         if(0<Car.Angel_Target-Car.Angel){
-            CarMode=anticlockwise;
+            Car_Anticlockwise();
         }else{
-            CarMode=turnround;
+            Car_Turnround();
         }
       }else if(Car.mileage!=Car.Distance){
-        CarMode=ahead;
+        Car_Ahead();
     }else{
-        CarMode=stop;
+        Car_Stop();
     }
 }
 
