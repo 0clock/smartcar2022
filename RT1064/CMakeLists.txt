@@ -516,4 +516,28 @@ add_executable(RT1064
         my-smartcar/USER/inc/isr.h
         my-smartcar/USER/inc/RT106X_config.h
         my-smartcar/USER/src/isr.c
-        my-smartcar/USER/src/main.c my-smartcar/CODE/icm.c my-smartcar/CODE/icm.h my-smartcar/CODE/ahrs.h my-smartcar/CODE/location.c my-smartcar/CODE/location.h my-smartcar/CODE/ahrs.c my-smartcar/CODE/fast_math.h my-smartcar/CODE/fast_math.c)
+        my-smartcar/USER/src/main.c my-smartcar/CODE/icm.c my-smartcar/CODE/icm.h my-smartcar/CODE/ahrs.h my-smartcar/CODE/location.c my-smartcar/CODE/location.h my-smartcar/CODE/ahrs.c my-smartcar/CODE/fast_math.h my-smartcar/CODE/fast_math.c
+
+        icm20602/CODE/filter.c
+        icm20602/CODE/filter.h
+        icm20602/CODE/GUI.c
+        icm20602/CODE/GUI.h
+        icm20602/CODE/key.c
+        icm20602/CODE/key.h
+        icm20602/CODE/motor.c
+        icm20602/CODE/motor.h
+        icm20602/CODE/vofa.c
+        icm20602/CODE/vofa.h
+        icm20602/CODE/vofa_imageformat.h
+        icm20602/USER/inc/isr.h
+        icm20602/USER/inc/RT106X_config.h
+        icm20602/USER/src/isr.c
+        icm20602/USER/src/main.c
+        icm20602/CODE/icm20602.c
+        icm20602/CODE/icm20602.h
+        icm20602/CODE/ahrs.h
+        icm20602/CODE/location.c
+        icm20602/CODE/location.h
+        icm20602/CODE/ahrs.c
+        icm20602/CODE/fast_math.h
+        icm20602/CODE/fast_math.c)

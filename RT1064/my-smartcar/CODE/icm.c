@@ -80,13 +80,15 @@ void icmOffsetInit(void)
 */
 void icmGetValues(void)
 {
+    float alpha=0.3;
     //获取瞬时数据
     get_icm20602_gyro_spi();
     get_icm20602_accdata_spi();
     //加速度计
-    icm_data.acc_x = (float) icm_acc_x - icmOffset.acc_x;
-    icm_data.acc_y = (float) icm_acc_y - icmOffset.acc_y;
-    icm_data.acc_z = (float) icm_acc_z - icmOffset.acc_z;
+    icm_data.acc_x = (((float) icm_acc_x)*alpha)/4096 + icm_data.acc_x*(1-alpha);
+    icm_data.acc_y = (((float) icm_acc_y)*alpha)/4096 + icm_data.acc_y*(1-alpha);
+    icm_data.acc_z = (((float) icm_acc_z)*alpha)/4096 + icm_data.acc_z*(1-alpha);
+
     //! 陀螺仪角速度必须转换为弧度制角速度: deg/s -> rad/s
     icm_data.gyro_x = ((float) icm_gyro_x - icmOffset.gyro_x) * PI / 180 / 16.4f;
     icm_data.gyro_y = ((float) icm_gyro_y - icmOffset.gyro_y) * PI / 180 / 16.4f;
@@ -99,12 +101,8 @@ void icmGetValues(void)
     gyro_vector.x = icm_data.gyro_x;
     gyro_vector.y = icm_data.gyro_y;
     gyro_vector.z = icm_data.gyro_z;
-    //低通滤波
-    gyro_RCFilter.x = RCFilter(icm_data.gyro_x,RC_gyrox);
-    gyro_RCFilter.y = RCFilter(icm_data.gyro_y,RC_gyroy);
-    gyro_RCFilter.z = RCFilter(icm_data.gyro_z,RC_gyroz);
-
-    gyro_MovAverFilter.x = Movingaverage_filter(gyro_RCFilter.x,MovAverbuf_gyrox);
-    gyro_MovAverFilter.y = Movingaverage_filter(gyro_RCFilter.y,MovAverbuf_gyroy);
-    gyro_MovAverFilter.z = Movingaverage_filter(gyro_RCFilter.z,MovAverbuf_gyroz);
 }
+
+/*
+ * 互补滤波算法
+ */

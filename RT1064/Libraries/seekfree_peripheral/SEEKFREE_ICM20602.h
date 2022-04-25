@@ -98,7 +98,7 @@
 #define     ICM20602_YA_OFFSET_L        0x7B
 #define     ICM20602_ZA_OFFSET_H        0x7D
 #define     ICM20602_ZA_OFFSET_L        0x7E
-#define			PI													3.14
+#define			PI		3.1415926f
 
 
 extern int16 icm_gyro_x,icm_gyro_y,icm_gyro_z;

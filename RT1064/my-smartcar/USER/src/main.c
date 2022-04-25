@@ -126,8 +126,8 @@ int main(void)
         }
         if(icm_reset_time > 2000)   //10s后重新初始化
         {
-            //icm20602_init_spi();            //icm重新初始化
-            //icmOffsetInit();               //消除零漂
+            icm20602_init_spi();            //icm重新初始化
+            icmOffsetInit();               //消除零漂
             AHRS_Reset();
             icm_reset_time = 0;
             Beep_flag=1;

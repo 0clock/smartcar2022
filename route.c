@@ -33,6 +33,7 @@ double dis(int aNum){
     double tmpDis= sqrt(pow(a[aNum][0],2)+ pow(a[aNum][1],2));
     return tmpDis;
 }
+
 void Distance(){//主函数
     for(int i=0;i<n;++i){
         D[i].dist= dis(i);
