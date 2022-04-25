@@ -18,6 +18,17 @@ float location_X[locate_sz]={0,5,10,10};
 float location_Y[locate_sz]={0,5,5,10};
 int CarMode;
 
+/*
+ **************************************************
+ *  函数名:Car_Route
+ *  功能说明:路径规划、根据与原点位置判断计算点位
+ *  形参:
+ *  返回值:
+ **************************************************
+ */
+void Car_Route(){
+
+}
 void Car_Move(){
     if(Car.Angel==Car.Angel_Target||Car.Distance==Car.mileage){
         Car_Stop();
