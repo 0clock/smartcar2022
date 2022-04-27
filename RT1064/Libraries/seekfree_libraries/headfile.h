@@ -89,11 +89,11 @@
 #include "vofa.h"
 #include "key.h"
 #include "filter.h"
-#include "icm20602.h"
+#include "icm.h"
 #include "location.h"
 #include "ahrs.h"
 #include "fast_math.h"
 
 
-#endif
+#endif ·
 

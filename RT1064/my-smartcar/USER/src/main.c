@@ -66,7 +66,7 @@ int main(void)
 	/*******************************************/
 	pit_init();//
 	pit_interrupt_ms(PIT_CH0,5);  //初始化pit通道0 周期5ms 编码器中断
-	pit_interrupt_ms(PIT_CH1,16);  //初始化pit通道1 周期10ms	按键、串口发送中断
+	pit_interrupt_ms(PIT_CH1,5);  //初始化pit通道1 周期10ms	按键、串口发送中断
 	pit_interrupt_ms(PIT_CH2,10);  //初始化pit通道2 周期10ms	PID控制中断
 	NVIC_SetPriority(PIT_IRQn,1);
 	
@@ -101,38 +101,19 @@ int main(void)
     Car.Angel_Target=20;
 	while(1)
 	{
-#if 0
-
+#if 1
+/*
         Car.Angel=Angel_z;
         Car_Move();
         if(Car.Angel==Car.Angel_Target){
             Get_Location();
         }
+        */
         //屏幕显示
-		
-		GUI_speed();
-		GUI_duty();
-#endif
-
-        //给定周期5ms解算一次
-        current_time = pit_get_us(PIT_CH1) - last_time;
-
-        if(current_time > 5000)
-        {
-            last_time = pit_get_us(PIT_CH1);	//更新时间
-            AHRS_get_yaw();
-            yaw_Filter = Movingaverage_filter(ahrs_angle.z,icm_buffer);    //滑动窗口滤波
-            icm_reset_time++;
-        }
-        if(icm_reset_time > 2000)   //10s后重新初始化
-        {
-            icm20602_init_spi();            //icm重新初始化
-            icmOffsetInit();               //消除零漂
-            AHRS_Reset();
-            icm_reset_time = 0;
-            Beep_flag=1;
-        }
         GUI_icm20602();
+		//GUI_speed();
+		//GUI_duty();
+#endif
     }
 }
 

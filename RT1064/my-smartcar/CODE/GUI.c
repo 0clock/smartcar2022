@@ -18,7 +18,8 @@ void GUI_speed(){
 }
 
 void GUI_icm20602(){
-    ips114_showfloat(80,2,yaw_Filter,2,3);
+    ips114_showfloat(80,2,ahrs_angle.z,3,4);
+    ips114_showfloat(80,3,cpmangle_z,3,4);
 }
 
 void GUI_duty(){

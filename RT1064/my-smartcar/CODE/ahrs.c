@@ -8,8 +8,8 @@
 #include "icm.h"
 
 Q4_t Q4 = {1, 0, 0, 0};  //四元数
-float ahrs_kp = 0.17f; //PI控制器，修正机体坐标系
-float ahrs_ki = 0.1f;
+float ahrs_kp = 0.18f; //PI控制器，修正机体坐标系
+float ahrs_ki = 0.05f;
 float angle_offset = 0;
 float cpmangle_z = 0;
 vectorxyz integral;  //机体坐标误差积分
