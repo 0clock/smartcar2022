@@ -68,6 +68,7 @@ int main(void)
 	pit_interrupt_ms(PIT_CH0,5);  //初始化pit通道0 周期5ms 编码器中断
 	pit_interrupt_ms(PIT_CH1,5);  //初始化pit通道1 周期10ms	按键、串口发送中断
 	pit_interrupt_ms(PIT_CH2,10);  //初始化pit通道2 周期10ms	PID控制中断
+    pit_interrupt_ms(PIT_CH3,5);  //初始化pit通道3 周期10ms	icm中断
 	NVIC_SetPriority(PIT_IRQn,1);
 	
 	
@@ -98,21 +99,16 @@ int main(void)
 	systick_start();
 	EnableGlobalIRQ(0);
     Beep_flag=1;
-    Car.Angel_Target=20;
 	while(1)
 	{
 #if 1
-/*
-        Car.Angel=Angel_z;
+
+        Car.Angel=-(int)cpmangle_z;
         Car_Move();
-        if(Car.Angel==Car.Angel_Target){
-            Get_Location();
-        }
-        */
         //屏幕显示
         GUI_icm20602();
-		//GUI_speed();
-		//GUI_duty();
+		GUI_speed();
+		GUI_duty();
 #endif
     }
 }

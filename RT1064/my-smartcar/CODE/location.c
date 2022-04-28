@@ -14,27 +14,36 @@
 //-------------------结构体-----------------------//
 struct Location_Goal Car={0};          //小车状态（位置，目标）存储结构体
 //---------------------数组-----------------------//
-float location_X[locate_sz]={0,5,10,10};
-float location_Y[locate_sz]={0,5,5,10};
+float location_X[locate_sz]={5,5,0,10,0};
+float location_Y[locate_sz]={5,0,5,10,0};
 int CarMode;
 
-
+/*
+ * name:路径规划
+ */
 
 
 void Car_Move(){
-    if(Car.Angel==Car.Angel_Target||Car.Distance==Car.mileage){
+    if((int)Car.Angel==(int)Car.Angel_Target && (int)Car.Distance==(int)Car.mileage){
         Car_Stop();
+        Get_Location();
+        Car.mileage=0;
+        Beep_flag=1;
     }
-    if(Car.Angel!=Car.Angel_Target){
+    if(Car.Angel!=(int)Car.Angel_Target){
         if(0<Car.Angel_Target-Car.Angel){
-            Car_Anticlockwise();
-        }else{
             Car_Turnround();
+            CarMode=anticlockwise;
+        }else{
+            Car_Anticlockwise();
+            CarMode=turnround;
         }
       }else if(Car.mileage!=Car.Distance){
         Car_Ahead();
+        CarMode=ahead;
     }else{
         Car_Stop();
+        CarMode=stop;
     }
 }
 
@@ -97,7 +106,7 @@ void Get_Location(void)
 {
     Get_Target();
     //用两点式计算角度和距离
-    Car.Angel_Target=tan((Car.x1-Car.x)/(Car.y1-Car.y));
+    Car.Angel_Target=atan2((Car.y1-Car.y),(Car.x1-Car.x))*180/PI;
     Car.Distance=20*sqrt((Car.x-Car.x1)*(Car.x-Car.x1)+(Car.y-Car.y1)*(Car.y-Car.y1));
 }
 

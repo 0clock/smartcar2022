@@ -14,24 +14,20 @@ void GUI_speed(){
 	ips114_showint16(10,4,RC_encoder2);
 	ips114_showint16(10,5,RC_encoder3);
 	ips114_showint16(10,6,RC_encoder4);
-    ips114_showint16(10,8,Car.mileage);
 }
 
 void GUI_icm20602(){
     ips114_showfloat(80,2,ahrs_angle.z,3,4);
     ips114_showfloat(80,3,cpmangle_z,3,4);
+
+    ips114_showint16(80,5,Car.Angel_Target);
+    ips114_showint16(80,6,Car.Angel);
 }
 
 void GUI_duty(){
-	ips114_showint16(160,2,duty1);
-	ips114_showint16(160,3,duty2);
-	ips114_showint16(160,4,duty3);
-	ips114_showint16(160,5,duty4);
-	
-	ips114_showint16(160,6,speed_tar_1);
-	ips114_showint16(160,7,speed_tar_2);
-	ips114_showint16(160,8,speed_tar_3);
-	ips114_showint16(160,9,speed_tar_4);
+	ips114_showint16(160,2,Car.Distance);
+	ips114_showint16(160,3,Car.mileage);
+
 }
 
 void GUI_TargetPoint(){

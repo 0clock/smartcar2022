@@ -9,7 +9,7 @@
 
 Q4_t Q4 = {1, 0, 0, 0};  //四元数
 float ahrs_kp = 0.18f; //PI控制器，修正机体坐标系
-float ahrs_ki = 0.05f;
+float ahrs_ki = 0.01f;
 float angle_offset = 0;
 float cpmangle_z = 0;
 vectorxyz integral;  //机体坐标误差积分
@@ -79,13 +79,15 @@ void AHRS_quat_update(vectorxyz gyro, vectorxyz acc, float interval)
     Q4.q1 += ( q0 * gx + q2 * gz - q3 * gy);
     Q4.q2 += ( q0 * gy - q1 * gz + q3 * gx);
     Q4.q3 += ( q0 * gz + q1 * gy - q2 * gx);
-    //单位化四元数
+
+
+    // 单位化四元数在空间旋转时不会拉伸，仅有旋转角度，下面算法类似线性代数里的正交变换
     norm = myinvSqrt(Q4.q0 * Q4.q0 + Q4.q1 * Q4.q1 + Q4.q2 * Q4.q2 + Q4.q3 * Q4.q3);
 
     Q4.q0 *= norm;
     Q4.q1 *= norm;
     Q4.q2 *= norm;
-    Q4.q3 *= norm;
+    Q4.q3 *= norm;      // 用全局变量记录上一次计算的四元数值
 }
 
 /*
@@ -126,7 +128,7 @@ void ahrs_update(void)
     icmGetValues();
     static uint32 lasttime = 0;
     float dt = (systick_getval_us() - lasttime)/1000000.0f;
-    if (dt > 0.006)                                              //姿态解算周期最大6ms(可修改)
+    if (dt > 0.005)                                              //姿态解算周期最大6ms(可修改)
     {
         lasttime = systick_getval_us();
         return;
@@ -134,8 +136,8 @@ void ahrs_update(void)
     lasttime = systick_getval_us();
 
     // quat update
-    AHRS_quat_update(gyro_MovAverFilter, acc_vector, dt);   //低通滑动窗口滤波
-    //AHRS_quat_update(gyro_vector, acc_vector, dt);
+    //AHRS_quat_update(gyro_MovAverFilter, acc_vector, dt);   //低通滑动窗口滤波
+    AHRS_quat_update(gyro_vector, acc_vector, dt);
 
 
     // 更新姿态角

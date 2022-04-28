@@ -37,11 +37,11 @@ void PIT_IRQHandler(void)
     
     if(PIT_FLAG_GET(PIT_CH1))
     {
-        //Key_Scans();
+        Key_Scans();
         //Get_Angel();
-        AHRS_get_yaw();
-        //VOFA_Send();
-        //Beep_Set();
+
+        VOFA_Send();
+        Beep_Set();
         PIT_FLAG_CLEAR(PIT_CH1);
     }
     
@@ -54,6 +54,7 @@ void PIT_IRQHandler(void)
     
     if(PIT_FLAG_GET(PIT_CH3))
     {
+        AHRS_get_yaw();
         PIT_FLAG_CLEAR(PIT_CH3);
     }
 

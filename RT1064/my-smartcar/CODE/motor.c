@@ -34,13 +34,6 @@ int speed_tar_4 = 0;
 int speed_tar = 0;//目标速度
 float deta_mileage=0;
 
-float Angel_x;
-float Angel_y;
-float Angel_z;
-
-float deta_gyro_x;
-float deta_gyro_y;
-float deta_gyro_z;
 
 void Car_Ahead()
 {
@@ -308,18 +301,4 @@ float Angel_Limit(float angel){
        }
    }
     return angel;
-}
-void Get_Angel(){
-    icmGetValues();
-    deta_gyro_x=icm_data.gyro_x;
-    deta_gyro_y=icm_data.gyro_y;
-    deta_gyro_z=icm_data.gyro_z;
-
-    Angel_x+=deta_gyro_x;
-    Angel_y+=deta_gyro_y;
-    Angel_z+=deta_gyro_z;
-
-    Angel_x= Angel_Limit(Angel_x);
-    Angel_y= Angel_Limit(Angel_y);
-    Angel_z= Angel_Limit(Angel_z);
 }
