@@ -52,10 +52,7 @@
 
 #include "headfile.h"
 
-float icm_buffer[Filter_N+1]={0};
-uint32_t current_time = 0;
-uint32_t last_time = 0;
-uint32_t icm_reset_time = 0;
+
 
 int main(void)
 {
@@ -104,7 +101,10 @@ int main(void)
 #if 1
 
         Car.Angel=-(int)cpmangle_z;
-        Car_Move();
+        //Car_Move();
+
+       // Car_Omni((speed_tar *sin(45/180 *PI)),(speed_tar *cos(45/180 *PI)),0);
+        Car_OmniMove();
         //фад╩отй╬
         GUI_icm20602();
 		GUI_speed();

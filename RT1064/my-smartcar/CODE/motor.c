@@ -33,15 +33,16 @@ int speed_tar_4 = 0;
 int speed_tar = 0;//目标速度
 float deta_mileage=0;
 
-/*
- * 全向结算
- */
+/**
+ * @name: 全向解算
+ **/
 void Car_Omni(int16 x, int16 y, int16 z){
-    speed_tar_1= y + x - z;
-    speed_tar_2= y - x - z;
-    speed_tar_3= y + x + z;
-    speed_tar_4= y - x + z;
+    speed_tar_1= y + x + z;
+    speed_tar_2= y - x + z;
+    speed_tar_3= y + x - z;
+    speed_tar_4= y - x - z;
 }
+
 
 void Car_Ahead(){
 	speed_tar_1 = speed_tar;
@@ -85,7 +86,7 @@ void Car_Turnround(){
 	speed_tar_4 = -speed_tar;
 }
 
-void Car_Anticlockwise(){
+void Car_Anticlockwise() {
     speed_tar_1 = -speed_tar;
     speed_tar_2 = -speed_tar;
     speed_tar_3 = speed_tar;
@@ -238,6 +239,17 @@ void Motor_Ctrl(){
 	}
 }
 
+/**
+ * @name 全向移动位移
+ **/
+float Omni_Mileage(){
+    float mileage,detax=0,detay=0;
+    detax=(RC_encoder1 - RC_encoder2 + RC_encoder3 - RC_encoder4)/4;
+    detay=(RC_encoder1 + RC_encoder2 + RC_encoder3 + RC_encoder4)/4;
+    mileage=sqrtf(detax*detax+detay*detay)*0.0083;
+    return mileage;
+}
+
 void RCEncoder_Init(void)
 {
     RC_Encoder1->RC = 0.6;
@@ -272,12 +284,10 @@ void Get_Encoder(){
 	encoder3 = -qtimer_quad_get(QTIMER_1,QTIMER1_TIMER2_C2); //这里需要注意第二个参数务必填写A相引脚
 	encoder4 = -qtimer_quad_get(QTIMER_2,QTIMER2_TIMER0_C3); //这里需要注意第二个参数务必填写A相引脚
 
+
     //计算位移(单位：m)
     //Car.mileage=(Encoder/1024)*(45/104)*2*PI*0.03;
-    if(CarMode==ahead) {
-        deta_mileage = abs(encoder1) * 0.0083;
-        Car.mileage += deta_mileage;
-    }
+    Car.mileage+=Omni_Mileage();
 
     RC_encoder1 = (int16_t)RCFilter(encoder1,RC_Encoder1);
     RC_encoder2 = (int16_t)RCFilter(encoder2,RC_Encoder2);

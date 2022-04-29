@@ -21,7 +21,8 @@ void GUI_icm20602(){
     ips114_showfloat(80,3,cpmangle_z,3,4);
 
     ips114_showint16(80,5,Car.Angel_Target);
-    ips114_showint16(80,6,Car.Angel);
+    ips114_showint16(80,7,((float)speed_tar * sin(Car.Angel_Target/180 *PI)));
+    ips114_showint16(80,8,((float)speed_tar * cos(Car.Angel_Target/180 *PI)));
 }
 
 void GUI_duty(){
