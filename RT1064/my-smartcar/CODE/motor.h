@@ -28,6 +28,8 @@ void Get_Angel(void);
 void Get_Encoder(void);
 void RCEncoder_Init(void);
 
+void Car_Omni(int16 X_speed, int16 Y_speed, int16 Z_speed);
+
 void Car_Ahead();
 void Car_SideWay();
 void Car_RSideWay();

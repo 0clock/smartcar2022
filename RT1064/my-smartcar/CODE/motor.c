@@ -19,7 +19,6 @@ RC_Filter_pt RC_Encoder3 = &Encoder3_Para;
 RC_Filter_pt RC_Encoder4 = &Encoder4_Para;
 
 
-
 //记录PID系数
 float Position_KP =150;
 float Position_KI =20;
@@ -34,73 +33,73 @@ int speed_tar_4 = 0;
 int speed_tar = 0;//目标速度
 float deta_mileage=0;
 
+/*
+ * 全向结算
+ */
+void Car_Omni(int16 x, int16 y, int16 z){
+    speed_tar_1= y + x - z;
+    speed_tar_2= y - x - z;
+    speed_tar_3= y + x + z;
+    speed_tar_4= y - x + z;
+}
 
-void Car_Ahead()
-{
+void Car_Ahead(){
 	speed_tar_1 = speed_tar;
 	speed_tar_2 = speed_tar;
 	speed_tar_3 = speed_tar;
 	speed_tar_4 = speed_tar;
 }
 
-void Car_Back()
-{
+void Car_Back(){
 	speed_tar_1 = -speed_tar;
 	speed_tar_2 = -speed_tar;
 	speed_tar_3 = -speed_tar;
 	speed_tar_4 = -speed_tar;
 }
 
-void Car_SideWay()
-{
+void Car_SideWay(){
 	speed_tar_1 = speed_tar;
 	speed_tar_2 = -speed_tar;
 	speed_tar_3 = speed_tar;
 	speed_tar_4 = -speed_tar;
 }
 
-void Car_RSideWay()
-{
+void Car_RSideWay(){
 	speed_tar_1 = -speed_tar;
 	speed_tar_2 = speed_tar;
 	speed_tar_3 = -speed_tar;
 	speed_tar_4 = speed_tar;
 }
 
-void Car_Diagonal()
-{
+void Car_Diagonal(){
 	speed_tar_1 = speed_tar;
 	speed_tar_2 = 0;
 	speed_tar_3 = speed_tar;
 	speed_tar_4 = 0;
 }
 
-void Car_Turnround()
-{
+void Car_Turnround(){
 	speed_tar_1 = speed_tar;
 	speed_tar_2 = speed_tar;
 	speed_tar_3 = -speed_tar;
 	speed_tar_4 = -speed_tar;
 }
 
-void Car_Anticlockwise()
-{
+void Car_Anticlockwise(){
     speed_tar_1 = -speed_tar;
     speed_tar_2 = -speed_tar;
     speed_tar_3 = speed_tar;
     speed_tar_4 = speed_tar;
 }
 
-void Car_Concerning()
-{
+void Car_Concerning(){
 	speed_tar_1 = speed_tar;
 	speed_tar_2 = speed_tar;
 	speed_tar_3 = 0;
 	speed_tar_4 = 0;
 }
 
-void Car_Stop()
-{
+void Car_Stop(){
     speed_tar_1 = 0;
     speed_tar_2 = 0;
     speed_tar_3 = 0;
@@ -289,16 +288,4 @@ void Get_Encoder(){
 	qtimer_quad_clear(QTIMER_1,QTIMER1_TIMER0_C0 );
 	qtimer_quad_clear(QTIMER_1,QTIMER1_TIMER2_C2 );
 	qtimer_quad_clear(QTIMER_2,QTIMER2_TIMER0_C3 );
-}
-float Angel_Limit(float angel){
-   if(angel>0) {
-       if (angel >= 360) {
-           angel = 0;
-       }
-   }else{
-       if(angel<=-360){
-           angel=0;
-       }
-   }
-    return angel;
 }
