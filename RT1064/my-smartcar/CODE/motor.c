@@ -13,6 +13,7 @@ struct RC_Para Encoder2_Para = {0,0,10};
 struct RC_Para Encoder3_Para = {0,0,10};
 struct RC_Para Encoder4_Para = {0,0,10};
 
+
 RC_Filter_pt RC_Encoder1 = &Encoder1_Para;
 RC_Filter_pt RC_Encoder2 = &Encoder2_Para;
 RC_Filter_pt RC_Encoder3 = &Encoder3_Para;
@@ -36,6 +37,26 @@ float deta_mileage=0;
 /**
  * @name: 全向解算
  **/
+
+void Car_SpeedGet(){
+    if(Car.MileageX<=Car.DistanceX){
+        Car.Speed_X=speed_tar;
+    }else{
+        Car.Speed_X=0;
+    }
+    if(Car.MileageY<=Car.DistanceY){
+        Car.Speed_Y=speed_tar;
+    }else{
+        Car.Speed_Y=0;
+    }
+    if(Car.Angel>2){
+        Car.Speed_Z=5;
+    }else if(Car.Angel<2){
+        Car.Speed_Z=-5;
+    }else{
+        Car.Speed_Z=0;
+    }
+}
 void Car_Omni(int16 x, int16 y, int16 z){
     speed_tar_1= y + x + z;
     speed_tar_2= y - x + z;
@@ -240,13 +261,14 @@ void Motor_Ctrl(){
 
 /**
  * @name 全向移动位移
+ * bug:无法算出负值？
  **/
-float Omni_Mileage(){
-    float mileage,detax=0,detay=0;
+void Omni_Mileage(){
+    float detax=0,detay=0;
     detax=(RC_encoder1 - RC_encoder2 + RC_encoder3 - RC_encoder4)/4;
     detay=(RC_encoder1 + RC_encoder2 + RC_encoder3 + RC_encoder4)/4;
-    mileage=sqrtf(detax*detax+detay*detay)*0.0083;
-    return mileage;
+    Car.MileageX+=detax;
+    Car.MileageY+=detay;
 }
 
 void RCEncoder_Init(void)
@@ -286,7 +308,7 @@ void Get_Encoder(){
 
     //计算位移(单位：m)
     //Car.mileage=(Encoder/1024)*(45/104)*2*PI*0.03;
-    Car.mileage+=Omni_Mileage();
+    Omni_Mileage();
 
     RC_encoder1 = (int16_t)RCFilter(encoder1,RC_Encoder1);
     RC_encoder2 = (int16_t)RCFilter(encoder2,RC_Encoder2);

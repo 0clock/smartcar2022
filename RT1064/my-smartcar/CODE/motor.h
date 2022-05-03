@@ -13,7 +13,6 @@
 #define PWM_4 PWM1_MODULE0_CHB_D13
 
 
-
 extern int16 encoder1,encoder2,encoder3,encoder4;
 extern int16 RC_encoder1,RC_encoder2,RC_encoder3,RC_encoder4;//滤波之后encoder的值
 extern int32 duty1,duty2,duty3,duty4;
@@ -28,6 +27,7 @@ void Get_Angel(void);
 void Get_Encoder(void);
 void RCEncoder_Init(void);
 
+void Car_SpeedGet(void);
 void Car_Omni(int16 x, int16 y, int16 z);
 
 void Car_Ahead();

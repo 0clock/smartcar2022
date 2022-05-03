@@ -14,7 +14,15 @@
 
 2022-5-4
 
-> 路劲规划算法已整合完毕，编译通过。
+> 1. 路劲规划算法已整合完毕，编译通过。
+>
+> 1. 跟改了位移计算方式由之前的角度求解出目标位移改为了直接对分速度的积分求解。
+>
+> 2. ```c
+>    //三角函数法计算速度公式：
+>    Car_Omni(((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
+>    Car.Distance=20*sqrt((Car.x-Car.x1)*(Car.x-Car.x1)+(Car.y-Car.y1)*(Car.y-Car.y1));
+>    ```
 
 2022-4-2
 

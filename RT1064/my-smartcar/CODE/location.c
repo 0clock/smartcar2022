@@ -58,16 +58,18 @@ void Location_Route(){
 }
 
 void Car_OmniMove(){
-    if((int)Car.mileage<=(int)Car.Distance){
-        Car_Omni(((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
-    }else{
+    Car_SpeedGet();
+    Car_Omni(Car.Speed_X,Car.Speed_Y,Car.Speed_Z);
+    if(Car.MileageX>=Car.DistanceX&&Car.MileageY>=Car.DistanceY){
         Car_Stop();
         Get_Location();
-        Car.mileage=0;
+        Car.MileageX=0;
+        Car.MileageY=0;
         Beep_flag=1;
     }
 }
 
+/*先转向再跑，暂时不用
 void Car_Move(){
     if((int)Car.Angel==(int)Car.Angel_Target-1 && (int)Car.Distance==(int)Car.mileage){
         Car_Stop();
@@ -91,7 +93,7 @@ void Car_Move(){
         CarMode=stop;
     }
 }
-
+*/
 
 void Car_Mode(){
     switch (CarMode) {
@@ -115,8 +117,8 @@ void Car_Mode(){
 void Charge_Locate(void)
 {
     //获取当前坐标
-    Car.x+=Car.mileage*sin(Car.Angel);
-    Car.y+=Car.mileage*sin(Car.Angel);
+    Car.x+=Car.MileageX/20;
+    Car.y+=Car.MileageY/20;
     //修正函数可以放在这后面
 }
 
@@ -155,7 +157,8 @@ void Get_Location(void)
     Get_Target();
     //用两点式计算角度和距离
     Car.Angel_Target=atan2((Car.x1-Car.x),(Car.y1-Car.y))*180/PI;
-    Car.Distance=20*sqrt((Car.x-Car.x1)*(Car.x-Car.x1)+(Car.y-Car.y1)*(Car.y-Car.y1));
+    Car.DistanceX=fabs(20*(Car.x1-Car.x));
+    Car.DistanceY=fabs(20*(Car.y1-Car.y));
 }
 
 

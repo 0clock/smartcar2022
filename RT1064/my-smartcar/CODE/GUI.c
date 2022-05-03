@@ -26,11 +26,15 @@ void GUI_icm20602(){
 }
 
 void GUI_duty(){
-	ips114_showint16(160,2,Car.Distance);
-	ips114_showint16(160,3,Car.mileage);
+	ips114_showint16(160,2,Car.x);
+	ips114_showint16(160,3,Car.y);
 
 }
 
 void GUI_TargetPoint(){
     ips114_drawRectangle(240, 30, 315, 80,GREEN);
+    for(int i=0;i<=locate_sz;i++){
+        ips114_drawCircle(315-Car_Location[i][0]*2,Car_Location[i][1]*2+30,2,WHITE);
+    }
+    ips114_drawpoint(Car.x,Car.y,RED);
 }
