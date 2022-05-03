@@ -13,8 +13,9 @@
 //-----------------------宏-----------------------//
 //-------------------结构体-----------------------//
 struct Location_Goal Car={0};          //小车状态（位置，目标）存储结构体
+struct Route_Dist Route_D[5];
 //---------------------数组-----------------------//
-int location[locate_sz][2]={
+int Car_Location[locate_sz][2]={//坐标原始数据
         1,20,
         3,4,
         15,20,
@@ -22,20 +23,45 @@ int location[locate_sz][2]={
         1,5,
         0,0
 };
-
+int Car_Location_Route[locate_sz][2]={};//存放经过路径规划算法之后的坐标数据
 int CarMode;
 
 /*
- * name:路径规划
+ ***************************************************************
+*	函 数 名: Location_Route
+*   功能说明: 路径规划
+*	形    参: 无
+*	返 回 值: 无
+ ***************************************************************
  */
+int cmpFunc(const void *aa, const void *bb){//判断函数，现在是从小到大
+    return (*(Route_Dist*)aa).dist>(*(Route_Dist*)bb).dist?1:-1;
+}
 
+double dis(int aNum){
+    double tmpDis= sqrt(pow(Car_Location[aNum][0],2)+ pow(Car_Location[aNum][1],2));
+    return tmpDis;
+}
+
+void Location_Route(){
+    for(int i=0;i<locate_sz;++i){
+        Route_D[i].dist= dis(i);
+        Route_D[i].num=i;
+       }
+    qsort(Route_D,locate_sz, sizeof(struct Route_Dist),cmpFunc);//排序
+    //printf("--顺序点位--\n");
+    for(int i=0;i<locate_sz;++i){
+        //printf("(%d,%d)\n",Car_Location[Route_D[i].num][0],Car_Location[Route_D[i].num][1]);//根据序号输出a(x,y), x=a[D[i].num][0] y=a[D[i].num][1]
+        Car_Location_Route[i][0]=Car_Location[Route_D[i].num][0];
+        Car_Location_Route[i][1]=Car_Location[Route_D[i].num][1];
+    }
+}
 
 void Car_OmniMove(){
     if((int)Car.mileage<=(int)Car.Distance){
         Car_Omni(((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
     }else{
         Car_Stop();
-        systick_delay_ms(1000);
         Get_Location();
         Car.mileage=0;
         Beep_flag=1;
@@ -106,11 +132,11 @@ void Charge_Locate(void)
 void Get_Target(void)
 {
     //赋予新的目标坐标点
-    Car.x=location[Car.Position_Pointer-1][0];
-    Car.y=location[Car.Position_Pointer-1][1];
+    Car.x=Car_Location[Car.Position_Pointer-1][0];
+    Car.y=Car_Location[Car.Position_Pointer-1][1];
 
-    Car.x1=location[Car.Position_Pointer][0];
-    Car.y1=location[Car.Position_Pointer][1];
+    Car.x1=Car_Location[Car.Position_Pointer][0];
+    Car.y1=Car_Location[Car.Position_Pointer][1];
     //下一个目标点
     Car.Position_Pointer++;
 }

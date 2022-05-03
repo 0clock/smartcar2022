@@ -7,10 +7,12 @@
 
 
 #include "headfile.h"
+#include <stdlib.h>
+#include <math.h>
 
 
 //-----------------------宏-----------------------//
-#define locate_sz 10             //坐标数组数量,可能还需要更改，目标点数不确定！
+#define locate_sz 10             //坐标数组数量,可能还需要更改，目标点数不确定！(5-20都有可能)
 //---------------------数组-----------------------//
 extern float location_X[locate_sz];    //x坐标存放处
 extern float location_Y[locate_sz];    //y坐标存放处
@@ -27,6 +29,13 @@ enum CarMode
     stop
 };
 //---------------------结构体---------------------//
+
+typedef struct Route_Dist{//距离结构体
+    int num;//序号
+    double dist;//距离
+}Route_Dist;
+
+
 //记录坐标和相对位置的结构体
 typedef struct Location_Goal
 {
@@ -52,6 +61,7 @@ typedef struct Location_Goal
 
 
 //-------------------函数定义---------------------//
+void Location_Route(void);           //路径规划函数
 void Charge_Locate(void);            //坐标处理函数
 void Car_Mode(void);
 void Car_OmniMove(void);

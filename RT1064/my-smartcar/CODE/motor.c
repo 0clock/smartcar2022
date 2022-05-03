@@ -109,7 +109,6 @@ void Car_Stop(){
 
 
 //增量式PID
-
 int Position_PID1(int Encoder,int Target){ 	
 	static float Bias,Pwm,Integral_bias,Last_Bias;
 	Bias=Target - Encoder;

@@ -1,3 +1,3 @@
-C:/Users/Jay/Desktop/my-smart-car-2022/RT1064/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Jay/Desktop/my-smart-car-2022/RT1064/cmake-build-debug/CMakeFiles/RT1064.dir
-C:/Users/Jay/Desktop/my-smart-car-2022/RT1064/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/CMakeFiles/RT1064.dir
+C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/CMakeFiles/rebuild_cache.dir
