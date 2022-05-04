@@ -67,7 +67,8 @@ int main(void)
 	pit_interrupt_ms(PIT_CH2,10);  //初始化pit通道2 周期10ms	PID控制中断
     pit_interrupt_ms(PIT_CH3,5);  //初始化pit通道3 周期10ms	icm中断
 	NVIC_SetPriority(PIT_IRQn,1);
-	
+
+
 	
 	Motor_Init();
 	Encoder_Init();
@@ -91,13 +92,24 @@ int main(void)
        cmd_rxbuf,cmd_sz,
        USART_8,USART_8,USART_8);
 
+    mt9v03x_csi_init();		//初始化摄像头	使用CSI接口
 	//如果图像只采集一次，请检查场信号(VSY)是否连接OK?
 	systick_delay_ms(500);
 	systick_start();
 	EnableGlobalIRQ(0);
+
     Beep_flag=1;
 	while(1)
 	{
+        if(mt9v03x_csi_finish_flag)			//图像采集完成
+        {
+            mt9v03x_csi_finish_flag = 0;	//清除采集完成标志位
+
+            //使用缩放显示函数，根据原始图像大小 以及设置需要显示的大小自动进行缩放或者放大显示
+            //总钻风采集到的图像分辨率为 188*120 ，2.0寸IPS屏显示分辨率为 320*240 ，图像拉伸全屏显示。
+            ips114_displayimage032_zoom(mt9v03x_csi_image[0], MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//显示摄像头图像
+        }
+
 #if 1
 
         Car.Angel=-(int)cpmangle_z;
@@ -106,9 +118,9 @@ int main(void)
        // Car_Omni((speed_tar *sin(45/180 *PI)),(speed_tar *cos(45/180 *PI)),0);
         Car_OmniMove();
         //屏幕显示
-        GUI_icm20602();
+/*        GUI_icm20602();
 		GUI_speed();
-		GUI_duty();
+		GUI_duty();*/
 #endif
     }
 }

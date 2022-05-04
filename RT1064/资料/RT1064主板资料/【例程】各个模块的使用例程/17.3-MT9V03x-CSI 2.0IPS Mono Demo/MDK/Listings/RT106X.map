@@ -14978,56 +14978,56 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      1050          0          0          0          0       9541   board.o
-      2002          0        100          0          0      10890   clock_config.o
-        32          0          0          0          5       1410   common.o
-         0          0        512          0          0       2572   evkmimxrt1064_flexspi_nor_config.o
-         0          0       1072          0          0        667   evkmimxrt1064_sdram_ini_dcd.o
-        32          0         43          0          0        689   fsl_assert.o
-      2732         32         86          0          8      17283   fsl_clock.o
-      2312          0         89          0          8      17518   fsl_csi.o
-       680          0        135          0         32       6382   fsl_debug_console.o
-      1766          0        115          0        128      27024   fsl_edma.o
-       348          0         95          0         28      27934   fsl_enet.o
-       220          0        132          4         16      38618   fsl_flexcan.o
-       128          0          0          0         24      15114   fsl_flexio.o
-       110          0          0          0          0      13837   fsl_flexio_camera.o
-         0          0         48          0          0        973   fsl_flexspi_nor_boot.o
-       292          6         58          0          0       6785   fsl_gpio.o
-       698          0        218          0          0       6807   fsl_gpt.o
-       192          0          0          0         48      30944   fsl_lpi2c.o
-       336          0        117          0         28      29561   fsl_lpspi.o
-      3888          0        357          4         36      24471   fsl_lpuart.o
-       546          0         99          0         40      35654   fsl_sai.o
-       130          0          0          0         12       9018   fsl_sdmmc_event.o
-       264          0         48          0         41      19940   fsl_sdmmc_host.o
-       120          0          0          0         16      21070   fsl_spdif.o
-      3490         18          0          0          0       8503   fsl_str.o
-        72          0         12          4         12      32020   fsl_usdhc.o
-       406          0          0          0          0       6323   isr.o
-       506          0        210          0          0       5516   lpuart_adapter.o
-       198          0         51          0          0       1346   main.o
-         0          0       1520          0          0        892   seekfree_font.o
-      1612          0          0          0          0      12802   seekfree_ips200_parallel8.o
-       436          0          0          0          5      19744   seekfree_mt9v03x.o
-       606          0          0         68      45214       6518   seekfree_mt9v03x_csi.o
-       142          0          0          0         12      18480   seekfree_scc8660.o
-       726          0        123          0          0       5996   serial_manager.o
-       290          0         88          0          0       4061   serial_port_uart.o
-       548        242       1024          0          0       3572   startup_mimxrt1064.o
-       588          0          0          4          0       6394   system_mimxrt1064.o
-       528          0          0          0          0      12267   usb_device_dci.o
-      1934          0          0          0          0      19043   usb_device_ehci.o
-        56          0          0          0         28      22282   zf_camera.o
-      1116          0         46          0         32      11179   zf_csi.o
-       534          0          0         40          0      14040   zf_gpio.o
-     35670        184         47          0          0      18838   zf_iomuxc.o
-       410          0         86          0          1       9347   zf_systick.o
-      1318         16         45         36          0      11611   zf_uart.o
-        36          0          0          0         16      16969   zf_usb_cdc.o
+      1050          0          0          0          0       9525   board.o
+      2002          0        100          0          0      10874   clock_config.o
+        32          0          0          0          5       1394   common.o
+         0          0        512          0          0       2556   evkmimxrt1064_flexspi_nor_config.o
+         0          0       1072          0          0        651   evkmimxrt1064_sdram_ini_dcd.o
+        32          0         43          0          0        673   fsl_assert.o
+      2732         32         86          0          8      17267   fsl_clock.o
+      2312          0         89          0          8      17502   fsl_csi.o
+       680          0        135          0         32       6366   fsl_debug_console.o
+      1766          0        115          0        128      27008   fsl_edma.o
+       348          0         95          0         28      27918   fsl_enet.o
+       220          0        132          4         16      38602   fsl_flexcan.o
+       128          0          0          0         24      15098   fsl_flexio.o
+       110          0          0          0          0      13821   fsl_flexio_camera.o
+         0          0         48          0          0        957   fsl_flexspi_nor_boot.o
+       292          6         58          0          0       6769   fsl_gpio.o
+       698          0        218          0          0       6791   fsl_gpt.o
+       192          0          0          0         48      30928   fsl_lpi2c.o
+       336          0        117          0         28      29545   fsl_lpspi.o
+      3888          0        357          4         36      24455   fsl_lpuart.o
+       546          0         99          0         40      35638   fsl_sai.o
+       130          0          0          0         12       9002   fsl_sdmmc_event.o
+       264          0         48          0         41      19924   fsl_sdmmc_host.o
+       120          0          0          0         16      21054   fsl_spdif.o
+      3490         18          0          0          0       8487   fsl_str.o
+        72          0         12          4         12      32004   fsl_usdhc.o
+       406          0          0          0          0       6307   isr.o
+       506          0        210          0          0       5500   lpuart_adapter.o
+       198          0         51          0          0       1330   main.o
+         0          0       1520          0          0        876   seekfree_font.o
+      1612          0          0          0          0      12786   seekfree_ips200_parallel8.o
+       436          0          0          0          5      19728   seekfree_mt9v03x.o
+       606          0          0         68      45214       6502   seekfree_mt9v03x_csi.o
+       142          0          0          0         12      18464   seekfree_scc8660.o
+       726          0        123          0          0       5980   serial_manager.o
+       290          0         88          0          0       4045   serial_port_uart.o
+       548        242       1024          0          0       3556   startup_mimxrt1064.o
+       588          0          0          4          0       6378   system_mimxrt1064.o
+       528          0          0          0          0      12251   usb_device_dci.o
+      1934          0          0          0          0      19027   usb_device_ehci.o
+        56          0          0          0         28      22266   zf_camera.o
+      1116          0         46          0         32      11163   zf_csi.o
+       534          0          0         40          0      14024   zf_gpio.o
+     35670        184         47          0          0      18822   zf_iomuxc.o
+       410          0         86          0          1       9331   zf_systick.o
+      1318         16         45         36          0      11595   zf_uart.o
+        36          0          0          0         16      16953   zf_usb_cdc.o
 
     ----------------------------------------------------------------------
-     69934        498       6628        160      51976     642445   Object Totals
+     69934        498       6628        160      51976     641693   Object Totals
          0          0         48          0       6144          0   (incl. Generated)
        834          0          4          0         42          0   (incl. Padding)
 
@@ -15088,8 +15088,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     73528        834       6772        164      51976     643033   Grand Totals
-     73528        834       6772        164      51976     643033   ELF Image Totals
+     73528        834       6772        164      51976     642281   Grand Totals
+     73528        834       6772        164      51976     642281   ELF Image Totals
      73528        834       6772        164          0          0   ROM Totals
 
 ==============================================================================

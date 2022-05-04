@@ -144,23 +144,26 @@ void Key_Scans(void)
 
 void Key1_Action(void)
 {
-    speed_tar=speed_tar+20;
+    speed_tar=10;
+    key1number=0;
     Beep_flag=1;
 }
 
 void Key2_Action(void)
 {
-    speed_tar=speed_tar-20;
+    speed_tar=40;
     Beep_flag=1;
 }
 
 
 void Key3_Action(void)
 {
+    speed_tar=60;
     Beep_flag=1;
 }
 
 void Key4_Action(void)
 {
+    speed_tar=0;
     Beep_flag=1;
 }

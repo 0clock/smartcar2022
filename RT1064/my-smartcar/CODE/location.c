@@ -9,18 +9,22 @@
 * @date         2022/3/14
 ***************************************************/
 #include "location.h"
-
+int key1number=0;
 //-----------------------宏-----------------------//
 //-------------------结构体-----------------------//
 struct Location_Goal Car={0};          //小车状态（位置，目标）存储结构体
 struct Route_Dist Route_D[5];
 //---------------------数组-----------------------//
 int Car_Location[locate_sz][2]={//坐标原始数据
-        1,20,
-        3,4,
-        15,20,
-        7,8,
+        5,5,
+        10,5,
+        10,20,
         1,5,
+        4,5,
+        2,20,
+        0,0,
+        0,0,
+        -10,-10,
         0,0
 };
 int Car_Location_Route[locate_sz][2]={};//存放经过路径规划算法之后的坐标数据
@@ -56,18 +60,31 @@ void Location_Route(){
         Car_Location_Route[i][1]=Car_Location[Route_D[i].num][1];
     }
 }
-
+/*
+ * 识别模式
+ */
+void Car_RecMode(){
+    while(key1number);
+}
 void Car_OmniMove(){
+    static int count=0;
+    count++;
+    if(count==2){
+        key1number=1;
+        count=1;
+    }
     Car_SpeedGet();
     Car_Omni(Car.Speed_X,Car.Speed_Y,Car.Speed_Z);
-    if(Car.MileageX>=Car.DistanceX&&Car.MileageY>=Car.DistanceY){
+    if(abs(Car.MileageX)>=abs(Car.DistanceX)&&abs(Car.MileageY)>=abs(Car.DistanceY)){
         Car_Stop();
+        Car_RecMode();
         Get_Location();
         Car.MileageX=0;
         Car.MileageY=0;
         Beep_flag=1;
     }
 }
+
 
 /*先转向再跑，暂时不用
 void Car_Move(){
@@ -131,11 +148,15 @@ void Charge_Locate(void)
 ***************************************************************
 */
 
-void Get_Target(void)
-{
+void Get_Target(void) {
     //赋予新的目标坐标点
-    Car.x=Car_Location[Car.Position_Pointer-1][0];
-    Car.y=Car_Location[Car.Position_Pointer-1][1];
+    if (Car.Position_Pointer == 0){
+        Car.x=0;
+        Car.y=0;
+    }else{
+        Car.x=Car_Location[Car.Position_Pointer-1][0];
+        Car.y=Car_Location[Car.Position_Pointer-1][1];
+    }
 
     Car.x1=Car_Location[Car.Position_Pointer][0];
     Car.y1=Car_Location[Car.Position_Pointer][1];
@@ -157,8 +178,8 @@ void Get_Location(void)
     Get_Target();
     //用两点式计算角度和距离
     Car.Angel_Target=atan2((Car.x1-Car.x),(Car.y1-Car.y))*180/PI;
-    Car.DistanceX=fabs(20*(Car.x1-Car.x));
-    Car.DistanceY=fabs(20*(Car.y1-Car.y));
+    Car.DistanceX=20*(Car.x1-Car.x);
+    Car.DistanceY=20*(Car.y1-Car.y);
 }
 
 

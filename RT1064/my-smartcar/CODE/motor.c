@@ -39,21 +39,37 @@ float deta_mileage=0;
  **/
 
 void Car_SpeedGet(){
-    if(Car.MileageX<=Car.DistanceX){
-        Car.Speed_X=speed_tar;
+    Car.Speed_X=(float)speed_tar * sin(Car.Angel_Target/180 *PI);//((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
+    Car.Speed_Y=(float)speed_tar * cos(Car.Angel_Target/180 *PI);
+/*    if(Car.MileageX<= abs(Car.DistanceX)){
+        if(Car.DistanceX<0) {
+            Car.Speed_X=-speed_tar;
+        }else{
+            Car.Speed_X=speed_tar;
+        }
     }else{
         Car.Speed_X=0;
     }
-    if(Car.MileageY<=Car.DistanceY){
-        Car.Speed_Y=speed_tar;
+
+    if(Car.MileageY<=abs(Car.DistanceY)){
+        if(Car.DistanceY<0){
+            Car.Speed_Y=-speed_tar;
+        }else{
+            Car.Speed_Y=speed_tar;
+        }
     }else{
         Car.Speed_Y=0;
-    }
-    if(Car.Angel>2){
-        Car.Speed_Z=5;
-    }else if(Car.Angel<2){
+    }*/
+    if(Car.Angel>1){
         Car.Speed_Z=-5;
+    }else if(Car.Angel< -1){
+        Car.Speed_Z=5;
     }else{
+        Car.Speed_Z=0;
+    }
+    if((Car.x1==-10&&Car.y1==-10)||speed_tar==0){
+        Car.Speed_X=0;
+        Car.Speed_Y=0;
         Car.Speed_Z=0;
     }
 }
@@ -267,8 +283,8 @@ void Omni_Mileage(){
     float detax=0,detay=0;
     detax=(RC_encoder1 - RC_encoder2 + RC_encoder3 - RC_encoder4)/4;
     detay=(RC_encoder1 + RC_encoder2 + RC_encoder3 + RC_encoder4)/4;
-    Car.MileageX+=detax;
-    Car.MileageY+=detay;
+    Car.MileageX+=detax*0.0095;
+    Car.MileageY+=detay*0.0086;
 }
 
 void RCEncoder_Init(void)

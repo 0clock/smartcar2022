@@ -18,6 +18,7 @@ extern int Car_Location[locate_sz][2];
 //--------------------全局变量---------------------//
 extern struct Location_Goal Car;
 extern int CarMode;
+extern int key1number;
 
 enum CarMode
 {
@@ -48,15 +49,15 @@ typedef struct Location_Goal
     float x;
     float y;
     //目标位置
-    float x1;
-    float y1;
+    int x1;
+    int y1;
     //当前姿态
     float Angel;
     //目标姿态
     float Angel_Target;
     //目标距离
-    float DistanceX;
-    float DistanceY;
+    int DistanceX;
+    int DistanceY;
     //距上次转向之后前进的距离(里程）
     float MileageX;
     float MileageY;
