@@ -31,6 +31,7 @@ int Car_Location_Route[locate_sz][2]={};//存放经过路径规划算法之后的坐标数据
 int CarMode;
 
 /*
+<<<<<<< HEAD
  ***************************************************************
 *	函 数 名: Location_Route
 *   功能说明: 路径规划
@@ -58,6 +59,21 @@ void Location_Route(){
         //printf("(%d,%d)\n",Car_Location[Route_D[i].num][0],Car_Location[Route_D[i].num][1]);//根据序号输出a(x,y), x=a[D[i].num][0] y=a[D[i].num][1]
         Car_Location_Route[i][0]=Car_Location[Route_D[i].num][0];
         Car_Location_Route[i][1]=Car_Location[Route_D[i].num][1];
+=======
+ **************************************************
+ *  函数名:Car_Route
+ *  功能说明:路径规划、根据与原点位置判断计算点位
+ *  形参:
+ *  返回值:
+ **************************************************
+ */
+void Car_Route(){
+
+}
+void Car_Move(){
+    if(Car.Angel==Car.Angel_Target||Car.Distance==Car.mileage){
+        Car_Stop();
+>>>>>>> dev
     }
 }
 /*
