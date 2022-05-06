@@ -12,19 +12,32 @@
 #define Dial_switch1 D27
 #define Dial_switch2 D4
 
-int Beep_flag;
+struct Beep beep;
 
-void Beep_Set(){
-    static int count=0;
-    if(Beep_flag) {
-        gpio_set(BEEP_PIN, 1);
+void Beep_Set(int time,int frequency){
+    beep.time=time;
+    beep.frequency=frequency;
+}
+
+void Beep_Ctrl() {
+    static int count = 0, flag = 1;
+    if (flag == 1) {
+        if (beep.frequency > 0) {
+            gpio_set(BEEP_PIN, 1);
+            count++;
+        }
+        if (count >= beep.time) {
+            count = 0;
+            beep.frequency--;
+            flag = !flag;
+        }
+    } else {
+        gpio_set(BEEP_PIN, 0);
         count++;
-    }
-    else if(!Beep_flag)
-        gpio_set(BEEP_PIN,0);
-    if(count>=5){
-        count=0;
-        Beep_flag=0;
+        if (count >= beep.time) {
+            count = 0;
+            flag = !flag;
+        }
     }
 }
 
@@ -146,20 +159,17 @@ void Key1_Action(void)
 {
     speed_tar=10;
     key1number=0;
-    Beep_flag=1;
 }
 
 void Key2_Action(void)
 {
     speed_tar=40;
-    Beep_flag=1;
 }
 
 
 void Key3_Action(void)
 {
     speed_tar=60;
-    Beep_flag=1;
 }
 
 void Key4_Action(void)
@@ -167,5 +177,4 @@ void Key4_Action(void)
     ips114_clear(GREEN);
     GUI_TargetPoint();
     speed_tar=0;
-    Beep_flag=1;
 }

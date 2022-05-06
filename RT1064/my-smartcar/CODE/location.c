@@ -75,7 +75,6 @@ void Car_OmniMove(){
         Get_Location();
         Car.MileageX=0;
         Car.MileageY=0;
-        Beep_flag=1;
     }
 }
 

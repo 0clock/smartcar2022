@@ -93,6 +93,7 @@
 #include "location.h"
 #include "ahrs.h"
 #include "fast_math.h"
+#include "image.h"
 
 
 #endif 

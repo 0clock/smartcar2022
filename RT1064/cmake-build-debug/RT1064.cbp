@@ -8,1598 +8,1598 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug"/>
+				<Option working_dir="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RT1064">
-				<Option output="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/RT1064.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug"/>
+				<Option output="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/RT1064.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/lists"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/uart"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/template"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/dcd"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/include"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs/ehci"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/phy"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/config"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/debug_console"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/str"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/USER/inc"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/lists"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/uart"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/template"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/dcd"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/include"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs/ehci"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/phy"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/config"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/debug_console"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/str"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/USER/inc"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT1064"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT1064"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RT1064/fast">
-				<Option output="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/RT1064.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug"/>
+				<Option output="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/RT1064.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/lists"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/uart"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/template"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/dcd"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/include"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs/ehci"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/phy"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/config"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/debug_console"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/str"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE"/>
-					<Add directory="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/USER/inc"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/lists"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/uart"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/template"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/dcd"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/include"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs/ehci"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/phy"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/config"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/debug_console"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/str"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE"/>
+					<Add directory="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/USER/inc"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT1064/fast"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT1064/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug"/>
+				<Option working_dir="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_CAN.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_CAN.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_ETH_MAC.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_ETH_MAC.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_ETH_PHY.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_ETH_PHY.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_Flash.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_Flash.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_I2C.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_I2C.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_MCI.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_MCI.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_SAI.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_SAI.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_SPI.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_SPI.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_Storage.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_Storage.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_USART.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_USART.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_USBD.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_USBD.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_USBH.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_USBH.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_CAN.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_CAN.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_Common.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_Common.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_ETH.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_ETH.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_ETH_MAC.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_ETH_MAC.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_ETH_PHY.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_ETH_PHY.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_Flash.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_Flash.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_I2C.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_I2C.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_MCI.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_MCI.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_NAND.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_NAND.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_SAI.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_SAI.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_SPI.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_SPI.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_USART.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_USART.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_USB.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_USB.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_USBD.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_USBD.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_USBH.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_USBH.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_WiFi.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Driver/Include/Driver_WiFi.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/arm_common_tables.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/arm_common_tables.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/arm_const_structs.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/arm_const_structs.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/arm_math.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/arm_math.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_armcc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_armcc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_armclang.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_armclang.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_armclang_ltm.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_armclang_ltm.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_compiler.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_compiler.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_gcc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_gcc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_iccarm.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_iccarm.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_version.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/cmsis_version.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_armv81mml.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_armv81mml.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_armv8mbl.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_armv8mbl.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_armv8mml.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_armv8mml.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm0.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm0.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm0plus.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm0plus.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm1.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm1.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm23.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm23.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm3.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm3.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm33.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm33.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm35p.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm35p.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm4.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm4.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm7.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_cm7.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_dsp.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_dsp.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_sc000.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_sc000.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_sc300.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/core_sc300.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/mpu_armv7.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/mpu_armv7.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/mpu_armv8.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/mpu_armv8.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/tz_context.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/CMSIS/Include/tz_context.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers/fsl_lpi2c_cmsis.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers/fsl_lpi2c_cmsis.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers/fsl_lpi2c_cmsis.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers/fsl_lpi2c_cmsis.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers/fsl_lpspi_cmsis.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers/fsl_lpspi_cmsis.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers/fsl_lpspi_cmsis.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers/fsl_lpspi_cmsis.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers/fsl_lpuart_cmsis.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers/fsl_lpuart_cmsis.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers/fsl_lpuart_cmsis.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/cmsis_drivers/fsl_lpuart_cmsis.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/lists/generic_list.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/lists/generic_list.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/lists/generic_list.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/lists/generic_list.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa/fsl_os_abstraction.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa/fsl_os_abstraction.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa/fsl_os_abstraction_bm.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa/fsl_os_abstraction_bm.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa/fsl_os_abstraction_bm.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa/fsl_os_abstraction_bm.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa/fsl_os_abstraction_config.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/osa/fsl_os_abstraction_config.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_manager.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_manager.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_manager.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_manager.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_internal.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_internal.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_swo.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_swo.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_swo.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_swo.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_uart.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_uart.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_uart.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_uart.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_usb.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_usb.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_usb.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_usb.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_usb_virtual.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_usb_virtual.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_usb_virtual.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/serial_port_usb_virtual.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_cdc_acm.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_cdc_acm.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_cdc_acm.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_cdc_acm.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_ch9.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_ch9.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_ch9.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_ch9.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_class.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_class.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_class.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_class.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_config.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_config.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_descriptor.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_descriptor.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_descriptor.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_descriptor.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/uart/lpuart_adapter.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/uart/lpuart_adapter.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/uart/uart.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/components/uart/uart.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive/MIMXRT1064.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive/MIMXRT1064.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive/MIMXRT1064_features.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive/MIMXRT1064_features.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive/fsl_device_registers.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive/fsl_device_registers.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive/system_MIMXRT1064.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive/system_MIMXRT1064.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive/system_MIMXRT1064.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/deceive/system_MIMXRT1064.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_adc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_adc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_adc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_adc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_adc_etc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_adc_etc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_adc_etc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_adc_etc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_aipstz.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_aipstz.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_aipstz.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_aipstz.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_aoi.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_aoi.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_aoi.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_aoi.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_bee.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_bee.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_bee.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_bee.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_cache.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_cache.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_cache.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_cache.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_clock.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_clock.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_clock.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_clock.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_cmp.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_cmp.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_cmp.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_cmp.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_common.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_common.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_common.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_common.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_csi.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_csi.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_csi.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_csi.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_dcdc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_dcdc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_dcdc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_dcdc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_dcp.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_dcp.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_dcp.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_dcp.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_dmamux.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_dmamux.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_dmamux.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_dmamux.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_edma.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_edma.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_edma.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_edma.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_elcdif.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_elcdif.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_elcdif.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_elcdif.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_enc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_enc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_enc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_enc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_enet.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_enet.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_enet.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_enet.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_ewm.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_ewm.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_ewm.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_ewm.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexcan.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexcan.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexcan.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexcan.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexcan_edma.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexcan_edma.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexcan_edma.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexcan_edma.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_camera.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_camera.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_camera.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_camera.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_camera_edma.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_camera_edma.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_camera_edma.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_camera_edma.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_i2c_master.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_i2c_master.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_i2c_master.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_i2c_master.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_i2s.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_i2s.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_i2s.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_i2s.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_i2s_edma.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_i2s_edma.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_i2s_edma.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_i2s_edma.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_mculcd.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_mculcd.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_mculcd.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_mculcd.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_mculcd_edma.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_mculcd_edma.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_mculcd_edma.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_mculcd_edma.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_spi.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_spi.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_spi.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_spi.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_spi_edma.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_spi_edma.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_spi_edma.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_spi_edma.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_uart.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_uart.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_uart.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_uart.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_uart_edma.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_uart_edma.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_uart_edma.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexio_uart_edma.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexram.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexram.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexram.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexram.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexram_allocate.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexram_allocate.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexram_allocate.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexram_allocate.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexspi.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexspi.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexspi.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_flexspi.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_gpc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_gpc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_gpc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_gpc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_gpio.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_gpio.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_gpio.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_gpio.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_gpt.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_gpt.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_gpt.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_gpt.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_iomuxc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_iomuxc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_kpp.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_kpp.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_kpp.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_kpp.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpi2c.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpi2c.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpi2c.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpi2c.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpi2c_edma.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpi2c_edma.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpi2c_edma.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpi2c_edma.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpspi.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpspi.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpspi.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpspi.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpspi_edma.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpspi_edma.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpspi_edma.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpspi_edma.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpuart.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpuart.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpuart.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpuart.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpuart_edma.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpuart_edma.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpuart_edma.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_lpuart_edma.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_ocotp.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_ocotp.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_ocotp.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_ocotp.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pit.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pit.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pit.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pit.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pmu.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pmu.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pmu.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pmu.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pwm.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pwm.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pwm.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pwm.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pxp.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pxp.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pxp.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_pxp.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_qtmr.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_qtmr.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_qtmr.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_qtmr.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_rtwdog.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_rtwdog.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_rtwdog.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_rtwdog.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_sai.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_sai.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_sai.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_sai.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_sai_edma.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_sai_edma.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_sai_edma.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_sai_edma.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_semc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_semc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_semc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_semc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_snvs_hp.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_snvs_hp.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_snvs_hp.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_snvs_hp.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_snvs_lp.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_snvs_lp.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_snvs_lp.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_snvs_lp.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_spdif.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_spdif.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_spdif.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_spdif.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_spdif_edma.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_spdif_edma.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_spdif_edma.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_spdif_edma.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_src.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_src.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_src.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_src.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_tempmon.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_tempmon.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_tempmon.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_tempmon.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_trng.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_trng.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_trng.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_trng.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_tsc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_tsc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_tsc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_tsc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_usdhc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_usdhc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_usdhc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_usdhc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_wdog.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_wdog.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_wdog.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_wdog.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_xbara.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_xbara.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_xbara.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_xbara.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_xbarb.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_xbarb.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_xbarb.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/drives/fsl_xbarb.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/documents/res/app1.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/documents/res/app1.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/documents/res/app2.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/documents/res/app2.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/documents/res/app3.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/documents/res/app3.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/documents/res/app4.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/documents/res/app4.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/documents/res/app5.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/documents/res/app5.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/diskio.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/diskio.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/diskio.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/diskio.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/ff.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/ff.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/ff.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/ff.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/ffconf.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/ffconf.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/ffconf_template.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/ffconf_template.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/ffsystem.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/ffsystem.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/ffunicode.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/ffunicode.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_bm.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_bm.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/template/ffconf.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/fatfs/template/ffconf.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_mmc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_mmc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sd.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sd.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sdio.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sdio.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sdmmc_common.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sdmmc_common.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sdmmc_host.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sdmmc_host.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sdmmc_spec.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/inc/fsl_sdmmc_spec.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/fsl_sdmmc_event.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/fsl_sdmmc_event.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/freertos/fsl_sdmmc_event.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/freertos/fsl_sdmmc_event.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/freertos/fsl_sdmmc_host.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/freertos/fsl_sdmmc_host.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/polling/fsl_sdmmc_event.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/polling/fsl_sdmmc_event.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/polling/fsl_sdmmc_host.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/polling/fsl_sdmmc_host.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/src/fsl_sd.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/src/fsl_sd.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/dcd/usb_charger_detect.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/dcd/usb_charger_detect.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/dcd/usb_phydcd.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/dcd/usb_phydcd.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/dcd/usb_phydcd.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/dcd/usb_phydcd.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_dci.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_dci.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_dci.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_dci.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_ehci.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_ehci.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_ehci.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_ehci.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_khci.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_khci.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_khci.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_khci.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_lpcip3511.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_lpcip3511.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_lpcip3511.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/device/usb_device_lpcip3511.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_audio.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_audio.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_audio.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_audio.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc_rndis.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc_rndis.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc_rndis.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc_rndis.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hid.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hid.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hid.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hid.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub_app.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub_app.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub_app.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub_app.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd_ufi.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd_ufi.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_phdc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_phdc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_phdc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_phdc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_printer.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_printer.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_printer.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_printer.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_video.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_video.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_video.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/class/usb_host_video.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_devices.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_devices.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_devices.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_devices.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_ehci.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_ehci.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_ehci.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_ehci.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_framework.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_framework.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_framework.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_framework.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_hci.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_hci.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_hci.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_hci.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_ip3516hs.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_ip3516hs.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_ip3516hs.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_ip3516hs.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_khci.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_khci.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_khci.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_khci.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_ohci.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_ohci.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_ohci.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/host/usb_host_ohci.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/include/usb.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/include/usb.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/include/usb_misc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/include/usb_misc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/include/usb_spec.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/include/usb_spec.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs/ehci/usb_host_config.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs/ehci/usb_host_config.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/phy/usb_phy.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/phy/usb_phy.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/phy/usb_phy.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/phy/usb_phy.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/config/usb_device_config.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/config/usb_device_config.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/config/usb_host_config.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/config/usb_host_config.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_audio.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_audio.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_audio.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_audio.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_ccid.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_ccid.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_ccid.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_ccid.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_acm.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_acm.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_acm.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_acm.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_rndis.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_rndis.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_rndis.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_rndis.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_class.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_class.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_class.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_class.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_dfu.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_dfu.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_dfu.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_dfu.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_hid.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_hid.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_hid.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_hid.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc_ufi.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc_ufi.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc_ufi.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc_ufi.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_phdc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_phdc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_phdc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_phdc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_printer.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_printer.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_printer.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_printer.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_video.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_video.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_video.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_video.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/usb_device_ch9.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/usb_device_ch9.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/usb_device_ch9.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/middleware/usb/templates/device/usb_device_ch9.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/debug_console/fsl_debug_console.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/debug_console/fsl_debug_console.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/debug_console/fsl_debug_console.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/debug_console/fsl_debug_console.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/debug_console/fsl_debug_console_conf.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/debug_console/fsl_debug_console_conf.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/fsl_assert.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/fsl_assert.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/fsl_notifier.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/fsl_notifier.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/fsl_notifier.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/fsl_notifier.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/fsl_sbrk.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/fsl_sbrk.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/fsl_shell.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/fsl_shell.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/fsl_shell.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/fsl_shell.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/str/fsl_str.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/str/fsl_str.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/str/fsl_str.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/utilities/str/fsl_str.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip/fsl_flexspi_nor_boot.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip/fsl_flexspi_nor_boot.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip/fsl_flexspi_nor_boot.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/nxp_libraries/xip/fsl_flexspi_nor_boot.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/RTE_Device.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/RTE_Device.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/board.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/board.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/board.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/board.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/clock_config.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/clock_config.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/clock_config.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/clock_config.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/pin_mux.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/pin_mux.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/pin_mux.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/board/pin_mux.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common/SEEKFREE_PRINTF.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common/SEEKFREE_PRINTF.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common/SEEKFREE_PRINTF.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common/SEEKFREE_PRINTF.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common/common.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common/common.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common/common.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/common/common.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/headfile.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/headfile.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_adc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_adc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_adc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_adc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_camera.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_camera.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_camera.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_camera.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_csi.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_csi.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_csi.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_csi.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_flash.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_flash.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_flash.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_flash.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_gpio.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_gpio.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_gpio.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_gpio.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_iic.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_iic.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_iic.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_iic.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_iomuxc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_iomuxc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_iomuxc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_iomuxc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_pit.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_pit.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_pit.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_pit.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_pwm.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_pwm.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_pwm.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_pwm.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_qtimer.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_qtimer.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_qtimer.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_qtimer.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_rom_api.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_rom_api.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_rom_api.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_rom_api.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_sdcard.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_sdcard.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_sdcard.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_sdcard.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_spi.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_spi.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_spi.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_spi.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_systick.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_systick.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_systick.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_systick.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_uart.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_uart.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_uart.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_uart.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_usb_cdc.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_usb_cdc.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_usb_cdc.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_usb_cdc.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_vector.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_vector.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_vector.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_libraries/zf_vector.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_18TFT.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_18TFT.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_18TFT.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_18TFT.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_FONT.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_FONT.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_FONT.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_FONT.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_FUN.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_FUN.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_FUN.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_FUN.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_ICM20602.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_ICM20602.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_ICM20602.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_ICM20602.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_IIC.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_IIC.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_IIC.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_IIC.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_IPS114_SPI.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_IPS114_SPI.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_IPS114_SPI.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_IPS114_SPI.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_L3G4200D.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_L3G4200D.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_L3G4200D.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_L3G4200D.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MMA8451.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MMA8451.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MMA8451.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MMA8451.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MPU6050.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MPU6050.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MPU6050.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MPU6050.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MT9V03X.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MT9V03X.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MT9V03X.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MT9V03X.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_NRF24L01.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_NRF24L01.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_NRF24L01.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_NRF24L01.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_OLED.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_OLED.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_OLED.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_OLED.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_SCC8660.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_SCC8660.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_SCC8660.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_SCC8660.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_SCC8660_CSI.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_SCC8660_CSI.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_SCC8660_CSI.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_SCC8660_CSI.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_VIRSCO.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_VIRSCO.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_VIRSCO.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_VIRSCO.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_W25QXXJV.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_W25QXXJV.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_W25QXXJV.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_W25QXXJV.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_WIRELESS.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_WIRELESS.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_WIRELESS.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/Libraries/seekfree_peripheral/SEEKFREE_WIRELESS.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/GUI.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/GUI.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/GUI.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/GUI.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/ahrs.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/ahrs.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/ahrs.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/ahrs.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/fast_math.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/fast_math.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/fast_math.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/fast_math.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/filter.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/filter.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/filter.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/filter.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/icm.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/icm.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/icm.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/icm.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/image.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/image.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/image.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/image.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/key.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/key.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/key.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/key.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/location.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/location.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/location.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/location.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/motor.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/motor.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/motor.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/motor.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/vofa.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/vofa.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/vofa.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/vofa.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/vofa_imageformat.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/CODE/vofa_imageformat.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/USER/inc/RT106X_config.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/USER/inc/RT106X_config.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/USER/inc/isr.h">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/USER/inc/isr.h">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/USER/src/isr.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/USER/src/isr.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/USER/src/main.c">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/my-smartcar/USER/src/main.c">
 			<Option target="RT1064"/>
 		</Unit>
-		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/CMakeLists.txt">
+		<Unit filename="C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

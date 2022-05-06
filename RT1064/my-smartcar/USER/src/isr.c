@@ -41,7 +41,7 @@ void PIT_IRQHandler(void)
         //Get_Angel();
 
         VOFA_Send();
-        Beep_Set();
+        Beep_Ctrl();
         PIT_FLAG_CLEAR(PIT_CH1);
     }
     

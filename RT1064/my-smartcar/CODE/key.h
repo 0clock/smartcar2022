@@ -16,7 +16,15 @@ enum Keycode
     Key4
 };
 
-void Beep_Set(void);
+typedef struct Beep{
+    int frequency;
+    int time;
+}Beep;
+
+extern struct Beep beep;
+
+void Beep_Set(int time,int frequency);
+void Beep_Ctrl(void);
 void Key_Init(void);
 void Key_Scans(void);
 

@@ -160,4 +160,5 @@ AHRS_t AHRS =
 void AHRS_get_yaw(void)
 {
     AHRS.update();	//AHRS×ËÌ¬½áËã
+    Car.Angel=cpmangle_z;
 }

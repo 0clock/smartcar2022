@@ -16,17 +16,12 @@ void GUI_FirstPage(){
     }
     switch(Page_Number){
         case InfoPage:
-
             break;
         case ConfigPage:
-
             break;
-
         case TargetPointPage:
-
             break;
         case AboutPage:
-
             break;
     }
 }
