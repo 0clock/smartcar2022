@@ -6,58 +6,57 @@ int main(void)
 {
 	DisableGlobalIRQ();
  
-	board_init();   	//Îñ±Ø±£Áô£¬±¾º¯ÊıÓÃÓÚ³õÊ¼»¯MPU Ê±ÖÓ µ÷ÊÔ´®¿Ú
+	board_init();   	//åŠ¡å¿…ä¿ç•™ï¼Œæœ¬å‡½æ•°ç”¨äºåˆå§‹åŒ–MPU æ—¶é’Ÿ è°ƒè¯•ä¸²å£
     
-	systick_delay_ms(300);	//ÑÓÊ±300ms£¬µÈ´ıÖ÷°åÆäËûÍâÉèÉÏµç³É¹¦
+	systick_delay_ms(300);	//å»¶æ—¶300msï¼Œç­‰å¾…ä¸»æ¿å…¶ä»–å¤–è®¾ä¸Šç”µæˆåŠŸ
 	/*******************************************/
 	pit_init();//
-	pit_interrupt_ms(PIT_CH0,5);  //³õÊ¼»¯pitÍ¨µÀ0 ÖÜÆÚ5ms ±àÂëÆ÷ÖĞ¶Ï
-	pit_interrupt_ms(PIT_CH1,5);  //³õÊ¼»¯pitÍ¨µÀ1 ÖÜÆÚ10ms	°´¼ü¡¢´®¿Ú·¢ËÍÖĞ¶Ï
-	pit_interrupt_ms(PIT_CH2,10);  //³õÊ¼»¯pitÍ¨µÀ2 ÖÜÆÚ10ms	PID¿ØÖÆÖĞ¶Ï
-    pit_interrupt_ms(PIT_CH3,5);  //³õÊ¼»¯pitÍ¨µÀ3 ÖÜÆÚ10ms	icmÖĞ¶Ï
+	pit_interrupt_ms(PIT_CH0,5);  //åˆå§‹åŒ–pité€šé“0 å‘¨æœŸ5ms ç¼–ç å™¨ä¸­æ–­
+	pit_interrupt_ms(PIT_CH1,5);  //åˆå§‹åŒ–pité€šé“1 å‘¨æœŸ10ms	æŒ‰é”®ã€ä¸²å£å‘é€ä¸­æ–­
+	pit_interrupt_ms(PIT_CH2,10);  //åˆå§‹åŒ–pité€šé“2 å‘¨æœŸ10ms	PIDæ§åˆ¶ä¸­æ–­
+  pit_interrupt_ms(PIT_CH3,5);  //åˆå§‹åŒ–pité€šé“3 å‘¨æœŸ10ms	icmä¸­æ–­
 	NVIC_SetPriority(PIT_IRQn,1);
 
 
 	
 	Motor_Init();
 	Encoder_Init();
-    RCEncoder_Init();
 	Key_Init();
 
-    icm20602_init_spi();
-    icmOffsetInit();//icmÁãÆ¯Ïû³ı
+  icm20602_init_spi();
+  icmOffsetInit();//icmé›¶æ¼‚æ¶ˆé™¤
 	GUI_init();
-	//mt9v03x_csi_init();	//³õÊ¼»¯ÉãÏñÍ· Ê¹ÓÃCSI½Ó¿Ú
-	//Èç¹ûÆÁÄ»Ò»Ö±ÏÔÊ¾³õÊ¼»¯ĞÅÏ¢£¬Çë¼ì²éÉãÏñÍ·½ÓÏß
-	//Èç¹ûÊ¹ÓÃÖ÷°å£¬Ò»Ö±¿¨ÔÚwhile(!uart_receive_flag)£¬Çë¼ì²éÊÇ·ñµç³ØÁ¬½ÓOK?
-	uart_init (USART_8, 115200,UART8_TX_D16,UART8_RX_D17); //³õÊ¼»¯´®¿Ú
+	//mt9v03x_csi_init();	//åˆå§‹åŒ–æ‘„åƒå¤´ ä½¿ç”¨CSIæ¥å£
+	//å¦‚æœå±å¹•ä¸€ç›´æ˜¾ç¤ºåˆå§‹åŒ–ä¿¡æ¯ï¼Œè¯·æ£€æŸ¥æ‘„åƒå¤´æ¥çº¿
+	//å¦‚æœä½¿ç”¨ä¸»æ¿ï¼Œä¸€ç›´å¡åœ¨while(!uart_receive_flag)ï¼Œè¯·æ£€æŸ¥æ˜¯å¦ç”µæ± è¿æ¥OK?
+	uart_init (USART_8, 115200,UART8_TX_D16,UART8_RX_D17); //åˆå§‹åŒ–ä¸²å£
 	
 	// VOFA+ 
-    VOFA* VOFA_pt = vofa_create();       //´´½¨VOFA¶ÔÏó
-    vofa_init(VOFA_pt,                   //³õÊ¼»¯µ±Ç°µÄvofa¶ÔÏó
+    VOFA* VOFA_pt = vofa_create();       //åˆ›å»ºVOFAå¯¹è±¡
+    vofa_init(VOFA_pt,                   //åˆå§‹åŒ–å½“å‰çš„vofaå¯¹è±¡
                 vofa_ch_data,ch_sz,
        vofa_image,image_sz,
        custom_buf,custom_sz,
        cmd_rxbuf,cmd_sz,
        USART_8,USART_8,USART_8);
 
-    mt9v03x_csi_init();		//³õÊ¼»¯ÉãÏñÍ·	Ê¹ÓÃCSI½Ó¿Ú
-	//Èç¹ûÍ¼ÏñÖ»²É¼¯Ò»´Î£¬Çë¼ì²é³¡ĞÅºÅ(VSY)ÊÇ·ñÁ¬½ÓOK?
+    mt9v03x_csi_init();		//åˆå§‹åŒ–æ‘„åƒå¤´	ä½¿ç”¨CSIæ¥å£
+	//å¦‚æœå›¾åƒåªé‡‡é›†ä¸€æ¬¡ï¼Œè¯·æ£€æŸ¥åœºä¿¡å·(VSY)æ˜¯å¦è¿æ¥OK?
 	systick_delay_ms(500);
 	systick_start();
 	EnableGlobalIRQ(0);
 
-    Beep_flag=1;
-    Location_Route();
+	Beep_flag=1;
+	Location_Route();
 	while(1)
 	{
-        if(mt9v03x_csi_finish_flag)			//Í¼Ïñ²É¼¯Íê³É
+        if(mt9v03x_csi_finish_flag)			//å›¾åƒé‡‡é›†å®Œæˆ
         {
-            mt9v03x_csi_finish_flag = 0;	//Çå³ı²É¼¯Íê³É±êÖ¾Î»
+            mt9v03x_csi_finish_flag = 0;	//æ¸…é™¤é‡‡é›†å®Œæˆæ ‡å¿—ä½
 
-            //Ê¹ÓÃËõ·ÅÏÔÊ¾º¯Êı£¬¸ù¾İÔ­Ê¼Í¼Ïñ´óĞ¡ ÒÔ¼°ÉèÖÃĞèÒªÏÔÊ¾µÄ´óĞ¡×Ô¶¯½øĞĞËõ·Å»òÕß·Å´óÏÔÊ¾
-            //×Ü×ê·ç²É¼¯µ½µÄÍ¼Ïñ·Ö±æÂÊÎª 188*120 £¬2.0´çIPSÆÁÏÔÊ¾·Ö±æÂÊÎª 320*240 £¬Í¼ÏñÀ­ÉìÈ«ÆÁÏÔÊ¾¡£
-            //ips114_displayimage032_zoom(mt9v03x_csi_image[0], MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//ÏÔÊ¾ÉãÏñÍ·Í¼Ïñ
+            //ä½¿ç”¨ç¼©æ”¾æ˜¾ç¤ºå‡½æ•°ï¼Œæ ¹ï¿½9                                                                                                                                                                   è°î…ƒçºªæ·ç¿Šç¬®ï¿½ ä»¥åŠè®¾ç½®éœ€è¦æ˜¾ç¤ºçš„å¤§å°è‡ªåŠ¨è¿›è¡Œç¼©æ”¾æˆ–è€…æ”¾å¤§æ˜¾ç¤º
+            //æ€»é’»é£é‡‡é›†åˆ°çš„å›¾åƒåˆ†è¾¨ç‡ä¸º 188*120 ï¼Œ2.0å¯¸IPSå±æ˜¾ç¤ºåˆ†è¾¨ç‡ä¸º 320*240 ï¼Œå›¾åƒæ‹‰ä¼¸å…¨å±æ˜¾ç¤ºã€‚
+            //ips114_displayimage032_zoom(mt9v03x_csi_image[0], MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//æ˜¾ç¤ºæ‘„åƒå¤´å›¾åƒ
         }
 
         Car.Angel=-(int)cpmangle_z;
@@ -65,10 +64,10 @@ int main(void)
 
         //Car_Omni(Car.Speed_X,Car.Speed_Y,Car.Speed_Z);
         Car_OmniMove();
-        //ÆÁÄ»ÏÔÊ¾
-        GUI_icm20602();
+        //å±å¹•æ˜¾ç¤º
+/*        GUI_icm20602();
         GUI_speed();
-        GUI_duty();
+        GUI_duty();*/
     }
 }
 

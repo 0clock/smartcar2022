@@ -164,6 +164,8 @@ void Key3_Action(void)
 
 void Key4_Action(void)
 {
+    ips114_clear(GREEN);
+    GUI_TargetPoint();
     speed_tar=0;
     Beep_flag=1;
 }

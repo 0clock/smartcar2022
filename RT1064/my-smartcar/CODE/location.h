@@ -12,9 +12,10 @@
 
 
 //-----------------------宏-----------------------//
-#define locate_sz 10             //坐标数组数量,可能还需要更改，目标点数不确定！(5-20都有可能)
+#define locate_sz 7             //坐标数组数量,可能还需要更改，目标点数不确定！(5-20都有可能)
 //---------------------数组-----------------------//
 extern int Car_Location[locate_sz][2];
+extern int Car_Location_Route[locate_sz][2];
 //--------------------全局变量---------------------//
 extern struct Location_Goal Car;
 extern int CarMode;

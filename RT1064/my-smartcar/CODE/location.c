@@ -22,12 +22,10 @@ int Car_Location[locate_sz][2]={//坐标原始数据
     2,3,
     13,20,
     3,6,
-    0,0,
-    -10,-10,
     0,0
 };
 
-int Car_Location_Route[locate_sz][2]={};//存放经过路径规划算法之后的坐标数据
+int Car_Location_Route[locate_sz][2]={0,0};//存放经过路径规划算法之后的坐标数据
 int CarMode;
 
 /*
@@ -141,13 +139,13 @@ void Get_Target(void) {
         Car.x=0;
         Car.y=0;
     }else{
-        Car.x=Car_Location[Car.Position_Pointer-1][0];
-        Car.y=Car_Location[Car.Position_Pointer-1][1];
+        Car.x=Car_Location_Route[Car.Position_Pointer-1][0];
+        Car.y=Car_Location_Route[Car.Position_Pointer-1][1];
     }
 
 
-    Car.x1=Car_Location[Car.Position_Pointer][0];
-    Car.y1=Car_Location[Car.Position_Pointer][1];
+    Car.x1=Car_Location_Route[Car.Position_Pointer][0];
+    Car.y1=Car_Location_Route[Car.Position_Pointer][1];
     //下一个目标点
     Car.Position_Pointer++;
 }
