@@ -55,25 +55,10 @@ void Location_Route(){
        }
     qsort(Route_D,locate_sz, sizeof(struct Route_Dist),cmpFunc);//排序
     //printf("--顺序点位--\n");
-    for(int i=0;i<locate_sz;++i){
+    for(int i=0;i<locate_sz;++i) {
         //printf("(%d,%d)\n",Car_Location[Route_D[i].num][0],Car_Location[Route_D[i].num][1]);//根据序号输出a(x,y), x=a[D[i].num][0] y=a[D[i].num][1]
-        Car_Location_Route[i][0]=Car_Location[Route_D[i].num][0];
-        Car_Location_Route[i][1]=Car_Location[Route_D[i].num][1];
-=======
- **************************************************
- *  函数名:Car_Route
- *  功能说明:路径规划、根据与原点位置判断计算点位
- *  形参:
- *  返回值:
- **************************************************
- */
-void Car_Route(){
-
-}
-void Car_Move(){
-    if(Car.Angel==Car.Angel_Target||Car.Distance==Car.mileage){
-        Car_Stop();
->>>>>>> dev
+        Car_Location_Route[i][0] = Car_Location[Route_D[i].num][0];
+        Car_Location_Route[i][1] = Car_Location[Route_D[i].num][1];
     }
 }
 /*
