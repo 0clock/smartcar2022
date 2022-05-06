@@ -1,442 +1,0 @@
-Dependencies for Project 'LCD', Target 'Target 1': (DO NOT MODIFY !)
-F (.\main.c)(0x60ED280B)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\main.o --depend ..\obj\main.d)
-I (main.h)(0x5BF8CE16)
-I (..\SYSTEM\delay\delay.h)(0x5E6AF9B9)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-I (..\SYSTEM\sys\sys.h)(0x5E6AF9B9)
-I (..\HARDWARE\LED\led.h)(0x5E6AF9B9)
-I (..\HARDWARE\LCD\lcd_init.h)(0x60ED2839)
-I (..\HARDWARE\LCD\lcd.h)(0x5EDDB862)
-I (..\HARDWARE\LCD\pic.h)(0x5E69B55D)
-F (.\stm32l4xx_it.c)(0x5BF8CE15)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\stm32l4xx_it.o --depend ..\obj\stm32l4xx_it.d)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-I (stm32l4xx_it.h)(0x5BF8CE15)
-F (.\system_stm32l4xx.c)(0x5BF8A5B9)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\system_stm32l4xx.o --depend ..\obj\system_stm32l4xx.d)
-I (stm32l4xx.h)(0x5BF8A5B9)
-I (stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-F (..\HARDWARE\LED\led.c)(0x5E6AF9B9)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\led.o --depend ..\obj\led.d)
-I (..\HARDWARE\LED\led.h)(0x5E6AF9B9)
-I (..\SYSTEM\sys\sys.h)(0x5E6AF9B9)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-F (..\HARDWARE\LCD\lcd_init.c)(0x60ED2829)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\lcd_init.o --depend ..\obj\lcd_init.d)
-I (..\HARDWARE\LCD\lcd_init.h)(0x60ED2839)
-I (..\SYSTEM\sys\sys.h)(0x5E6AF9B9)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-I (..\SYSTEM\delay\delay.h)(0x5E6AF9B9)
-F (..\HARDWARE\LCD\lcd.c)(0x5EE46A98)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\lcd.o --depend ..\obj\lcd.d)
-I (..\HARDWARE\LCD\lcd.h)(0x5EDDB862)
-I (..\SYSTEM\sys\sys.h)(0x5E6AF9B9)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-I (..\HARDWARE\LCD\lcd_init.h)(0x60ED2839)
-I (..\HARDWARE\LCD\lcdfont.h)(0x5EDEE16D)
-I (..\SYSTEM\delay\delay.h)(0x5E6AF9B9)
-F (..\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c)(0x5BF8A5BF)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\stm32l4xx_hal.o --depend ..\obj\stm32l4xx_hal.d)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-F (..\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cortex.c)(0x5BF8A5BF)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\stm32l4xx_hal_cortex.o --depend ..\obj\stm32l4xx_hal_cortex.d)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-F (..\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gpio.c)(0x5BF8A5BF)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\stm32l4xx_hal_gpio.o --depend ..\obj\stm32l4xx_hal_gpio.d)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-F (..\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr.c)(0x5BF8A5BF)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\stm32l4xx_hal_pwr.o --depend ..\obj\stm32l4xx_hal_pwr.d)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-F (..\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr_ex.c)(0x5BF8A5BF)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\stm32l4xx_hal_pwr_ex.o --depend ..\obj\stm32l4xx_hal_pwr_ex.d)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-F (..\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c)(0x5BF8A5BF)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\stm32l4xx_hal_rcc.o --depend ..\obj\stm32l4xx_hal_rcc.d)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-F (..\CORE\startup_stm32l476xx.s)(0x5BF8A5B9)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 526" --pd "STM32L476xx SETA 1"--list .\listings\startup_stm32l476xx.lst --xref -o ..\obj\startup_stm32l476xx.o --depend ..\obj\startup_stm32l476xx.d)
-F (..\SYSTEM\sys\sys.c)(0x5E6AF9B9)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\sys.o --depend ..\obj\sys.d)
-I (..\SYSTEM\sys\sys.h)(0x5E6AF9B9)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)
-F (..\SYSTEM\delay\delay.c)(0x5E6AF9B9)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32L4xx_HAL_Driver\Inc -I ..\USER -I ..\STM32L4xx_HAL_Driver\Src -I ..\STM32L4xx_HAL_Driver\Inc\Legacy -I ..\STM32L4xx_HAL_Driver\Include -I ..\SYSTEM\sys -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32L476xx -DUSE_HAL_DRIVER -DSTM32L476xx-o ..\obj\delay.o --depend ..\obj\delay.d)
-I (..\SYSTEM\delay\delay.h)(0x5E6AF9B9)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx_hal_conf.h)(0x5BF8CE16)
-I (..\USER\main.h)(0x5BF8CE16)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h)(0x5BF8A5BD)
-I (..\USER\stm32l4xx.h)(0x5BF8A5B9)
-I (..\USER\stm32l476xx.h)(0x5BF8A5B9)
-I (..\CORE\core_cm4.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x5BF8A5BD)
-I (..\CORE\cmsis_armcc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmFunc.h)(0x5BF8A5BD)
-I (..\CORE\core_cmSimd.h)(0x5BF8A5BD)
-I (..\USER\system_stm32l4xx.h)(0x5BF8A5B9)
-I (..\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5BF8A5BD)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h)(0x5BF8A5BE)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h)(0x5BF8A5BD)
-I (..\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h)(0x5BF8A5BD)

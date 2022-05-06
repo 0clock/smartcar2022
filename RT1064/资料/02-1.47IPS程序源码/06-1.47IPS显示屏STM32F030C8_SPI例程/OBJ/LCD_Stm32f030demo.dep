@@ -1,168 +1,0 @@
-Dependencies for Project 'LCD', Target 'Stm32f030demo': (DO NOT MODIFY !)
-F (.\main.c)(0x60ED26BA)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F030 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
-I (stm32f0xx.h)(0x4F6BFDB8)
-I (..\CORE\core_cm0.h)(0x4F6BFDB8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
-I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
-I (system_stm32f0xx.h)(0x4F6BFDB8)
-I (stm32f0xx_conf.h)(0x536A18A2)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
-I (..\SYSTEM\delay\delay.h)(0x5E69F88F)
-I (..\SYSTEM\sys\sys.h)(0x5E69F851)
-I (..\HARDWARE\LED\led.h)(0x5E69F80A)
-I (..\HARDWARE\LCD\lcd_init.h)(0x60ED26F7)
-I (..\HARDWARE\LCD\lcd.h)(0x5EDDB862)
-I (..\HARDWARE\LCD\pic.h)(0x5E69B55D)
-F (.\stm32f0xx_it.c)(0x4F6BFDC2)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F030 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\stm32f0xx_it.o --omf_browse ..\obj\stm32f0xx_it.crf --depend ..\obj\stm32f0xx_it.d)
-I (stm32f0xx_it.h)(0x4F6BFDC2)
-I (stm32f0xx.h)(0x4F6BFDB8)
-I (..\CORE\core_cm0.h)(0x4F6BFDB8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
-I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
-I (system_stm32f0xx.h)(0x4F6BFDB8)
-I (stm32f0xx_conf.h)(0x536A18A2)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
-F (.\system_stm32f0xx.c)(0x4F6BFDB8)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F030 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\system_stm32f0xx.o --omf_browse ..\obj\system_stm32f0xx.crf --depend ..\obj\system_stm32f0xx.d)
-I (stm32f0xx.h)(0x4F6BFDB8)
-I (..\CORE\core_cm0.h)(0x4F6BFDB8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
-I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
-I (system_stm32f0xx.h)(0x4F6BFDB8)
-I (stm32f0xx_conf.h)(0x536A18A2)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
-F (..\CORE\startup_stm32f0xx.s)(0x5C64CCE7)(--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 526" --pd "STM32F030 SETA 1"--list .\startup_stm32f0xx.lst --xref -o ..\obj\startup_stm32f0xx.o --depend ..\obj\startup_stm32f0xx.d)
-F (..\HARDWARE\LED\led.c)(0x5E69F534)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F030 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\led.o --omf_browse ..\obj\led.crf --depend ..\obj\led.d)
-I (..\HARDWARE\LED\led.h)(0x5E69F80A)
-I (..\SYSTEM\sys\sys.h)(0x5E69F851)
-I (..\User\stm32f0xx.h)(0x4F6BFDB8)
-I (..\CORE\core_cm0.h)(0x4F6BFDB8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
-I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
-I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx_conf.h)(0x536A18A2)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
-F (..\HARDWARE\LCD\lcd_init.c)(0x60ED26E2)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F030 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\lcd_init.o --omf_browse ..\obj\lcd_init.crf --depend ..\obj\lcd_init.d)
-I (..\HARDWARE\LCD\lcd_init.h)(0x60ED26F7)
-I (..\SYSTEM\sys\sys.h)(0x5E69F851)
-I (..\User\stm32f0xx.h)(0x4F6BFDB8)
-I (..\CORE\core_cm0.h)(0x4F6BFDB8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
-I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
-I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx_conf.h)(0x536A18A2)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
-I (..\SYSTEM\delay\delay.h)(0x5E69F88F)
-F (..\HARDWARE\LCD\lcd.c)(0x5EE46A98)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F030 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\lcd.o --omf_browse ..\obj\lcd.crf --depend ..\obj\lcd.d)
-I (..\HARDWARE\LCD\lcd.h)(0x5EDDB862)
-I (..\SYSTEM\sys\sys.h)(0x5E69F851)
-I (..\User\stm32f0xx.h)(0x4F6BFDB8)
-I (..\CORE\core_cm0.h)(0x4F6BFDB8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
-I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
-I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx_conf.h)(0x536A18A2)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
-I (..\HARDWARE\LCD\lcd_init.h)(0x60ED26F7)
-I (..\HARDWARE\LCD\lcdfont.h)(0x5EDEE16D)
-I (..\SYSTEM\delay\delay.h)(0x5E69F88F)
-F (..\SYSTEM\sys\sys.c)(0x5E69F80A)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F030 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
-I (..\SYSTEM\sys\sys.h)(0x5E69F851)
-I (..\User\stm32f0xx.h)(0x4F6BFDB8)
-I (..\CORE\core_cm0.h)(0x4F6BFDB8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
-I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
-I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx_conf.h)(0x536A18A2)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
-F (..\SYSTEM\delay\delay.c)(0x52B5C282)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F030 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
-I (..\SYSTEM\delay\delay.h)(0x5E69F88F)
-I (..\User\stm32f0xx.h)(0x4F6BFDB8)
-I (..\CORE\core_cm0.h)(0x4F6BFDB8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
-I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
-I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx_conf.h)(0x536A18A2)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
-F (..\STM32F03x_FWLib\src\stm32f0xx_gpio.c)(0x4F6BFDB8)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F030 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\stm32f0xx_gpio.o --omf_browse ..\obj\stm32f0xx_gpio.crf --depend ..\obj\stm32f0xx_gpio.d)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx.h)(0x4F6BFDB8)
-I (..\CORE\core_cm0.h)(0x4F6BFDB8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
-I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
-I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx_conf.h)(0x536A18A2)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
-F (..\STM32F03x_FWLib\src\stm32f0xx_rcc.c)(0x4F6BFDB8)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F030 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\stm32f0xx_rcc.o --omf_browse ..\obj\stm32f0xx_rcc.crf --depend ..\obj\stm32f0xx_rcc.d)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx.h)(0x4F6BFDB8)
-I (..\CORE\core_cm0.h)(0x4F6BFDB8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
-I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
-I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx_conf.h)(0x536A18A2)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
-F (..\STM32F03x_FWLib\src\stm32f0xx_misc.c)(0x4F6BFDB8)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F030 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\stm32f0xx_misc.o --omf_browse ..\obj\stm32f0xx_misc.crf --depend ..\obj\stm32f0xx_misc.d)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx.h)(0x4F6BFDB8)
-I (..\CORE\core_cm0.h)(0x4F6BFDB8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
-I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
-I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx_conf.h)(0x536A18A2)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
-F (..\STM32F03x_FWLib\src\stm32f0xx_usart.c)(0x4F6BFDB8)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\HARDWARE\LCD-I.\RTE\_Stm32f030demo-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F030 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\stm32f0xx_usart.o --omf_browse ..\obj\stm32f0xx_usart.crf --depend ..\obj\stm32f0xx_usart.d)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx.h)(0x4F6BFDB8)
-I (..\CORE\core_cm0.h)(0x4F6BFDB8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
-I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
-I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
-I (..\User\stm32f0xx_conf.h)(0x536A18A2)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
-I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
