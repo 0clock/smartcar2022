@@ -22,7 +22,7 @@ void Beep_Set(){
     }
     else if(!Beep_flag)
         gpio_set(BEEP_PIN,0);
-    if(count>=2){
+    if(count>=5){
         count=0;
         Beep_flag=0;
     }

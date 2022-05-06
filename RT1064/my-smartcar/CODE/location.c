@@ -16,22 +16,21 @@ struct Location_Goal Car={0};          //小车状态（位置，目标）存储结构体
 struct Route_Dist Route_D[5];
 //---------------------数组-----------------------//
 int Car_Location[locate_sz][2]={//坐标原始数据
-        5,5,
-        10,5,
-        10,20,
-        1,5,
-        4,5,
-        2,20,
-        0,0,
-        0,0,
-        -10,-10,
-        0,0
+        10,15,
+    1,1,
+    9,8,
+    2,3,
+    13,20,
+    3,6,
+    0,0,
+    -10,-10,
+    0,0
 };
+
 int Car_Location_Route[locate_sz][2]={};//存放经过路径规划算法之后的坐标数据
 int CarMode;
 
 /*
-<<<<<<< HEAD
  ***************************************************************
 *	函 数 名: Location_Route
 *   功能说明: 路径规划
@@ -67,16 +66,12 @@ void Location_Route(){
 void Car_RecMode(){
     while(key1number);
 }
+
+
 void Car_OmniMove(){
-    static int count=0;
-    count++;
-    if(count==2){
-        key1number=1;
-        count=1;
-    }
     Car_SpeedGet();
     Car_Omni(Car.Speed_X,Car.Speed_Y,Car.Speed_Z);
-    if(abs(Car.MileageX)>=abs(Car.DistanceX)&&abs(Car.MileageY)>=abs(Car.DistanceY)){
+    if(abs(Car.MileageX)>=abs(Car.DistanceX)&&abs(Car.MileageY)>=abs(Car.DistanceY)||(Car.x1==-10&&Car.y1==-10)){
         Car_Stop();
         Car_RecMode();
         Get_Location();
@@ -113,15 +108,6 @@ void Car_Move(){
 }
 */
 
-void Car_Mode(){
-    switch (CarMode) {
-        case ahead:Car_Ahead();break;
-        case forward:Car_Back();break;
-        case turnround:Car_Turnround();break;
-        case anticlockwise:Car_Anticlockwise();break;
-        case stop:Car_Stop();break;
-    }
-}
 
 /*
 ***************************************************************
@@ -158,6 +144,7 @@ void Get_Target(void) {
         Car.x=Car_Location[Car.Position_Pointer-1][0];
         Car.y=Car_Location[Car.Position_Pointer-1][1];
     }
+
 
     Car.x1=Car_Location[Car.Position_Pointer][0];
     Car.y1=Car_Location[Car.Position_Pointer][1];

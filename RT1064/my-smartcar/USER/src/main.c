@@ -5,6 +5,7 @@
 int main(void)
 {
 	DisableGlobalIRQ();
+ 
 	board_init();   	//务必保留，本函数用于初始化MPU 时钟 调试串口
     
 	systick_delay_ms(300);	//延时300ms，等待主板其他外设上电成功
@@ -47,6 +48,7 @@ int main(void)
 	EnableGlobalIRQ(0);
 
     Beep_flag=1;
+    Location_Route();
 	while(1)
 	{
         if(mt9v03x_csi_finish_flag)			//图像采集完成
@@ -55,19 +57,18 @@ int main(void)
 
             //使用缩放显示函数，根据原始图像大小 以及设置需要显示的大小自动进行缩放或者放大显示
             //总钻风采集到的图像分辨率为 188*120 ，2.0寸IPS屏显示分辨率为 320*240 ，图像拉伸全屏显示。
-            ips114_displayimage032_zoom(mt9v03x_csi_image[0], MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//显示摄像头图像
+            //ips114_displayimage032_zoom(mt9v03x_csi_image[0], MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//显示摄像头图像
         }
-
 
         Car.Angel=-(int)cpmangle_z;
         //Car_Move();
 
-       // Car_Omni((speed_tar *sin(45/180 *PI)),(speed_tar *cos(45/180 *PI)),0);
+        //Car_Omni(Car.Speed_X,Car.Speed_Y,Car.Speed_Z);
         Car_OmniMove();
         //屏幕显示
         GUI_icm20602();
-				GUI_speed();
-				GUI_duty();
+        GUI_speed();
+        GUI_duty();
     }
 }
 

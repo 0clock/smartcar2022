@@ -26,7 +26,7 @@ float Position_KP =150;
 float Position_KI =20;
 float Position_KD =0;
 
-float Angel_KP = 10;
+float Angel_KP = 5;
 float Angel_KI = 0;
 float Angel_KD = 10;
 
@@ -46,7 +46,11 @@ float deta_mileage=0;
 void Car_SpeedGet(){
     Car.Speed_X=(float)speed_tar * sin(Car.Angel_Target/180 *PI);//((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
     Car.Speed_Y=(float)speed_tar * cos(Car.Angel_Target/180 *PI);
-    Car.Speed_Z= Angel_PID(Car.Angel,Car.Angel_Target);
+    Car.Speed_Z= Angel_PID(Car.Angel,0);
+    if(Car.Speed_Z>=70)
+        Car.Speed_Z=70;
+    if(Car.Speed_Z<=-70)
+        Car.Speed_Z=-70;
 /*    if(Car.MileageX<= abs(Car.DistanceX)){
         if(Car.DistanceX<0) {
             Car.Speed_X=-speed_tar;
@@ -193,7 +197,7 @@ int Angel_PID(int NowAngel,int TargetAngel){
     static float Bias,Speed_Z,Integral_bias,Last_Bias;
     Bias=TargetAngel - NowAngel;
     Integral_bias+=Bias;
-    Speed_Z=Position_KP*Bias+Position_KI*Integral_bias+Position_KD*(Bias-Last_Bias);
+    Speed_Z=Angel_KP*Bias+Angel_KI*Integral_bias+Angel_KD*(Bias-Last_Bias);
     Last_Bias=Bias;
     return Speed_Z;
 }
