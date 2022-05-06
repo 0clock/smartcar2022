@@ -219,6 +219,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/fast_math.c" "CMakeFiles/RT1064.dir/my-smartcar/CODE/fast_math.c.obj" "gcc" "CMakeFiles/RT1064.dir/my-smartcar/CODE/fast_math.c.obj.d"
   "C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/filter.c" "CMakeFiles/RT1064.dir/my-smartcar/CODE/filter.c.obj" "gcc" "CMakeFiles/RT1064.dir/my-smartcar/CODE/filter.c.obj.d"
   "C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/icm.c" "CMakeFiles/RT1064.dir/my-smartcar/CODE/icm.c.obj" "gcc" "CMakeFiles/RT1064.dir/my-smartcar/CODE/icm.c.obj.d"
+  "C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/image.c" "CMakeFiles/RT1064.dir/my-smartcar/CODE/image.c.obj" "gcc" "CMakeFiles/RT1064.dir/my-smartcar/CODE/image.c.obj.d"
   "C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/key.c" "CMakeFiles/RT1064.dir/my-smartcar/CODE/key.c.obj" "gcc" "CMakeFiles/RT1064.dir/my-smartcar/CODE/key.c.obj.d"
   "C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/location.c" "CMakeFiles/RT1064.dir/my-smartcar/CODE/location.c.obj" "gcc" "CMakeFiles/RT1064.dir/my-smartcar/CODE/location.c.obj.d"
   "C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/motor.c" "CMakeFiles/RT1064.dir/my-smartcar/CODE/motor.c.obj" "gcc" "CMakeFiles/RT1064.dir/my-smartcar/CODE/motor.c.obj.d"

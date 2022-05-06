@@ -421,6 +421,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RT1064.dir/my-smartcar/CODE/filter.c.obj.d"
   "CMakeFiles/RT1064.dir/my-smartcar/CODE/icm.c.obj"
   "CMakeFiles/RT1064.dir/my-smartcar/CODE/icm.c.obj.d"
+  "CMakeFiles/RT1064.dir/my-smartcar/CODE/image.c.obj"
+  "CMakeFiles/RT1064.dir/my-smartcar/CODE/image.c.obj.d"
   "CMakeFiles/RT1064.dir/my-smartcar/CODE/key.c.obj"
   "CMakeFiles/RT1064.dir/my-smartcar/CODE/key.c.obj.d"
   "CMakeFiles/RT1064.dir/my-smartcar/CODE/location.c.obj"

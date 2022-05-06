@@ -13,6 +13,7 @@ struct RC_Para Encoder2_Para = {0,0,10};
 struct RC_Para Encoder3_Para = {0,0,10};
 struct RC_Para Encoder4_Para = {0,0,10};
 
+int Angel_PID(int NowAngel,int TargetAngel);
 
 RC_Filter_pt RC_Encoder1 = &Encoder1_Para;
 RC_Filter_pt RC_Encoder2 = &Encoder2_Para;
@@ -24,6 +25,10 @@ RC_Filter_pt RC_Encoder4 = &Encoder4_Para;
 float Position_KP =150;
 float Position_KI =20;
 float Position_KD =0;
+
+float Angel_KP = 10;
+float Angel_KI = 0;
+float Angel_KD = 10;
 
 //电机目标速度
 int speed_tar_1 = 0;
@@ -41,6 +46,7 @@ float deta_mileage=0;
 void Car_SpeedGet(){
     Car.Speed_X=(float)speed_tar * sin(Car.Angel_Target/180 *PI);//((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
     Car.Speed_Y=(float)speed_tar * cos(Car.Angel_Target/180 *PI);
+    Car.Speed_Z= Angel_PID(Car.Angel,Car.Angel_Target);
 /*    if(Car.MileageX<= abs(Car.DistanceX)){
         if(Car.DistanceX<0) {
             Car.Speed_X=-speed_tar;
@@ -60,7 +66,7 @@ void Car_SpeedGet(){
     }else{
         Car.Speed_Y=0;
     }*/
-    if(Car.Angel>1){
+/*    if(Car.Angel>1){
         Car.Speed_Z=-5;
     }else if(Car.Angel< -1){
         Car.Speed_Z=5;
@@ -71,7 +77,7 @@ void Car_SpeedGet(){
         Car.Speed_X=0;
         Car.Speed_Y=0;
         Car.Speed_Z=0;
-    }
+    }*/
 }
 void Car_Omni(int16 x, int16 y, int16 z){
     speed_tar_1= y + x + z;
@@ -148,9 +154,9 @@ void Car_Stop(){
 //增量式PID
 int Position_PID1(int Encoder,int Target){ 	
 	static float Bias,Pwm,Integral_bias,Last_Bias;
-	Bias=Target - Encoder;
-	Integral_bias+=Bias;
-	Pwm=Position_KP*Bias+Position_KI*Integral_bias+Position_KD*(Bias-Last_Bias);
+	Bias=Target - Encoder;//当前误差
+	Integral_bias+=Bias;//误差的积累
+	Pwm=Position_KP*Bias+Position_KI*Integral_bias+Position_KD*(Bias-Last_Bias);//当前误差-上次误差
 	Last_Bias=Bias;
 	return Pwm;
 }
@@ -181,6 +187,15 @@ int Position_PID4(int Encoder,int Target){
 	Pwm=Position_KP*Bias+Position_KI*Integral_bias+Position_KD*(Bias-Last_Bias);
 	Last_Bias=Bias;
 	return Pwm;
+}
+
+int Angel_PID(int NowAngel,int TargetAngel){
+    static float Bias,Speed_Z,Integral_bias,Last_Bias;
+    Bias=TargetAngel - NowAngel;
+    Integral_bias+=Bias;
+    Speed_Z=Position_KP*Bias+Position_KI*Integral_bias+Position_KD*(Bias-Last_Bias);
+    Last_Bias=Bias;
+    return Speed_Z;
 }
 /**
  * @name: limit_pwm 

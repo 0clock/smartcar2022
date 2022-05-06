@@ -5192,6 +5192,30 @@ my-smartcar/CODE/icm.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.dir\build.make CMakeFiles/RT1064.dir/my-smartcar/CODE/icm.c.s
 .PHONY : my-smartcar/CODE/icm.c.s
 
+my-smartcar/CODE/image.obj: my-smartcar/CODE/image.c.obj
+.PHONY : my-smartcar/CODE/image.obj
+
+# target to build an object file
+my-smartcar/CODE/image.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.dir\build.make CMakeFiles/RT1064.dir/my-smartcar/CODE/image.c.obj
+.PHONY : my-smartcar/CODE/image.c.obj
+
+my-smartcar/CODE/image.i: my-smartcar/CODE/image.c.i
+.PHONY : my-smartcar/CODE/image.i
+
+# target to preprocess a source file
+my-smartcar/CODE/image.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.dir\build.make CMakeFiles/RT1064.dir/my-smartcar/CODE/image.c.i
+.PHONY : my-smartcar/CODE/image.c.i
+
+my-smartcar/CODE/image.s: my-smartcar/CODE/image.c.s
+.PHONY : my-smartcar/CODE/image.s
+
+# target to generate assembly for a file
+my-smartcar/CODE/image.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.dir\build.make CMakeFiles/RT1064.dir/my-smartcar/CODE/image.c.s
+.PHONY : my-smartcar/CODE/image.c.s
+
 my-smartcar/CODE/key.obj: my-smartcar/CODE/key.c.obj
 .PHONY : my-smartcar/CODE/key.obj
 
@@ -5978,6 +6002,9 @@ help:
 	@echo ... my-smartcar/CODE/icm.obj
 	@echo ... my-smartcar/CODE/icm.i
 	@echo ... my-smartcar/CODE/icm.s
+	@echo ... my-smartcar/CODE/image.obj
+	@echo ... my-smartcar/CODE/image.i
+	@echo ... my-smartcar/CODE/image.s
 	@echo ... my-smartcar/CODE/key.obj
 	@echo ... my-smartcar/CODE/key.i
 	@echo ... my-smartcar/CODE/key.s

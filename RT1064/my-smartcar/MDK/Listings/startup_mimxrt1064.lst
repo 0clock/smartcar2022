@@ -1798,12 +1798,12 @@ ARM Macro Assembler    Page 28
               00000000 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M7.fp.dp --depen
-d=.\objects\startup_mimxrt1064.d -o.\objects\startup_mimxrt1064.o -IC:\Users\Ja
-y\AppData\Local\Arm\Packs\NXP\MIMXRT1064_DFP\14.0.0 --predefine="__MICROLIB SET
-A 1" --predefine="__UVISION_VERSION SETA 536" --predefine="CPU_MIMXRT1064DVL6A 
-SETA 1" --predefine="__STARTUP_INITIALIZE_NONCACHEDATA SETA 1" --list=.\listing
-s\startup_mimxrt1064.lst ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
-MIMXRT1064.s
+d=.\objects\startup_mimxrt1064.d -o.\objects\startup_mimxrt1064.o -IC:\Users\Th
+inkPad\AppData\Local\Arm\Packs\NXP\MIMXRT1064_DFP\13.1.0 --predefine="__MICROLI
+B SETA 1" --predefine="__UVISION_VERSION SETA 536" --predefine="CPU_MIMXRT1064D
+VL6A SETA 1" --predefine="__STARTUP_INITIALIZE_NONCACHEDATA SETA 1" --list=.\li
+stings\startup_mimxrt1064.lst ..\..\Libraries\nxp_libraries\startup\MDK-ARM\sta
+rtup_MIMXRT1064.s
 
 
 

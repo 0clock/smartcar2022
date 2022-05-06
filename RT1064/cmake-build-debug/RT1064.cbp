@@ -1554,6 +1554,12 @@
 		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/icm.h">
 			<Option target="RT1064"/>
 		</Unit>
+		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/image.c">
+			<Option target="RT1064"/>
+		</Unit>
+		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/image.h">
+			<Option target="RT1064"/>
+		</Unit>
 		<Unit filename="C:/Users/ThinkPad/Desktop/智能车/my-smart-car-2022/RT1064/my-smartcar/CODE/key.c">
 			<Option target="RT1064"/>
 		</Unit>

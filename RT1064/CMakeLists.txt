@@ -504,6 +504,8 @@ add_executable(RT1064
         Libraries/seekfree_peripheral/SEEKFREE_WIRELESS.h
         my-smartcar/CODE/filter.c
         my-smartcar/CODE/filter.h
+        my-smartcar/CODE/image.c
+        my-smartcar/CODE/image.h
         my-smartcar/CODE/GUI.c
         my-smartcar/CODE/GUI.h
         my-smartcar/CODE/key.c

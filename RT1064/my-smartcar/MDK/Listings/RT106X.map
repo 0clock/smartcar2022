@@ -16205,74 +16205,74 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       940         24          0         28         32       4030   ahrs.o
-       706          0          0          0          0       9693   board.o
-      1772         68          8          0          0      11379   clock_config.o
-        16          0          0          0          5       1309   common.o
-         0          0        512          0          0       2468   evkmimxrt1064_flexspi_nor_config.o
-         0          0       1072          0          0        563   evkmimxrt1064_sdram_ini_dcd.o
-        94         12          0          0          0        897   fast_math.o
-        40          0          0          0          0       2219   filter.o
-        60         44          0          0          0        683   fsl_assert.o
-      1764         60         71          0          8      19571   fsl_clock.o
-      1336         36         47          0          4      18927   fsl_csi.o
-       446          0        135          0         32       7939   fsl_debug_console.o
-      1192          0        115          0        128      33606   fsl_edma.o
-       480         48         48          0         12      33355   fsl_enet.o
-       248         84         51          4         16      49164   fsl_flexcan.o
-        86          0          0          0         24      16492   fsl_flexio.o
-        74          0          0          0          0      14375   fsl_flexio_camera.o
-         0          0         48          0          0        869   fsl_flexspi_nor_boot.o
-       564        174         48          0          0       7432   fsl_gpio.o
-       648        240         53          0          0       7257   fsl_gpt.o
-      1138         14         49          0         48      37081   fsl_lpi2c.o
-      3674        248         89          0         25      35659   fsl_lpspi.o
-      2604        172        273          4         36      29969   fsl_lpuart.o
-       242         52         47          0          0       6280   fsl_pit.o
-      2076        296         87          0          0      20054   fsl_pwm.o
-       450        124         58          0          0      13354   fsl_qtmr.o
-      1578         56         47          0         32      44490   fsl_sai.o
-        70          0          0          0         12       9291   fsl_sdmmc_event.o
-       154          0          0          0         41      21668   fsl_sdmmc_host.o
-      1072          0         49          0         16      24232   fsl_spdif.o
-      2314         70          0          0          0      13609   fsl_str.o
-        66          0          0          4         12      39764   fsl_usdhc.o
-       222         40          0          0          0       1342   gui.o
-       696         28          0          0         72       1903   icm.o
-       242          0          0          0          0       6407   isr.o
-       652          0          0          0         20       5340   key.o
-       396         20          0         80         68       2728   location.o
-       376         48        172          0          0       6544   lpuart_adapter.o
-       380          0          0          0          0       9142   main.o
-      1876         24          0         72         88      12029   motor.o
-         0          0       1520          0          0        788   seekfree_font.o
-       454          0          0          0         12       5285   seekfree_icm20602.o
-      1456          0          0          0          0      18640   seekfree_ips114_spi.o
-       274          0          0          0          5      20597   seekfree_mt9v03x.o
-       438          0          0         68      45214       6572   seekfree_mt9v03x_csi.o
-       774        176          0          0          0       5350   seekfree_printf.o
-        88          0          0          0         12      18714   seekfree_scc8660.o
-       466          8        123          0          0       8892   serial_manager.o
-       194         16         75          0          0       5072   serial_port_uart.o
-       548        242       1024          0          0       3488   startup_mimxrt1064.o
-       352          0          0          4          0       6433   system_mimxrt1064.o
-       238          0          0          0          0      15889   usb_device_dci.o
-      1188          0          0          0          0      21379   usb_device_ehci.o
-       706         90          0         32        141       5114   vofa.o
-        48          0          0          0         28      22723   zf_camera.o
-       570         48          0          0         32      11528   zf_csi.o
-       200          0          0         40          0      15268   zf_gpio.o
-     14054       1564         49          0          0      17906   zf_iomuxc.o
-       260         64          0          0          0       8919   zf_pit.o
-      1182        314         64          0          0      14272   zf_pwm.o
-      1224        152         47         20          0      10053   zf_qtimer.o
-      1582        240         44         20          0      14832   zf_spi.o
-       270          0          0          0          1       9320   zf_systick.o
-       690         60          0         36          0      12401   zf_uart.o
-        36          0          0          0         16      18247   zf_usb_cdc.o
+       940         24          0         28         32       4045   ahrs.o
+       706          0          0          0          0       9708   board.o
+      1772         68          8          0          0      11394   clock_config.o
+        16          0          0          0          5       1324   common.o
+         0          0        512          0          0       2483   evkmimxrt1064_flexspi_nor_config.o
+         0          0       1072          0          0        578   evkmimxrt1064_sdram_ini_dcd.o
+        94         12          0          0          0        912   fast_math.o
+        40          0          0          0          0       2234   filter.o
+        60         44          0          0          0        698   fsl_assert.o
+      1764         60         71          0          8      19586   fsl_clock.o
+      1336         36         47          0          4      18942   fsl_csi.o
+       446          0        135          0         32       7954   fsl_debug_console.o
+      1192          0        115          0        128      33621   fsl_edma.o
+       480         48         48          0         12      33370   fsl_enet.o
+       248         84         51          4         16      49179   fsl_flexcan.o
+        86          0          0          0         24      16507   fsl_flexio.o
+        74          0          0          0          0      14390   fsl_flexio_camera.o
+         0          0         48          0          0        884   fsl_flexspi_nor_boot.o
+       564        174         48          0          0       7447   fsl_gpio.o
+       648        240         53          0          0       7272   fsl_gpt.o
+      1138         14         49          0         48      37096   fsl_lpi2c.o
+      3674        248         89          0         25      35674   fsl_lpspi.o
+      2604        172        273          4         36      29984   fsl_lpuart.o
+       242         52         47          0          0       6295   fsl_pit.o
+      2076        296         87          0          0      20069   fsl_pwm.o
+       450        124         58          0          0      13369   fsl_qtmr.o
+      1578         56         47          0         32      44505   fsl_sai.o
+        70          0          0          0         12       9306   fsl_sdmmc_event.o
+       154          0          0          0         41      21683   fsl_sdmmc_host.o
+      1072          0         49          0         16      24247   fsl_spdif.o
+      2314         70          0          0          0      13624   fsl_str.o
+        66          0          0          4         12      39779   fsl_usdhc.o
+       222         40          0          0          0       1357   gui.o
+       696         28          0          0         72       1918   icm.o
+       242          0          0          0          0       6422   isr.o
+       652          0          0          0         20       5355   key.o
+       396         20          0         80         68       2743   location.o
+       376         48        172          0          0       6559   lpuart_adapter.o
+       380          0          0          0          0       9157   main.o
+      1876         24          0         72         88      12044   motor.o
+         0          0       1520          0          0        803   seekfree_font.o
+       454          0          0          0         12       5300   seekfree_icm20602.o
+      1456          0          0          0          0      18655   seekfree_ips114_spi.o
+       274          0          0          0          5      20612   seekfree_mt9v03x.o
+       438          0          0         68      45214       6587   seekfree_mt9v03x_csi.o
+       774        176          0          0          0       5365   seekfree_printf.o
+        88          0          0          0         12      18729   seekfree_scc8660.o
+       466          8        123          0          0       8907   serial_manager.o
+       194         16         75          0          0       5087   serial_port_uart.o
+       548        242       1024          0          0       3500   startup_mimxrt1064.o
+       352          0          0          4          0       6448   system_mimxrt1064.o
+       238          0          0          0          0      15904   usb_device_dci.o
+      1188          0          0          0          0      21394   usb_device_ehci.o
+       706         90          0         32        141       5129   vofa.o
+        48          0          0          0         28      22738   zf_camera.o
+       570         48          0          0         32      11543   zf_csi.o
+       200          0          0         40          0      15283   zf_gpio.o
+     14054       1564         49          0          0      17921   zf_iomuxc.o
+       260         64          0          0          0       8934   zf_pit.o
+      1182        314         64          0          0      14287   zf_pwm.o
+      1224        152         47         20          0      10068   zf_qtimer.o
+      1582        240         44         20          0      14847   zf_spi.o
+       270          0          0          0          1       9335   zf_systick.o
+       690         60          0         36          0      12416   zf_uart.o
+        36          0          0          0         16      18262   zf_usb_cdc.o
 
     ----------------------------------------------------------------------
-     59522       5064       6076        412      52432     880796   Object Totals
+     59522       5064       6076        412      52432     881768   Object Totals
          0          0         48          0       6144          0   (incl. Generated)
       1486        108          3          0         96          0   (incl. Padding)
 
@@ -16347,8 +16347,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     66480       5826       6748        424      52432     882080   Grand Totals
-     66480       5826       6748        256      52432     882080   ELF Image Totals (compressed)
+     66480       5826       6748        424      52432     883052   Grand Totals
+     66480       5826       6748        256      52432     883052   ELF Image Totals (compressed)
      66480       5826       6748        256          0          0   ROM Totals
 
 ==============================================================================

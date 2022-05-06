@@ -1,55 +1,3 @@
-/*********************************************************************************************************************
- * COPYRIGHT NOTICE
- * Copyright (c) 2019,逐飞科技
- * All rights reserved.
- * 技术讨论QQ群：一群：179029047(已满)  二群：244861897
- *
- * 以下所有内容版权均属逐飞科技所有，未经允许不得用于商业用途，
- * 欢迎各位使用并传播本程序，修改内容时必须保留逐飞科技的版权声明。
- *
- * @file       		main
- * @company	   		成都逐飞科技有限公司
- * @author     		逐飞科技(QQ3184284598)
- * @version    		查看doc内version文件 版本说明
- * @Software 		IAR 8.3 or MDK 5.24
- * @Target core		NXP RT1064DVL6A
- * @Taobao   		https://seekfree.taobao.com/
- * @date       		2019-04-30
- * @note		
-					接线定义：
-					------------------------------------ 
-						1.14IPS模块管脚      	单片机管脚
-						SCL                 	查看SEEKFREE_IPS114_SPI.h文件中的IPS114_SCL_PIN		宏定义     硬件SPI引脚不可随意切换
-						SDA                 	查看SEEKFREE_IPS114_SPI.h文件中的IPS114_SDA_PIN		宏定义     硬件SPI引脚不可随意切换
-						RES                 	查看SEEKFREE_IPS114_SPI.h文件中的IPS114_REST_PIN	宏定义   
-						DC                  	查看SEEKFREE_IPS114_SPI.h文件中的IPS114_DC_PIN		宏定义
-						CS                  	查看SEEKFREE_IPS114_SPI.h文件中的IPS114_CS_PIN		宏定义     硬件SPI引脚不可随意切换
-						
-						电源引脚
-						BL  3.3V电源（背光控制引脚，也可以接PWM来控制亮度）
-						VCC 3.3V电源
-						GND 电源地
-						最大分辨率135*240
-					------------------------------------ 
-						总钻风模块管脚      	单片机管脚
-						SDA(51的RX)         	查看SEEKFREE_MT9V03X_CSI.h文件中的MT9V03X_CSI_COF_UART_TX	宏定义
-						SCL(51的TX)         	查看SEEKFREE_MT9V03X_CSI.h文件中的MT9V03X_CSI_COF_UART_RX	宏定义
-						场中断(VSY)         	查看SEEKFREE_MT9V03X_CSI.h文件中的MT9V03X_CSI_VSYNC_PIN		宏定义
-						行中断(HREF)	    	不需要使用
-						像素中断(PCLK)      	查看SEEKFREE_MT9V03X_CSI.h文件中的MT9V03X_CSI_PCLK_PIN		宏定义
-						数据口(D0-D7)			B31-B24 B31对应摄像头接口D0
-					------------------------------------ 
-						默认分辨率是            188*120
-						默认FPS                 50帧
-					------------------------------------ 
- ********************************************************************************************************************/
-
-
-//整套推荐IO查看Projecct文件夹下的TXT文本
-//打开新的工程或者工程移动了位置务必执行以下操作
-//第一步 关闭上面所有打开的文件
-//第二步 project  clean  等待下方进度条走完
-
 #include "headfile.h"
 
 
@@ -110,7 +58,6 @@ int main(void)
             ips114_displayimage032_zoom(mt9v03x_csi_image[0], MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//显示摄像头图像
         }
 
-#if 1
 
         Car.Angel=-(int)cpmangle_z;
         //Car_Move();
@@ -118,10 +65,9 @@ int main(void)
        // Car_Omni((speed_tar *sin(45/180 *PI)),(speed_tar *cos(45/180 *PI)),0);
         Car_OmniMove();
         //屏幕显示
-/*        GUI_icm20602();
-		GUI_speed();
-		GUI_duty();*/
-#endif
+        GUI_icm20602();
+				GUI_speed();
+				GUI_duty();
     }
 }
 
