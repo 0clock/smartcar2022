@@ -71,6 +71,7 @@ typedef struct Location_Goal
 void Location_Route(void);           //路径规划函数
 void Charge_Locate(void);            //坐标处理函数
 void Car_Mode(void);
+void Car_Return();
 void Car_OmniMove(void);
 void Car_Move(void);
 void Get_Road(void);                 //路径呈现函数

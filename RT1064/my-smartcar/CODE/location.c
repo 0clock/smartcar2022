@@ -22,7 +22,7 @@ int Car_Location[locate_sz][2]={//坐标原始数据
     2,3,
     13,20,
     3,6,
-    0,0
+    10,10
 };
 
 int Car_Location_Route[locate_sz][2]={0,0};//存放经过路径规划算法之后的坐标数据
@@ -50,6 +50,7 @@ void Location_Route(){
         Route_D[i].dist= dis(i);
         Route_D[i].num=i;
        }
+
     qsort(Route_D,locate_sz, sizeof(struct Route_Dist),cmpFunc);//排序
     //printf("--顺序点位--\n");
     for(int i=0;i<locate_sz;++i) {
@@ -61,23 +62,23 @@ void Location_Route(){
 /*
  * 识别模式
  */
-void Car_RecMode(){
-    while(key1number);
-}
 
 
 void Car_OmniMove(){
     Car_SpeedGet();
     Car_Omni(Car.Speed_X,Car.Speed_Y,Car.Speed_Z);
-    if(abs(Car.MileageX)>=abs(Car.DistanceX)&&abs(Car.MileageY)>=abs(Car.DistanceY)||(Car.x1==-10&&Car.y1==-10)){
+    if(abs(Car.MileageX)>=abs(Car.DistanceX)&&abs(Car.MileageY)>=abs(Car.DistanceY)){
         Car_Stop();
-        Car_RecMode();
+        Beep_Set(50,1);
         Get_Location();
         Car.MileageX=0;
         Car.MileageY=0;
     }
 }
 
+void Car_Return(){
+
+}
 
 /*先转向再跑，暂时不用
 void Car_Move(){
@@ -141,12 +142,18 @@ void Get_Target(void) {
         Car.x=Car_Location_Route[Car.Position_Pointer-1][0];
         Car.y=Car_Location_Route[Car.Position_Pointer-1][1];
     }
-
-
-    Car.x1=Car_Location_Route[Car.Position_Pointer][0];
-    Car.y1=Car_Location_Route[Car.Position_Pointer][1];
+    if(Car.Position_Pointer<=locate_sz){
+        Car.x1=Car_Location_Route[Car.Position_Pointer][0];
+        Car.y1=Car_Location_Route[Car.Position_Pointer][1];
+        Car.Position_Pointer++;
+    }else{
+        Car.x=0;
+        Car.y=0;
+        Car.x1=0;
+        Car.y1=0;
+    }
     //下一个目标点
-    Car.Position_Pointer++;
+
 }
  
 /*

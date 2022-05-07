@@ -158,23 +158,33 @@ void Key_Scans(void)
 void Key1_Action(void)
 {
     speed_tar=10;
-    key1number=0;
+    Gui_Page_Active=TRUE;
+    Beep_Set(5,1);
+
 }
 
 void Key2_Action(void)
 {
+
     speed_tar=40;
+    Gui_Page_Active=TRUE;
+    Beep_Set(5,1);
 }
 
 
 void Key3_Action(void)
 {
     speed_tar=60;
+    Gui_Page_Active=TRUE;
+    Beep_Set(5,1);
 }
 
 void Key4_Action(void)
 {
-    ips114_clear(GREEN);
-    GUI_TargetPoint();
     speed_tar=0;
+    Gui_Page_Active=TRUE;
+    Page_Number++;
+    if(Page_Number>5)
+        Page_Number=0;
+    Beep_Set(5,1);
 }

@@ -38,8 +38,6 @@ void PIT_IRQHandler(void)
     if(PIT_FLAG_GET(PIT_CH1))
     {
         Key_Scans();
-        //Get_Angel();
-
         VOFA_Send();
         Beep_Ctrl();
         PIT_FLAG_CLEAR(PIT_CH1);
@@ -47,8 +45,7 @@ void PIT_IRQHandler(void)
     
     if(PIT_FLAG_GET(PIT_CH2))
     {
-        //Car_Mode();
-
+        Car_OmniMove();
         Motor_Ctrl();
         PIT_FLAG_CLEAR(PIT_CH2);
     }
@@ -56,6 +53,7 @@ void PIT_IRQHandler(void)
     if(PIT_FLAG_GET(PIT_CH3))
     {
         AHRS_get_yaw();
+        Car.Angel=cpmangle_z;
         PIT_FLAG_CLEAR(PIT_CH3);
     }
 

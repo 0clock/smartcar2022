@@ -106,7 +106,7 @@ void image_or(image_t *img0, image_t *img1, image_t *img2) {
     }
 }
 
-// 2x2最小池化(赛道边界是黑色，最小池化可以较好保留赛道边界)
+//2x2最小池化(赛道边界是黑色，最小池化可以较好保留赛道边界)
 void minpool2(image_t *img0, image_t *img1) {
     assert(img0 && img0->data);
     assert(img1 && img1->data);

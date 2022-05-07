@@ -13,7 +13,7 @@ struct RC_Para Encoder2_Para = {0,0,10};
 struct RC_Para Encoder3_Para = {0,0,10};
 struct RC_Para Encoder4_Para = {0,0,10};
 
-int Angel_PID(int NowAngel,int TargetAngel);
+
 
 RC_Filter_pt RC_Encoder1 = &Encoder1_Para;
 RC_Filter_pt RC_Encoder2 = &Encoder2_Para;
@@ -28,7 +28,7 @@ float Position_KD =0;
 
 float Angel_KP = 5;
 float Angel_KI = 0;
-float Angel_KD = 10;
+float Angel_KD = 15;
 
 //电机目标速度
 int speed_tar_1 = 0;
@@ -46,11 +46,7 @@ float deta_mileage=0;
 void Car_SpeedGet(){
     Car.Speed_X=(float)speed_tar * sin(Car.Angel_Target/180 *PI);//((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
     Car.Speed_Y=(float)speed_tar * cos(Car.Angel_Target/180 *PI);
-    Car.Speed_Z= - Angel_PID(Car.Angel,0);
-    if(Car.Speed_Z>=70)
-        Car.Speed_Z=70;
-    if(Car.Speed_Z<=-70)
-        Car.Speed_Z=-70;
+    Car.Speed_Z=-Angel_PID(Car.Angel,0);
 /*    if(Car.MileageX<= abs(Car.DistanceX)){
         if(Car.DistanceX<0) {
             Car.Speed_X=-speed_tar;
@@ -199,6 +195,10 @@ int Angel_PID(int NowAngel,int TargetAngel){
     Integral_bias+=Bias;
     Speed_Z=Angel_KP*Bias+Angel_KI*Integral_bias+Angel_KD*(Bias-Last_Bias);
     Last_Bias=Bias;
+    if(Speed_Z>=70)
+        Speed_Z=70;
+    if(Speed_Z<=-70)
+        Speed_Z=-70;
     return Speed_Z;
 }
 /**

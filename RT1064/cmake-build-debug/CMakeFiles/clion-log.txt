@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\ThinkPad\Desktop\smart-car\my-smart-car-2022\RT1064 -B C:\Users\ThinkPad\Desktop\smart-car\my-smart-car-2022\RT1064\cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe" -G Ninja -S C:\Users\Jay\Desktop\my-smart-car-2022\RT1064 -B C:\Users\Jay\Desktop\my-smart-car-2022\RT1064\cmake-build-debug
 -- The C compiler identification is GNU 11.2.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
@@ -7,4 +7,4 @@
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/ThinkPad/Desktop/smart-car/my-smart-car-2022/RT1064/cmake-build-debug
+-- Build files have been written to: C:/Users/Jay/Desktop/my-smart-car-2022/RT1064/cmake-build-debug
