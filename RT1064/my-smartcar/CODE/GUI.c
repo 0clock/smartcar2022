@@ -39,6 +39,8 @@ void GUI_FirstPage(){
             break;
     }
 }
+
+
 void GUI_Motor(){
     ips114_showstr(10,0,"Encoder:");
     ips114_showint16(15,1,RC_encoder1);
@@ -61,7 +63,7 @@ void GUI_Motor(){
 
 void GUI_icm20602(){
     ips114_showstr(10,5,"Angel:");
-    ips114_showfloat(15,6,cpmangle_z,3,4);
+    ips114_showfloat(15,6,Car.Angel,3,4);
     ips114_showstr(10,8,"An_Tar:");
     ips114_showint16(15,9,Car.Angel_Target);
 }

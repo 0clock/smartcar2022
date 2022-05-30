@@ -20,11 +20,11 @@ int main(void)
 
 	Motor_Init();
 	Encoder_Init();
-    RCEncoder_Init();
+  RCEncoder_Init();
 	Key_Init();
 
-    icm20602_init_spi();
-    icmOffsetInit();//icm零漂消除
+  icm20602_init_spi();
+  icmOffsetInit();//icm零漂消除
 	GUI_init();
 	//mt9v03x_csi_init();	//初始化摄像头 使用CSI接口
 	//如果屏幕一直显示初始化信息，请检查摄像头接线
@@ -45,17 +45,11 @@ int main(void)
 	systick_delay_ms(500);
 	systick_start();
 	EnableGlobalIRQ(0);
-
     Location_Route();
-    Beep_Set(12,3);
-    Car.Position_Pointer=0;
-    Car.DistanceX=0;
-    Car.DistanceY=0;
 	while(1)
 	{
         GUI_FirstPage();
-        //Car_Move();
-        //Car_Omni(Car.Speed_X,Car.Speed_Y,Car.Speed_Z);
+				Car_Omni(5,8,2);
     }
 }
 

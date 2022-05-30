@@ -67,13 +67,13 @@ void Location_Route(){
 void Car_OmniMove(){
     Car_SpeedGet();
     Car_Omni(Car.Speed_X,Car.Speed_Y,Car.Speed_Z);
-    if(abs(Car.MileageX)>=abs(Car.DistanceX)&&abs(Car.MileageY)>=abs(Car.DistanceY)){
+/*    if(abs(Car.MileageX)>=abs(Car.DistanceX)&&abs(Car.MileageY)>=abs(Car.DistanceY)){
         Car_Stop();
         Beep_Set(50,1);
         Get_Location();
         Car.MileageX=0;
         Car.MileageY=0;
-    }
+    }*/
 }
 
 void Car_Return(){
