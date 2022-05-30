@@ -20,7 +20,7 @@ int main(void)
 
 	Motor_Init();
 	Encoder_Init();
-  RCEncoder_Init();
+    RCEncoder_Init();
 	Key_Init();
 
   icm20602_init_spi();
@@ -49,7 +49,6 @@ int main(void)
 	while(1)
 	{
         GUI_FirstPage();
-				Car_Omni(5,8,2);
     }
 }
 
