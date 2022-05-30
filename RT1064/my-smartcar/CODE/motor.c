@@ -44,10 +44,10 @@ float deta_mileage=0;
  **/
 
 void Car_SpeedGet(){
-/*    Car.Speed_X=(float)speed_tar * sin(Car.Angel_Target/180 *PI);//((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
-    Car.Speed_Y=(float)speed_tar * cos(Car.Angel_Target/180 *PI);*/
+    Car.Speed_X=(float)speed_tar * sin(Car.Angel_Target/180 *PI);//((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
+    Car.Speed_Y=(float)speed_tar * cos(Car.Angel_Target/180 *PI);
     Car.Speed_Z=-Angel_PID(Car.Angel,0);
-/*    if(Car.MileageX<= abs(Car.DistanceX)){
+    if(Car.MileageX<= abs(Car.DistanceX)){
         if(Car.DistanceX<0) {
             Car.Speed_X=-speed_tar;
         }else{
@@ -65,8 +65,8 @@ void Car_SpeedGet(){
         }
     }else{
         Car.Speed_Y=0;
-    }*/
-/*    if(Car.Angel>1){
+    }
+    if(Car.Angel>1){
         Car.Speed_Z=-5;
     }else if(Car.Angel< -1){
         Car.Speed_Z=5;
@@ -77,7 +77,7 @@ void Car_SpeedGet(){
         Car.Speed_X=0;
         Car.Speed_Y=0;
         Car.Speed_Z=0;
-    }*/
+    }
 }
 void Car_Omni(int16 x, int16 y, int16 z){
     speed_tar_1= y + x + z;
