@@ -49,6 +49,7 @@ int main(void)
 	while(1)
 	{
         GUI_FirstPage();
+        Car_Omni(0,0,0);
     }
 }
 
