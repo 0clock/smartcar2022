@@ -13,6 +13,7 @@
 #define Dial_switch2 D4
 
 struct Beep beep;
+int RecModeTest=1;
 
 void Beep_Set(int time,int frequency){
     beep.time=time;

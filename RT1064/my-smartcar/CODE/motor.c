@@ -275,7 +275,6 @@ void Omni_Mileage(){
     Car.MileageY+=(float)(detay*0.0086);
 }
 
-void
 
 void RCEncoder_Init(void)
 {
