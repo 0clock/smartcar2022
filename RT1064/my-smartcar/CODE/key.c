@@ -167,6 +167,7 @@ void Key2_Action(void)
 {
 
     speed_tar=40;
+    RecModeTest=0;
     Gui_Page_Active=TRUE;
     Beep_Set(5,1);
 }

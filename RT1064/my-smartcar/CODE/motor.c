@@ -44,40 +44,9 @@ float deta_mileage=0;
  **/
 
 void Car_SpeedGet(){
-    Car.Speed_X=(float)speed_tar * sin(Car.Angel_Target/180 *PI);//((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
-    Car.Speed_Y=(float)speed_tar * cos(Car.Angel_Target/180 *PI);
+    Car.Speed_X=(int16)(speed_tar * sin(Car.Angel_Target/180 *PI));//((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
+    Car.Speed_Y=(int16)(speed_tar * cos(Car.Angel_Target/180 *PI));
     Car.Speed_Z=-Angel_PID(Car.Angel,0);
-    if(Car.MileageX<= abs(Car.DistanceX)){
-        if(Car.DistanceX<0) {
-            Car.Speed_X=-speed_tar;
-        }else{
-            Car.Speed_X=speed_tar;
-        }
-    }else{
-        Car.Speed_X=0;
-    }
-
-    if(Car.MileageY<=abs(Car.DistanceY)){
-        if(Car.DistanceY<0){
-            Car.Speed_Y=-speed_tar;
-        }else{
-            Car.Speed_Y=speed_tar;
-        }
-    }else{
-        Car.Speed_Y=0;
-    }
-    if(Car.Angel>1){
-        Car.Speed_Z=-5;
-    }else if(Car.Angel< -1){
-        Car.Speed_Z=5;
-    }else{
-        Car.Speed_Z=0;
-    }
-    if((Car.x1==-10&&Car.y1==-10)||speed_tar==0){
-        Car.Speed_X=0;
-        Car.Speed_Y=0;
-        Car.Speed_Z=0;
-    }
 }
 void Car_Omni(int16 x, int16 y, int16 z){
     speed_tar_1= y + x + z;
@@ -154,44 +123,44 @@ void Car_Stop(){
 //增量式PID
 int Position_PID1(int Encoder,int Target){ 	
 	static float Bias,Pwm,Integral_bias,Last_Bias;
-	Bias=Target - Encoder;//当前误差
+	Bias=(float)(Target - Encoder);//当前误差
 	Integral_bias+=Bias;//误差的积累
 	Pwm=Position_KP*Bias+Position_KI*Integral_bias+Position_KD*(Bias-Last_Bias);//当前误差-上次误差
 	Last_Bias=Bias;
-	return Pwm;
+	return (int)Pwm;
 }
 
 int Position_PID2(int Encoder,int Target){ 	
 	static float Bias,Pwm,Integral_bias,Last_Bias;
-	Bias=Target - Encoder;
+	Bias=(float)(Target - Encoder);
 	Integral_bias+=Bias;
 	Pwm=Position_KP*Bias+Position_KI*Integral_bias+Position_KD*(Bias-Last_Bias);
 	Last_Bias=Bias;
-	return Pwm;
+	return (int)Pwm;
 }
 
 int Position_PID3(int Encoder,int Target){ 	
 	static float Bias,Pwm,Integral_bias,Last_Bias;
-	Bias=Target - Encoder;
+	Bias=(float)(Target - Encoder);
 	Integral_bias+=Bias;
 	Pwm=Position_KP*Bias+Position_KI*Integral_bias+Position_KD*(Bias-Last_Bias);
 	Last_Bias=Bias;
-	return Pwm;
+	return (int)Pwm;
 }
 
 
 int Position_PID4(int Encoder,int Target){ 	
 	static float Bias,Pwm,Integral_bias,Last_Bias;
-	Bias=Target - Encoder;
+	Bias=(float)(Target - Encoder);
 	Integral_bias+=Bias;
 	Pwm=Position_KP*Bias+Position_KI*Integral_bias+Position_KD*(Bias-Last_Bias);
 	Last_Bias=Bias;
-	return Pwm;
+	return (int)Pwm;
 }
 
 int Angel_PID(int NowAngel,int TargetAngel){
     static float Bias,Speed_Z,Integral_bias,Last_Bias;
-    Bias=TargetAngel - NowAngel;
+    Bias=(float)(TargetAngel - NowAngel);
     Integral_bias+=Bias;
     Speed_Z=Angel_KP*Bias+Angel_KI*Integral_bias+Angel_KD*(Bias-Last_Bias);
     Last_Bias=Bias;
@@ -199,7 +168,7 @@ int Angel_PID(int NowAngel,int TargetAngel){
         Speed_Z=70;
     if(Speed_Z<=-70)
         Speed_Z=-70;
-    return Speed_Z;
+    return (int)Speed_Z;
 }
 /**
  * @name: limit_pwm 
@@ -300,11 +269,13 @@ void Motor_Ctrl(){
  **/
 void Omni_Mileage(){
     float detax=0,detay=0;
-    detax=(RC_encoder1 - RC_encoder2 + RC_encoder3 - RC_encoder4)/4;
-    detay=(RC_encoder1 + RC_encoder2 + RC_encoder3 + RC_encoder4)/4;
-    Car.MileageX+=detax*0.0095;
-    Car.MileageY+=detay*0.0086;
+    detax=(float)(RC_encoder1 - RC_encoder2 + RC_encoder3 - RC_encoder4)/4;
+    detay=(float)(RC_encoder1 + RC_encoder2 + RC_encoder3 + RC_encoder4)/4;
+    Car.MileageX+=(float)(detax*0.0095);
+    Car.MileageY+=(float)(detay*0.0086);
 }
+
+void
 
 void RCEncoder_Init(void)
 {

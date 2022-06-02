@@ -9,13 +9,14 @@
 * @date         2022/3/14
 ***************************************************/
 #include "location.h"
-int key1number=0;
+
+extern int RecModeTest;
 //-----------------------宏-----------------------//
 //-------------------结构体-----------------------//
 struct Location_Goal Car={0};          //小车状态（位置，目标）存储结构体
 struct Route_Dist Route_D[5];
 //---------------------数组-----------------------//
-int Car_Location[locate_sz][2]={//坐标原始数据
+float Car_Location[locate_sz][2]={//坐标原始数据
         10,15,
     1,1,
     9,8,
@@ -25,8 +26,7 @@ int Car_Location[locate_sz][2]={//坐标原始数据
     10,10
 };
 
-int Car_Location_Route[locate_sz][2]={0,0};//存放经过路径规划算法之后的坐标数据
-int CarMode;
+float Car_Location_Route[locate_sz][2]={0,0};//存放经过路径规划算法之后的坐标数据
 
 /*
  ***************************************************************
@@ -52,9 +52,8 @@ void Location_Route(){
        }
 
     qsort(Route_D,locate_sz, sizeof(struct Route_Dist),cmpFunc);//排序
-    //printf("--顺序点位--\n");
+
     for(int i=0;i<locate_sz;++i) {
-        //printf("(%d,%d)\n",Car_Location[Route_D[i].num][0],Car_Location[Route_D[i].num][1]);//根据序号输出a(x,y), x=a[D[i].num][0] y=a[D[i].num][1]
         Car_Location_Route[i][0] = Car_Location[Route_D[i].num][0];
         Car_Location_Route[i][1] = Car_Location[Route_D[i].num][1];
     }
@@ -62,13 +61,17 @@ void Location_Route(){
 /*
  * 识别模式
  */
-
+void Car_RecMode(){
+    while(RecModeTest);
+    RecModeTest=1;
+}
 
 void Car_OmniMove(){
     Car_SpeedGet();
     Car_Omni(Car.Speed_X,Car.Speed_Y,Car.Speed_Z);
     if(abs(Car.MileageX)>=abs(Car.DistanceX)&&abs(Car.MileageY)>=abs(Car.DistanceY)){
         Car_Stop();
+        Car_RecMode();
         Beep_Set(50,1);
         Get_Location();
         Car.MileageX=0;
@@ -119,8 +122,19 @@ void Car_Move(){
 void Charge_Locate(void)
 {
     //获取当前坐标
-    Car.x+=Car.MileageX/20;
-    Car.y+=Car.MileageY/20;
+    if (Car.Position_Pointer == 0){ //位于起点
+        Car.x=0;
+        Car.y=0;
+    }else if(Car.Position_Pointer < locate_sz){
+        Car.x=Car_Location_Route[Car.Position_Pointer-1][0];
+        Car.y=Car_Location_Route[Car.Position_Pointer-1][1];
+    } else if (Car.Position_Pointer==locate_sz){
+        Car.x=Car_Location_Route[locate_sz-1][0];
+        Car.y=Car_Location_Route[locate_sz-1][1];
+    }
+
+/*    Car.x+=Car.MileageX/20;
+    Car.y+=Car.MileageY/20;*/
     //修正函数可以放在这后面
 }
 
@@ -135,27 +149,17 @@ void Charge_Locate(void)
 
 void Get_Target(void) {
     //赋予新的目标坐标点
-    if (Car.Position_Pointer == 0){
-        Car.x=0;
-        Car.y=0;
-    }else{
-        Car.x=Car_Location_Route[Car.Position_Pointer-1][0];
-        Car.y=Car_Location_Route[Car.Position_Pointer-1][1];
-    }
-    if(Car.Position_Pointer<=locate_sz){
+
+    if(Car.Position_Pointer<locate_sz){
         Car.x1=Car_Location_Route[Car.Position_Pointer][0];
         Car.y1=Car_Location_Route[Car.Position_Pointer][1];
-        Car.Position_Pointer++;
-    }else{
-        Car.x=0;
-        Car.y=0;
+    }else if(Car.Position_Pointer==locate_sz){
         Car.x1=0;
         Car.y1=0;
     }
-    //下一个目标点
 
 }
- 
+
 /*
 ***************************************************************
 *	函 数 名: Get_Road
@@ -165,8 +169,12 @@ void Get_Target(void) {
 ***************************************************************
 */
 
-void Get_Location(void)
-{
+void Get_Location(void){
+    Car.Position_Pointer++;
+    if(Car.Position_Pointer>=locate_sz)
+        Car.Position_Pointer=locate_sz;
+
+    Charge_Locate();
     Get_Target();
     //用两点式计算角度和距离
     Car.Angel_Target=atan2((Car.x1-Car.x),(Car.y1-Car.y))*180/PI;

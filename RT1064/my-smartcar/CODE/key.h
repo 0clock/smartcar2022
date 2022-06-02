@@ -7,6 +7,7 @@
 #define STATUS1_COUNTER_MAX 50
 
 extern int Beep_flag;
+int RecModeTest=1;
 
 enum Keycode
 {
