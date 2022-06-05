@@ -32,7 +32,7 @@ enum CarMode {
 
 typedef struct Route_Dist {//æ‡¿ÎΩ·ππÃÂ
     int num;//–Ú∫≈
-    double dist;//æ‡¿Î
+    float dist;//æ‡¿Î
 } Route_Dist;
 
 

@@ -15,7 +15,7 @@ int main(void)
     pit_interrupt_ms(PIT_CH1,5);  //初始化pit通道1 周期10ms	按键、串口发送中断
     pit_interrupt_ms(PIT_CH2,20);  //初始化pit通道2 周期10ms	PID控制中断
     pit_interrupt_ms(PIT_CH3,5);  //初始化pit通道3 周期10ms	icm中断
-    NVIC_SetPriority(PIT_IRQn,1);
+    NVIC_SetPriority(PIT_IRQn,0);
 
 
     Motor_Init();
@@ -27,8 +27,8 @@ int main(void)
     icmOffsetInit();//icm零漂消除
     GUI_init();
 
-    //如果屏幕一直显示初始化信息，请检查摄像头接线
-    //如果使用主板，一直卡在while(!uart_receive_flag)，请检查是否电池连接OK?
+//    //如果屏幕一直显示初始化信息，请检查摄像头接线
+//    //如果使用主板，一直卡在while(!uart_receive_flag)，请检查是否电池连接OK?
     uart_init (USART_8, 115200,UART8_TX_D16,UART8_RX_D17); //初始化串口
     // VOFA+
     VOFA* VOFA_pt = vofa_create();       //创建VOFA对象
@@ -42,17 +42,15 @@ int main(void)
     mt9v03x_csi_init();		//初始化摄像头	使用CSI接口
     //如果图像只采集一次，请检查场信号(VSY)是否连接OK?
     systick_delay_ms(500);
-    systick_start();
+    //systick_start();
     EnableGlobalIRQ(0);
 
     Location_Route(); //路径规划
+	
+//    Get_Location();
 
     while(1)
     {
         GUI_FirstPage();
     }
 }
-
-
-
-

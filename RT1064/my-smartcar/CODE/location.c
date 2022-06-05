@@ -40,36 +40,43 @@ int cmpFunc(const void *aa, const void *bb){//判断函数，现在是从小到大
     return (*(Route_Dist*)aa).dist>(*(Route_Dist*)bb).dist?1:-1;
 }
 
-double dis(int aNum){
-    double tmpDis= sqrt(pow(Car_Location[aNum][0],2)+ pow(Car_Location[aNum][1],2));
+float dis(int aNum){
+    float tmpDis;
+		//tmpDis= sqrt(pow(Car_Location[aNum][0],2)+ pow(Car_Location[aNum][1],2));   
     return tmpDis;
 }
 
 void Location_Route(){
-    for(int i=0;i<locate_sz;++i){
-        Route_D[i].dist= dis(i);
-        Route_D[i].num=i;
-       }
+
+    for(int location_count=0;location_count<locate_sz;++location_count){
+        Route_D[location_count].dist = dis(location_count);
+        Route_D[location_count].num=location_count;
+    }
 
     qsort(Route_D,locate_sz, sizeof(struct Route_Dist),cmpFunc);//排序
 
-    for(int i=0;i<locate_sz;++i) {
-        Car_Location_Route[i][0] = Car_Location[Route_D[i].num][0];
-        Car_Location_Route[i][1] = Car_Location[Route_D[i].num][1];
-    }
+
+//    for(int location_count=0;location_count<locate_sz;++location_count) {
+//        Car_Location_Route[location_count][0] = Car_Location[Route_D[location_count].num][0];
+//        Car_Location_Route[location_count][1] = Car_Location[Route_D[location_count].num][1];
+//    }
 }
+
 /*
  * 识别模式
  */
 void Car_RecMode(){
-    while(RecModeTest);
+    do{
+      Beep_Set(10,2);
+			Car_Stop();
+		}while(RecModeTest);
     RecModeTest=1;
 }
 
 void Car_OmniMove(){
     Car_SpeedGet();
     Car_Omni(Car.Speed_X,Car.Speed_Y,Car.Speed_Z);
-    if(abs(Car.MileageX)>=abs(Car.DistanceX)&&abs(Car.MileageY)>=abs(Car.DistanceY)){
+    if(abs(Car.MileageX)>abs(Car.DistanceX)&&abs(Car.MileageY)>abs(Car.DistanceY)){
         Car_Stop();
         Car_RecMode();
         Beep_Set(50,1);

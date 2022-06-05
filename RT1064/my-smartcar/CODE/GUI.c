@@ -1,6 +1,6 @@
 #include "GUI.h"
 
-enum Gui_Page Page_Number=InfoPage;
+enum Gui_Page Page_Number=CameraPage;
 int8 Gui_Page_Active=TRUE;
 void GUI_init(){
 	ips114_init();     	//³õÊ¼»¯1.47´çIPSÆÁÄ»
