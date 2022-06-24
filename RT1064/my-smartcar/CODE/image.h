@@ -2,10 +2,11 @@
 // Created by ThinkPad on 2022/5/5.
 //
 
-#ifndef RT1064_IMAGE_H
-#define RT1064_IMAGE_H
+#ifndef _IMAGE_H
+#define _IMAGE_H
 
 #include <stdint.h>
+#include "headfile.h"
 
 typedef struct image {
     uint8_t *data;
@@ -20,6 +21,8 @@ typedef struct fimage {
     uint32_t height;
     uint32_t step;
 } fimage_t;
+
+extern image_t img_thres ;
 
 #define AT_IMAGE(img, x, y)          ((img)->data[(y)*(img)->step+(x)])
 #define AT_IMAGE_CLIP(img, x, y)     AT_IMAGE(img, clip(x, 0, (img)->width-1), clip(y, 0, (img)->height-1))
@@ -96,6 +99,8 @@ void draw_x(image_t *img, int x, int y, int len, uint8_t value);
 
 // ªÊ÷∆O
 void draw_o(image_t *img, int x, int y, int radius, uint8_t value);
+
+void ImageHandel(void);
 
 #endif // IMGPROC_H
 

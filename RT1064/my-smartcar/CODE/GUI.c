@@ -31,7 +31,8 @@ void GUI_FirstPage(){
             if(mt9v03x_csi_finish_flag)			//图像采集完成
             {
                 mt9v03x_csi_finish_flag = 0;	//清除采集完成标志位
-                ips114_displayimage032_zoom(mt9v03x_csi_image[0], MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//显示摄像头图像
+                ImageHandel();
+                ips114_displayimage032_zoom(img_thres.data, MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//显示摄像头图像
             }
             break;
         case AboutPage:

@@ -94,6 +94,7 @@
 #include "ahrs.h"
 #include "fast_math.h"
 #include "image.h"
+#include "flash_param.h"
 
 
 #endif 

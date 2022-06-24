@@ -51,7 +51,7 @@ int main(void)
 
     Location_Route(); //路径规划
 	
-    //Get_Location();
+    Get_Location();
 
     while(1)
     {

@@ -706,7 +706,8 @@
 				471,
 				474,
 				476,
-				478
+				478,
+				479
 			]
 		}
 	],
@@ -960,7 +961,8 @@
 				471,
 				474,
 				476,
-				478
+				478,
+				479
 			]
 		},
 		{
@@ -1227,7 +1229,8 @@
 				472,
 				473,
 				475,
-				477
+				477,
+				480
 			]
 		}
 	],
@@ -3845,6 +3848,17 @@
 			"compileGroupIndex" : 0,
 			"path" : "my-smartcar/CODE/fast_math.c",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "my-smartcar/CODE/flash_param.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "my-smartcar/CODE/flash_param.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

@@ -1,6 +1,6 @@
-./objects/ahrs.o: ..\CODE\ahrs.c ..\CODE\ahrs.h \
-  ..\..\Libraries\seekfree_libraries\headfile.h \
+./objects/image.o: ..\CODE\image.c ..\CODE\image.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\..\Libraries\seekfree_libraries\headfile.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   ..\..\Libraries\nxp_libraries\drives\fsl_common.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\assert.h \
@@ -102,6 +102,6 @@
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660.h ..\CODE\motor.h \
   ..\CODE\GUI.h ..\CODE\motor.h ..\CODE\key.h ..\CODE\vofa.h \
   ..\CODE\Vofa_imageformat.h ..\CODE\key.h ..\CODE\filter.h \
-  ..\CODE\icm.h ..\CODE\location.h ..\CODE\ahrs.h ..\CODE\fast_math.h \
-  ..\CODE\image.h ..\CODE\flash_param.h ..\CODE\filter.h \
-  ..\CODE\fast_math.h ..\CODE\icm.h
+  ..\CODE\icm.h ..\CODE\ahrs.h ..\CODE\filter.h ..\CODE\location.h \
+  ..\CODE\ahrs.h ..\CODE\fast_math.h ..\CODE\image.h \
+  ..\CODE\flash_param.h

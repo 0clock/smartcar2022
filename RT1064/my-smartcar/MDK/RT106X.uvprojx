@@ -1944,6 +1944,16 @@
               <FileType>5</FileType>
               <FilePath>..\CODE\fast_math.h</FilePath>
             </File>
+            <File>
+              <FileName>flash_param.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\flash_param.c</FilePath>
+            </File>
+            <File>
+              <FileName>image.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\image.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
@@ -3884,6 +3894,16 @@
               <FileName>fast_math.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\CODE\fast_math.h</FilePath>
+            </File>
+            <File>
+              <FileName>flash_param.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\flash_param.c</FilePath>
+            </File>
+            <File>
+              <FileName>image.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\image.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -7,7 +7,19 @@
 #define AT                  AT_IMAGE
 #define AT_CLIP(img, x, y)  AT_IMAGE((img), clip((x), 0, (img)->width-1), clip((y), 0, (img)->height-1));
 
-extern int clip(int x, int low, int up);
+uint8_t img_line_data[MT9V03X_CSI_H][MT9V03X_CSI_W];
+uint8_t img_thres_data[MT9V03X_CSI_H][MT9V03X_CSI_W];
+
+image_t img_raw = DEF_IMAGE(NULL, MT9V03X_CSI_W, MT9V03X_CSI_H);
+image_t img_thres = DEF_IMAGE((uint8_t *) img_thres_data, MT9V03X_CSI_W, MT9V03X_CSI_H);
+
+int clip(int x, int low, int up) {
+    return x > up ? up : x < low ? low : x;
+}
+
+float fclip(float x, float low, float up) {
+    return x > up ? up : x < low ? low : x;
+}
 
 void clone_image(image_t *img0, image_t *img1) {
     assert(img0 && img0->data);
@@ -629,5 +641,130 @@ void draw_x(image_t *img, int x, int y, int len, uint8_t value) {
 void draw_o(image_t *img, int x, int y, int radius, uint8_t value) {
     for (float i = -PI; i <= PI; i += PI / 10) {
                 AT(img, clip(x + radius * cosf(i), 0, img->width - 1), clip(y + radius * sinf(i), 0, img->height - 1)) = value;
+    }
+}
+
+
+#define POINTS_MAX_LEN  (MT9V03X_CSI_H)
+
+
+int Ypt0_rpts0s_id, Ypt1_rpts1s_id;
+int rpts0s_num, rpts1s_num;
+
+float rpts0a[POINTS_MAX_LEN];
+float rpts0an[POINTS_MAX_LEN];
+float rpts1an[POINTS_MAX_LEN];
+float rpts0s[POINTS_MAX_LEN][2];
+float rpts1s[POINTS_MAX_LEN][2];
+
+float rpts1a[POINTS_MAX_LEN];
+int Lpt0_rpts0s_id, Lpt1_rpts1s_id;
+int Lpt0_rpts0s_id, Lpt1_rpts1s_id;
+
+bool Ypt0_found, Ypt1_found;
+bool is_straight0, is_straight1;
+bool Lpt0_found, Lpt1_found;
+
+
+void find_corners() {
+    // 识别Y,L拐点
+    Ypt0_found = Ypt1_found = Lpt0_found = Lpt1_found = false;
+    is_straight0 = rpts0s_num > 1. / sample_dist;
+    is_straight1 = rpts1s_num > 1. / sample_dist;
+    for (int i = 0; i < rpts0s_num; i++) {
+        if (rpts0an[i] == 0) continue;
+        int im1 = clip(i - (int) round(angle_dist / sample_dist), 0, rpts0s_num - 1);
+        int ip1 = clip(i + (int) round(angle_dist / sample_dist), 0, rpts0s_num - 1);
+        float conf = fabs(rpts0a[i]) - (fabs(rpts0a[im1]) + fabs(rpts0a[ip1])) / 2;
+
+        //Y角点阈值
+        if (Ypt0_found == false && 30. / 180. * PI < conf && conf < 65. / 180. * PI && i < 0.8 / sample_dist) {
+            Ypt0_rpts0s_id = i;
+            Ypt0_found = true;
+        }
+        //L角点阈值
+        if (Lpt0_found == false && 70. / 180. * PI < conf && conf < 140. / 180. * PI && i < 0.8 / sample_dist) {
+            Lpt0_rpts0s_id = i;
+            Lpt0_found = true;
+        }
+        //长直道阈值
+        if (conf > 5. / 180. * PI && i < 1.0 / sample_dist) is_straight0 = false;
+        if (Ypt0_found == true && Lpt0_found == true && is_straight0 == false) break;
+    }
+    for (int i = 0; i < rpts1s_num; i++) {
+        if (rpts1an[i] == 0) continue;
+        int im1 = clip(i - (int) round(angle_dist / sample_dist), 0, rpts1s_num - 1);
+        int ip1 = clip(i + (int) round(angle_dist / sample_dist), 0, rpts1s_num - 1);
+        float conf = fabs(rpts1a[i]) - (fabs(rpts1a[im1]) + fabs(rpts1a[ip1])) / 2;
+        if (Ypt1_found == false && 30. / 180. * PI < conf && conf < 65. / 180. * PI && i < 0.8 / sample_dist) {
+            Ypt1_rpts1s_id = i;
+            Ypt1_found = true;
+        }
+        if (Lpt1_found == false && 70. / 180. * PI < conf && conf < 140. / 180. * PI && i < 0.8 / sample_dist) {
+            Lpt1_rpts1s_id = i;
+            Lpt1_found = true;
+        }
+
+        if (conf > 5. / 180. * PI && i < 1.0 / sample_dist) is_straight1 = false;
+
+        if (Ypt1_found == true && Lpt1_found == true && is_straight1 == false) break;
+    }
+    // Y点二次检查,依据两角点距离及角点后张开特性
+    if (Ypt0_found && Ypt1_found) {
+        float dx = rpts0s[Ypt0_rpts0s_id][0] - rpts1s[Ypt1_rpts1s_id][0];
+        float dy = rpts0s[Ypt0_rpts0s_id][1] - rpts1s[Ypt1_rpts1s_id][1];
+        float dn = sqrtf(dx * dx + dy * dy);
+        if (fabs(dn - 0.45 * pixel_per_meter) < 0.15 * pixel_per_meter) {
+            float dwx = rpts0s[clip(Ypt0_rpts0s_id + 50, 0, rpts0s_num - 1)][0] -
+                        rpts1s[clip(Ypt1_rpts1s_id + 50, 0, rpts1s_num - 1)][0];
+            float dwy = rpts0s[clip(Ypt0_rpts0s_id + 50, 0, rpts0s_num - 1)][1] -
+                        rpts1s[clip(Ypt1_rpts1s_id + 50, 0, rpts1s_num - 1)][1];
+            float dwn = sqrtf(dwx * dwx + dwy * dwy);
+            if (!(dwn > 0.7 * pixel_per_meter &&
+                  rpts0s[clip(Ypt0_rpts0s_id + 50, 0, rpts0s_num - 1)][0] < rpts0s[Ypt0_rpts0s_id][0] &&
+                  rpts1s[clip(Ypt1_rpts1s_id + 50, 0, rpts1s_num - 1)][0] > rpts1s[Ypt1_rpts1s_id][0])) {
+                Ypt0_found = Ypt1_found = false;
+            }
+        } else {
+            Ypt0_found = Ypt1_found = false;
+        }
+    }
+    // L点二次检查，车库模式不检查, 依据L角点距离及角点后张开特性
+    if (1) {
+        if (Lpt0_found && Lpt1_found) {
+            float dx = rpts0s[Lpt0_rpts0s_id][0] - rpts1s[Lpt1_rpts1s_id][0];
+            float dy = rpts0s[Lpt0_rpts0s_id][1] - rpts1s[Lpt1_rpts1s_id][1];
+            float dn = sqrtf(dx * dx + dy * dy);
+            if (fabs(dn - 0.45 * pixel_per_meter) < 0.15 * pixel_per_meter) {
+                float dwx = rpts0s[clip(Lpt0_rpts0s_id + 50, 0, rpts0s_num - 1)][0] -
+                            rpts1s[clip(Lpt1_rpts1s_id + 50, 0, rpts1s_num - 1)][0];
+                float dwy = rpts0s[clip(Lpt0_rpts0s_id + 50, 0, rpts0s_num - 1)][1] -
+                            rpts1s[clip(Lpt1_rpts1s_id + 50, 0, rpts1s_num - 1)][1];
+                float dwn = sqrtf(dwx * dwx + dwy * dwy);
+                if (!(dwn > 0.7 * pixel_per_meter &&
+                      rpts0s[clip(Lpt0_rpts0s_id + 50, 0, rpts0s_num - 1)][0] < rpts0s[Lpt0_rpts0s_id][0] &&
+                      rpts1s[clip(Lpt1_rpts1s_id + 50, 0, rpts1s_num - 1)][0] > rpts1s[Lpt1_rpts1s_id][0])) {
+                    Lpt0_found = Lpt1_found = false;
+                }
+            } else {
+                Lpt0_found = Lpt1_found = false;
+            }
+        }
+    }
+}
+
+
+int pt1[2]={0,0},pt2[2]={10,10};
+
+void ImageHandel(){
+    draw_line(mt9v03x_csi_image[0],pt1,pt2,255);
+    img_raw.data = mt9v03x_csi_image[0];
+    //threshold(&img_raw, &img_thres, 200, 0, 255);
+    adaptive_threshold(&img_raw, &img_thres, block_size, clip_value, 0, 255);
+    for (int i = 0; i < img_thres.width / 2 - begin_x; i++) {
+        AT_IMAGE(&img_thres, (int) i, (int) begin_y) = 0;
+    }
+    for (int i = img_thres.width / 2 + begin_x; i < img_thres.width; i++) {
+        AT_IMAGE(&img_thres, (int) i, (int) begin_y) = 0;
     }
 }

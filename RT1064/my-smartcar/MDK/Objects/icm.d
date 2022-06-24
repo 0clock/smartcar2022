@@ -103,4 +103,4 @@
   ..\CODE\GUI.h ..\CODE\motor.h ..\CODE\key.h ..\CODE\vofa.h \
   ..\CODE\Vofa_imageformat.h ..\CODE\key.h ..\CODE\filter.h \
   ..\CODE\icm.h ..\CODE\location.h ..\CODE\ahrs.h ..\CODE\fast_math.h \
-  ..\CODE\image.h ..\CODE\filter.h
+  ..\CODE\image.h ..\CODE\flash_param.h ..\CODE\filter.h
