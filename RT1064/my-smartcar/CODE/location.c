@@ -10,14 +10,19 @@
 ***************************************************/
 #include "location.h"
 
+
 extern int RecModeTest;
 //-----------------------ºê-----------------------//
 //-------------------½á¹¹Ìå-----------------------//
 struct Location_Goal Car={0};          //Ð¡³µ×´Ì¬£¨Î»ÖÃ£¬Ä¿±ê£©´æ´¢½á¹¹Ìå
-struct Route_Dist Route_D[5];
+struct Route_Dist{//¾àÀë½á¹¹Ìå
+    int num;//ÐòºÅ
+    double dist;//¾àÀë
+} Route_D[5];
+
 //---------------------Êý×é-----------------------//
 float Car_Location[locate_sz][2]={//×ø±êÔ­Ê¼Êý¾Ý
-        10,15,
+    10,15,
     1,1,
     9,8,
     2,3,
@@ -36,30 +41,29 @@ float Car_Location_Route[locate_sz][2]={0,0};//´æ·Å¾­¹ýÂ·¾¶¹æ»®Ëã·¨Ö®ºóµÄ×ø±êÊý¾
 *	·µ »Ø Öµ: ÎÞ
  ***************************************************************
  */
-int cmpFunc(const void *aa, const void *bb){//ÅÐ¶Ïº¯Êý£¬ÏÖÔÚÊÇ´ÓÐ¡µ½´ó
-    return (*(Route_Dist*)aa).dist>(*(Route_Dist*)bb).dist?1:-1;
-}
 
-float dis(int aNum){
-    float tmpDis;
-		//tmpDis= sqrt(pow(Car_Location[aNum][0],2)+ pow(Car_Location[aNum][1],2));   
+double dis(int aNum){
+    double tmpDis;
+    tmpDis= sqrt(pow(Car_Location[aNum][0],2)+ pow(Car_Location[aNum][1],2));
     return tmpDis;
 }
-
+int cmpFunc(const void *aa, const void *bb){//ÅÐ¶Ïº¯Êý£¬ÏÖÔÚÊÇ´ÓÐ¡µ½´ó
+    return (*(struct Route_Dist*)aa).dist>(*(struct Route_Dist*)bb).dist;
+}
 void Location_Route(){
 
-    for(int location_count=0;location_count<locate_sz;++location_count){
+    for(int location_count=0;location_count<locate_sz;location_count++){
         Route_D[location_count].dist = dis(location_count);
         Route_D[location_count].num=location_count;
     }
 
-    qsort(Route_D,locate_sz, sizeof(struct Route_Dist),cmpFunc);//ÅÅÐò
+    qsort(Route_D,locate_sz, sizeof(Route_D),cmpFunc);//ÅÅÐò z 
 
 
-//    for(int location_count=0;location_count<locate_sz;++location_count) {
-//        Car_Location_Route[location_count][0] = Car_Location[Route_D[location_count].num][0];
-//        Car_Location_Route[location_count][1] = Car_Location[Route_D[location_count].num][1];
-//    }
+    for(int location_count=0;location_count<locate_sz;++location_count) {
+        Car_Location_Route[location_count][0] = Car_Location[Route_D[location_count].num][0];
+        Car_Location_Route[location_count][1] = Car_Location[Route_D[location_count].num][1];
+    }
 }
 
 /*
@@ -78,7 +82,7 @@ void Car_OmniMove(){
     Car_Omni(Car.Speed_X,Car.Speed_Y,Car.Speed_Z);
     if(abs(Car.MileageX)>abs(Car.DistanceX)&&abs(Car.MileageY)>abs(Car.DistanceY)){
         Car_Stop();
-        Car_RecMode();
+        //Car_RecMode();
         Beep_Set(50,1);
         Get_Location();
         Car.MileageX=0;

@@ -30,10 +30,6 @@ enum CarMode {
 };
 //---------------------结构体---------------------//
 
-typedef struct Route_Dist {//距离结构体
-    int num;//序号
-    float dist;//距离
-} Route_Dist;
 
 
 //记录坐标和相对位置的结构体

@@ -757,10 +757,10 @@ void find_corners() {
 int pt1[2]={0,0},pt2[2]={10,10};
 
 void ImageHandel(){
-    draw_line(mt9v03x_csi_image[0],pt1,pt2,255);
     img_raw.data = mt9v03x_csi_image[0];
     //threshold(&img_raw, &img_thres, 200, 0, 255);
     adaptive_threshold(&img_raw, &img_thres, block_size, clip_value, 0, 255);
+    find_corners();
     for (int i = 0; i < img_thres.width / 2 - begin_x; i++) {
         AT_IMAGE(&img_thres, (int) i, (int) begin_y) = 0;
     }

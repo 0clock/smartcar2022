@@ -4,8 +4,8 @@
 #define PWM_LIMIT 25000
 
 int32 duty1=0,duty2=0,duty3=0,duty4=0;//电机PWM值
-int16 encoder1=0,encoder2=0,encoder3=0,encoder4=0;//编码器的值
-int16 RC_encoder1,RC_encoder2,RC_encoder3,RC_encoder4;//滤波之后encoder的值
+int32 encoder1=0,encoder2=0,encoder3=0,encoder4=0;//编码器的值
+int32 RC_encoder1,RC_encoder2,RC_encoder3,RC_encoder4;//滤波之后encoder的值
 
 //---------------------结构体---------------------//
 struct RC_Para Encoder1_Para = {0,0,10};

@@ -30,7 +30,6 @@ int main(void)
     icm20602_init_spi();
     icmOffsetInit();//icm零漂消除
     GUI_init();
-
 //    //如果屏幕一直显示初始化信息，请检查摄像头接线
 //    //如果使用主板，一直卡在while(!uart_receive_flag)，请检查是否电池连接OK?
     uart_init (USART_8, 115200,UART8_TX_D16,UART8_RX_D17); //初始化串口
@@ -51,7 +50,7 @@ int main(void)
 
     Location_Route(); //路径规划
 	
-    //Get_Location();
+    Get_Location();
 
     while(1)
     {
