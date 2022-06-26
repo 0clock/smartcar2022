@@ -8,6 +8,19 @@
 #include <stdint.h>
 #include "headfile.h"
 
+
+#define AT_IMAGE(img, x, y)          ((img)->data[(y)*(img)->step+(x)])
+#define AT_IMAGE_CLIP(img, x, y)     AT_IMAGE(img, clip(x, 0, (img)->width-1), clip(y, 0, (img)->height-1))
+
+#define DEF_IMAGE(ptr, w, h)         {.data=ptr, .width=w, .height=h, .step=w}
+#define ROI_IMAGE(img, x1, y1, w, h) {.data=&AT_IMAGE(img, x1, y1), .width=w, .height=h, .step=img.width}
+
+
+#define ROAD_WIDTH      (0.45)
+#define POINTS_MAX_LEN  (MT9V03X_CSI_H)
+
+#define FAR_POINTS_MAX_LEN  (POINTS_MAX_LEN)
+
 typedef struct image {
     uint8_t *data;
     uint32_t width;
@@ -22,13 +35,25 @@ typedef struct fimage {
     uint32_t step;
 } fimage_t;
 
-extern image_t img_thres ;
 
-#define AT_IMAGE(img, x, y)          ((img)->data[(y)*(img)->step+(x)])
-#define AT_IMAGE_CLIP(img, x, y)     AT_IMAGE(img, clip(x, 0, (img)->width-1), clip(y, 0, (img)->height-1))
 
-#define DEF_IMAGE(ptr, w, h)         {.data=ptr, .width=w, .height=h, .step=w}
-#define ROI_IMAGE(img, x1, y1, w, h) {.data=&AT_IMAGE(img, x1, y1), .width=w, .height=h, .step=img.width}
+
+
+extern bool is_straight0, is_straight1;
+
+extern float mapx[240][376];
+extern float mapy[240][376];
+
+extern image_t img_raw;
+extern image_t img_thres;
+extern image_t img_line;
+
+enum track_type_e {
+    TRACK_LEFT,
+    TRACK_RIGHT,
+};
+extern enum track_type_e track_type;
+
 
 // 深拷贝图片，img0和img1不可以指向相同图片
 void clone_image(image_t *img0, image_t *img1);

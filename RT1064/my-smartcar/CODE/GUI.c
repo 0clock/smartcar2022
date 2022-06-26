@@ -30,9 +30,13 @@ void GUI_FirstPage(){
             //ips114_showstr(10,0,"Camera:");
             if(mt9v03x_csi_finish_flag)			//图像采集完成
             {
+                ips114_showstr(10,0,"thres=");
+                ips114_showfloat(80,0,thres,3,2);
                 mt9v03x_csi_finish_flag = 0;	//清除采集完成标志位
                 ImageHandel();
-                ips114_displayimage032_zoom(img_thres.data, MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//显示摄像头图像
+                ips114_displayimage032_zoom1(img_thres.data, MT9V03X_CSI_W, MT9V03X_CSI_H, 66, 26, MT9V03X_CSI_W, MT9V03X_CSI_H);
+                //ips114_displayimage032_zoom(img_thres.data, MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//显示摄像头图像
+                //ips114_displayimage032_zoom(img_raw.data, MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//显示摄像头图像
             }
             break;
         case AboutPage:

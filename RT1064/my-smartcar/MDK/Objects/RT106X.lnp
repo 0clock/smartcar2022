@@ -1,4 +1,4 @@
---cpu Cortex-M7.fp.dp
+--cpu Cortex-M7.fp.sp
 ".\objects\board.o"
 ".\objects\clock_config.o"
 ".\objects\pin_mux.o"
