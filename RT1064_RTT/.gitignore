@@ -1,0 +1,8 @@
+cmake-build-debug/
+.idea/
+.vscode/
+.git/
+/Project/MDK/RT106X.uvguix.ThinkPad
+/Project/MDK/RT106X.uvguix_ThinkPad.bak
+/Project/MDK/RT106X_uvoptx.bak
+/Project/MDK/RT106X_uvprojx.bak

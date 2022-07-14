@@ -1,0 +1,15 @@
+apple
+banana
+sedan
+cat
+cow
+bus
+dog
+durian
+grape
+horse
+orange
+pig
+plane
+ship
+trains

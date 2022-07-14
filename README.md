@@ -129,7 +129,7 @@
 ### 1、OpenArt透视变换（未解决）
 
 1. [find_rects 识别矩形 · OpenMV中文入门教程](https://book.openmv.cc/example/09-Feature-Detection/find-rects.html)、透视变换[教程](https://book.openmv.cc/example/04-Image-Filters/perspective-correction.html)
-2. 4-2 已经提交了issu并[得到回复](https://github.com/NXPmicro/OpenART/tree/dev)，有希望能解决openart透视变换函数报错问题，但是我不会编译OpenArt的固件:cry:
+2. 4-2 已经提交了issu并[得到回复](https://github.com/NXPmicro/OpenART/tree/dev)，有希望能解决openart透视变换函数报错问题，但是我不会编译OpenArt的固件:cry:-
 
 ### 2、麦轮转向
 

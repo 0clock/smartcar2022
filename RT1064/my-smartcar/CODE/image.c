@@ -770,6 +770,21 @@ void process_image() {
     rptsc1_num = rpts1s_num;
 }
 
+// 显式规定参数的地址，保证参数放置在0x20200000~0x20200100这片内存区域。便于保存到flash以及从flash中加载
+//__attribute__((section(".ARM.__at_0x20200000"))) float thres = 140;
+//__attribute__((section(".ARM.__at_0x20200004"))) float block_size = 7;
+//__attribute__((section(".ARM.__at_0x20200008"))) float clip_value = 2;
+//__attribute__((section(".ARM.__at_0x2020000C"))) float begin_x = 32;
+//__attribute__((section(".ARM.__at_0x20200010"))) float begin_y = 167;
+//__attribute__((section(".ARM.__at_0x20200014"))) float line_blur_kernel = 7;
+//__attribute__((section(".ARM.__at_0x20200018"))) float pixel_per_meter = 102;
+//__attribute__((section(".ARM.__at_0x2020001C"))) float sample_dist = 0.02;
+//__attribute__((section(".ARM.__at_0x20200020"))) float angle_dist = 0.2;
+//__attribute__((section(".ARM.__at_0x20200024"))) float far_rate = 0.5;
+//__attribute__((section(".ARM.__at_0x20200028"))) float aim_distance = 0.68;
+//__attribute__((section(".ARM.__at_0x2020002C"))) bool adc_cross = false;
+
+
 void find_corners() {
     // 识别Y,L拐点
     Ypt0_found = Ypt1_found = Lpt0_found = Lpt1_found = false;
@@ -891,7 +906,6 @@ void ImageHandel(){
         AT_IMAGE(&img_line, clip(rptsn[i][0], 0, img_line.width - 1),
                  clip(rptsn[i][1], 0, img_line.height - 1)) = 100;
     }
-
     //绘制角点
     if (Lpt0_found) {
         draw_x(&img_line, rpts0s[Lpt0_rpts0s_id][0], rpts0s[Lpt0_rpts0s_id][1], 3, 200);

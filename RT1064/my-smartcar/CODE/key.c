@@ -166,7 +166,6 @@ void Key1_Action(void)
 
 void Key2_Action(void)
 {
-
     speed_tar=40;
     RecModeTest=0;
     Gui_Page_Active=TRUE;
