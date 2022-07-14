@@ -105,14 +105,14 @@ void car_recmode(){
 void car_omnimove(){
     bool x_flag,y_flag;
     Car.Angel=eulerAngle.yaw;
-    if(abs(Car.MileageX)<=abs(Car.DistanceX)){
+    if(abs(Car.MileageX)<abs(Car.DistanceX)){
         Car.Speed_X=(int16)(speed_tar * sin(Car.Angel_Target/180 *PI));//((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
         x_flag=false;
     }else{
         Car.Speed_X=0;
         x_flag=true;
     }
-    if(abs(Car.MileageY)<=abs(Car.DistanceY)){
+    if(abs(Car.MileageY)<abs(Car.DistanceY)){
         Car.Speed_Y=(int16)(speed_tar * cos(Car.Angel_Target/180 *PI));
         y_flag=false;
     }else{
