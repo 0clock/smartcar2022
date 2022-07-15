@@ -19,6 +19,8 @@ extern float ahrs_kp;
 extern int tempTest;
 
 
+
+
 void GUI_Motor(){
     ips114_showstr(10,0,"Encoder:");
     ips114_showint16(15,1,RC_encoder1);
@@ -151,10 +153,10 @@ void display_page(){
             //ips114_displayimage032_zoom1(img_thres.data, MT9V03X_CSI_W, MT9V03X_CSI_H, 66, 26, MT9V03X_CSI_W, MT9V03X_CSI_H);
             //ips114_displayimage032_zoom(img_thres.data, MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//显示摄像头图像
             //ips114_displayimage032_zoom(img_raw.data, MT9V03X_CSI_W, MT9V03X_CSI_H, 240, 135);	//显示摄像头图像
-            ips114_drawline(66+Xt,26+Yl,66+Xt,26+Yl,BLUE);
-            ips114_drawline(66+Xt,26+Yr,66+Xb,26+Yr,BLUE);
-            ips114_drawline(66+Xb,26+Yr,66+Xb,26+Yl,BLUE);
-            ips114_drawline(66+Xb,26+Yl,66+Xt,26+Yl,BLUE);
+//            ips114_drawline(66+Xt,26+Yl,66+Xt,26+Yl,BLUE);
+//            ips114_drawline(66+Xt,26+Yr,66+Xb,26+Yr,BLUE);
+//            ips114_drawline(66+Xb,26+Yr,66+Xb,26+Yl,BLUE);
+//            ips114_drawline(66+Xb,26+Yl,66+Xt,26+Yl,BLUE);
             break;
         case AboutPage:
             ips114_showstr(10,0,"About:");
@@ -210,7 +212,7 @@ void display_init(void)
     ips114_clear(BLACK);
 
     //创建显示线程 优先级设置为31
-    tid = rt_thread_create("display", display_entry, RT_NULL, 1024, 31, 16);
+    tid = rt_thread_create("display", display_entry, RT_NULL, 1024, 11, 16);
     
     //启动显示线程
     if(RT_NULL != tid)

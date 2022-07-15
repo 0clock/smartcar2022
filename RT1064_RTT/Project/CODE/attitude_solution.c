@@ -14,8 +14,8 @@ gyro_param_t GyroOffset;
 
 bool GyroOffset_init = 0;
 
-float param_Kp = 0.002;   // 加速度计的收敛速率比例增益
-float param_Ki = 0.004;   //陀螺仪收敛速率的积分增益 0.004
+float param_Kp = 0.18;   // 加速度计的收敛速率比例增益
+float param_Ki = 0.003;   //陀螺仪收敛速率的积分增益 0.004
 
 
 float fast_sqrt(float x) {

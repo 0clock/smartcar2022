@@ -670,7 +670,7 @@ ARM Macro Assembler    Page 11
   307 00000000                 IMPORT           SystemInit
   308 00000000                 IMPORT           __main
   309 00000000         
-  310 00000000 484C            LDR              R0,=_iomux_gpr17_adr
+  310 00000000 484C    8       LDR              R0,=_iomux_gpr17_adr
   311 00000002 F64A 21AF 
               F6CA 21AA        MOV32            R1,_flexram_bank_cfg
   312 0000000A 6001            STR              R1,[R0]
@@ -1852,6 +1852,14 @@ _MIMXRT1064.s
 ARM Macro Assembler    Page 1 Alphabetic symbol ordering
 Relocatable symbols
 
+ 00000000
+
+Symbol: 
+   Definitions
+      None
+   Uses
+      None
+Warning:  undefinedComment:  unused
 .text 00000000
 
 Symbol: .text
@@ -1903,6 +1911,12 @@ Symbol: ACMP4_IRQHandler
    Definitions
       At line 1045 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
 p_MIMXRT1064.s
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Relocatable symbols
+
    Uses
       At line 176 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -1910,12 +1924,6 @@ _MIMXRT1064.s
 _MIMXRT1064.s
 
 ADC1_IRQHandler 0000012E
-
-
-
-
-ARM Macro Assembler    Page 2 Alphabetic symbol ordering
-Relocatable symbols
 
 Symbol: ADC1_IRQHandler
    Definitions
@@ -1968,6 +1976,12 @@ ADC_ETC_IRQ1_IRQHandler 0000012E
 Symbol: ADC_ETC_IRQ1_IRQHandler
    Definitions
       At line 1038 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
+
+
+
+ARM Macro Assembler    Page 3 Alphabetic symbol ordering
+Relocatable symbols
+
 p_MIMXRT1064.s
    Uses
       At line 169 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -1976,12 +1990,6 @@ _MIMXRT1064.s
 _MIMXRT1064.s
 
 ADC_ETC_IRQ2_IRQHandler 0000012E
-
-
-
-ARM Macro Assembler    Page 3 Alphabetic symbol ordering
-Relocatable symbols
-
 
 Symbol: ADC_ETC_IRQ2_IRQHandler
    Definitions
@@ -2033,6 +2041,12 @@ CAN1_IRQHandler 000000E2
 
 Symbol: CAN1_IRQHandler
    Definitions
+
+
+
+ARM Macro Assembler    Page 4 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 626 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
    Uses
@@ -2040,12 +2054,6 @@ _MIMXRT1064.s
 MIMXRT1064.s
       At line 627 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-
-ARM Macro Assembler    Page 4 Alphabetic symbol ordering
-Relocatable symbols
 
 CAN2_DriverIRQHandler 0000012E
 
@@ -2098,6 +2106,12 @@ _MIMXRT1064.s
 CCM_1_IRQHandler 0000012E
 
 Symbol: CCM_1_IRQHandler
+
+
+
+ARM Macro Assembler    Page 5 Alphabetic symbol ordering
+Relocatable symbols
+
    Definitions
       At line 1014 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
 p_MIMXRT1064.s
@@ -2106,12 +2120,6 @@ p_MIMXRT1064.s
 _MIMXRT1064.s
       At line 855 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-ARM Macro Assembler    Page 5 Alphabetic symbol ordering
-Relocatable symbols
-
 
 CCM_2_IRQHandler 0000012E
 
@@ -2163,6 +2171,12 @@ _MIMXRT1064.s
 
 CTI0_ERROR_IRQHandler 0000012E
 
+
+
+
+ARM Macro Assembler    Page 6 Alphabetic symbol ordering
+Relocatable symbols
+
 Symbol: CTI0_ERROR_IRQHandler
    Definitions
       At line 936 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -2171,12 +2185,6 @@ _MIMXRT1064.s
       At line 67 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
 MIMXRT1064.s
       At line 777 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
-
-
-
-ARM Macro Assembler    Page 6 Alphabetic symbol ordering
-Relocatable symbols
-
 _MIMXRT1064.s
 
 CTI1_ERROR_IRQHandler 0000012E
@@ -2229,6 +2237,12 @@ _MIMXRT1064.s
 
 DMA0_DMA16_DriverIRQHandler 0000012E
 
+
+
+ARM Macro Assembler    Page 7 Alphabetic symbol ordering
+Relocatable symbols
+
+
 Symbol: DMA0_DMA16_DriverIRQHandler
    Definitions
       At line 919 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -2236,12 +2250,6 @@ _MIMXRT1064.s
    Uses
       At line 397 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-ARM Macro Assembler    Page 7 Alphabetic symbol ordering
-Relocatable symbols
-
       At line 760 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
@@ -2293,6 +2301,12 @@ _MIMXRT1064.s
       At line 771 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
+
+
+
+ARM Macro Assembler    Page 8 Alphabetic symbol ordering
+Relocatable symbols
+
 DMA11_DMA27_IRQHandler 0000008A
 
 Symbol: DMA11_DMA27_IRQHandler
@@ -2301,12 +2315,6 @@ Symbol: DMA11_DMA27_IRQHandler
 _MIMXRT1064.s
    Uses
       At line 61 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
-
-
-
-ARM Macro Assembler    Page 8 Alphabetic symbol ordering
-Relocatable symbols
-
 MIMXRT1064.s
       At line 473 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -2359,6 +2367,12 @@ MIMXRT1064.s
       At line 487 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
+
+
+ARM Macro Assembler    Page 9 Alphabetic symbol ordering
+Relocatable symbols
+
+
 DMA14_DMA30_DriverIRQHandler 0000012E
 
 Symbol: DMA14_DMA30_DriverIRQHandler
@@ -2366,12 +2380,6 @@ Symbol: DMA14_DMA30_DriverIRQHandler
       At line 933 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
    Uses
-
-
-
-ARM Macro Assembler    Page 9 Alphabetic symbol ordering
-Relocatable symbols
-
       At line 495 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
       At line 774 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -2423,6 +2431,12 @@ _MIMXRT1064.s
       At line 404 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
       At line 761 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
+
+
+
+ARM Macro Assembler    Page 10 Alphabetic symbol ordering
+Relocatable symbols
+
 _MIMXRT1064.s
 
 DMA1_DMA17_IRQHandler 00000062
@@ -2431,12 +2445,6 @@ Symbol: DMA1_DMA17_IRQHandler
    Definitions
       At line 402 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-ARM Macro Assembler    Page 10 Alphabetic symbol ordering
-Relocatable symbols
-
    Uses
       At line 51 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
 MIMXRT1064.s
@@ -2488,6 +2496,12 @@ _MIMXRT1064.s
    Uses
       At line 53 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
 MIMXRT1064.s
+
+
+
+ARM Macro Assembler    Page 11 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 417 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
@@ -2496,12 +2510,6 @@ DMA4_DMA20_DriverIRQHandler 0000012E
 Symbol: DMA4_DMA20_DriverIRQHandler
    Definitions
       At line 923 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
-
-
-
-ARM Macro Assembler    Page 11 Alphabetic symbol ordering
-Relocatable symbols
-
 _MIMXRT1064.s
    Uses
       At line 425 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -2553,6 +2561,12 @@ Symbol: DMA6_DMA22_DriverIRQHandler
 _MIMXRT1064.s
    Uses
       At line 439 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
+
+
+
+ARM Macro Assembler    Page 12 Alphabetic symbol ordering
+Relocatable symbols
+
 _MIMXRT1064.s
       At line 766 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -2561,12 +2575,6 @@ DMA6_DMA22_IRQHandler 00000076
 
 Symbol: DMA6_DMA22_IRQHandler
    Definitions
-
-
-
-ARM Macro Assembler    Page 12 Alphabetic symbol ordering
-Relocatable symbols
-
       At line 437 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
    Uses
@@ -2618,6 +2626,12 @@ Symbol: DMA8_DMA24_IRQHandler
       At line 451 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
    Uses
+
+
+
+ARM Macro Assembler    Page 13 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 58 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
 MIMXRT1064.s
       At line 452 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -2626,12 +2640,6 @@ _MIMXRT1064.s
 DMA9_DMA25_DriverIRQHandler 0000012E
 
 Symbol: DMA9_DMA25_DriverIRQHandler
-
-
-
-ARM Macro Assembler    Page 13 Alphabetic symbol ordering
-Relocatable symbols
-
    Definitions
       At line 928 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -2683,6 +2691,12 @@ Symbol: DebugMon_Handler
    Definitions
       At line 380 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
+
+
+
+ARM Macro Assembler    Page 14 Alphabetic symbol ordering
+Relocatable symbols
+
    Uses
       At line 44 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
 MIMXRT1064.s
@@ -2690,12 +2704,6 @@ MIMXRT1064.s
 _MIMXRT1064.s
 
 DefaultISR 0000012E
-
-
-
-
-ARM Macro Assembler    Page 14 Alphabetic symbol ordering
-Relocatable symbols
 
 Symbol: DefaultISR
    Definitions
@@ -2748,6 +2756,12 @@ _MIMXRT1064.s
 _MIMXRT1064.s
       At line 230 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
+
+
+
+ARM Macro Assembler    Page 15 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 231 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
       At line 232 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -2756,12 +2770,6 @@ _MIMXRT1064.s
 _MIMXRT1064.s
       At line 234 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-ARM Macro Assembler    Page 15 Alphabetic symbol ordering
-Relocatable symbols
-
       At line 235 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
       At line 236 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -2813,6 +2821,12 @@ _MIMXRT1064.s
       At line 259 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
       At line 260 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
+
+
+
+ARM Macro Assembler    Page 16 Alphabetic symbol ordering
+Relocatable symbols
+
 _MIMXRT1064.s
       At line 261 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -2821,12 +2835,6 @@ _MIMXRT1064.s
       At line 263 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
       At line 264 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
-
-
-
-ARM Macro Assembler    Page 16 Alphabetic symbol ordering
-Relocatable symbols
-
 _MIMXRT1064.s
       At line 265 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -2878,6 +2886,12 @@ _MIMXRT1064.s
 _MIMXRT1064.s
       At line 918 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
+
+
+
+ARM Macro Assembler    Page 17 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 1078 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
 p_MIMXRT1064.s
 
@@ -2886,12 +2900,6 @@ Default_Handler 0000012E
 Symbol: Default_Handler
    Definitions
       At line 759 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
-
-
-
-ARM Macro Assembler    Page 17 Alphabetic symbol ordering
-Relocatable symbols
-
 _MIMXRT1064.s
    Uses
       None
@@ -2944,6 +2952,12 @@ _MIMXRT1064.s
       At line 892 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
+
+
+ARM Macro Assembler    Page 18 Alphabetic symbol ordering
+Relocatable symbols
+
+
 ENET2_1588_Timer_DriverIRQHandler 0000012E
 
 Symbol: ENET2_1588_Timer_DriverIRQHandler
@@ -2951,12 +2965,6 @@ Symbol: ENET2_1588_Timer_DriverIRQHandler
       At line 1072 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
 p_MIMXRT1064.s
    Uses
-
-
-
-ARM Macro Assembler    Page 18 Alphabetic symbol ordering
-Relocatable symbols
-
       At line 740 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
       At line 913 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -3008,6 +3016,12 @@ p_MIMXRT1064.s
       At line 726 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
       At line 875 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
+
+
+
+ARM Macro Assembler    Page 19 Alphabetic symbol ordering
+Relocatable symbols
+
 _MIMXRT1064.s
 
 ENET_1588_Timer_IRQHandler 0000011A
@@ -3016,12 +3030,6 @@ Symbol: ENET_1588_Timer_IRQHandler
    Definitions
       At line 724 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-ARM Macro Assembler    Page 19 Alphabetic symbol ordering
-Relocatable symbols
-
    Uses
       At line 165 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -3073,6 +3081,12 @@ p_MIMXRT1064.s
    Uses
       At line 677 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
+
+
+
+ARM Macro Assembler    Page 20 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 850 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
@@ -3081,12 +3095,6 @@ FLEXIO1_IRQHandler 000000FE
 Symbol: FLEXIO1_IRQHandler
    Definitions
       At line 675 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
-
-
-
-ARM Macro Assembler    Page 20 Alphabetic symbol ordering
-Relocatable symbols
-
 _MIMXRT1064.s
    Uses
       At line 140 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -3138,6 +3146,12 @@ Symbol: FLEXIO3_IRQHandler
 _MIMXRT1064.s
    Uses
       At line 206 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
+
+
+
+ARM Macro Assembler    Page 21 Alphabetic symbol ordering
+Relocatable symbols
+
 _MIMXRT1064.s
       At line 753 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -3146,12 +3160,6 @@ FLEXRAM_IRQHandler 0000012E
 
 Symbol: FLEXRAM_IRQHandler
    Definitions
-
-
-
-ARM Macro Assembler    Page 21 Alphabetic symbol ordering
-Relocatable symbols
-
       At line 957 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
    Uses
@@ -3203,6 +3211,12 @@ Symbol: FLEXSPI_IRQHandler
       At line 696 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
    Uses
+
+
+
+ARM Macro Assembler    Page 22 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 158 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
       At line 697 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -3211,12 +3225,6 @@ _MIMXRT1064.s
 GPC_IRQHandler 0000012E
 
 Symbol: GPC_IRQHandler
-
-
-
-ARM Macro Assembler    Page 22 Alphabetic symbol ordering
-Relocatable symbols
-
    Definitions
       At line 1016 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
 p_MIMXRT1064.s
@@ -3268,6 +3276,12 @@ Symbol: GPIO1_INT1_IRQHandler
    Definitions
       At line 992 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
+
+
+
+ARM Macro Assembler    Page 23 Alphabetic symbol ordering
+Relocatable symbols
+
    Uses
       At line 123 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -3275,12 +3289,6 @@ _MIMXRT1064.s
 _MIMXRT1064.s
 
 GPIO1_INT2_IRQHandler 0000012E
-
-
-
-
-ARM Macro Assembler    Page 23 Alphabetic symbol ordering
-Relocatable symbols
 
 Symbol: GPIO1_INT2_IRQHandler
    Definitions
@@ -3333,6 +3341,12 @@ GPIO1_INT6_IRQHandler 0000012E
 Symbol: GPIO1_INT6_IRQHandler
    Definitions
       At line 997 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
+
+
+
+ARM Macro Assembler    Page 24 Alphabetic symbol ordering
+Relocatable symbols
+
 _MIMXRT1064.s
    Uses
       At line 128 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -3341,12 +3355,6 @@ _MIMXRT1064.s
 _MIMXRT1064.s
 
 GPIO1_INT7_IRQHandler 0000012E
-
-
-
-ARM Macro Assembler    Page 24 Alphabetic symbol ordering
-Relocatable symbols
-
 
 Symbol: GPIO1_INT7_IRQHandler
    Definitions
@@ -3398,6 +3406,12 @@ GPIO3_Combined_16_31_IRQHandler 0000012E
 
 Symbol: GPIO3_Combined_16_31_IRQHandler
    Definitions
+
+
+
+ARM Macro Assembler    Page 25 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 1004 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
 p_MIMXRT1064.s
    Uses
@@ -3405,12 +3419,6 @@ p_MIMXRT1064.s
 _MIMXRT1064.s
       At line 845 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-
-ARM Macro Assembler    Page 25 Alphabetic symbol ordering
-Relocatable symbols
 
 GPIO4_Combined_0_15_IRQHandler 0000012E
 
@@ -3463,6 +3471,12 @@ _MIMXRT1064.s
 GPIO6_7_8_9_IRQHandler 0000012E
 
 Symbol: GPIO6_7_8_9_IRQHandler
+
+
+
+ARM Macro Assembler    Page 26 Alphabetic symbol ordering
+Relocatable symbols
+
    Definitions
       At line 1076 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
 p_MIMXRT1064.s
@@ -3471,12 +3485,6 @@ p_MIMXRT1064.s
 _MIMXRT1064.s
       At line 917 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-ARM Macro Assembler    Page 26 Alphabetic symbol ordering
-Relocatable symbols
-
 
 GPR_IRQ_IRQHandler 0000012E
 
@@ -3528,6 +3536,12 @@ _MIMXRT1064.s
 
 KPP_IRQHandler 0000012E
 
+
+
+
+ARM Macro Assembler    Page 27 Alphabetic symbol ordering
+Relocatable symbols
+
 Symbol: KPP_IRQHandler
    Definitions
       At line 958 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -3536,12 +3550,6 @@ _MIMXRT1064.s
       At line 89 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
 MIMXRT1064.s
       At line 799 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
-
-
-
-ARM Macro Assembler    Page 27 Alphabetic symbol ordering
-Relocatable symbols
-
 _MIMXRT1064.s
 
 LCDIF_IRQHandler 0000012E
@@ -3594,6 +3602,12 @@ _MIMXRT1064.s
 
 LPI2C2_IRQHandler 000000C6
 
+
+
+ARM Macro Assembler    Page 28 Alphabetic symbol ordering
+Relocatable symbols
+
+
 Symbol: LPI2C2_IRQHandler
    Definitions
       At line 577 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -3601,12 +3615,6 @@ _MIMXRT1064.s
    Uses
       At line 79 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
 MIMXRT1064.s
-
-
-
-ARM Macro Assembler    Page 28 Alphabetic symbol ordering
-Relocatable symbols
-
       At line 578 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
@@ -3658,6 +3666,12 @@ MIMXRT1064.s
       At line 592 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
+
+
+
+ARM Macro Assembler    Page 29 Alphabetic symbol ordering
+Relocatable symbols
+
 LPSPI1_DriverIRQHandler 0000012E
 
 Symbol: LPSPI1_DriverIRQHandler
@@ -3666,12 +3680,6 @@ Symbol: LPSPI1_DriverIRQHandler
 _MIMXRT1064.s
    Uses
       At line 600 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
-
-
-
-ARM Macro Assembler    Page 29 Alphabetic symbol ordering
-Relocatable symbols
-
 _MIMXRT1064.s
       At line 792 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -3724,6 +3732,12 @@ _MIMXRT1064.s
       At line 794 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
+
+
+ARM Macro Assembler    Page 30 Alphabetic symbol ordering
+Relocatable symbols
+
+
 LPSPI3_IRQHandler 000000DA
 
 Symbol: LPSPI3_IRQHandler
@@ -3731,12 +3745,6 @@ Symbol: LPSPI3_IRQHandler
       At line 612 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
    Uses
-
-
-
-ARM Macro Assembler    Page 30 Alphabetic symbol ordering
-Relocatable symbols
-
       At line 84 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
 MIMXRT1064.s
       At line 613 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -3788,6 +3796,12 @@ _MIMXRT1064.s
       At line 70 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
 MIMXRT1064.s
       At line 515 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
+
+
+
+ARM Macro Assembler    Page 31 Alphabetic symbol ordering
+Relocatable symbols
+
 _MIMXRT1064.s
 
 LPUART2_DriverIRQHandler 0000012E
@@ -3796,12 +3810,6 @@ Symbol: LPUART2_DriverIRQHandler
    Definitions
       At line 940 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-ARM Macro Assembler    Page 31 Alphabetic symbol ordering
-Relocatable symbols
-
    Uses
       At line 523 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -3853,6 +3861,12 @@ _MIMXRT1064.s
    Uses
       At line 537 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
+
+
+
+ARM Macro Assembler    Page 32 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 783 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
@@ -3861,12 +3875,6 @@ LPUART4_IRQHandler 000000AE
 Symbol: LPUART4_IRQHandler
    Definitions
       At line 535 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
-
-
-
-ARM Macro Assembler    Page 32 Alphabetic symbol ordering
-Relocatable symbols
-
 _MIMXRT1064.s
    Uses
       At line 73 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
@@ -3918,6 +3926,12 @@ Symbol: LPUART6_IRQHandler
 _MIMXRT1064.s
    Uses
       At line 75 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
+
+
+
+ARM Macro Assembler    Page 33 Alphabetic symbol ordering
+Relocatable symbols
+
 MIMXRT1064.s
       At line 550 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -3926,12 +3940,6 @@ LPUART7_DriverIRQHandler 0000012E
 
 Symbol: LPUART7_DriverIRQHandler
    Definitions
-
-
-
-ARM Macro Assembler    Page 33 Alphabetic symbol ordering
-Relocatable symbols
-
       At line 945 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
    Uses
@@ -3983,6 +3991,12 @@ Symbol: MemManage_Handler
       At line 360 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
    Uses
+
+
+
+ARM Macro Assembler    Page 34 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 36 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
 MIMXRT1064.s
       At line 361 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -3991,12 +4005,6 @@ _MIMXRT1064.s
 NMI_Handler 0000004C
 
 Symbol: NMI_Handler
-
-
-
-ARM Macro Assembler    Page 34 Alphabetic symbol ordering
-Relocatable symbols
-
    Definitions
       At line 350 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -4048,6 +4056,12 @@ Symbol: PWM1_1_IRQHandler
    Definitions
       At line 1022 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
 p_MIMXRT1064.s
+
+
+
+ARM Macro Assembler    Page 35 Alphabetic symbol ordering
+Relocatable symbols
+
    Uses
       At line 153 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -4055,12 +4069,6 @@ _MIMXRT1064.s
 _MIMXRT1064.s
 
 PWM1_2_IRQHandler 0000012E
-
-
-
-
-ARM Macro Assembler    Page 35 Alphabetic symbol ordering
-Relocatable symbols
 
 Symbol: PWM1_2_IRQHandler
    Definitions
@@ -4113,6 +4121,12 @@ PWM2_1_IRQHandler 0000012E
 Symbol: PWM2_1_IRQHandler
    Definitions
       At line 1057 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
+
+
+
+ARM Macro Assembler    Page 36 Alphabetic symbol ordering
+Relocatable symbols
+
 p_MIMXRT1064.s
    Uses
       At line 188 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -4121,12 +4135,6 @@ _MIMXRT1064.s
 _MIMXRT1064.s
 
 PWM2_2_IRQHandler 0000012E
-
-
-
-ARM Macro Assembler    Page 36 Alphabetic symbol ordering
-Relocatable symbols
-
 
 Symbol: PWM2_2_IRQHandler
    Definitions
@@ -4178,6 +4186,12 @@ PWM3_1_IRQHandler 0000012E
 
 Symbol: PWM3_1_IRQHandler
    Definitions
+
+
+
+ARM Macro Assembler    Page 37 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 1062 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
 p_MIMXRT1064.s
    Uses
@@ -4185,12 +4199,6 @@ p_MIMXRT1064.s
 _MIMXRT1064.s
       At line 903 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-
-ARM Macro Assembler    Page 37 Alphabetic symbol ordering
-Relocatable symbols
 
 PWM3_2_IRQHandler 0000012E
 
@@ -4243,6 +4251,12 @@ _MIMXRT1064.s
 PWM4_1_IRQHandler 0000012E
 
 Symbol: PWM4_1_IRQHandler
+
+
+
+ARM Macro Assembler    Page 38 Alphabetic symbol ordering
+Relocatable symbols
+
    Definitions
       At line 1067 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
 p_MIMXRT1064.s
@@ -4251,12 +4265,6 @@ p_MIMXRT1064.s
 _MIMXRT1064.s
       At line 908 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-ARM Macro Assembler    Page 38 Alphabetic symbol ordering
-Relocatable symbols
-
 
 PWM4_2_IRQHandler 0000012E
 
@@ -4308,6 +4316,12 @@ _MIMXRT1064.s
 
 PendSV_Handler 0000005A
 
+
+
+
+ARM Macro Assembler    Page 39 Alphabetic symbol ordering
+Relocatable symbols
+
 Symbol: PendSV_Handler
    Definitions
       At line 385 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -4316,12 +4330,6 @@ _MIMXRT1064.s
       At line 46 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
 MIMXRT1064.s
       At line 386 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
-
-
-
-ARM Macro Assembler    Page 39 Alphabetic symbol ordering
-Relocatable symbols
-
 _MIMXRT1064.s
 
 RTWDOG_IRQHandler 0000012E
@@ -4374,6 +4382,12 @@ _MIMXRT1064.s
 
 Reserved171_IRQHandler 0000012E
 
+
+
+ARM Macro Assembler    Page 40 Alphabetic symbol ordering
+Relocatable symbols
+
+
 Symbol: Reserved171_IRQHandler
    Definitions
       At line 1074 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
@@ -4381,12 +4395,6 @@ p_MIMXRT1064.s
    Uses
       At line 205 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-ARM Macro Assembler    Page 40 Alphabetic symbol ordering
-Relocatable symbols
-
       At line 915 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
@@ -4438,6 +4446,12 @@ _MIMXRT1064.s
       At line 831 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
+
+
+
+ARM Macro Assembler    Page 41 Alphabetic symbol ordering
+Relocatable symbols
+
 Reset_Handler 00000000
 
 Symbol: Reset_Handler
@@ -4446,12 +4460,6 @@ Symbol: Reset_Handler
 _MIMXRT1064.s
    Uses
       At line 33 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup_
-
-
-
-ARM Macro Assembler    Page 41 Alphabetic symbol ordering
-Relocatable symbols
-
 MIMXRT1064.s
       At line 306 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -4504,6 +4512,12 @@ _MIMXRT1064.s
       At line 648 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
+
+
+ARM Macro Assembler    Page 42 Alphabetic symbol ordering
+Relocatable symbols
+
+
 SAI3_RX_DriverIRQHandler 0000012E
 
 Symbol: SAI3_RX_DriverIRQHandler
@@ -4511,12 +4525,6 @@ Symbol: SAI3_RX_DriverIRQHandler
       At line 977 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
    Uses
-
-
-
-ARM Macro Assembler    Page 42 Alphabetic symbol ordering
-Relocatable symbols
-
       At line 656 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
       At line 818 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -4568,6 +4576,12 @@ p_MIMXRT1064.s
       At line 159 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
       At line 869 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
+
+
+
+ARM Macro Assembler    Page 43 Alphabetic symbol ordering
+Relocatable symbols
+
 _MIMXRT1064.s
 
 SJC_IRQHandler 0000012E
@@ -4576,12 +4590,6 @@ Symbol: SJC_IRQHandler
    Definitions
       At line 973 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
-
-
-
-ARM Macro Assembler    Page 43 Alphabetic symbol ordering
-Relocatable symbols
-
    Uses
       At line 104 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -4633,6 +4641,12 @@ _MIMXRT1064.s
    Uses
       At line 670 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
+
+
+
+ARM Macro Assembler    Page 44 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 820 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
@@ -4641,12 +4655,6 @@ SPDIF_IRQHandler 000000FA
 Symbol: SPDIF_IRQHandler
    Definitions
       At line 668 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
-
-
-
-ARM Macro Assembler    Page 44 Alphabetic symbol ordering
-Relocatable symbols
-
 _MIMXRT1064.s
    Uses
       At line 110 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -4698,6 +4706,12 @@ Symbol: TEMP_LOW_HIGH_IRQHandler
 _MIMXRT1064.s
    Uses
       At line 113 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
+
+
+
+ARM Macro Assembler    Page 45 Alphabetic symbol ordering
+Relocatable symbols
+
 _MIMXRT1064.s
       At line 823 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -4706,12 +4720,6 @@ TEMP_PANIC_IRQHandler 0000012E
 
 Symbol: TEMP_PANIC_IRQHandler
    Definitions
-
-
-
-ARM Macro Assembler    Page 45 Alphabetic symbol ordering
-Relocatable symbols
-
       At line 983 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
    Uses
@@ -4763,6 +4771,12 @@ Symbol: TMR4_IRQHandler
       At line 1055 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
 p_MIMXRT1064.s
    Uses
+
+
+
+ARM Macro Assembler    Page 46 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 186 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
       At line 896 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -4771,12 +4785,6 @@ _MIMXRT1064.s
 TRNG_IRQHandler 0000012E
 
 Symbol: TRNG_IRQHandler
-
-
-
-ARM Macro Assembler    Page 46 Alphabetic symbol ordering
-Relocatable symbols
-
    Definitions
       At line 972 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -4828,6 +4836,12 @@ Symbol: USB_PHY1_IRQHandler
    Definitions
       At line 984 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
+
+
+
+ARM Macro Assembler    Page 47 Alphabetic symbol ordering
+Relocatable symbols
+
    Uses
       At line 115 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
@@ -4835,12 +4849,6 @@ _MIMXRT1064.s
 _MIMXRT1064.s
 
 USB_PHY2_IRQHandler 0000012E
-
-
-
-
-ARM Macro Assembler    Page 47 Alphabetic symbol ordering
-Relocatable symbols
 
 Symbol: USB_PHY2_IRQHandler
    Definitions
@@ -4893,6 +4901,12 @@ USDHC2_IRQHandler 00000112
 Symbol: USDHC2_IRQHandler
    Definitions
       At line 710 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
+
+
+
+ARM Macro Assembler    Page 48 Alphabetic symbol ordering
+Relocatable symbols
+
 _MIMXRT1064.s
    Uses
       At line 161 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
@@ -4901,12 +4915,6 @@ _MIMXRT1064.s
 _MIMXRT1064.s
 
 UsageFault_Handler 00000054
-
-
-
-ARM Macro Assembler    Page 48 Alphabetic symbol ordering
-Relocatable symbols
-
 
 Symbol: UsageFault_Handler
    Definitions
@@ -4958,6 +4966,12 @@ XBAR1_IRQ_2_3_IRQHandler 0000012E
 
 Symbol: XBAR1_IRQ_2_3_IRQHandler
    Definitions
+
+
+
+ARM Macro Assembler    Page 49 Alphabetic symbol ordering
+Relocatable symbols
+
       At line 1036 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startu
 p_MIMXRT1064.s
    Uses
@@ -4966,13 +4980,7 @@ _MIMXRT1064.s
       At line 877 in file ..\..\Libraries\nxp_libraries\startup\MDK-ARM\startup
 _MIMXRT1064.s
 
-
-
-
-ARM Macro Assembler    Page 49 Alphabetic symbol ordering
-Relocatable symbols
-
-223 symbols
+224 symbols
 
 
 
@@ -5093,4 +5101,4 @@ _MIMXRT1064.s
 _MIMXRT1064.s
 Comment: __main used once
 3 symbols
-573 symbols in table
+574 symbols in table
