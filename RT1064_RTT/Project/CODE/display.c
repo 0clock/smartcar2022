@@ -19,7 +19,7 @@ extern float ahrs_kp;
 extern int tempTest;
 
 
-
+extern int openartBuffer;
 
 void GUI_Motor(){
     ips114_showstr(10,0,"Encoder:");
@@ -145,8 +145,8 @@ void display_page(){
             break;
         case CameraPage:
             ips114_showstr(10,0,"Camera:");
-
-            ips114_displayimage032_zoom1(mt9v03x_csi_image[0], MT9V03X_CSI_W  , MT9V03X_CSI_H, 66, 26, MT9V03X_CSI_W, MT9V03X_CSI_H);
+            ips114_showint8(10,2,openartBuffer);
+            //ips114_displayimage032_zoom1(mt9v03x_csi_image[0], MT9V03X_CSI_W  , MT9V03X_CSI_H, 66, 26, MT9V03X_CSI_W, MT9V03X_CSI_H);
             //ips114_showfloat(80,0,thres,3,2);
             //mt9v03x_csi_finish_flag = 0;	//清除采集完成标志位
             //ImageHandel();
@@ -212,7 +212,7 @@ void display_init(void)
     ips114_clear(BLACK);
 
     //创建显示线程 优先级设置为31
-    tid = rt_thread_create("display", display_entry, RT_NULL, 1024, 31, 16);
+    tid = rt_thread_create("display", display_entry, RT_NULL, 1024, 11, 16);
     
     //启动显示线程
     if(RT_NULL != tid)

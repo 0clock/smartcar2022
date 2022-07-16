@@ -9,7 +9,7 @@
 #include "smotor.h"
 extern const float PI;
 int nextpoint=0;
-
+bool isgetpicture;
 /*
 ***************************************************************
 *	函 数 名: Charge_Locate
@@ -21,7 +21,7 @@ int nextpoint=0;
 
 void charge_locate(void)
 {
-    Car.x=Car.x1;
+    //Car.x=Car.x1;
     Car.y=Car.y1;
 //    //获取当前坐标
 //    if (Car.Position_Pointer == 0){ //位于起点1
@@ -88,8 +88,22 @@ void get_location(void){
 
 void omni_banyun(){
     //车头向前将图片搬运到指定位置
+    Car.MileageY=0;
+    Car.MileageX=0;
+    Car.DistanceX=-20*(Car.x+1);
+    Car.Speed_X = -speed_tar;
+    while(1) {
 
+        systick_delay_ms(100);
+        if(abs(Car.MileageX)>=abs(Car.DistanceX))
+            break;
+    }
+    car_stop();
+    Car.Speed_X=0;
+    Car.Speed_Y=0;
+    Car.Speed_Z=0;
     //这里要改变Car.x,Car.y
+    Car.x=-1;
 }
 
 void car_recmode(){
@@ -98,13 +112,18 @@ void car_recmode(){
     grab_picture();//等待识别完成后电磁铁吸取图片
     //rt_thread_delay(2500);
     rt_mb_send(buzzer_mailbox,233);
-    //omni_banyun();//吸取完成后搬运图片到指定位置
+    omni_banyun();//吸取完成后搬运图片到指定位置
+
+    rt_thread_delay(2000);
+    place_picture();
+
 }
 
 
 void car_omnimove(){
     bool x_flag,y_flag;
     Car.Angel=eulerAngle.yaw;
+
     if(abs(Car.MileageX)<abs(Car.DistanceX)){
         Car.Speed_X=(int16)(speed_tar * sin(Car.Angel_Target/180 *PI));//((float)speed_tar * sin(Car.Angel_Target/180 *PI)),((float)speed_tar * cos(Car.Angel_Target/180 *PI)),0);
         x_flag=false;
@@ -122,12 +141,15 @@ void car_omnimove(){
     //Car.Speed_Z=-angel_pid(  Car.Angel,-Car.Angel_Target);//速度环
 
     if(x_flag && y_flag){
+        Car.x=Car.x1;
         car_stop();
+        Car.Speed_X=0;
+        Car.Speed_Y=0;
+        Car.Speed_Z=0;
         car_recmode();
         //rt_mb_send(buzzer_mailbox,1000);
         x_flag=false;
         y_flag=false;
-
         get_location();
         Car.MileageX=0;
         Car.MileageY=0;
