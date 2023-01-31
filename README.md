@@ -6,11 +6,15 @@
 
 ## 目录说明:cactus:
 
-- **rt1064_rtt**内是rt1064的工程
+- **[rt1064_rtt](\RT1064_RTT)**内是rt1064的工程
 - **openart**部分是两个openart的代码
 - **hardware**内有电机驱动以及母版的pcb文件
 
 ## 更新日志:rabbit:
+
+2023-1-31
+
+> 把文件重新整理了一下
 
 2022-6-27
 
@@ -143,13 +147,14 @@
 
 > ### 参考链接🔗
 >
-> 1. .[恩智浦AI视觉组入门教程发布--逐飞科技](https://mp.weixin.qq.com/s/y90pT2_g0IPRuaNQPzZUqg)
-> 2. [智能车竞赛AI组OpenART mini视觉传感器图像识别模块Open ART逐飞-淘宝网](https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-22508770847.38.3f9d5f26PVLIVv&id=637029649233&mt=)
-> 3. [恩智浦AI视觉组浅析--逐飞科技 ](https://mp.weixin.qq.com/s/y2IzQTzd_mr4BtPH-oOKcQ)
-> 4. [智能视觉组比赛细则](https://bj.bcebos.com/cdstm-hyetecforthesmartcar-bucket/source/doc-2kd6k14jliw0.pdf)
-> 5. [智能视觉组补充说明](https://bj.bcebos.com/cdstm-hyetecforthesmartcar-bucket/source/doc-888jo99kh9g0.pdf)
-> 6. [17界比赛总规则](https://bj.bcebos.com/cdstm-hyetecforthesmartcar-bucket/source/doc-7f76k5yp26g0.pdf)
+> 1. [第16届智能车智能视觉组-上海交通大学AuTop战队开源汇总 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/391252945)
+> 2. [恩智浦AI视觉组入门教程发布--逐飞科技](https://mp.weixin.qq.com/s/y90pT2_g0IPRuaNQPzZUqg)
+> 3. [智能车竞赛AI组OpenART mini视觉传感器图像识别模块Open ART逐飞-淘宝网](https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-22508770847.38.3f9d5f26PVLIVv&id=637029649233&mt=)
+> 4. [恩智浦AI视觉组浅析--逐飞科技 ](https://mp.weixin.qq.com/s/y2IzQTzd_mr4BtPH-oOKcQ)
+> 5. [智能视觉组比赛细则](https://bj.bcebos.com/cdstm-hyetecforthesmartcar-bucket/source/doc-2kd6k14jliw0.pdf)
+> 6. [智能视觉组补充说明](https://bj.bcebos.com/cdstm-hyetecforthesmartcar-bucket/source/doc-888jo99kh9g0.pdf)
+> 7. [17界比赛总规则](https://bj.bcebos.com/cdstm-hyetecforthesmartcar-bucket/source/doc-7f76k5yp26g0.pdf)
 > 8. [NXP_OpenART](https://github.com/NXPmicro/OpenART/blob/master/README_zh.md)
-> 8. [智能视觉组逐飞演示车模浅析-上篇 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzAxMjQxNjEyMw==&mid=2247488243&idx=1&sn=d22493cc62e76fa6e026b9518460315c&chksm=9bb377e7acc4fef12ee422909b196b3abf06e5c84fb28a643382cf9f0f960442744272f8dc7d&mpshare=1&scene=23&srcid=0404thhN6UB5NRRbZPrsRQda&sharer_sharetime=1649002328705&sharer_shareid=ab779ee959c61ae16ead99fe1fefb3b2#rd)
+> 9. [智能视觉组逐飞演示车模浅析-上篇 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzAxMjQxNjEyMw==&mid=2247488243&idx=1&sn=d22493cc62e76fa6e026b9518460315c&chksm=9bb377e7acc4fef12ee422909b196b3abf06e5c84fb28a643382cf9f0f960442744272f8dc7d&mpshare=1&scene=23&srcid=0404thhN6UB5NRRbZPrsRQda&sharer_sharetime=1649002328705&sharer_shareid=ab779ee959c61ae16ead99fe1fefb3b2#rd)
 >
 
