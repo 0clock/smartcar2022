@@ -6,9 +6,15 @@
 
 ## 目录说明:cactus:
 
-- **[rt1064_rtt](/RT1064_RTT)**内是rt1064的工程
-- **openart**部分是两个openart的代码
-- **hardware**内有电机驱动以及母版的pcb文件
+- [rt1064_rtt](/RT1064_RTT)内是rt1064的工程
+- [openart](/openart)部分是两个openart的代码
+- [hardware](hardware)内有电机驱动以及母版的pcb文件
+
+## 硬件：
+
+母版和电机驱动板都参考的逐飞的方案。
+
+母版使用立创EDA绘制：[2022年大学生智能汽车竞赛-智能视觉组硬件部分 - 嘉立创EDA开源硬件平台 (oshwhub.com)](https://oshwhub.com/admin3075/zi-ran-xuan-zhai-hao)
 
 ## 更新日志:rabbit:
 
