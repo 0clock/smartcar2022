@@ -2,13 +2,13 @@
 
 第17届智能车竞赛-AHSTU-视觉小白队
 
-## 任务列表:cactus:
+视频：[【智能车】大二小白参加17届智能视觉组记录 开源_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1rY4y1u77a/)
 
-- [x] 优化路径规划算法
-- [x] 两种运动方式
-- [x] `OpenArt`和`RT1064`之间的通讯
-- [x] `OpenArt `坐标识别优化（透视变换）
-- [x] `OpenArt`坐标识别和图片识别整合
+## 目录说明:cactus:
+
+- **rt1064_rtt**内是rt1064的工程
+- **openart**部分是两个openart的代码
+- **hardware**内有电机驱动以及母版的pcb文件
 
 ## 更新日志:rabbit:
 
