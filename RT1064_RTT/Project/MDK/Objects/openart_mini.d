@@ -120,4 +120,5 @@
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_W25QXXJV.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660_CSI.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660.h \
-  ..\..\Libraries\seekfree_peripheral\SEEKFREE_IMU963RA.h
+  ..\..\Libraries\seekfree_peripheral\SEEKFREE_IMU963RA.h \
+  ..\CODE\location.h

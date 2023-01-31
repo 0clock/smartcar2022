@@ -15,7 +15,8 @@
 int32 duty1=0,duty2=0,duty3=0,duty4=0;//电机PWM值
 
 
-
+float pictureP=0.15f,pictureI=0,pictureD=0.03f;
+  
 
 
 
@@ -27,7 +28,7 @@ int speed_tar_2 = 0;
 int speed_tar_3 = 0;
 int speed_tar_4 = 0;
 
-int speed_tar = 0;//目标速度
+double speed_tar = 0;//目标速度
 
 
 void motor_init(void)
@@ -43,7 +44,7 @@ void motor_init(void)
 }
 
 
-void car_omni(int16 x, int16 y, int16 z){
+void car_omni(float x, float y, float z){
     speed_tar_1= y + x + z;
     speed_tar_2= y - x + z;
     speed_tar_3= y + x - z;
@@ -175,11 +176,37 @@ int angel_pid(int NowAngel,int TargetAngel){
     Integral_bias+=Bias;
     Speed_Z=Angel_KP*Bias+Angel_KI*Integral_bias+Angel_KD*(Bias-Last_Bias);
     Last_Bias=Bias;
-    if(Speed_Z>=20)
-        Speed_Z=20;
-    if(Speed_Z<=-20)
-        Speed_Z=-20;
+    if(Speed_Z>=10)
+        Speed_Z=10;
+    if(Speed_Z<=-10)
+        Speed_Z=-10;
     return (int)Speed_Z;
+}
+
+int picture_xerror_pid(int16 now_x,int16 target_x){
+    static float Bias,Speed_X,Integral_bias,Last_Bias;
+    Bias=(float)(target_x - now_x);
+    Integral_bias+=Bias;
+    Speed_X=-pictureP*Bias+pictureI*Integral_bias+pictureD*(Bias-Last_Bias);
+    Last_Bias=Bias;
+    if(Speed_X>=10)
+        Speed_X=10;
+    if(Speed_X<=-10)
+        Speed_X=-10;
+    return (int)Speed_X;
+}
+
+int picture_yerror_pid(int16 now_y,int16 target_y){
+    static float Bias,Speed_Y,Integral_bias,Last_Bias;
+    Bias=(float)(target_y - now_y);
+    Integral_bias+=Bias;
+    Speed_Y=pictureP*Bias+pictureI*Integral_bias+pictureD*(Bias-Last_Bias);
+    Last_Bias=Bias;
+    if(Speed_Y>=10)
+        Speed_Y=10;
+    if(Speed_Y<=-10)
+        Speed_Y=-10;
+    return (int)Speed_Y;
 }
 
 /**
@@ -271,3 +298,4 @@ void motor_control(bool run)
         pwm_duty(PWM_4,-duty4);
     }
 }
+

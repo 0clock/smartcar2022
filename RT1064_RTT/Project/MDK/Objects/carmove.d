@@ -122,4 +122,5 @@
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_IMU963RA.h \
   ..\CODE\location.h ..\CODE\motor.h ..\CODE\buzzer.h \
-  ..\CODE\attitude_solution.h ..\CODE\smotor.h
+  ..\CODE\attitude_solution.h ..\CODE\smotor.h ..\CODE\openart_mini.h \
+  ..\CODE\sendmsg.h

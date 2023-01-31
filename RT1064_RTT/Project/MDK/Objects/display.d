@@ -123,4 +123,5 @@
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_IMU963RA.h \
   ..\CODE\encoder.h ..\CODE\display.h ..\CODE\location.h \
   ..\CODE\button.h ..\CODE\attitude_solution.h ..\CODE\MahonyAHRS.h \
-  ..\CODE\imgproc.h ..\CODE\flash_param.h ..\CODE\carmove.h
+  ..\CODE\imgproc.h ..\CODE\flash_param.h ..\CODE\carmove.h \
+  ..\CODE\openart_mini.h

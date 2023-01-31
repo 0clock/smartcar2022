@@ -10,46 +10,44 @@
 #include <stdlib.h>
 #include "headfile.h"
 
-#define locate_sz 12             //×ø±êÊý×éÊýÁ¿£¬Ä¿±êµãÊý²»È·¶¨£¡(5-20¶¼ÓÐ¿ÉÄÜ)
+#define locate_sz 12             //åæ ‡æ•°ç»„æ•°é‡ï¼Œç›®æ ‡ç‚¹æ•°ä¸ç¡®å®šï¼(5-20éƒ½æœ‰å¯èƒ½)
 
-//---------------------½á¹¹Ìå---------------------//
-//¼ÇÂ¼×ø±êºÍÏà¶ÔÎ»ÖÃµÄ½á¹¹Ìå
+//---------------------ç»“æž„ä½“---------------------//
+//è®°å½•åæ ‡å’Œç›¸å¯¹ä½ç½®çš„ç»“æž„ä½“
 typedef struct location_goal {
-    //ÒÑµ½´ïµÄÄ¿±êµã
+    //å·²åˆ°è¾¾çš„ç›®æ ‡ç‚¹
     int8_t Position_Pointer;
-    //µ±Ç°ËÙ¶È
-    int Speed_X;
-    int Speed_Y;
-    int Speed_Z;
-    //µ±Ç°Î»ÖÃ
+    //å½“å‰é€Ÿåº¦
+    double Speed_X;
+    double Speed_Y;
+    double Speed_Z;
+    //å½“å‰ä½ç½®
     float x;
     float y;
-    //Ä¿±êÎ»ÖÃ
+    //ç›®æ ‡ä½ç½®
     float x1;
     float y1;
-    //µ±Ç°×ËÌ¬
+    //å½“å‰å§¿æ€
     float Angel;
-    //Ä¿±ê×ËÌ¬
-    float Angel_Target;
-    //Ä¿±ê¾àÀë
+    //ç›®æ ‡å§¿æ€
+    double Angel_Target;
+    //ç›®æ ‡è·ç¦»
     float DistanceX;
     float DistanceY;
-    //¾àÉÏ´Î×ªÏòÖ®ºóÇ°½øµÄ¾àÀë(Àï³Ì£©
+    //è·ä¸Šæ¬¡è½¬å‘ä¹‹åŽå‰è¿›çš„è·ç¦»(é‡Œç¨‹ï¼‰
     float MileageX;
     float MileageY;
-    //Ä£Ê½±êÖ¾Î»:1->ÐÐ½øÄ£Ê½||0->Ê¶±ðÄ£Ê½
-    int8_t Mode_Flag;
 }location_goal;
 
 extern location_goal Car;
 extern uint8 Xt , Xb , Yl , Yr ;
-extern float originMap[locate_sz][2];
+extern int originMap[locate_sz][2];
 
 
 void carlocation_init(void);
 
 void location_thres_init(void);
-int locate_route(void);
+void get_route();
 void initHashMap(int true_sz);
 
 

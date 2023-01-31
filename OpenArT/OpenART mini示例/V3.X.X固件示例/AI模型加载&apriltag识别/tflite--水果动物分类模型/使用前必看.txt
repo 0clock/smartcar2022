@@ -1,1 +1,0 @@
-model_18_0.7639_quant.tflite与labels_animal_fruits.txt两文件必须放sd卡根目录

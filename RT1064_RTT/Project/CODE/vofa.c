@@ -8,6 +8,10 @@ uint8_t custom_buf[custom_sz]  = {0};    				   //下位机发送状态数据缓冲区
 uint8_t cmd_rxbuf[cmd_sz] = {0};  					 		   //下位机接收命令缓冲区
 
 
+//发送识别结果给上位机
+void send_result(){
+
+}
 void vofa_Send(){
     //VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);
     //VOFA_pt->sendzip(VOFA_pt,VOFA_PROTOCOL_JUSTFLOAT,VOFA_CH_FRAME);

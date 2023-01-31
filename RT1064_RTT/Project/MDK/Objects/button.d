@@ -122,4 +122,5 @@
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_SCC8660.h \
   ..\..\Libraries\seekfree_peripheral\SEEKFREE_IMU963RA.h \
   ..\CODE\button.h ..\CODE\display.h ..\CODE\motor.h \
-  ..\CODE\flash_param.h ..\CODE\ahrs.h ..\CODE\location.h
+  ..\CODE\flash_param.h ..\CODE\ahrs.h ..\CODE\location.h \
+  ..\CODE\attitude_solution.h

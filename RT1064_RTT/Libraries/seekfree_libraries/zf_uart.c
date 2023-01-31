@@ -264,7 +264,6 @@ void uart_set_handle(UARTN_enum uartn, lpuart_handle_t *handle, lpuart_transfer_
     handle->txDataSize = tx_count;
     handle->rxData = rx_buff;
     handle->rxDataSize = rx_count;
-    
 }
 
 

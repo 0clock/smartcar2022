@@ -12,16 +12,16 @@
 #include "SEEKFREE_MT9V03X_CSI.h"
 #include "flash_param.h"
 
-//**Ñ°ÕÒ±ß½ç**//
+//**å¯»æ‰¾è¾¹ç•Œ**//
 
-#define COLUMN_SCOPE 70 //ÁĞÉ¨Ãè·¶Î§ Ïò×ó & ÏòÓÒ É¨Ãè
-#define ROW_SCOPE 50    //ĞĞÉ¨Ãè·¶Î§ ÏòÉÏ & ÏòÏÂ É¨Ãè
+#define COLUMN_SCOPE 70 //åˆ—æ‰«æèŒƒå›´ å‘å·¦ & å‘å³ æ‰«æ
+#define ROW_SCOPE 50    //è¡Œæ‰«æèŒƒå›´ å‘ä¸Š & å‘ä¸‹ æ‰«æ
 
-#define COLUMN_OFFSET 50 //ÁĞÆ«Ö´ Ïò×ó & ÏòÓÒ É¨ÃèÊ±´ÓÖĞÑë·Ö±ğ ÏòÉÏ & ÏòÏÂ ÅĞ¶¨¶àÉÙÁĞ
-#define ROW_OFFSET 50    //ĞĞÆ«Ö´ ÏòÉÏ & ÏòÏÂ É¨ÃèÊ±´ÓÖĞÑë·Ö±ğ Ïò×ó & ÏòÓÒ ÅĞ¶¨¶àÉÙĞĞ
+#define COLUMN_OFFSET 50 //åˆ—åæ‰§ å‘å·¦ & å‘å³ æ‰«ææ—¶ä»ä¸­å¤®åˆ†åˆ« å‘ä¸Š & å‘ä¸‹ åˆ¤å®šå¤šå°‘åˆ—
+#define ROW_OFFSET 50    //è¡Œåæ‰§ å‘ä¸Š & å‘ä¸‹ æ‰«ææ—¶ä»ä¸­å¤®åˆ†åˆ« å‘å·¦ & å‘å³ åˆ¤å®šå¤šå°‘è¡Œ
 
-#define COLUMN_TAR 60 //ÁĞÅĞ¶¨ãĞÖµ
-#define ROW_TAR 55    //ĞĞÅĞ¶¨ãĞÖµ
+#define COLUMN_TAR 60 //åˆ—åˆ¤å®šé˜ˆå€¼
+#define ROW_TAR 55    //è¡Œåˆ¤å®šé˜ˆå€¼
 
 uint8_t img_line_data[MT9V03X_CSI_H][MT9V03X_CSI_W];
 uint8_t img_thres_data[MT9V03X_CSI_H][MT9V03X_CSI_W];
@@ -31,62 +31,54 @@ image_t img_line = DEF_IMAGE((uint8_t *) img_line_data, MT9V03X_CSI_W, MT9V03X_C
 
 int tempTest;
 
-location_goal Car={0}; //Ğ¡³µ×´Ì¬£¨Î»ÖÃ£¬Ä¿±ê£©´æ´¢½á¹¹Ìå
+location_goal Car={0}; //å°è½¦çŠ¶æ€ï¼ˆä½ç½®ï¼Œç›®æ ‡ï¼‰å­˜å‚¨ç»“æ„ä½“
 
-bool initHashMapFlag = false; //ÊÇ·ñ³õÊ¼»¯¹şÏ£±í
+bool initHashMapFlag = false; //æ˜¯å¦åˆå§‹åŒ–å“ˆå¸Œè¡¨
 
 const float PI = 3.1415926f;
 
-//±ßÔµÏß×ø±ê Xt ÉÏ±ßÔµX×ø±ê Xb ÏÂ±ßÔµX×ø±ê Yl ×ó±ßÔµY×ø±ê Yr ÓÒ±ßÔµY×ø±ê
+//è¾¹ç¼˜çº¿åæ ‡ Xt ä¸Šè¾¹ç¼˜Xåæ ‡ Xb ä¸‹è¾¹ç¼˜Xåæ ‡ Yl å·¦è¾¹ç¼˜Yåæ ‡ Yr å³è¾¹ç¼˜Yåæ ‡
 uint8 Xt = 10, Xb = 35, Yl = 10, Yr = 45;
 
 
-//-------------------½á¹¹Ìå-----------------------//
+//-------------------ç»“æ„ä½“-----------------------//
 
-struct Route_Point {//¾àÀë½á¹¹Ìå
-	int num;//ĞòºÅ
-	float dist;//¾àÀë
-	bool isPointed;//ÊÇ·ñÒÑ¾­¼ÆËã¹ı¾àÀë
+struct Route_Point {//è·ç¦»ç»“æ„ä½“
+	int num;//åºå·
+	float dist;//è·ç¦»
+	bool isPointed;//æ˜¯å¦å·²ç»è®¡ç®—è¿‡è·ç¦»
 } HashMap[locate_sz];
 
-//---------------------Êı×é-----------------------//
+//---------------------æ•°ç»„-----------------------//
 
-float originMap[locate_sz][2] = {//×ø±êÔ­Ê¼Êı¾İ
-		1, 1,
-		10, 10,
-		20, 20,
-		5, 5,
-		15, 15,
-		17,17,
-		3,3,
-		2,2,
-		8,8,
-		25,10,
-		10,1,
-		25,20
+int originMap[locate_sz][2] = {//åæ ‡åŸå§‹æ•°æ®
+        0
 };
 
 /*
  ***************************************************************
-*	º¯ Êı Ãû: Locate_Route
-*   ¹¦ÄÜËµÃ÷: Â·¾¶¹æ»®
-*	ĞÎ    ²Î: ÎŞ
-*	·µ »Ø Öµ: num:Â·¾¶µãĞòºÅ
+*	å‡½ æ•° å: Locate_Route
+*   åŠŸèƒ½è¯´æ˜: è·¯å¾„è§„åˆ’
+*	å½¢    å‚: æ— 
+*	è¿” å› å€¼: num:è·¯å¾„ç‚¹åºå·
  ***************************************************************
- *  Èë¿Ú
- *  int t;//t´ú±íµãµÄ¸öÊı£¬Ö»³õÊ¼»¯Ç°t¸ö½á¹¹Ìå
+ *  å…¥å£
+ *  int t;//tä»£è¡¨ç‚¹çš„ä¸ªæ•°ï¼Œåªåˆå§‹åŒ–å‰tä¸ªç»“æ„ä½“
 	scanf("%d",&t);
 	initHashMap(t);
-	if (initHashMapFlag != 1) {
-		printf("³õÊ¼»¯HashMap´íÎó\n");
+    int best,routes;//bestä»£è¡¨æœ€ä¼˜è·¯å¾„ï¼Œroutesä»£è¡¨è·¯å¾„çš„åºå·
+	if(initHashMapFlag){
+		for(int i=0;i<t;++i){
+			best=locate_route();
+			routes=HashMap[best].num;
+			Car.x=originMap[routes][0];
+			Car.y=originMap[routes][1];
+			printf("%f %f %d\n",xx,yy,routes);
+		}
 	}
-	else printf("³õÊ¼»¯HashMap³É¹¦\n");
-	for (int i = 0; i < t; ++i) {
-		int n=locate_route();//n±íÊ¾originMapµÄµÚN×éµã
-		printf("%f %f\n",originMap[n][0],originMap[n][1]);
-	}
+	else printf("Init Failed");
  */
-void initHashMap(int true_sz) {//³õÊ¼»¯HashMap
+void initHashMap(int true_sz) {//åˆå§‹åŒ–HashMap
 	for (int i = 0; i < locate_sz; ++i) {
 		HashMap[i].num = i;
 		HashMap[i].dist = 0;
@@ -96,37 +88,38 @@ void initHashMap(int true_sz) {//³õÊ¼»¯HashMap
 	initHashMapFlag = 1;
 }
 
-int locate_route() {
-    int road_best = 1;           //¾Ö²¿×îÓÅµã
-	for (int j = 0; j < locate_sz; ++j) {
-		if (HashMap[j].isPointed) continue;
-		HashMap[j].dist = sqrtf((powf((Car.x - originMap[j][0]), 2) +
-		                         powf((Car.y - originMap[j][1]), 2))); //¼ÆËã¾àÀë
-	}
-	for(int j=0;j<locate_sz;++j){
-		if(HashMap[j].isPointed)continue;
-		if(HashMap[j].dist<HashMap[road_best].dist&&j!=road_best)road_best = j;
-	}
-
-    tempTest=road_best;
-
-    HashMap[road_best].isPointed = true;
-	return HashMap[road_best].num;
+int cmpDist(const void *aa, const void *bb){//ç»™qsortçš„æ¯”è¾ƒå‡½æ•°ï¼ˆä»å°åˆ°å¤§ï¼‰
+	return (*(struct Route_Point*)aa).dist>(*(struct Route_Point*)bb).dist;
 }
 
-
-
+int locate_route() {//è·¯å¾„è§„åˆ’
+	int num = 0;
+	float minDist = 100000;
+	for (int i = 0; i < locate_sz; ++i)if (HashMap[i].isPointed == false) {
+			float dist = powf(originMap[i][0] - Car.x, 2) + powf(originMap[i][1] - Car.y, 2);
+			if (dist < minDist) {minDist = dist;num = i;}
+	}
+	HashMap[num].isPointed = true;
+        tempTest=HashMap[num].num;
+	return num;
+}
+void get_route(){
+    int best=locate_route();
+    int nextpoint=HashMap[best].num;
+    Car.x1=originMap[nextpoint][0];
+    Car.y1=originMap[nextpoint][1];
+}
 void Find_Edge_1(void)
 {
     uint8_t mt9v03x_thres_image[MT9V03X_CSI_W][MT9V03X_CSI_H];
     memset(&mt9v03x_thres_image,*img_thres.data,sizeof(img_thres.data));//
-    uint8 aspect = 255;   //ÏàÁÚ3 ĞĞ|ÁĞ Ñ¹ËõÌØÕ÷Öµ
-    uint8 black_nums = 0; //¼ÇÂ¼µ±Ç°É¨ÃèĞĞºÚµãÊıÖµ
-    //ÉÏ°ëÇøÓò ´ÓÖĞ¼äÏòÉÏËÑË÷ ÖğĞĞ
+    uint8 aspect = 255;   //ç›¸é‚»3 è¡Œ|åˆ— å‹ç¼©ç‰¹å¾å€¼
+    uint8 black_nums = 0; //è®°å½•å½“å‰æ‰«æè¡Œé»‘ç‚¹æ•°å€¼
+    //ä¸ŠåŠåŒºåŸŸ ä»ä¸­é—´å‘ä¸Šæœç´¢ é€è¡Œ
     for (uint8 i = 60; i > 60 - ROW_SCOPE; --i)
     {
         black_nums = 0;
-        //ÖğĞĞËÑË÷ Ã¿´Î°ÑËÑË÷µãËù´¦ÁĞÉÏÏÂµãµÄÊı¾İÈÚºÏ
+        //é€è¡Œæœç´¢ æ¯æ¬¡æŠŠæœç´¢ç‚¹æ‰€å¤„åˆ—ä¸Šä¸‹ç‚¹çš„æ•°æ®èåˆ
         for (uint8 j = 94 - COLUMN_OFFSET; j < 94 + COLUMN_OFFSET; ++j)
         {
             aspect = mt9v03x_thres_image [i - 1][j] &
@@ -141,11 +134,11 @@ void Find_Edge_1(void)
         }
     }
 
-    //ÓÒ°ëÇøÓò ´ÓÖĞ¼äÏòÓÒËÑË÷ ÖğÁĞ
+    //å³åŠåŒºåŸŸ ä»ä¸­é—´å‘å³æœç´¢ é€åˆ—
     for (uint8 j = 94; j < 94 + COLUMN_SCOPE; ++j)
     {
         black_nums = 0;
-        //ÖğĞĞËÑË÷ Ã¿´Î°ÑËÑË÷µãËù´¦ĞĞÉÏÏÂµãµÄÊı¾İÈÚºÏ
+        //é€è¡Œæœç´¢ æ¯æ¬¡æŠŠæœç´¢ç‚¹æ‰€å¤„è¡Œä¸Šä¸‹ç‚¹çš„æ•°æ®èåˆ
         for (uint8 i = 60 - ROW_OFFSET; i < 60 + ROW_OFFSET; ++i)
         {
             aspect = mt9v03x_thres_image[i][j - 1] &
@@ -160,11 +153,11 @@ void Find_Edge_1(void)
         }
     }
 
-    //ÏÂ°ëÇøÓò ´ÓÖĞ¼äÏòÏÂËÑË÷ ÖğĞĞ
+    //ä¸‹åŠåŒºåŸŸ ä»ä¸­é—´å‘ä¸‹æœç´¢ é€è¡Œ
     for (uint8 i = 60; i < 60 + ROW_SCOPE; ++i)
     {
         black_nums = 0;
-        //ÖğĞĞËÑË÷ Ã¿´Î°ÑËÑË÷µãËù´¦ÁĞÉÏÏÂµãµÄÊı¾İÈÚºÏ
+        //é€è¡Œæœç´¢ æ¯æ¬¡æŠŠæœç´¢ç‚¹æ‰€å¤„åˆ—ä¸Šä¸‹ç‚¹çš„æ•°æ®èåˆ
         for (uint8 j = 94 - COLUMN_OFFSET; j < 94 + COLUMN_OFFSET; ++j)
         {
             aspect = mt9v03x_thres_image[i - 1][j] &
@@ -179,11 +172,11 @@ void Find_Edge_1(void)
         }
     }
 
-    //×ó°ëÇøÓò ´ÓÖĞ¼äÏò×óËÑË÷ ÖğÁĞ
+    //å·¦åŠåŒºåŸŸ ä»ä¸­é—´å‘å·¦æœç´¢ é€åˆ—
     for (uint8 j = 94; j > 94 - COLUMN_SCOPE; --j)
     {
         black_nums = 0;
-        //ÖğĞĞËÑË÷ Ã¿´Î°ÑËÑË÷µãËù´¦ĞĞÉÏÏÂµãµÄÊı¾İÈÚºÏ
+        //é€è¡Œæœç´¢ æ¯æ¬¡æŠŠæœç´¢ç‚¹æ‰€å¤„è¡Œä¸Šä¸‹ç‚¹çš„æ•°æ®èåˆ
         for (uint8 i = 60 - ROW_OFFSET; i < 60 + ROW_OFFSET; ++i)
         {
             aspect = mt9v03x_thres_image[i][j - 1] &
@@ -201,11 +194,16 @@ void Find_Edge_1(void)
 
 void carlocation_init(){
     initHashMap(12);
-    Car.x=0;
+    Car.x=1;
     Car.y=0;
 	int tmp=locate_route();
     Car.x1=originMap[tmp][0];
     Car.y1=originMap[tmp][1];
+    Car.Position_Pointer=0;
+    Car.Angel_Target=atan2((Car.x1-Car.x),(Car.y1-Car.y))*180/PI;
+    Car.DistanceX=20*(Car.x1-Car.x);
+    Car.DistanceY=20*(Car.y1-Car.y);
+    //Car.DistanceY=sqrt(Car.DistanceX*Car.DistanceX+Car.DistanceY*Car.DistanceY);
 }
 
 void location_entry(){
@@ -217,12 +215,12 @@ void location_entry(){
 void location_thres_init(void)
 {
     rt_thread_t tid;
-    //³õÊ¼»¯
-    //´´½¨Ñ°ÕÒ×ø±êÏß³Ì ÓÅÏÈ¼¶ÉèÖÃÎª8
+    //åˆå§‹åŒ–
+    //åˆ›å»ºå¯»æ‰¾åæ ‡çº¿ç¨‹ ä¼˜å…ˆçº§è®¾ç½®ä¸º8
     tid = rt_thread_create("location", location_entry, RT_NULL, 2048, 31, 100);
-    //ÓÅÏÈ¼¶±ÈÖ÷Ïß³Ì¸ß£¬¸Õ¿ªÊ¼¾ÍÖ´ĞĞÈÃÆä¿¨ËÀÔÚ´ËÏß³Ì£¬ÕÒµ½×ø±êºó¸ÄÏß³Ìreturn»ØÊÕ
+    //ä¼˜å…ˆçº§æ¯”ä¸»çº¿ç¨‹é«˜ï¼Œåˆšå¼€å§‹å°±æ‰§è¡Œè®©å…¶å¡æ­»åœ¨æ­¤çº¿ç¨‹ï¼Œæ‰¾åˆ°åæ ‡åæ”¹çº¿ç¨‹returnå›æ”¶
 
-    //Æô¶¯Ñ°ÕÒ×ø±êÏß³Ì
+    //å¯åŠ¨å¯»æ‰¾åæ ‡çº¿ç¨‹
     if (RT_NULL != tid)
     {
         rt_thread_startup(tid);
@@ -230,24 +228,24 @@ void location_thres_init(void)
 }
 
 /*
-//×ª»»×ø±ê
+//è½¬æ¢åæ ‡
 void map_change(int input[][2], int output[][2], int pts_nums, int *pts_label, int yr, int xb) {
     for (int i = 0; i <= pts_nums; ++i) {
         output[i][0] = input[pts_label[i]][0];
         output[i][1] = input[pts_label[i]][1];
-    }//ÖØĞÂÅÅĞò
+    }//é‡æ–°æ’åº
 
     for (int i = 0; i <= pts_nums; ++i) {
         output[i][0] = abs(output[i][0] - yr);
         output[i][1] 
 
 = abs(output[i][1] - xb);
-    }//ÖØĞÂÓ³Éä×ø±êÏµ
+    }//é‡æ–°æ˜ å°„åæ ‡ç³»
 
     return ;
 }
 
-//×ª»»×ø±êÖµ
+//è½¬æ¢åæ ‡å€¼
 void map_calculate(int input[][2], double *angle, double *gap, const int pts_nums, double x_length, double y_length) {
 
 //    x_length = (double)(Yr - Yl) / 100.0f;

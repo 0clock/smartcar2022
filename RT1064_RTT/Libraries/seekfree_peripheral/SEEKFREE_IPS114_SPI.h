@@ -81,15 +81,15 @@
 
 
 
-#define IPS114_W   172
-#define IPS114_H   320
+#define IPS114_W   120
+#define IPS114_H   240
 
 //定义显示方向
 //0 竖屏模式
 //1 竖屏模式  旋转180
 //2 横屏模式
 //3 横屏模式  旋转180
-#define IPS114_DISPLAY_DIR 2
+#define IPS114_DISPLAY_DIR 3
 
 #if (0==IPS114_DISPLAY_DIR || 1==IPS114_DISPLAY_DIR)
 #define	IPS114_X_MAX	IPS114_W	//液晶X方宽度

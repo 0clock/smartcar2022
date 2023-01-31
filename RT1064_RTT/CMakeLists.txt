@@ -1036,4 +1036,4 @@ add_executable(my_smartcar_rtt
         Project/USER/inc/isr.h
         Project/USER/inc/RT106X_config.h
         Project/USER/src/isr.c
-        Project/USER/src/main.c Project/CODE/location.c Project/CODE/location.h Project/CODE/interface.c Project/CODE/interface.h Project/CODE/carmove.c Project/CODE/carmove.h)
+        Project/USER/src/main.c Project/CODE/location.c Project/CODE/location.h Project/CODE/interface.c Project/CODE/interface.h Project/CODE/carmove.c Project/CODE/carmove.h Project/CODE/sendmsg.h)

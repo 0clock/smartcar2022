@@ -5,6 +5,8 @@
 #include "flash_param.h"
 #include "ahrs.h"
 #include "location.h"
+#include "zf_uart.h"
+#include "attitude_solution.h"
 
 
 
@@ -14,6 +16,7 @@
 #define KEY_4   C4	// 定义主板上按键对应引脚
 
 enum Config_Action config_action;
+extern float pictureP,pictureI,pictureD;
 
 //开关状态变量
 uint8 key1_status = 1;
@@ -53,7 +56,7 @@ void button_entry(void *parameter)
     if(key1_status && !key1_last_status)    
     {
         if(Page_Number==InfoPage){
-            speed_tar=5;//小车走起
+            speed_tar=+15;//小车走起
         }
         if(Page_Number==ConfigPage){
             switch (config_action) {
@@ -67,6 +70,12 @@ void button_entry(void *parameter)
                 case MotorD:Position_KD+=1;break;
                 default:break;
             }
+            flash_param_write();
+
+        }
+        if(Page_Number==CameraPage){
+            pictureP+=0.001;
+            uart_putstr(USART_1, "KEY1");
         }
         rt_sem_release(key1_sem);
         rt_mb_send(buzzer_mailbox, 23);
@@ -88,6 +97,10 @@ void button_entry(void *parameter)
                 case MotorD:Position_KD-=1;break;
                 default:break;
             }
+            flash_param_write();
+        }
+        if(Page_Number==CameraPage){
+            pictureP-=0.001;
         }
         rt_sem_release(key2_sem);
         rt_mb_send(buzzer_mailbox, 23);
@@ -100,12 +113,22 @@ void button_entry(void *parameter)
                 config_action=0;
             Gui_Page_Active=true;
         }
+        if(Page_Number==InfoPage){
+
+        }
+        if(Page_Number==CameraPage){
+            pictureD+=0.001;
+        }
         rt_sem_release(key3_sem);
         rt_mb_send(buzzer_mailbox, 23);
     }
     if(key4_status && !key4_last_status)    
     {
+        if(Page_Number==CameraPage){
+                pictureD-=0.001;
+            }
         Page_Number++;
+
         Gui_Page_Active=true;
         if(Page_Number>4)
             Page_Number=0;
@@ -128,7 +151,7 @@ void button_init(void)
     key1_sem = rt_sem_create("key1", 0, RT_IPC_FLAG_FIFO);		//创建按键的信号量，当按键按下就释放信号量，在需要使用按键的地方获取信号量即可
     key2_sem = rt_sem_create("key2", 0, RT_IPC_FLAG_FIFO);  
     key3_sem = rt_sem_create("key3", 0, RT_IPC_FLAG_FIFO);  
-    key4_sem = rt_sem_create("key4", 0, RT_IPC_FLAG_FIFO);  
+    key4_sem = rt_sem_create("key4", 0, RT_IPC_FLAG_FIFO);
     
     timer1 = rt_timer_create("button", button_entry, RT_NULL, 20, RT_TIMER_FLAG_PERIODIC);
 

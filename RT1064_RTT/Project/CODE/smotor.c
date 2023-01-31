@@ -47,7 +47,7 @@ void grab_picture(){
 void place_picture(){
     smotor1_control(0);
     //这里控制电磁铁松开
-    systick_delay_ms(400);
+    systick_delay_ms(100);
     gpio_set(ELECTROMAG_PIN,0);
     smotor1_control(1600);
 }

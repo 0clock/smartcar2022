@@ -1949,6 +1949,11 @@
               <FileType>1</FileType>
               <FilePath>..\CODE\carmove.c</FilePath>
             </File>
+            <File>
+              <FileName>sendmsg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\sendmsg.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -4289,6 +4294,11 @@
               <FileName>carmove.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CODE\carmove.c</FilePath>
+            </File>
+            <File>
+              <FileName>sendmsg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CODE\sendmsg.c</FilePath>
             </File>
           </Files>
         </Group>
