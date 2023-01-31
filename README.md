@@ -6,7 +6,7 @@
 
 ## 目录说明:cactus:
 
-- [rt1064_rtt](/RT1064_RTT)内是rt1064的工程
+- [rt1064](/rt1064)内是rt1064的工程
 - [openart](/openart)部分是两个openart的代码
 - [hardware](hardware)内有电机驱动以及母版的pcb文件
 
