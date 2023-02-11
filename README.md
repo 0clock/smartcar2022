@@ -4,6 +4,8 @@
 
 视频：[【智能车】大二小白参加17届智能视觉组记录 开源_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1rY4y1u77a/)
 
+<img src="images\小车2.jpg" style="zoom: 33%;" />
+
 ## 目录说明:cactus:
 
 - [rt1064](/rt1064)内是rt1064的工程
